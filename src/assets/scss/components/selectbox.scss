@@ -1,0 +1,35 @@
+.select-wrap {
+  padding: 5px;
+  border-radius: 3px;
+  &.active {
+    background: #5f6c84;
+    .select {
+      &-label {
+        color: $white;
+      }
+      &-filter {
+        color: $white;
+        background: transparent url("/src/assets/img/arrow-down-active.svg")
+          no-repeat center right 7px;
+      }
+    }
+  }
+  .select {
+    &-label {
+      font-size: 16px;
+      color: #5f6c84;
+      line-height: 24px;
+    }
+    &-filter {
+      -webkit-appearance: none;
+      font-size: 16px;
+      color: #5f6c84;
+      line-height: 24px;
+      padding-right: 20px;
+      background: transparent url("/src/assets/img/arrow-down.svg") no-repeat
+        center right 7px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

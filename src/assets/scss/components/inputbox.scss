@@ -1,0 +1,62 @@
+.search-wrap {
+  .custom-search {
+    background: rgba(#d8d8d8, 0.18);
+    padding: 3px 13px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #7a869a;
+    border: 1px solid #dadada;
+    border-radius: 2px;
+    &::placeholder {
+      font-size: 14px;
+      line-height: 24px;
+      color: #7a869a;
+    }
+  }
+}
+
+//toggle-switch
+.toggle-switch {
+  position: relative;
+  cursor: pointer;
+  input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .toggle-box {
+    position: absolute;
+    top: 4px;
+    width: 30px;
+    height: 16px;
+    // border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    background: #d9d9d9;
+  }
+  .toggle-circle {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 3px;
+    background: $white;
+    transition: all 0.2s ease;
+  }
+  .toggle-label {
+    font-size: 14px;
+    color: #5f6c84;
+    text-align: right;
+    line-height: 24px;
+    padding-left: 30px;
+  }
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-box .toggle-circle {
+  transform: translateX(14px);
+}
+
+.toggle-switch input[type="checkbox"]:checked + .toggle-box {
+  background: #4c53c0;
+}

@@ -1,85 +1,125 @@
-.rating {
-  @extend %flexbox;
-  @include flex-direction(row-reverse);
-  @include justify-content(flex-end);
-  &--type-2 {
-    @include justify-content(flex-end);
-    label {
-      width: 25px !important;
-      cursor: initial;
-      &:before,
-      &:after {
-        font-size: 2.5rem !important;
+.d-flex {
+  @include flexbox();
+}
+.d-flex-center {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(center);
+}
+.d-flex-v-center {
+  @include flexbox();
+  @include align-items(center);
+}
+.d-flex-space-center {
+  @include flexbox();
+  @include align-items(center);
+  @include justify-content(space-between);
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+.ml-5 {
+  margin-left: 5px;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mr-30 {
+  margin-right: 30px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.more {
+  &-icon {
+    &.material-icons {
+      font-size: 16px;
+      font-weight: 600;
+      color: #0053cc;
+    }
+  }
+  &-text {
+    font-size: 16px;
+    color: #0053cc;
+    line-height: 24px;
+  }
+}
+
+.close-icon {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #cecece;
+  display: inline-block;
+  text-align: center;
+  > .material-icons {
+    color: $white;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+  }
+}
+
+.main {
+  background: $white;
+}
+
+.navbar {
+  padding: 23px 55px;
+  &__list {
+    &-item {
+      font-size: 13px;
+      line-height: 24px;
+      color: #afb1bf;
+      padding: 8px 16px;
+      &.active {
+        color: #b2e7f4;
+        font-weight: $bold;
+        background: #333589;
+        box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+          0 12px 20px -16px rgba(158, 117, 255, 0.15);
+        border-radius: 3px;
       }
-    }
-  }
-  &.rating-1 {
-    #star5 ~ label:after {
-      opacity: 1;
-    }
-  }
-  &.rating-2 {
-    #star4 ~ label:after {
-      opacity: 1;
-    }
-  }
-  &.rating-3 {
-    #star3 ~ label:after {
-      opacity: 1;
-    }
-  }
-  &.rating-4 {
-    #star2 ~ label:after {
-      opacity: 1;
-    }
-  }
-  &.rating-5 {
-    #star1 ~ label:after {
-      opacity: 1;
-    }
-  }
-  > input {
-    display: none;
-  }
-  label {
-    display: block;
-    width: 30px;
-    height: 22px;
-    cursor: pointer;
-    &:before,
-    &:after {
-      content: "\e83a";
-      font-family: "Material Icons";
-      position: absolute;
-      display: block;
-      font-size: 3rem;
-      color: rgba(0, 0, 0, 0.4);
-    }
-    &:after {
-      content: "\e838";
-      color: #ffaf00;
-      opacity: 0;
-      @include transition(all 0.5s);
-    }
-  }
-  &--type-1 {
-    padding: 0.5rem;
-    label:hover:after,
-    label:hover ~ label:after,
-    input:checked ~ label:after {
-      opacity: 1;
     }
   }
 }
 
-pre {
-  background: #eeeeee;
-  padding: 20px;
-  min-height: 240px;
-  max-height: 240px;
-  > code {
-    width: 100%;
-    max-height: 200px;
-    overflow: auto;
+.filters-wrap {
+  padding: 11px 55px;
+}
+
+.stats-type {
+  padding: 2px;
+  background: rgba(#d9d9d9, 0.5);
+  border-radius: 6px;
+  &__item {
+    font-size: 14px;
+    line-height: 24px;
+    color: #5f6c84;
+    padding: 0px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    &.active {
+      color: $white;
+      background: #4c53c0;
+    }
+  }
+}
+
+.showing-text {
+  color: #172c4e;
+  font-size: 13px;
+  line-height: 24px;
+  .start,
+  .end {
+    font-weight: $bold;
   }
 }

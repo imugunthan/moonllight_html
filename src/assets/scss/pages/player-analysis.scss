@@ -1,0 +1,73 @@
+.player-table {
+  width: 100%;
+  th,
+  td {
+    padding: 10px 15px;
+  }
+  th {
+    font-size: 13px;
+    font-weight: $bold;
+    color: #5f6c84;
+  }
+  td {
+    font-size: 14px;
+    line-height: 16px;
+    color: #606380;
+    &.player-name {
+      font-weight: $bold;
+    }
+    .player-profile {
+      width: 20px;
+      height: 20px;
+      background: #4149ac;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      .material-icons {
+        color: $white;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  .up-arrow {
+    font-size: 17px;
+  }
+  thead {
+    text-align: left;
+    border-bottom: 1px solid #d1d1d1;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.11);
+  }
+  tbody {
+    tr {
+      border-bottom: 1px solid #d1d1d180;
+      &.selected {
+        background: #f3f3ff;
+      }
+    }
+  }
+  .status {
+    display: inline-block;
+    padding: 4px 10px;
+    font-size: 10px;
+    font-weight: $medium;
+    text-transform: uppercase;
+    border-radius: 4px;
+    &--available {
+      color: #5abf7b;
+      background: rgba(#5abf7b, 0.3);
+    }
+    &--injured {
+      color: #f86364;
+      background: rgba(#f86364, 0.3);
+    }
+    &--suspended {
+      color: #42526e;
+      background: rgba(#ebecf0, 0.3);
+    }
+    &--doubtful {
+      color: #d8aa00;
+      background: rgba(#ffe93c, 0.3);
+    }
+  }
+}
