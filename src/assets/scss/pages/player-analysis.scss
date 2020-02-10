@@ -9,6 +9,9 @@
     font-weight: $bold;
     color: #5f6c84;
   }
+  .w-110 {
+    width: 110px !important;
+  }
   td {
     font-size: 14px;
     line-height: 16px;
@@ -27,6 +30,30 @@
         color: $white;
         font-size: 14px;
         line-height: 20px;
+      }
+    }
+    &.team-details {
+      padding: 0;
+      &--2 {
+        .team-info {
+          height: 33px;
+        }
+      }
+    }
+    .team-info {
+      width: 110px;
+      padding: 10px 5px;
+      height: 66px;
+      background: #5abf7b;
+      > img {
+        width: 21px;
+        height: 21px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .team-name {
+        color: $white;
+        font-weight: $bold;
       }
     }
   }
