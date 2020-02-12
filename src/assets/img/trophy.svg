@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63 (92445) - https://sketch.com -->
+    <title>Trophy Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M17.7036,6 C17.7036,6.9888 17.016,7.8156 16.0956,8.0388 C16.1628,7.6728 16.2,7.2936 16.2,6.9072 L16.2,3.8964 L17.7036,3.8964 L17.7036,6 Z M9.6,7.7808 L7.746,8.8068 L8.1,6.6348 L6.6,5.0988 L8.6724,4.7808 L9.6,2.8068 L10.5276,4.7808 L12.6,5.0988 L11.1,6.6348 L11.454,8.8068 L9.6,7.7808 Z M1.4952,6 L1.4952,3.8964 L3,3.8964 L3,6.9072 C3,7.2936 3.0372,7.6728 3.1044,8.0388 C2.1828,7.8156 1.4952,6.9888 1.4952,6 L1.4952,6 Z M16.2,2.4 L16.2,0 L3,0 L3,2.4 L0,2.4 L0,6 C0,7.9884 1.6116,9.6 3.6,9.6 L3.6348,9.6 C4.5264,11.4528 6.2844,12.8076 8.4,13.11 L8.4,16.8 L4.8,16.8 L4.8,19.2 L14.4,19.2 L14.4,16.8 L10.8,16.8 L10.8,13.11 C12.9144,12.8076 14.6736,11.4528 15.564,9.6 L15.6,9.6 C17.5884,9.6 19.2,7.9884 19.2,6 L19.2,2.4 L16.2,2.4 Z" id="path-1"></path>
+        <filter x="-26.0%" y="-20.8%" width="152.1%" height="183.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="0.5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.321568627   0 0 0 0 0.360784314   0 0 0 0 0.843137255  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.3">
+        <g id="Artboard">
+            <g id="Trophy-Icon">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

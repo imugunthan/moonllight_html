@@ -1,0 +1,88 @@
+.side-nav {
+  width: 100px;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #2f3180;
+  padding: 45px 0 25px 0;
+  @include flex-direction(column);
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.5);
+  .user {
+    &-info {
+      text-align: center;
+      margin-bottom: 55px;
+    }
+    &-avatar {
+      width: 52px;
+      height: 52px;
+      background: #bdc7ff;
+      border-radius: 50%;
+      border: 2px solid $white;
+    }
+    &-image {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    &-name {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: bold;
+      color: $white;
+    }
+  }
+  .navmenu {
+    &__list {
+      cursor: pointer;
+    }
+    &__item {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      margin: 0 auto;
+      text-align: center;
+      .filled,
+      .normal {
+        margin: auto;
+        margin-top: 13px;
+      }
+      .filled {
+        display: none;
+      }
+      .normal {
+        display: inline-block;
+      }
+      &.active {
+        background: #2f3180;
+        box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.5);
+        .material-icons {
+          color: $white;
+        }
+        .filled {
+          display: inline-block;
+        }
+        .normal {
+          display: none;
+        }
+      }
+      .material-icons {
+        font-size: 19px;
+        line-height: 46px;
+        color: rgba($white, 0.3);
+      }
+    }
+  }
+  &__footer {
+    margin-top: auto;
+    .help {
+      cursor: pointer;
+      margin-bottom: 35px;
+      color: rgba($white, 0.3);
+      .material-icons {
+        font-size: 16px;
+      }
+    }
+  }
+}

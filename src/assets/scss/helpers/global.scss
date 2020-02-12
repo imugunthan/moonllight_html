@@ -15,7 +15,12 @@
   @include align-items(center);
   @include justify-content(space-between);
 }
-
+.align-top {
+  @include align-items(flex-start);
+}
+.m-auto {
+  margin: 0 auto;
+}
 .ml-auto {
   margin-left: auto;
 }
@@ -36,6 +41,15 @@
 }
 .mb-10 {
   margin-bottom: 10px;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+.text-center {
+  text-align: center;
 }
 
 .more {
@@ -69,7 +83,15 @@
 }
 
 .main {
+  width: 100vw;
+  min-height: 100vh;
   background: $white;
+}
+.right-section {
+  position: relative;
+  width: calc(100vw - 100px);
+  margin-left: 100px;
+  overflow: hidden;
 }
 
 .navbar {

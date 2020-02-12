@@ -1,13 +1,18 @@
 .player-table {
-  width: 100%;
+  &-wrap {
+    width: 100%;
+    overflow: scroll;
+  }
   th,
   td {
     padding: 10px 15px;
+    white-space: nowrap;
   }
   th {
     font-size: 13px;
     font-weight: $bold;
     color: #5f6c84;
+    white-space: nowrap;
   }
   .w-110 {
     width: 110px !important;
@@ -45,6 +50,7 @@
       padding: 10px 5px;
       height: 66px;
       background: #5abf7b;
+      border: 1px solid white;
       > img {
         width: 21px;
         height: 21px;
@@ -61,6 +67,7 @@
     font-size: 17px;
   }
   thead {
+    background: white;
     text-align: left;
     border-bottom: 1px solid #d1d1d1;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.11);
@@ -96,5 +103,49 @@
       color: #d8aa00;
       background: rgba(#ffe93c, 0.3);
     }
+  }
+  th,
+  td {
+    &:first-child {
+      // position: absolute;
+      width: 50px;
+      top: auto;
+      left: 0;
+    }
+    &:nth-child(2) {
+      // position: absolute;
+      width: 50px;
+      top: auto;
+      left: 50px;
+    }
+    &:nth-child(3) {
+      // position: absolute;
+      width: 46px;
+      top: auto;
+      left: 100px;
+    }
+    &:nth-child(4) {
+      // position: absolute;
+      width: 150px;
+      top: auto;
+      left: 146px;
+    }
+    &:nth-child(5) {
+      // position: absolute;
+      width: 46px;
+      top: auto;
+      left: 296px;
+    }
+  }
+}
+
+.table {
+  &-left {
+    position: absolute;
+  }
+  &-right {
+    width: calc(100% - 353px);
+    margin-left: 353px;
+    overflow: scroll;
   }
 }
