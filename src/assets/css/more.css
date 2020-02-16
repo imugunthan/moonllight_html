@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/* img path */
+/* break points*/
+.custom-checkbox input[type=checkbox] {
+  display: none;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.custom-checkbox .checkbox-label {
+  cursor: pointer;
+}
+.custom-checkbox .checkbox-icon-wrap {
+  width: 12px;
+  height: 12px;
+  background-color: white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  box-shadow: inset 0 0 1px 0 rgba(0, 0, 0, 0.33);
+  position: relative;
+  border: 1px solid #e3e3e3;
+}
+.custom-checkbox .checkbox-icon-wrap::before {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  content: "";
+  font-family: "Material Icons";
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.custom-checkbox .checkbox-txt {
+  color: #172c4e;
+  font-size: 14px;
+  line-height: 24px;
+  margin-left: 15px;
+}
+.custom-checkbox input:checked + .checkbox-label .checkbox-icon-wrap {
+  background-color: #4c53c0;
+  border: 1px solid #4c53c0;
+}
+.custom-checkbox input:checked + .checkbox-label .checkbox-icon-wrap::before {
+  content: "";
+  color: #fff;
+}
+
+.more {
+  position: relative;
+}
+.more .search-wrap {
+  width: 100%;
+  padding: 10px 10px 5px 10px;
+}
+.more .search-wrap .custom-search {
+  width: 100%;
+  background: white url("/src/assets/img/search-icon.svg") no-repeat center right 10px;
+  border: 0;
+  padding-right: 30px;
+}
+.more .additional-filters-wrap {
+  padding: 0px 30px 20px 30px;
+}
+.more .more-dropdown {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 30px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.27);
+  border-radius: 7px;
+  width: 260px;
+}
+.more .more-dropdown.open {
+  display: block;
+}
+.more .more-dropdown .clear-filters {
+  font-size: 14px;
+  color: #4c53c0;
+  line-height: 24px;
+  cursor: pointer;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.more .more-dropdown .additional-filters .head {
+  font-size: 14px;
+  color: #172c4e;
+  line-height: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/*# sourceMappingURL=more.css.map */
