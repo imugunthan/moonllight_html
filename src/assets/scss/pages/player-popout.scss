@@ -301,6 +301,30 @@
     background: #e8e7f3;
     border-radius: 9px;
     padding: 8px 25px;
+    .select-options {
+      cursor: pointer;
+      padding-right: 40px;
+      background: transparent
+        url("/src/assets/img/player-popout/select-background.svg") right center
+        no-repeat;
+      .label {
+        font-size: 11px;
+        color: #afb1bf;
+        line-height: 24px;
+      }
+      .select-btn {
+        font-size: 13px;
+        color: #2b2c78;
+      }
+      .material-icons {
+        color: #2b2c78;
+        margin-left: 5px;
+        font-size: 16px;
+        position: relative;
+        top: -1px;
+        cursor: pointer;
+      }
+    }
     .title {
       font-size: 13px;
       font-weight: $bold;
@@ -903,6 +927,14 @@
 }
 
 .stats-overview {
+  .stats-main__header {
+    .total-points {
+      width: 30%;
+    }
+    .select-options {
+      margin-right: 50px;
+    }
+  }
   .card {
     position: relative;
     padding: 20px 30px;

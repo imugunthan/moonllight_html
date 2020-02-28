@@ -1826,6 +1826,28 @@ html {
   border-radius: 9px;
   padding: 8px 25px;
 }
+.stats-main__header .select-options {
+  cursor: pointer;
+  padding-right: 40px;
+  background: transparent url("/src/assets/img/player-popout/select-background.svg") right center no-repeat;
+}
+.stats-main__header .select-options .label {
+  font-size: 11px;
+  color: #afb1bf;
+  line-height: 24px;
+}
+.stats-main__header .select-options .select-btn {
+  font-size: 13px;
+  color: #2b2c78;
+}
+.stats-main__header .select-options .material-icons {
+  color: #2b2c78;
+  margin-left: 5px;
+  font-size: 16px;
+  position: relative;
+  top: -1px;
+  cursor: pointer;
+}
 .stats-main__header .title {
   font-size: 13px;
   font-weight: 700;
@@ -2416,6 +2438,12 @@ html {
   width: 20%;
 }
 
+.stats-overview .stats-main__header .total-points {
+  width: 30%;
+}
+.stats-overview .stats-main__header .select-options {
+  margin-right: 50px;
+}
 .stats-overview .card {
   position: relative;
   padding: 20px 30px;
