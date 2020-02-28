@@ -1546,6 +1546,7 @@ html {
 .modal-body {
   width: calc(100% - 110px);
   margin: 30px auto;
+  height: 858px;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -1610,14 +1611,12 @@ html {
   font-size: 30px;
   font-weight: 500;
   color: #fff;
-  letter-spacing: 0;
   line-height: 16px;
   margin-bottom: 15px;
 }
 .modal-aside .player-info .player-position {
   font-size: 14px;
   color: rgba(255, 255, 255, 0.8);
-  letter-spacing: 0;
   line-height: 16px;
 }
 .modal-aside .player-rank {
@@ -1646,7 +1645,6 @@ html {
   font-family: "Bebas Neue";
   font-size: 16px;
   color: #ffffff;
-  letter-spacing: 0;
   text-align: center;
   margin-left: 5px;
   text-shadow: 0 1px 0 rgba(19, 18, 65, 0.4);
@@ -1666,7 +1664,6 @@ html {
   font-size: 12px;
   line-height: 24px;
   color: rgba(255, 255, 255, 0.67);
-  letter-spacing: 0;
   transform: skew(15deg);
 }
 .modal-aside .player-team-info {
@@ -1680,7 +1677,6 @@ html {
 .modal-aside .player-team-info .team-name {
   font-size: 18px;
   font-weight: 700;
-  letter-spacing: 0;
   text-align: center;
   line-height: 16px;
   margin-bottom: 10px;
@@ -1688,7 +1684,6 @@ html {
 .modal-aside .player-team-info .team-info {
   opacity: 0.3;
   font-size: 12px;
-  letter-spacing: 0;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -1707,7 +1702,6 @@ html {
 }
 .modal-aside .player-team-info .player-details .label {
   font-size: 18px;
-  letter-spacing: 0;
   text-align: center;
   line-height: 16px;
   margin-bottom: 10px;
@@ -1715,7 +1709,6 @@ html {
 .modal-aside .player-team-info .player-details .value {
   opacity: 0.3;
   font-size: 12px;
-  letter-spacing: 0;
   text-align: center;
   margin-bottom: 10px;
 }
@@ -1738,7 +1731,6 @@ html {
 .modal-aside .player-speciality .pills-text {
   color: #fff;
   font-size: 12px;
-  letter-spacing: 0;
   text-align: center;
   line-height: 24px;
   transform: skew(15deg);
@@ -1776,7 +1768,6 @@ html {
 .modal-aside .aside-footer .status-text {
   color: #fff;
   font-size: 12px;
-  letter-spacing: 0;
   text-align: center;
   line-height: 22px;
   transform: skew(15deg);
@@ -1806,6 +1797,7 @@ html {
   width: calc(100% - 300px);
   background: #fff;
   padding: 25px 40px;
+  overflow: auto;
   background-image: linear-gradient(151deg, #fafafa 0%, #faf9fc 62%);
 }
 
@@ -1832,6 +1824,26 @@ html {
 .stats-main__header {
   background: #e8e7f3;
   border-radius: 9px;
+  padding: 8px 25px;
+}
+.stats-main__header .title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 14px;
+  margin-bottom: 5px;
+}
+.stats-main__header .value {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  color: #606380;
+  letter-spacing: 0.36px;
+  line-height: 26.14px;
+}
+.stats-main__header .value > span {
+  font-size: 13px;
+  color: #606380;
+  line-height: 10.89px;
 }
 
 .card {
@@ -2000,7 +2012,6 @@ html {
   font-weight: bold;
   line-height: 17px;
   color: #ffffff;
-  letter-spacing: 0;
   text-align: center;
 }
 .overview .keypoint-drivers .key-points .points {
@@ -2043,7 +2054,6 @@ html {
 .overview .info-card .label-text {
   font-size: 12px;
   color: #606380;
-  letter-spacing: 0;
 }
 .overview .right-side {
   width: max-content;
@@ -2078,13 +2088,11 @@ html {
   font-size: 14px;
   font-weight: 700;
   color: #606380;
-  letter-spacing: 0;
   margin-right: 7px;
 }
 .overview .left-side .team-rank {
   font-size: 12px;
   color: #606380;
-  letter-spacing: 0;
   text-align: right;
   line-height: 10px;
   margin-left: 7px;
@@ -2094,7 +2102,6 @@ html {
   font-size: 12px;
   font-weight: 700;
   color: #ffffff;
-  letter-spacing: 0;
   text-align: center;
   background: #47bdb5;
   border-radius: 2px;
@@ -2128,13 +2135,11 @@ html {
   font-size: 15px;
   font-weight: 700;
   color: #606380;
-  letter-spacing: 0;
   margin-right: 7px;
 }
 .overview .current-info-card .team-rank {
   font-size: 12px;
   color: #606380;
-  letter-spacing: 0;
   text-align: right;
   line-height: 10px;
   margin-left: 7px;
@@ -2144,7 +2149,6 @@ html {
   font-size: 12px;
   font-weight: 700;
   color: #ffffff;
-  letter-spacing: 0;
   text-align: center;
   background: #47bdb5;
   border-radius: 2px;
@@ -2154,7 +2158,6 @@ html {
   font-size: 16px;
   font-weight: 700;
   color: #606380;
-  letter-spacing: 0;
   text-align: center;
 }
 .overview .current-info-card .team-goal > span {
@@ -2244,6 +2247,10 @@ html {
   margin-top: 20px;
 }
 
+.mt-30 {
+  margin-top: 30px;
+}
+
 .match-selection {
   background: #dfdfe5;
   height: 30px;
@@ -2268,14 +2275,208 @@ html {
 }
 
 .check-button .radio-button:checked + .check-button-text {
-  font-size: 13px;
   color: #5159b6;
-  letter-spacing: 0;
-  text-align: center;
-  line-height: 24px;
   background: #ffffff;
   box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
-  border-radius: 3px;
+}
+
+.stats-overview .stats-main {
+  min-height: 245px;
+}
+.stats-overview .stats-empty {
+  text-align: center;
+  height: calc(245px - 61px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stats-overview .stats-empty > img {
+  width: 30px;
+}
+.stats-overview .stats-empty-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(96, 99, 128, 0.5);
+  line-height: 29px;
+  margin-top: 10px;
+}
+.stats-overview .stats-graph {
+  width: calc(100% / 5);
+  text-align: center;
+  border-radius: 9px;
+}
+.stats-overview .stats-graph-holder {
+  margin: 30px 45px 0 45px;
+  height: 221px;
+}
+.stats-overview .stats-graph .grpah-wrap {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  height: 120px;
+  border-bottom: 1px solid #dfdfe5;
+}
+.stats-overview .stats-graph .graph {
+  height: 85px;
+  width: 20px;
+  background: rgba(223, 223, 229, 0.8);
+  border-radius: 6px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-right: 5px;
+}
+.stats-overview .stats-graph.active {
+  background: #fff;
+  border: 0 solid rgba(200, 200, 200, 0.24);
+  box-shadow: 0 13px 34px 0 rgba(43, 43, 118, 0.22);
+}
+.stats-overview .stats-graph .graph-value {
+  padding-bottom: 25px;
+}
+.stats-overview .stats-graph .graph-value .label {
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(96, 99, 128, 0.6);
+  margin-top: 12px;
+}
+.stats-overview .stats-graph .graph-value .value {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  color: #606380;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.progress-wrap {
+  padding: 25px 15px;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.progress-card {
+  width: calc(100% / 4 - 10px);
+  margin: 5px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.56);
+  box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 11px;
+}
+.progress-card .progress-card_title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 14px;
+  margin-bottom: 10px;
+}
+.progress-card .value {
+  font-family: "Bebas Neue";
+  font-size: 31px;
+  color: #606380;
+  letter-spacing: 0.37px;
+  line-height: 24px;
+}
+.progress-card .points {
+  font-family: "Bebas Neue";
+  font-size: 28px;
+  color: rgba(96, 99, 128, 0.8);
+  letter-spacing: 0.56px;
+  line-height: 24px;
+}
+.progress-card .points > span {
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  color: #afb1bf;
+  letter-spacing: 0.32px;
+  line-height: 24px;
+}
+
+.progress-bar-wrapper {
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: #dcdcdc;
+  position: relative;
+}
+.progress-bar-wrapper .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 10px;
+  background: #fa6260;
+  width: 20%;
+}
+
+.stats-overview .card {
+  position: relative;
+  padding: 20px 30px;
+  border-radius: 11px;
+  overflow: hidden;
+}
+.stats-overview .card .card-text {
+  position: absolute;
+  width: 152px;
+  height: 38px;
+  top: 0;
+  left: 0;
+  background: #efeef8;
+  border-radius: 11px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 38px;
+  text-align: center;
+}
+.stats-overview .card .legends {
+  padding: 20px;
+}
+.stats-overview .card .legends:not(:last-child) {
+  border-bottom: 1px solid #e7e7ef;
+}
+.stats-overview .card .legends .gameweek {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  line-height: 14px;
+  background: #444cb4;
+  border-radius: 4px;
+  padding: 3px 10px;
+}
+.stats-overview .card .legends-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 14px;
+}
+.stats-overview .card .legends-price {
+  font-family: "Bebas Neue";
+  font-size: 31px;
+  color: #606380;
+  letter-spacing: 0.37px;
+  line-height: 24px;
+  margin-left: 10px;
+}
+.stats-overview .card-left {
+  width: 57%;
+}
+.stats-overview .card-left > img {
+  width: 100%;
+}
+.stats-overview .card-right {
+  padding: 0 20px;
+  width: 43%;
 }
 
 /*# sourceMappingURL=app.css.map */
