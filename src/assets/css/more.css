@@ -59,23 +59,37 @@
   color: #fff;
 }
 
-.more {
+.more,
+.add-column {
   position: relative;
 }
-.more .search-wrap {
+.more .custom-checkbox,
+.add-column .custom-checkbox {
+  padding: 5px 10px;
+  margin-bottom: 0 !important;
+}
+.more .custom-checkbox:hover,
+.add-column .custom-checkbox:hover {
+  background: #f3f3ff;
+}
+.more .search-wrap,
+.add-column .search-wrap {
   width: 100%;
   padding: 10px 10px 5px 10px;
 }
-.more .search-wrap .custom-search {
+.more .search-wrap .custom-search,
+.add-column .search-wrap .custom-search {
   width: 100%;
   background: white url("/src/assets/img/search-icon.svg") no-repeat center right 10px;
   border: 0;
   padding-right: 30px;
 }
-.more .additional-filters-wrap {
-  padding: 0px 30px 20px 30px;
+.more .additional-filters-wrap,
+.add-column .additional-filters-wrap {
+  padding: 0px 20px 20px 20px;
 }
-.more .more-dropdown {
+.more .more-dropdown,
+.add-column .more-dropdown {
   display: none;
   position: absolute;
   z-index: 10;
@@ -85,10 +99,12 @@
   border-radius: 7px;
   width: 260px;
 }
-.more .more-dropdown.open {
+.more .more-dropdown.open,
+.add-column .more-dropdown.open {
   display: block;
 }
-.more .more-dropdown .clear-filters {
+.more .more-dropdown .clear-filters,
+.add-column .more-dropdown .clear-filters {
   font-size: 14px;
   color: #4c53c0;
   line-height: 24px;
@@ -96,12 +112,151 @@
   margin-bottom: 5px;
   display: inline-block;
 }
-.more .more-dropdown .additional-filters .head {
+.more .more-dropdown .additional-filters .head,
+.add-column .more-dropdown .additional-filters .head {
   font-size: 14px;
   color: #172c4e;
   line-height: 24px;
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+.add-column .more-dropdown {
+  right: 0;
+  width: 318px;
+}
+.add-column .more-dropdown .title {
+  font-size: 20px;
+  color: #5f6c84;
+  line-height: 24px;
+  padding: 25px 25px 5px 25px;
+}
+.add-column .more-dropdown .search-tab {
+  margin: 10px 25px 10px 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.42);
+}
+.add-column .more-dropdown .search-tab .search-list {
+  font-size: 14px;
+  color: rgba(95, 108, 132, 0.7);
+  text-align: center;
+  line-height: 24px;
+  margin-right: 15px;
+}
+.add-column .more-dropdown .search-tab .search-list.active {
+  position: relative;
+  font-size: 14px;
+  color: #4c53c0;
+  text-align: center;
+  line-height: 24px;
+}
+.add-column .more-dropdown .search-tab .search-list.active::after {
+  content: "";
+  position: absolute;
+  bottom: -11px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #4c53c0;
+}
+.add-column .more-dropdown .search-wrap {
+  padding: 10px 25px;
+}
+.add-column .more-dropdown .search-wrap .custom-search {
+  border: 1px solid #dadada;
+}
+.add-column .more-dropdown .additional-filters {
+  margin-top: 5px;
+  max-height: 258px;
+  overflow: auto;
+}
+.add-column .more-dropdown .btn-wrap {
+  margin-top: 30px;
+}
+.add-column .more-dropdown .btn-wrap .btn-done {
+  font-size: 14px;
+  color: #5f6c84;
+  text-align: center;
+  line-height: 24px;
+  background: #f4f5f7;
+}
+.add-column .more-dropdown .btn-wrap .btn-cancel {
+  font-size: 14px;
+  color: #4c53c0;
+  text-align: center;
+  line-height: 24px;
+  background: white;
+}
+
+.game-week-wrap {
+  position: relative;
+}
+.game-week-dropdown {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 209px;
+  background: #ffffff;
+  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.27);
+  border-radius: 7px;
+  padding: 10px 10px 20px 10px;
+  z-index: 10;
+}
+.game-week-dropdown .title {
+  font-size: 12px;
+  color: #5f6c84;
+  line-height: 24px;
+  font-weight: bold;
+}
+.game-week-dropdown .input {
+  margin-right: 10px;
+}
+.game-week-dropdown .input .input-wrap {
+  max-width: 40px;
+}
+.game-week-dropdown .input .input-wrap .custom-input {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 2px;
+  padding: 0 5px;
+  font-size: 14px;
+  color: #172c4e;
+  line-height: 24px;
+}
+.game-week-dropdown .input label {
+  margin-right: 5px;
+  font-size: 14px;
+  color: #5f6c84;
+  line-height: 24px;
+  font-weight: bold;
+}
+.game-week-dropdown .to {
+  margin-right: 10px;
+}
+.game-week-dropdown .note {
+  font-size: 12px;
+  color: rgba(95, 108, 132, 0.73);
+  line-height: 24px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 10px;
+}
+.game-week-dropdown .note::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #8b95a6;
+  display: inline-block;
+}
+.game-week-input-wrap {
+  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 /*# sourceMappingURL=more.css.map */

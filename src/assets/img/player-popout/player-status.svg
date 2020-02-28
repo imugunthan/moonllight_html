@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 10</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Player-Popup" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Popup---Player-Overview" transform="translate(-74.000000, -52.000000)">
+            <g id="Group-14-Copy-4" transform="translate(74.000000, 52.000000)">
+                <g id="Group-10">
+                    <circle id="Oval" fill="#525CD7" cx="11" cy="11" r="11"></circle>
+                    <g id="noun_person_1393453" transform="translate(6.000000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                        <g id="Group" transform="translate(0.666777, 0.000000)">
+                            <g transform="translate(0.000000, 5.730612)" id="Path">
+                                <path d="M3.31632373,0.121536735 C1.46655693,0.467761224 0.109739369,1.43802551 0.109739369,3.62950714 L0.109739369,4.12902551 L8.88888889,4.12902551 L8.88888889,3.62950714 C8.88888889,1.43802551 7.53207133,0.467761224 5.68241427,0.121417347"></path>
+                            </g>
+                            <g transform="translate(1.865569, 0.000000)" id="Path">
+                                <path d="M5.12010974,2.87390204 C5.12010974,4.36792041 4.00680384,6.3579949 2.63374486,6.3579949 C1.26068587,6.3579949 0.147379973,4.36792041 0.147379973,2.87390204 C0.147379973,1.38000306 1.26068587,0.168933673 2.63374486,0.168933673 C4.00680384,0.168933673 5.12010974,1.38012245 5.12010974,2.87390204 Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
