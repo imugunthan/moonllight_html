@@ -107,10 +107,10 @@
                 </div>
                 <div class="aside-footer">
                     <div class="status">
-                        <!-- <div class="status-text d-flex-v-center">Injured <span class="material-icons">info</span></div> -->
-                        <div class="status-text">Available</div>
+                        <div class="status-text d-flex-v-center">Injured <span class="material-icons">info</span></div>
+                        <!-- <div class="status-text">Available</div> -->
                     </div>
-                    <div class="price-wrap d-flex">
+                    <div class="price-wrap d-flex-center">
                         <img src="/src/assets/img/player-popout/price-up.svg" alt="">
                         <div class="price">$10.5M</div>
                     </div>
@@ -127,7 +127,7 @@
                         <li class="nav-items">News</li>
                     </ul>
                 </nav>
-                <!-- <div class="overview">
+                <div class="overview main-content">
                     <div class="stats-main">
                         <p class="season-overview">Season Overview</p>
                         <div class="season-stats d-flex-v-center">
@@ -251,7 +251,7 @@
                                 </div>
                             </div>
                             <div class="d-flex-v-center wrapper">
-                                <div class="current-info-card">
+                                <!-- <div class="current-info-card">
                                     <div class="text-right">
                                         <img src="/src/assets/img/player-popout/yellow card.svg" alt="">
                                         <img src="/src/assets/img/player-popout/goal.svg" alt="">
@@ -277,6 +277,37 @@
                                             29.38
                                         </div>
                                     </div>
+                                </div> -->
+                                <!-- <div class="current-info-card injured">
+                                    <div class="text-right">
+                                        <img src="/src/assets/img/player-popout/yellow card.svg" alt="">
+                                        <img src="/src/assets/img/player-popout/goal.svg" alt="">
+                                    </div>
+                                    <div class="opponent text-center">
+                                        <img src="/src/assets/img/player-popout/inter-milan.svg" alt="" class="mb-10">
+                                        <p class="team-name mb-7">Inter Millan (A)</p>
+                                        <div class="d-flex-center">
+                                            <img src="/src/assets/img/player-popout/down-arrow.svg" alt="">
+                                            <p class="team-rank">47th</p>
+                                            <span class="team-difficulty">2</span>
+                                        </div>
+                                    </div>
+                                    <div class="team-stats">
+                                        <div class="team-goal mt-20 text-center">
+                                            2 : 1
+                                            <span>W</span>
+                                        </div>
+                                        <div class="text-center">
+                                            <span class="injured-pill">
+                                                <img src="/src/assets/img/injured.svg" alt="">
+                                                Injured
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                <div class="current-info-card no-match">
+                                    <img src="/src/assets/img/player-popout/no-match.svg" alt="">
+                                    <p class="no-match__text">No Match</p>
                                 </div>
                                 <div class="current-info-stats">
                                     <ul class="tab-list d-flex-v-center">
@@ -418,8 +449,8 @@
                             </div>
                         </div>
                     </div>
-                </div> -->
-                <div class="stats-overview">
+                </div>
+                <div class="stats-overview main-content" style="display: none;">
                     <div class="stats-main">
                         <div class="stats-main__header d-flex-v-center">
                             <div class="total-points">
@@ -710,5 +741,22 @@
     </div>
     </div>
 </body>
+<script>
+    let nav = document.querySelectorAll('.nav-items');
+    let content = document.querySelectorAll('.main-content');
+    nav.forEach(x => {
+        x.addEventListener('click', function () {
+            let index = Array.prototype.slice.call(nav).indexOf(x);
+            content.forEach(y => {
+                y.style.display = 'none';
+            })
+            nav.forEach(na => {
+                na.classList.remove('active');
+            })
+            nav[index].classList.add('active');
+            content[index].style.display = 'block';
+        })
+    })
+</script>
 
 </html>
