@@ -1798,12 +1798,26 @@ html {
   line-height: 24px;
   margin-top: 10px;
 }
+.modal-aside--right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .modal-main {
   width: calc(100% - 300px);
   background: #fff;
   padding: 25px 40px;
   overflow: auto;
   background-image: linear-gradient(151deg, #fafafa 0%, #faf9fc 62%);
+}
+.modal-main .team-difficulty {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background: #47bdb5;
+  border-radius: 2px;
+  padding: 0 10px;
 }
 
 .nav-bar {
@@ -1817,6 +1831,8 @@ html {
   padding: 8px 16px;
 }
 .nav-items.active {
+  color: #b2e7f4;
+  font-weight: 700;
   background: #333589 url(/src/assets/img/player-popout/Shape-1.svg) top 13px right -18px no-repeat;
   box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
   border-radius: 3px;
@@ -2626,6 +2642,386 @@ html {
 }
 .info-dropdown-wrap .gameweek-wrap .team-goals .game-result {
   color: #5abf7b;
+}
+
+.d-flex-v-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+}
+
+.fixtures .pill {
+  display: inline-block;
+  padding: 2px 10px;
+  color: white;
+  border-radius: 10.5px;
+}
+.fixtures .pill > img {
+  position: relative;
+  top: -1px;
+}
+.fixtures .pill--injured {
+  background: #f86364;
+}
+.fixtures .pill--suspended {
+  background: rgba(96, 99, 128, 0.7);
+}
+.fixtures .no-match-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(96, 99, 128, 0.5);
+  line-height: 29px;
+  margin-left: 15px;
+}
+.fixtures .open-preview {
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 30px;
+  background: #efeef8;
+  text-align: center;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.fixtures .open-preview > .material-icons {
+  line-height: 30px;
+  display: inline-block;
+  color: #bfc0cc;
+}
+.fixtures .points-rank .rank {
+  margin-left: 5px;
+  font-size: 13px;
+  color: #7c7c7c;
+}
+.fixtures .points-rank .points {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  color: #606380;
+  letter-spacing: 0.36px;
+  line-height: 26px;
+}
+.fixtures .stats-main__header {
+  background: #e2e1f0;
+}
+.fixtures .title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 14px;
+}
+.fixtures .season-overview {
+  background: #fff;
+  border-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 29px;
+  width: max-content;
+  padding: 5px 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.fixtures .stats-main__header-2 {
+  padding: 15px;
+}
+.fixtures .card-wrapper {
+  padding: 0 15px 15px 15px;
+}
+.fixtures .stats-main__card {
+  min-height: 222px;
+  background: rgba(255, 255, 255, 0.56);
+  box-shadow: 0 12px 18px 0 rgba(0, 0, 0, 0.06);
+  border-radius: 11px;
+}
+.fixtures .stats-main__card.projection-accuracy {
+  width: 25%;
+  margin-right: 15px;
+  padding: 15px 20px;
+}
+.fixtures .stats-main__card.projection-accuracy .percentage {
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  color: #f86364;
+  letter-spacing: 0.3px;
+  line-height: 26px;
+}
+.fixtures .stats-main__card.projection-accuracy .points-diff {
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  color: #f86364;
+  letter-spacing: 0.22px;
+  line-height: 26px;
+  margin-top: 20px;
+  display: inline-block;
+}
+.fixtures .stats-main__card.projection-accuracy .points-wrapper {
+  padding-bottom: 13px;
+  border-bottom: 1px solid #dfdfe5;
+}
+.fixtures .stats-main__card.projection-accuracy .points-wrapper .projection-percentage {
+  margin: 5px 0;
+}
+.fixtures .stats-main__card.projection-accuracy .points-wrapper .label {
+  font-size: 12px;
+  color: #606380;
+  line-height: 11px;
+}
+.fixtures .stats-main__card.projection-accuracy .points-wrapper .mb-5 {
+  margin-bottom: 5px;
+}
+.fixtures .stats-main__card.projection-accuracy .points-wrapper .points {
+  font-family: "Bebas Neue";
+  font-size: 21px;
+  color: #606380;
+  line-height: 23px;
+}
+.fixtures .stats-main__card.projection-accuracy .points-wrapper .points-proj {
+  color: #56c079;
+}
+.fixtures .stats-main__card.projection-accuracy .points-rank {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  align-items: flex-end;
+}
+.fixtures .stats-main__card.home-away {
+  width: calc(75% - 15px);
+}
+.fixtures .stats-preview {
+  display: none;
+}
+.fixtures .stats-preview-wrapper.no-match .stats-info {
+  height: 65px;
+  background: #fff;
+}
+.fixtures .stats-preview-wrapper.injured .stats-info {
+  background: rgba(253, 97, 92, 0.11);
+  box-shadow: inset 0 -1px 0 0 rgba(253, 97, 92, 0.11);
+}
+.fixtures .stats-preview-wrapper.open .stats-main__header {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.19);
+}
+.fixtures .stats-preview-wrapper.open .stats-main__header .open-preview {
+  transform: rotate(180deg);
+}
+.fixtures .stats-preview-wrapper.open .stats-preview {
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+}
+.fixtures .stats-preview__header {
+  width: max-content;
+  padding: 10px 20px;
+  background: rgba(220, 222, 247, 0.5);
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.fixtures .stats-preview .preview-tab {
+  width: calc(100% / 5);
+  min-width: 278px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+.fixtures .stats-preview .stats-wrapper {
+  padding: 10px 20px;
+}
+.fixtures .stats-preview .stats-tab {
+  width: calc(100% / 5);
+  min-width: 278px;
+}
+.fixtures .stats-preview .stats-tab .stats-list {
+  margin-right: 15px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.28);
+}
+.fixtures .stats-preview .stats-tab .label {
+  font-size: 11px;
+  font-weight: 500;
+  color: #606380;
+  line-height: 29px;
+}
+.fixtures .stats-preview .stats-tab .value {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 29px;
+}
+.fixtures .stats-preview .stats-tab .value .points {
+  color: #56c079;
+}
+.fixtures-wrap {
+  max-height: 360px;
+  padding-bottom: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 0 11px 0 rgba(0, 0, 0, 0.13);
+}
+.fixtures-wrap .stats-info {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  background: #f7f7fa;
+  padding: 10px 20px 10px 40px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.28);
+}
+.fixtures-wrap .stats-info.active {
+  position: relative;
+  background: #ffffff;
+  border: 0 solid rgba(200, 200, 200, 0.24);
+  box-shadow: 0 13px 34px 0 rgba(43, 43, 118, 0.1);
+}
+.fixtures-wrap .fixtures-holder {
+  padding-bottom: 20px;
+  max-height: 310px;
+  overflow: auto;
+}
+.fixtures-wrap .fixtures__header {
+  position: relative;
+  z-index: 1;
+  padding: 18px 20px;
+  background: #fff;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
+  border-radius: 3px 3px 0 0;
+}
+.fixtures-wrap .team-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.fixtures-wrap .team-name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #606380;
+}
+.fixtures-wrap .team-goals {
+  font-size: 16px;
+  font-weight: 700;
+  color: #606380;
+  margin-left: 30px;
+}
+.fixtures-wrap .team-goals .game-result {
+  color: #5abf7b;
+}
+.fixtures-wrap .text {
+  font-size: 12px;
+  color: #606380;
+}
+.fixtures-wrap .projected-points {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  color: rgba(96, 99, 128, 0.8);
+  letter-spacing: 0.6px;
+}
+.fixtures-wrap .projected-points > span {
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  color: #afb1bf;
+  letter-spacing: 0.32px;
+}
+.fixtures-wrap .stats-sub {
+  width: 25%;
+}
+.fixtures-wrap .stats-sub:first-child {
+  width: 50%;
+}
+.fixtures-wrap .stats-sub:last-child {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.fixtures-wrap .stats-sub-proj {
+  padding-right: 50px;
+}
+.fixtures-wrap .card-info {
+  position: relative;
+  top: 3px;
+}
+.fixtures-wrap .card-info > img:not(:last-child) {
+  margin-right: -8px;
+}
+.fixtures-wrap .points-compare .proj {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  color: #f86364;
+  letter-spacing: 0.24px;
+}
+.fixtures-wrap .points-compare .actual {
+  font-family: "Bebas Neue";
+  font-size: 31px;
+  color: #606380;
+  letter-spacing: 0.37px;
+  line-height: 24px;
+  margin-left: 5px;
+}
+.fixtures-wrap .transfered {
+  position: relative;
+  height: 2px;
+  background: #fb295e;
+}
+.fixtures-wrap .transfered > img {
+  position: absolute;
+  top: -14px;
+  left: 10px;
+  cursor: pointer;
+}
+.fixtures-wrap .transfered-popup {
+  position: absolute;
+  width: 425px;
+  background: #ffffff;
+  box-shadow: 0 -1px 28px -4px rgba(30, 30, 30, 0.22);
+  border-radius: 0 8px 8px 0;
+  padding: 20px 30px;
+  left: 50px;
+  transform: translateY(-50%);
+  border-left: 3px solid #4048aa;
+}
+.fixtures-wrap .transfered-popup:after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 10px solid #4048aa;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  top: calc(50% - 10px);
+  left: -20px;
+}
+.fixtures-wrap .transfered-popup .w-50 {
+  width: 50%;
+}
+.fixtures-wrap .transfered-popup .from-to {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.17);
+}
+.fixtures-wrap .transfered-popup .teams img {
+  width: 42px;
+  height: 42px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */

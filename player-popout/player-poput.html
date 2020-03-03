@@ -127,7 +127,7 @@
                         <li class="nav-items">News</li>
                     </ul>
                 </nav>
-                <div class="overview main-content">
+                <div class="overview main-content" style="display: none;">
                     <div class="stats-main">
                         <p class="season-overview">Season Overview</p>
                         <div class="season-stats d-flex-v-center">
@@ -278,7 +278,7 @@
                                         </div>
                                     </div>
                                 </div> -->
-                                <!-- <div class="current-info-card injured">
+                                <div class="current-info-card injured">
                                     <div class="text-right">
                                         <img src="/src/assets/img/player-popout/yellow card.svg" alt="">
                                         <img src="/src/assets/img/player-popout/goal.svg" alt="">
@@ -304,11 +304,11 @@
                                             </span>
                                         </div>
                                     </div>
-                                </div> -->
-                                <div class="current-info-card no-match">
+                                </div>
+                                <!-- <div class="current-info-card no-match">
                                     <img src="/src/assets/img/player-popout/no-match.svg" alt="">
                                     <p class="no-match__text">No Match</p>
-                                </div>
+                                </div> -->
                                 <div class="current-info-stats">
                                     <ul class="tab-list d-flex-v-center">
                                         <li class="tab-items">Category</li>
@@ -733,7 +733,667 @@
                         </div>
                     </div>
                 </div>
+                <div class="fixtures main-content" style="display: none;">
+                    <div class="stats-main">
+                        <div class="stats-main__header-2 d-flex-v-center">
+                            <p class="season-overview">Season Overview</p>
+                            <div class="match-selection d-flex-v-center ml-auto">
+                                <label for="total1" class="check-button">
+                                    <input type="radio" id="total1" class="radio-button" name="match" checked>
+                                    <span class="check-button-text">Total</span>
+                                </label>
+                                <label for="perMatch1" class="check-button">
+                                    <input type="radio" id="perMatch1" class="radio-button" name="match">
+                                    <span class="check-button-text">per Match</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="d-flex-v-center card-wrapper">
+                            <div class="projection-accuracy stats-main__card">
+                                <p class="title">Projection Accuracy</p>
+                                <div class="points-wrapper">
+                                    <div class="projection-percentage d-flex-v-center">
+                                        <span class="percentage">5.6%</span>
+                                        <span class="points-diff">/-34.43</span>
+                                    </div>
+                                    <div class="d-flex-v-center mb-5">
+                                        <p class="label">Actual Score</p>
+                                        <p class="points ml-auto">1,736.38</p>
+                                    </div>
+                                    <div class="d-flex-v-center">
+                                        <p class="label">Projected Score</p>
+                                        <p class="points points-proj ml-auto">1,736.38</p>
+                                    </div>
+                                </div>
+                                <div class="highest-score">
+                                    <p class="title mt-10 mb-10">Highest gameweek score</p>
+                                    <div class="points-rank d-flex">
+                                        <p class="points">96.73</p>
+                                        <p class="rank">
+                                            <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                            <span class="rank">34th</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="home-away stats-main__card">
+
+                            </div>
+                        </div>
+                        <div class="stats-preview-wrapper">
+                            <div class="stats-main__header d-flex-v-center">
+                                <div class="select-options">
+                                    <label class="label">Season Overview</label>
+                                    <button class="select-btn">2019/20</button>
+                                </div>
+                                <div class="points-rank d-flex-v-center ml-auto">
+                                    <div class="rank">
+                                        <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                        <span>34th</span>
+                                    </div>
+                                    <p class="points ml-10">1,736.38</p>
+                                </div>
+                                <div class="open-preview">
+                                    <span class="material-icons">keyboard_arrow_down</span>
+                                </div>
+                            </div>
+                            <div class="stats-preview">
+                                <ul class="stats-preview__header d-flex-v-center">
+                                    <li class="preview-tab">General</li>
+                                    <li class="preview-tab">Finishing</li>
+                                    <li class="preview-tab">Passing</li>
+                                    <li class="preview-tab">Dribbling</li>
+                                    <li class="preview-tab">Defending</li>
+                                </ul>
+                                <div class="stats-wrapper d-flex">
+                                    <ul class="stats-tab">
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Dribbles Comp.</p>
+                                            <p class="value">
+                                                3420' <span class="points">| 76.00</span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Chances Created</p>
+                                            <p class="value">
+                                                100% <span class="points">| 10.29</span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Goals Conceded</p>
+                                            <p class="value">
+                                                0 <span class="points"></span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul class="stats-tab">
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Dribbles Comp.</p>
+                                            <p class="value">
+                                                3420' <span class="points">| 76.00</span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Chances Created</p>
+                                            <p class="value">
+                                                100% <span class="points">| 10.29</span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Goals Conceded</p>
+                                            <p class="value">
+                                                0 <span class="points"></span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Sub Category</p>
+                                            <p class="value">
+                                                0 <span class="points"></span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul class="stats-tab">
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Dribbles Comp.</p>
+                                            <p class="value">
+                                                3420' <span class="points">| 76.00</span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Chances Created</p>
+                                            <p class="value">
+                                                100% <span class="points">| 10.29</span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Goals Conceded</p>
+                                            <p class="value">
+                                                0 <span class="points"></span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Sub Category</p>
+                                            <p class="value">
+                                                10 <span class="points">| 31.50</span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Goals Conceded</p>
+                                            <p class="value">
+                                                0 <span class="points"></span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul class="stats-tab">
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Dribbles Comp.</p>
+                                            <p class="value">
+                                                3420' <span class="points">| 76.00</span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Chances Created</p>
+                                            <p class="value">
+                                                100% <span class="points">| 10.29</span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Goals Conceded</p>
+                                            <p class="value">
+                                                0 <span class="points"></span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                    <ul class="stats-tab">
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Dribbles Comp.</p>
+                                            <p class="value">
+                                                3420' <span class="points">| 76.00</span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Chances Created</p>
+                                            <p class="value">
+                                                100% <span class="points">| 10.29</span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Goals Conceded</p>
+                                            <p class="value">
+                                                0 <span class="points"></span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Goals Conceded</p>
+                                            <p class="value">
+                                                0 <span class="points"></span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Sub Category</p>
+                                            <p class="value">
+                                                10 <span class="points">| 31.50</span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Goals Conceded</p>
+                                            <p class="value">
+                                                0 <span class="points"></span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Goals Conceded</p>
+                                            <p class="value">
+                                                0 <span class="points"></span>
+                                            </p>
+                                        </li>
+                                        <li class="stats-list d-flex-v-center">
+                                            <p class="label flex-grow-1">Goals Conceded</p>
+                                            <p class="value">
+                                                0 <span class="points"></span>
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fixtures-wrap mt-20">
+                        <div class="fixtures__header">
+                            <p class="title">Fixtures</p>
+                        </div>
+                        <div class="fixtures-holder">
+                            <div class="stats-preview-wrapper">
+                                <div class="stats-info d-flex-v-center">
+                                    <div class="d-flex-v-center team-info stats-sub">
+                                        <img src="/src/assets/img/player-popout/inter-milan.svg" alt=""
+                                            class="team-logo">
+                                        <p class="team-name ml-10">Inter Millan (H)</p>
+                                        <div class="points-rank d-flex-v-center ml-10">
+                                            <img src="/src/assets/img/player-popout/down-arrow.svg" alt="">
+                                            <p class="rank">47th</p>
+                                            <span class="team-difficulty ml-10">2</span>
+                                        </div>
+                                        <div class="team-goals">
+                                            2 : 1
+                                            <span class="game-result">W</span>
+                                        </div>
+                                    </div>
+                                    <p class="gameweek-info text stats-sub">Gameweek 9 | Sat, Oct 27 10:30am</p>
+                                    <div class="d-flex-v-bottom stats-sub stats-sub-proj">
+                                        <p class="text">Projected Pts.</p>
+                                        <div class="projected-points ml-10">24 <span>PTS</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stats-preview-wrapper">
+                                <div class="stats-info d-flex-v-center">
+                                    <div class="d-flex-v-center team-info stats-sub">
+                                        <img src="/src/assets/img/player-popout/inter-milan.svg" alt=""
+                                            class="team-logo">
+                                        <p class="team-name ml-10">Inter Millan (H)</p>
+                                        <div class="points-rank d-flex-v-center ml-10">
+                                            <img src="/src/assets/img/player-popout/down-arrow.svg" alt="">
+                                            <p class="rank">47th</p>
+                                            <span class="team-difficulty ml-10">2</span>
+                                        </div>
+                                        <div class="team-goals">
+                                            2 : 1
+                                            <span class="game-result">W</span>
+                                        </div>
+                                    </div>
+                                    <p class="gameweek-info text stats-sub">Gameweek 9 | Sat, Oct 27 10:30am</p>
+                                    <div class="d-flex-v-bottom stats-sub stats-sub-proj">
+                                        <p class="text">Projected Pts.</p>
+                                        <div class="projected-points ml-10">24 <span>PTS</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stats-preview-wrapper open">
+                                <div class="stats-info d-flex-v-center active">
+                                    <div class="d-flex-v-center team-info stats-sub">
+                                        <img src="/src/assets/img/player-popout/inter-milan.svg" alt=""
+                                            class="team-logo">
+                                        <p class="team-name ml-10">Inter Millan (H)</p>
+                                        <div class="points-rank d-flex-v-center ml-10">
+                                            <img src="/src/assets/img/player-popout/down-arrow.svg" alt="">
+                                            <p class="rank">47th</p>
+                                            <span class="team-difficulty ml-10">2</span>
+                                        </div>
+                                        <div class="team-goals">
+                                            2 : 1
+                                            <span class="game-result">W</span>
+                                        </div>
+                                    </div>
+                                    <p class="gameweek-info text stats-sub">Gameweek 9 | Sat, Oct 27 10:30am</p>
+                                    <div class="d-flex-v-bottom stats-sub">
+                                        <p class="minutes text mr-10">86'</p>
+                                        <div class="card-info mr-10">
+                                            <img src="/src/assets/img/player-popout/yellow card.svg" alt="">
+                                            <img src="/src/assets/img/player-popout/goal.svg" alt="">
+                                        </div>
+                                        <div class="points-compare d-flex-v-bottom">
+                                            <p class="proj">29.38</p>
+                                            <p class="actual">27.38</p>
+                                        </div>
+                                        <div class="open-preview">
+                                            <span class="material-icons">keyboard_arrow_down</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="stats-preview">
+                                    <ul class="stats-preview__header d-flex-v-center">
+                                        <li class="preview-tab">General</li>
+                                        <li class="preview-tab">Finishing</li>
+                                        <li class="preview-tab">Passing</li>
+                                        <li class="preview-tab">Dribbling</li>
+                                        <li class="preview-tab">Defending</li>
+                                    </ul>
+                                    <div class="stats-wrapper d-flex">
+                                        <ul class="stats-tab">
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Dribbles Comp.</p>
+                                                <p class="value">
+                                                    3420' <span class="points">| 76.00</span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Chances Created</p>
+                                                <p class="value">
+                                                    100% <span class="points">| 10.29</span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Goals Conceded</p>
+                                                <p class="value">
+                                                    0 <span class="points"></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="stats-tab">
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Dribbles Comp.</p>
+                                                <p class="value">
+                                                    3420' <span class="points">| 76.00</span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Chances Created</p>
+                                                <p class="value">
+                                                    100% <span class="points">| 10.29</span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Goals Conceded</p>
+                                                <p class="value">
+                                                    0 <span class="points"></span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Sub Category</p>
+                                                <p class="value">
+                                                    0 <span class="points"></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="stats-tab">
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Dribbles Comp.</p>
+                                                <p class="value">
+                                                    3420' <span class="points">| 76.00</span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Chances Created</p>
+                                                <p class="value">
+                                                    100% <span class="points">| 10.29</span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Goals Conceded</p>
+                                                <p class="value">
+                                                    0 <span class="points"></span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Sub Category</p>
+                                                <p class="value">
+                                                    10 <span class="points">| 31.50</span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Goals Conceded</p>
+                                                <p class="value">
+                                                    0 <span class="points"></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="stats-tab">
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Dribbles Comp.</p>
+                                                <p class="value">
+                                                    3420' <span class="points">| 76.00</span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Chances Created</p>
+                                                <p class="value">
+                                                    100% <span class="points">| 10.29</span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Goals Conceded</p>
+                                                <p class="value">
+                                                    0 <span class="points"></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                        <ul class="stats-tab">
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Dribbles Comp.</p>
+                                                <p class="value">
+                                                    3420' <span class="points">| 76.00</span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Chances Created</p>
+                                                <p class="value">
+                                                    100% <span class="points">| 10.29</span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Goals Conceded</p>
+                                                <p class="value">
+                                                    0 <span class="points"></span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Goals Conceded</p>
+                                                <p class="value">
+                                                    0 <span class="points"></span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Sub Category</p>
+                                                <p class="value">
+                                                    10 <span class="points">| 31.50</span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Goals Conceded</p>
+                                                <p class="value">
+                                                    0 <span class="points"></span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Goals Conceded</p>
+                                                <p class="value">
+                                                    0 <span class="points"></span>
+                                                </p>
+                                            </li>
+                                            <li class="stats-list d-flex-v-center">
+                                                <p class="label flex-grow-1">Goals Conceded</p>
+                                                <p class="value">
+                                                    0 <span class="points"></span>
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stats-preview-wrapper injured">
+                                <div class="stats-info d-flex-v-center">
+                                    <div class="d-flex-v-center team-info stats-sub">
+                                        <img src="/src/assets/img/player-popout/inter-milan.svg" alt=""
+                                            class="team-logo">
+                                        <p class="team-name ml-10">Inter Millan (H)</p>
+                                        <div class="points-rank d-flex-v-center ml-10">
+                                            <img src="/src/assets/img/player-popout/down-arrow.svg" alt="">
+                                            <p class="rank">47th</p>
+                                            <span class="team-difficulty ml-10">2</span>
+                                        </div>
+                                        <div class="team-goals">
+                                            2 : 1
+                                            <span class="game-result">W</span>
+                                        </div>
+                                    </div>
+                                    <p class="gameweek-info text stats-sub">Gameweek 9 | Sat, Oct 27 10:30am</p>
+
+                                    <div class="d-flex-v-center stats-sub stats-sub-proj">
+                                        <span class="pill pill--injured d-flex-v-center">
+                                            <img src="/src/assets/img/injured.svg" alt="">
+                                            Injured
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stats-preview-wrapper no-match">
+                                <div class="stats-info d-flex-v-center">
+                                    <div class="d-flex-v-center team-info stats-sub">
+                                        <img src="/src/assets/img/player-popout/no-match.svg" alt="" class="ml-10">
+                                        <p class="no-match-text">No Match</p>
+                                    </div>
+                                    <p class="gameweek-info text stats-sub">Gameweek 9 | Sat, Oct 27 10:30am</p>
+                                    <div class="d-flex-v-center stats-sub stats-sub-proj">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transfered">
+                                <img src="/src/assets/img/player-popout/jersey.svg" alt="">
+                                <div class="transfered-popup">
+                                    <div class="from-to d-flex-v-center">
+                                        <div class="label w-50">From</div>
+                                        <div class="label w-50">To</div>
+                                    </div>
+                                    <div class="teams-wrap d-flex-v-center">
+                                        <div class="teams d-flex-v-center w-50">
+                                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                                            <p class="team-name">Inter Millan</p>
+                                        </div>
+                                        <div class="teams d-flex-v-center w-50">
+                                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                                            <p class="team-name">Bologna</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="stats-preview-wrapper suspended">
+                                <div class="stats-info d-flex-v-center">
+                                    <div class="d-flex-v-center team-info stats-sub">
+                                        <img src="/src/assets/img/player-popout/inter-milan.svg" alt=""
+                                            class="team-logo">
+                                        <p class="team-name ml-10">Inter Millan (H)</p>
+                                        <div class="points-rank d-flex-v-center ml-10">
+                                            <img src="/src/assets/img/player-popout/down-arrow.svg" alt="">
+                                            <p class="rank">47th</p>
+                                            <span class="team-difficulty ml-10">2</span>
+                                        </div>
+                                        <div class="team-goals">
+                                            2 : 1
+                                            <span class="game-result">W</span>
+                                        </div>
+                                    </div>
+                                    <p class="gameweek-info text stats-sub">Gameweek 9 | Sat, Oct 27 10:30am</p>
+
+                                    <div class="d-flex-v-center stats-sub stats-sub-proj">
+                                        <span class="pill pill--suspended d-flex-v-center">
+                                            <img src="/src/assets/img/suspended.svg" alt="">
+                                            Suspended
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="comparison">
+                </div>
+
             </div>
+            <aside class="modal-aside modal-aside--right">
+                <figure class="player-avatar-container">
+                    <img src="/src/assets/img/player-popout/Player-image.svg" alt="Player Picture"
+                        class="player-avatar">
+                    <div class="player-shadow"></div>
+                    <div class="player-status">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="">
+                    </div>
+                    <button class="player-switch">
+                        <img src="/src/assets/img/player-popout/player-switch.svg" alt="">
+                    </button>
+                </figure>
+                <div class="player-info">
+                    <p class="player-name">Christiano Ronaldo</p>
+                    <p class="player-position">Forward</p>
+                </div>
+                <div class="player-rank">
+                    <div class="rank-no-wrap d-flex-v-center">
+                        <div class="rank">
+                            <div class="wrap d-flex-center mb-10">
+                                <img src="/src/assets/img/player-popout/down-arrow.svg" alt="">
+                                <p class="rank-count d-flex-v-center">55 <span>th</span></p>
+                            </div>
+                            <div class="rank-in ml-5">
+                                <p class="rank-in-text">Ovr Rank</p>
+                            </div>
+                        </div>
+                        <div class="rank">
+                            <div class="wrap d-flex-center mb-10">
+                                <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                <p class="rank-count d-flex-v-center">4 <span>th</span></p>
+                            </div>
+                            <div class="rank-in">
+                                <p class="rank-in-text">Serie A Rank</p>
+                            </div>
+                        </div>
+                        <div class="rank">
+                            <div class="wrap d-flex-center mb-10">
+                                <img src="/src/assets/img/player-popout/down-arrow.svg" alt="">
+                                <p class="rank-count d-flex-v-center">8 <span>th</span></p>
+                            </div>
+                            <div class="rank-in">
+                                <p class="rank-in-text">Fw Rank</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-team-info">
+                    <div class="d-flex-v-center">
+                        <div class="flex-grow-1 text-center">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                        </div>
+                        <div class="flex-grow-1 text-center">
+                            <img src="/src/assets/img/player-popout/Serie A.svg" alt="" class="team-image">
+                        </div>
+                    </div>
+                    <div class="team-details d-flex-v-center">
+                        <div class="team">
+                            <p class="team-name">Juventus</p>
+                            <p class="team-info">Club</p>
+                        </div>
+                        <div class="team">
+                            <p class="team-name">Serie A</p>
+                            <p class="team-info">League</p>
+                        </div>
+                    </div>
+                    <div class="player-details d-flex-v-center">
+                        <div class="team">
+                            <p class="label">Portugal</p>
+                            <p class="value mb-0">Nation</p>
+                        </div>
+                        <div class="team">
+                            <p class="label">34</p>
+                            <p class="value mb-0">Age</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="player-speciality d-flex-v-center">
+                    <div class="pills">
+                        <p class="pills-text">Penalty-Kick Taker</p>
+                    </div>
+                    <div class="pills">
+                        <p class="pills-text">Free-Kick Taker</p>
+                    </div>
+                    <div class="pills">
+                        <p class="pills-text">Clinic Finisher</p>
+                    </div>
+                    <div class="pills">
+                        <p class="pills-text">Distance Shooter</p>
+                    </div>
+                </div>
+                <div class="aside-footer">
+                    <div class="status">
+                        <div class="status-text d-flex-v-center">Injured <span class="material-icons">info</span>
+                        </div>
+                        <!-- <div class="status-text">Available</div> -->
+                    </div>
+                    <div class="price-wrap d-flex-center">
+                        <img src="/src/assets/img/player-popout/price-up.svg" alt="">
+                        <div class="price">$10.5M</div>
+                    </div>
+                    <p class="price-value">Value</p>
+                </div>
+            </aside>
             <div class="close-button">
                 <img src="/src/assets/img/player-popout/close-icon.svg" alt="">
             </div>
