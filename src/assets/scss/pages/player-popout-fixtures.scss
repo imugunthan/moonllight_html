@@ -138,6 +138,7 @@
     }
     &.home-away {
       width: calc(75% - 15px);
+      padding: 15px 30px;
     }
   }
   .stats-preview {
@@ -365,6 +366,84 @@
           }
         }
       }
+    }
+  }
+  .home-away-wrap {
+    width: 30%;
+    .graph-holder {
+      margin-top: 20px;
+      text-align: center;
+      position: relative;
+      .graph-info {
+        position: absolute;
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background: $white;
+        box-shadow: 0 11px 25px 0 rgba(0, 0, 0, 0.11);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .value {
+          font-family: "Bebas Neue";
+          font-size: 20px;
+          color: #606380;
+          letter-spacing: 0.24px;
+          line-height: 26.14px;
+        }
+        .teams-text {
+          font-size: 12.6px;
+          font-weight: $bold;
+          color: #606380;
+          line-height: 13.07px;
+          &.home {
+            color: #fb295e;
+          }
+        }
+      }
+    }
+  }
+  .points-vs-teams {
+    height: calc(100% - 64px);
+  }
+  .difficulty-wrap {
+    width: 70%;
+    padding-left: 30px;
+    .team-points {
+      margin-right: 10px;
+      .points {
+        font-family: "Bebas Neue";
+        font-size: 16px;
+        color: #606380;
+        letter-spacing: 0.19px;
+        line-height: 26px;
+      }
+      .rank {
+        font-size: 13px;
+        color: #606380;
+        line-height: 10.89px;
+      }
+      .status-bar {
+        height: 5px;
+        background: #23f2e3;
+        border-radius: 2.5px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .difficulty-legends {
+    padding: 15px 0;
+    border-top: 1px solid #dfdfe5;
+    .marker {
+      width: 10px;
+      height: 10px;
+      border-radius: 2px;
+      display: inline-block;
+      margin-right: 7px;
+    }
+    .text {
+      font-size: 13px;
+      color: #606380;
     }
   }
 }

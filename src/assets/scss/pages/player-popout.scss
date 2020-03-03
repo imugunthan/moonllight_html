@@ -273,9 +273,9 @@
     }
   }
   &-aside--right {
-    position: absolute;
-    right: 0;
-    top: 0;
+    // position: absolute;
+    // right: 0;
+    // top: 0;
   }
   &-main {
     width: calc(100% - 300px);
@@ -1138,4 +1138,21 @@
 .d-flex-v-bottom {
   @include flexbox();
   @include align-items(flex-end);
+}
+.diff {
+  &-1 {
+    background: #23f2e3 !important;
+  }
+  &-2 {
+    background: #47bdb5 !important;
+  }
+  &-3 {
+    background: #439993 !important;
+  }
+  &-4 {
+    background: #527c79 !important;
+  }
+  &-5 {
+    background: #2c504e !important;
+  }
 }
