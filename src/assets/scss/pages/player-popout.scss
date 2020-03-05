@@ -18,6 +18,7 @@
     border-radius: 10px;
     overflow: hidden;
     position: relative;
+    background: $white;
     @include align-items(stretch);
     .close-button {
       position: absolute;
@@ -28,6 +29,7 @@
   }
   &-aside {
     width: 300px;
+    min-width: 300px;
     height: 100%;
     background-image: linear-gradient(124deg, #2c3282 0%, #2a2266 100%);
     position: relative;
@@ -236,6 +238,12 @@
         padding: 0 10px;
         margin: 0 5px 5px 0;
         border: 1px solid rgba(#fbfbfb, 0.2);
+        cursor: pointer;
+        &:hover {
+          .status-popup {
+            display: block;
+          }
+        }
         &-text {
           color: $white;
           font-size: 12px;
@@ -246,6 +254,47 @@
             font-size: 16px;
             margin-left: 5px;
             cursor: pointer;
+          }
+        }
+        &-popup {
+          display: none;
+          position: absolute;
+          min-width: 225px;
+          width: max-content;
+          background: $white;
+          transform: skew(15deg);
+          right: 0;
+          bottom: 30px;
+          background: #ffffff;
+          box-shadow: 0 -1px 28px -4px rgba(30, 30, 30, 0.22);
+          border-radius: 8px 8px 0 0;
+          padding: 15px;
+          text-align: left;
+          border-bottom: 3px solid #2b2c78;
+          &::before {
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border: 10px solid #2b2c78;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            bottom: -20px;
+            right: 45px;
+          }
+          .label {
+            font-size: 13px;
+            color: #606380;
+            line-height: 14px;
+            padding: 10px 0;
+            border-bottom: 1px solid rgba(#979797, 0.17);
+          }
+          .value {
+            font-size: 15px;
+            font-weight: $bold;
+            color: #606380;
+            padding: 10px 0;
           }
         }
       }

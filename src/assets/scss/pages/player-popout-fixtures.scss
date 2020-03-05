@@ -22,23 +22,6 @@
     line-height: 29px;
     margin-left: 15px;
   }
-  .open-preview {
-    margin-left: 20px;
-    width: 30px;
-    height: 30px;
-    min-width: 30px;
-    min-height: 30px;
-    border-radius: 30px;
-    background: #efeef8;
-    text-align: center;
-    transition: all 0.3s ease-in;
-    cursor: pointer;
-    > .material-icons {
-      line-height: 30px;
-      display: inline-block;
-      color: #bfc0cc;
-    }
-  }
   .points-rank {
     .rank {
       margin-left: 5px;
@@ -325,9 +308,16 @@
         top: -14px;
         left: 10px;
         cursor: pointer;
+        &:hover + .transfered-popup {
+          opacity: 1;
+          visibility: visible;
+        }
       }
       &-popup {
+        opacity: 0;
+        visibility: hidden;
         position: absolute;
+        transition: all 0.3s ease;
         width: 425px;
         background: #ffffff;
         box-shadow: 0 -1px 28px -4px rgba(30, 30, 30, 0.22);
@@ -445,5 +435,22 @@
       font-size: 13px;
       color: #606380;
     }
+  }
+}
+.open-preview {
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 30px;
+  background: #efeef8;
+  text-align: center;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  > .material-icons {
+    line-height: 30px;
+    display: inline-block;
+    color: #bfc0cc;
   }
 }

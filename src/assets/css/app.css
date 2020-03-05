@@ -1550,6 +1550,7 @@ html {
   border-radius: 10px;
   overflow: hidden;
   position: relative;
+  background: #fff;
   -webkit-box-align: stretch;
   -ms-flex-align: stretch;
   -webkit-align-items: stretch;
@@ -1564,6 +1565,7 @@ html {
 }
 .modal-aside {
   width: 300px;
+  min-width: 300px;
   height: 100%;
   background-image: linear-gradient(124deg, #2c3282 0%, #2a2266 100%);
   position: relative;
@@ -1764,6 +1766,10 @@ html {
   padding: 0 10px;
   margin: 0 5px 5px 0;
   border: 1px solid rgba(251, 251, 251, 0.2);
+  cursor: pointer;
+}
+.modal-aside .aside-footer .status:hover .status-popup {
+  display: block;
 }
 .modal-aside .aside-footer .status-text {
   color: #fff;
@@ -1776,6 +1782,47 @@ html {
   font-size: 16px;
   margin-left: 5px;
   cursor: pointer;
+}
+.modal-aside .aside-footer .status-popup {
+  display: none;
+  position: absolute;
+  min-width: 225px;
+  width: max-content;
+  background: #fff;
+  transform: skew(15deg);
+  right: 0;
+  bottom: 30px;
+  background: #ffffff;
+  box-shadow: 0 -1px 28px -4px rgba(30, 30, 30, 0.22);
+  border-radius: 8px 8px 0 0;
+  padding: 15px;
+  text-align: left;
+  border-bottom: 3px solid #2b2c78;
+}
+.modal-aside .aside-footer .status-popup::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 10px solid #2b2c78;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -20px;
+  right: 45px;
+}
+.modal-aside .aside-footer .status-popup .label {
+  font-size: 13px;
+  color: #606380;
+  line-height: 14px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.17);
+}
+.modal-aside .aside-footer .status-popup .value {
+  font-size: 15px;
+  font-weight: 700;
+  color: #606380;
+  padding: 10px 0;
 }
 .modal-aside .aside-footer .price-wrap {
   margin-top: 35px;
@@ -2691,23 +2738,6 @@ html {
   line-height: 29px;
   margin-left: 15px;
 }
-.fixtures .open-preview {
-  margin-left: 20px;
-  width: 30px;
-  height: 30px;
-  min-width: 30px;
-  min-height: 30px;
-  border-radius: 30px;
-  background: #efeef8;
-  text-align: center;
-  transition: all 0.3s ease-in;
-  cursor: pointer;
-}
-.fixtures .open-preview > .material-icons {
-  line-height: 30px;
-  display: inline-block;
-  color: #bfc0cc;
-}
 .fixtures .points-rank .rank {
   margin-left: 5px;
   font-size: 13px;
@@ -2997,8 +3027,15 @@ html {
   left: 10px;
   cursor: pointer;
 }
+.fixtures-wrap .transfered > img:hover + .transfered-popup {
+  opacity: 1;
+  visibility: visible;
+}
 .fixtures-wrap .transfered-popup {
+  opacity: 0;
+  visibility: hidden;
   position: absolute;
+  transition: all 0.3s ease;
   width: 425px;
   background: #ffffff;
   box-shadow: 0 -1px 28px -4px rgba(30, 30, 30, 0.22);
@@ -3114,6 +3151,27 @@ html {
   color: #606380;
 }
 
+.open-preview {
+  margin-left: 20px;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  border-radius: 30px;
+  background: #efeef8;
+  text-align: center;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+.open-preview > .material-icons {
+  line-height: 30px;
+  display: inline-block;
+  color: #bfc0cc;
+}
+
+.comparison {
+  margin: 0 -15px;
+}
 .comparison .progress-card {
   width: 100%;
 }
@@ -3197,6 +3255,7 @@ html {
   padding: 15px;
   background: #f7f7fa;
   box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+  height: 110px;
 }
 .comparison .card .stat-card--green {
   background: rgba(86, 192, 121, 0.11);
@@ -3304,6 +3363,172 @@ html {
   color: #606380;
   line-height: 38px;
   text-align: center;
+}
+
+.news-aside {
+  background: #fff;
+  padding: 0 15px;
+}
+.news-aside .title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 29px;
+  background: rgba(232, 231, 243, 0.46);
+  border-radius: 9px;
+  padding: 10px 15px;
+}
+.news-aside .club-history {
+  margin-top: 100px;
+  height: calc(100% - 100px);
+}
+.news-aside .club-wrap {
+  height: calc(100% - 50px);
+  overflow: auto;
+  padding: 0 15px;
+}
+.news-aside .club-details {
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.28);
+}
+.news-aside .club-details .date-year {
+  font-size: 12px;
+  color: #afb1bf;
+  width: 60px;
+  margin-right: 15px;
+}
+.news-aside .club-details .club-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 29px;
+}
+
+.news-wrapper {
+  display: block;
+  height: calc(100% - 65px);
+  overflow: auto;
+}
+.news-wrapper .news-card {
+  background: #ffffff;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+  margin-bottom: 25px;
+  max-height: 78px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.news-wrapper .news-card.open {
+  max-height: initial;
+}
+.news-wrapper .news-card.open .open-preview {
+  transform: rotate(180deg);
+}
+.news-wrapper .news-card__header {
+  height: 78px;
+  padding: 15px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.28);
+}
+.news-wrapper .news-card .news-date {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 29px;
+}
+.news-wrapper .news-card .news-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #606380;
+  letter-spacing: 0;
+}
+.news-wrapper .news-card .news-content {
+  padding: 15px;
+}
+.news-wrapper .news-card .news-content__title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 29px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+.news-wrapper .news-card .news-text {
+  font-size: 13px;
+  color: #6b6f8c;
+  line-height: 19px;
+  margin-bottom: 5px;
+}
+
+.player-picker {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 3px;
+}
+.player-picker__header {
+  padding: 25px 15px;
+}
+.player-picker__header .title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 14px;
+}
+.player-picker .select-options {
+  cursor: pointer;
+  padding-right: 30px;
+  background: transparent url("/src/assets/img/player-popout/select-background.svg") right center no-repeat;
+}
+.player-picker .select-options .label {
+  font-size: 11px;
+  color: #afb1bf;
+  line-height: 24px;
+}
+.player-picker .select-options .select-btn {
+  font-size: 13px;
+  color: #2b2c78;
+}
+.player-picker .select-options .material-icons {
+  color: #2b2c78;
+  margin-left: 5px;
+  font-size: 16px;
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+}
+.player-picker .search-wrap input {
+  width: 100%;
+  background: #eeebf4;
+  border-radius: 6px;
+  border: none;
+  padding: 3px 15px;
+  font-family: Roboto-Regular;
+  font-size: 13px;
+  color: #afb1bf;
+  line-height: 24px;
+  background: #eeebf4 url("/src/assets/img/player-popout/search-icon.svg") right 20px center no-repeat;
+}
+.player-picker .player-card {
+  padding: 10px 15px;
+  background: #ffffff;
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.player-picker .player-card-wrap {
+  height: calc(100% - 30px);
+  overflow: auto;
+}
+.player-picker .player-card .player-details {
+  margin-left: 10px;
+}
+.player-picker .player-card .player-name {
+  font-size: 16px;
+  color: #5b5b60;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+.player-picker .player-card .player-position {
+  font-size: 12px;
+  color: rgba(96, 99, 128, 0.5);
+  line-height: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */
