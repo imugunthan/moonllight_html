@@ -344,27 +344,6 @@
     }
   }
 }
-.nav {
-  &-bar {
-    margin-bottom: 25px;
-  }
-  &-items {
-    cursor: pointer;
-    font-size: 13px;
-    color: #afb1bf;
-    line-height: 24px;
-    padding: 8px 16px;
-    &.active {
-      color: #b2e7f4;
-      font-weight: $bold;
-      background: #333589 url(/src/assets/img/player-popout/Shape-1.svg) top
-        13px right -18px no-repeat;
-      box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
-        0 12px 20px -16px rgba(158, 117, 255, 0.15);
-      border-radius: 3px;
-    }
-  }
-}
 .stats-main {
   background: #efeef8;
   border-radius: 10px;
@@ -1204,5 +1183,27 @@
   }
   &-5 {
     background: #2c504e !important;
+  }
+}
+
+.nav {
+  &-bar {
+    margin-bottom: 25px;
+  }
+  &-items {
+    cursor: pointer;
+    font-size: 13px;
+    color: #afb1bf;
+    line-height: 24px;
+    padding: 8px 16px;
+    &.active {
+      color: #b2e7f4;
+      font-weight: $bold;
+      background: #333589 url(/src/assets/img/player-popout/Shape-1.svg) top
+        13px right -18px no-repeat;
+      box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+        0 12px 20px -16px rgba(158, 117, 255, 0.15);
+      border-radius: 3px;
+    }
   }
 }
