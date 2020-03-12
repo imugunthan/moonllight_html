@@ -1,0 +1,32 @@
+.card {
+  background: #ffffff;
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 3px 3px 10px 10px;
+  &-header {
+    padding: 10px 20px;
+    background: #ffffff;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid rgba(#979797, 0.28);
+    &--shadow {
+      position: relative;
+      z-index: 1;
+      border: none;
+      box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+.link {
+  font-size: 11px;
+  font-weight: $bold;
+  color: #525cd7;
+  cursor: pointer;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flexwrap {
+  @include flex-wrap(wrap);
+}

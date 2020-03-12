@@ -3805,8 +3805,7 @@ html {
   font-size: 10px;
   color: rgba(255, 255, 255, 0.7);
 }
-
-.match-week-info-wrap {
+.dashboard .match-week-info-wrap {
   -webkit-box-align: end;
   -ms-flex-align: end;
   -webkit-align-items: flex-end;
@@ -3814,88 +3813,108 @@ html {
   align-items: flex-end;
   margin-top: -30px;
 }
-.match-week-info-wrap .draft-league {
+.dashboard .match-week-info-wrap .draft-league {
   width: 24%;
 }
-.match-week-info-wrap .draft-league > img {
+.dashboard .match-week-info-wrap .draft-league > img {
   position: relative;
   bottom: -3px;
   width: 100%;
   max-height: 200px;
 }
-.match-week-info-wrap .match-week-card {
+.dashboard .match-week-info-wrap .match-week-card {
   background: #5abf7b;
   box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
   border-radius: 10px;
   min-width: 31%;
   overflow: hidden;
 }
-.match-week-info-wrap .match-week-card--type2 {
+.dashboard .match-week-info-wrap .match-week-card--type2 {
   width: 40%;
   background-image: linear-gradient(125deg, #2c3282 0%, #2a2266 100%);
 }
-.match-week-info-wrap .match-week-card--type2 .match-week-card__title {
+.dashboard .match-week-info-wrap .match-week-card--type2 .match-week-card__title {
   background: rgba(255, 255, 255, 0.1);
 }
-.match-week-info-wrap .match-week-card--type2 .match-week-card__body {
+.dashboard .match-week-info-wrap .match-week-card--type2 .match-week-card__body {
+  padding: 0 20px;
   background: none;
 }
-.match-week-info-wrap .match-week-card--type2 .match-week-card__body .versus {
+.dashboard .match-week-info-wrap .match-week-card--type2 .match-week-card__body .versus {
   font-size: 10px;
   font-weight: 700;
   color: rgba(146, 147, 159, 0.5);
+  align-self: center;
 }
-.match-week-info-wrap .match-week-card__title {
+.dashboard .match-week-info-wrap .match-week-card--type2 .match-week-card__body .player {
+  margin-right: 10px;
+}
+.dashboard .match-week-info-wrap .match-week-card--type2 .match-week-card__body .player-points {
+  margin: 5px 0 0 0;
+}
+.dashboard .match-week-info-wrap .match-week-card--type2 .match-week-card__body .player .name-avatar {
+  text-align: right;
+}
+.dashboard .match-week-info-wrap .match-week-card--type2 .match-week-card__body .player-opponent {
+  margin-left: 10px;
+}
+.dashboard .match-week-info-wrap .match-week-card--type2 .match-week-card__body .player-opponent .name-avatar {
+  text-align: left;
+}
+.dashboard .match-week-info-wrap .match-week-card--type2 .match-week-card__body .player-opponent .player-points {
+  margin: 5px 0 0 0;
+}
+.dashboard .match-week-info-wrap .match-week-card__title {
   padding: 15px 20px;
   background: rgba(0, 0, 0, 0.1);
 }
-.match-week-info-wrap .match-week-card__title .title {
+.dashboard .match-week-info-wrap .match-week-card__title .title {
   border-radius: 10px 10px 0 0;
   font-size: 13px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.5);
 }
-.match-week-info-wrap .match-week-card__title .title > span {
+.dashboard .match-week-info-wrap .match-week-card__title .title > span {
   color: #fff;
 }
-.match-week-info-wrap .match-week-card__title .view {
+.dashboard .match-week-info-wrap .match-week-card__title .view {
   font-size: 11px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
 }
-.match-week-info-wrap .match-week-card__body {
+.dashboard .match-week-info-wrap .match-week-card__body {
   background: url(/src/assets/img/league-dashboard/football-court.svg) center no-repeat;
   min-height: 116px;
 }
-.match-week-info-wrap .match-week-card__body .player {
+.dashboard .match-week-info-wrap .match-week-card__body .player {
   width: 50%;
   text-align: center;
 }
-.match-week-info-wrap .match-week-card__body .player.win {
+.dashboard .match-week-info-wrap .match-week-card__body .player.win {
   background: url(/src/assets/img/league-dashboard/win.svg) left bottom no-repeat;
 }
-.match-week-info-wrap .match-week-card__body .player-opponent .player-points {
+.dashboard .match-week-info-wrap .match-week-card__body .player-opponent .player-points {
   margin: 5px 0 0 20px;
 }
-.match-week-info-wrap .match-week-card__body .player-points {
+.dashboard .match-week-info-wrap .match-week-card__body .player-points {
   font-family: "Bebas Neue";
   font-size: 38px;
   color: #f2f2f2;
   line-height: 42px;
   margin: 5px 20px 0 0;
 }
-.match-week-info-wrap .match-week-card__body .name-avatar {
+.dashboard .match-week-info-wrap .match-week-card__body .name-avatar {
   margin-top: 10px;
 }
-.match-week-info-wrap .match-week-card__body .name {
+.dashboard .match-week-info-wrap .match-week-card__body .name {
   font-size: 15px;
   font-weight: 700;
   color: #ffffff;
   display: inline-block;
   vertical-align: middle;
 }
-.match-week-info-wrap .match-week-card__body .avatar {
+.dashboard .match-week-info-wrap .match-week-card__body .avatar {
   width: 26px;
   height: 26px;
   border-radius: 50%;
@@ -3906,13 +3925,13 @@ html {
   overflow: hidden;
   margin: 0 5px;
 }
-.match-week-info-wrap .match-week-card__body .avatar > img {
+.dashboard .match-week-info-wrap .match-week-card__body .avatar > img {
   width: 16px;
   margin-top: 1px;
   line-height: 26px;
   object-fit: cover;
 }
-.match-week-info-wrap .match-week-card__body .status-win {
+.dashboard .match-week-info-wrap .match-week-card__body .status-win {
   display: inline-block;
   transform: skew(-15deg);
   background: #fff;
@@ -3920,13 +3939,257 @@ html {
   margin: 0 auto;
   padding: 0px 15px 2px 15px;
 }
-.match-week-info-wrap .match-week-card__body .status-win > span {
+.dashboard .match-week-info-wrap .match-week-card__body .status-win > span {
   font-size: 10px;
   font-weight: 700;
   transform: skew(15deg);
   display: inline-block;
   color: rgba(75, 170, 106, 0.7);
   letter-spacing: 1px;
+}
+.dashboard .match-week-info-wrap .match-week-card__body .counter-wrap {
+  padding: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: flex-start !important;
+  -ms-flex-align: flex-start !important;
+  -webkit-align-items: flex-start !important;
+  -moz-align-items: flex-start !important;
+  align-items: flex-start !important;
+}
+.dashboard .match-week-info-wrap .match-week-card__body .counter-wrap .counter {
+  background: #43479f;
+  box-shadow: 0 5px 5px -4px rgba(3, 3, 3, 0.3);
+  border-radius: 4px;
+  color: #fff;
+}
+.dashboard .match-week-info-wrap .match-week-card__body .counter-wrap .counter .value {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 5px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px 4px 0 0;
+}
+.dashboard .match-week-info-wrap .match-week-card__body .counter-wrap .counter .label {
+  font-size: 10px;
+  padding: 3px 5px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.17);
+}
+.dashboard .match-week-info-wrap .match-week-card__body .counter-wrap .counter:not(:last-child) {
+  margin-right: 5px;
+}
+.dashboard .match-week-info-wrap .match-week-card__body .counter-date {
+  font-size: 10px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+}
+.dashboard .match-week-info-wrap .match-week-card__body .win-wrap .win {
+  font-size: 9px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #5abf7b;
+  transform: skew(-15deg);
+  text-align: center;
+  padding: 4px 5px 2px 5px;
+  margin-left: 5px;
+}
+.dashboard .match-week-info-wrap .match-week-card__body .win-wrap .win > span {
+  display: inline-block;
+  transform: skew(15deg);
+}
+.dashboard .card-stats {
+  margin-top: 40px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+}
+.dashboard .card-stats__left {
+  width: calc(60% - 20px);
+}
+.dashboard .card-stats__right {
+  width: calc(40% - 20px);
+}
+.dashboard .club-images img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.dashboard .club-images img:not(:last-child) {
+  margin-right: -10px;
+}
+.dashboard .player-card {
+  padding: 0px 10px;
+  min-width: calc(100% / 4);
+  border-right: 1px solid rgba(151, 151, 151, 0.28);
+}
+.dashboard .top-team-card .card-body {
+  padding: 15px 0;
+  overflow: auto;
+}
+.dashboard .top-team-card .player-image {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: #2a266e;
+  position: relative;
+  margin: 0 auto;
+}
+.dashboard .top-team-card .player-image > img {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.dashboard .top-team-card .player-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: #606380;
+}
+.dashboard .top-team-card .player-points {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  color: #606380;
+}
+.dashboard .top-team-card .player-position {
+  font-size: 12px;
+  color: rgba(96, 99, 128, 0.5);
+}
+.dashboard .top-team-card .point-diff {
+  font-family: "Bebas Neue";
+  font-size: 15px;
+  line-height: 20px;
+  color: #56c079;
+  margin-left: 5px;
+}
+.dashboard .league-standings .last-updated {
+  font-size: 13px;
+  font-style: italic;
+  color: #9c9fb9;
+}
+.dashboard .league-standings-table {
+  width: 100%;
+}
+.dashboard .league-standings-table th:first-child,
+.dashboard .league-standings-table td:first-child {
+  min-width: 10%;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 5px;
+}
+.dashboard .league-standings-table th:first-child > img,
+.dashboard .league-standings-table td:first-child > img {
+  width: 5px;
+  margin-right: 5px;
+}
+.dashboard .league-standings-table thead {
+  background: rgba(220, 222, 247, 0.5);
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.dashboard .league-standings-table thead th {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  padding: 7px 20px;
+  text-align: left;
+}
+.dashboard .league-standings-table tbody tr:nth-child(odd) {
+  background: #f7f7fa;
+}
+.dashboard .league-standings-table tbody tr td {
+  font-size: 15px;
+  color: #606380;
+  padding: 20px;
+}
+
+.your-team .player-card {
+  padding: 6px 15px;
+  background: #ffffff;
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.your-team .player-card-wrap {
+  height: calc(100% - 30px);
+  overflow: auto;
+}
+.your-team .player-card .player-image {
+  width: 35px;
+  height: auto;
+  object-fit: cover;
+}
+.your-team .player-card .player-details {
+  margin-left: 10px;
+}
+.your-team .player-card .player-name {
+  font-size: 16px;
+  color: #5b5b60;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+.your-team .player-card .player-position {
+  font-size: 12px;
+  color: rgba(96, 99, 128, 0.5);
+  line-height: 10px;
+}
+.your-team .player-card .player-clubs > img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+.your-team .player-card .player-clubs > img:not(:last-child) {
+  margin-right: -14px;
+}
+.your-team .player-card .gw-points {
+  opacity: 0.7;
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  color: rgba(96, 99, 128, 0.7);
+  margin-left: 25px;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 3px 3px 10px 10px;
+}
+.card-header {
+  padding: 10px 20px;
+  background: #ffffff;
+  border-radius: 3px 3px 0 0;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.28);
+}
+.card-header--shadow {
+  position: relative;
+  z-index: 1;
+  border: none;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
+}
+
+.link {
+  font-size: 11px;
+  font-weight: 700;
+  color: #525cd7;
+  cursor: pointer;
+}
+
+.flex-grow-1 {
+  flex-grow: 1;
+}
+
+.flexwrap {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=app.css.map */

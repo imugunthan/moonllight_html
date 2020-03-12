@@ -7,7 +7,8 @@
     <title>League Dashboard</title>
     <link rel="stylesheet" href="/src/assets/css/app.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
@@ -279,6 +280,17 @@
                                             </div>
                                         </div>
                                         <p class="player-points">183.21</p>
+                                        <div class="win-wrap d-flex-center">
+                                            <p class="win">
+                                                <span>W</span>
+                                            </p>
+                                            <p class="win">
+                                                <span>W</span>
+                                            </p>
+                                            <p class="win">
+                                                <span>W</span>
+                                            </p>
+                                        </div>
                                     </div>
                                     <p class="versus">VS</p>
                                     <div class="player player-opponent">
@@ -291,29 +303,315 @@
                                         <p class="player-points">183.21</p>
                                     </div>
                                 </div>
-                                <div class="counter-wrap d-flex-v-center">
-                                    <div class="counter">
-                                        <p class="value">08</p>
-                                        <p class="label">D</p>
+                                <div class="div flex-grow-1">
+                                    <div class="counter-wrap d-flex">
+                                        <div class="counter">
+                                            <p class="value">08</p>
+                                            <p class="label">D</p>
+                                        </div>
+                                        <div class="counter">
+                                            <p class="value">11</p>
+                                            <p class="label">H</p>
+                                        </div>
+                                        <div class="counter">
+                                            <p class="value">56</p>
+                                            <p class="label">M</p>
+                                        </div>
+                                        <div class="counter">
+                                            <p class="value">08</p>
+                                            <p class="label">S</p>
+                                        </div>
                                     </div>
-                                    <div class="counter">
-                                        <p class="value">11</p>
-                                        <p class="label">H</p>
-                                    </div>
-                                    <div class="counter">
-                                        <p class="value">56</p>
-                                        <p class="label">M</p>
-                                    </div>
-                                    <div class="counter">
-                                        <p class="value">08</p>
-                                        <p class="label">S</p>
-                                    </div>
+                                    <div class="counter-date">Friday, Oct 19th 2:30pm EST</div>
                                 </div>
                             </div>
                         </div>
                         <figure class="draft-league">
                             <img src="/src/assets/img/league-dashboard/draft-league.svg" alt="">
                         </figure>
+                    </div>
+                    <div class="card-stats d-flex">
+                        <div class="card-stats__left">
+                            <div class="card top-team-card">
+                                <div class="card-header d-flex-space-center">
+                                    <h3 class="head-title">Top Teams</h3>
+                                    <div class="options-wrap">
+                                        <div class="match-selection d-flex-v-center">
+                                            <label for="match1" class="check-button">
+                                                <input type="radio" id="match1" class="radio-button" name="match"
+                                                    checked="">
+                                                <span class="check-button-text">Season</span>
+                                            </label>
+                                            <label for="match2" class="check-button">
+                                                <input type="radio" id="match2" class="radio-button" name="match">
+                                                <span class="check-button-text">Week</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="link">FULL TEAM</p>
+                                </div>
+                                <div class="card-body d-flex-v-center">
+                                    <div class="player-card text-center">
+                                        <div class="player-card__head d-flex-space-center">
+                                            <p class="player-position">DF</p>
+                                            <div class="club-images">
+                                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <figure class="player-image">
+                                            <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                        </figure>
+                                        <p class="player-name mt-10">T. Alexander-Arnold</p>
+                                        <p class="player-points mt-10">174.93</p>
+                                        <p class="player-status d-flex-center mt-5">
+                                            <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                            <span class="point-diff">201.54</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-card text-center">
+                                        <div class="player-card__head d-flex-space-center">
+                                            <p class="player-position">DF</p>
+                                            <div class="club-images">
+                                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <figure class="player-image">
+                                            <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                        </figure>
+                                        <p class="player-name mt-10">T. Alexander-Arnold</p>
+                                        <p class="player-points mt-10">174.93</p>
+                                        <p class="player-status d-flex-center mt-5">
+                                            <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                            <span class="point-diff">201.54</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-card text-center">
+                                        <div class="player-card__head d-flex-space-center">
+                                            <p class="player-position">DF</p>
+                                            <div class="club-images">
+                                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <figure class="player-image">
+                                            <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                        </figure>
+                                        <p class="player-name mt-10">T. Alexander-Arnold</p>
+                                        <p class="player-points mt-10">174.93</p>
+                                        <p class="player-status d-flex-center mt-5">
+                                            <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                            <span class="point-diff">201.54</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-card text-center">
+                                        <div class="player-card__head d-flex-space-center">
+                                            <p class="player-position">DF</p>
+                                            <div class="club-images">
+                                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <figure class="player-image">
+                                            <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                        </figure>
+                                        <p class="player-name mt-10">T. Alexander-Arnold</p>
+                                        <p class="player-points mt-10">174.93</p>
+                                        <p class="player-status d-flex-center mt-5">
+                                            <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                            <span class="point-diff">201.54</span>
+                                        </p>
+                                    </div>
+                                    <div class="player-card text-center">
+                                        <div class="player-card__head d-flex-space-center">
+                                            <p class="player-position">DF</p>
+                                            <div class="club-images">
+                                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                        </div>
+                                        <figure class="player-image">
+                                            <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                        </figure>
+                                        <p class="player-name mt-10">T. Alexander-Arnold</p>
+                                        <p class="player-points mt-10">174.93</p>
+                                        <p class="player-status d-flex-center mt-5">
+                                            <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                            <span class="point-diff">201.54</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card league-standings mt-30">
+                                <div class="card-header d-flex-space-center">
+                                    <h3 class="head-title">League Standings</h3>
+                                    <p class="last-updated">Last Updated: Today 10:00pm</p>
+                                    <p class="link">FULL TABLE</p>
+                                </div>
+                                <div class="card-body">
+                                    <table class="league-standings-table">
+                                        <thead>
+                                            <tr>
+                                                <th>P</th>
+                                                <th>Team</th>
+                                                <th>Manager</th>
+                                                <th>W-D-L</th>
+                                                <th>Pts</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Alisson Wonderland</td>
+                                                <td>Ayana Smith</td>
+                                                <td>7-0-0</td>
+                                                <td>23</td>
+                                            </tr>
+                                            <tr>
+                                                <td> <img src="/src/assets/img/player-popout/up-arrow.svg" alt=""> 3
+                                                </td>
+                                                <td>Alisson Wonderland</td>
+                                                <td>Ayana Smith</td>
+                                                <td>7-0-0</td>
+                                                <td>23</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Alisson Wonderland</td>
+                                                <td>Ayana Smith</td>
+                                                <td>7-0-0</td>
+                                                <td>23</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-stats__right">
+                            <div class="card your-team">
+                                <div class="card-header d-flex-space-center">
+                                    <h3 class="head-title">Your Team</h3>
+                                    <div class="options-wrap">
+                                        <div class="match-selection d-flex-v-center">
+                                            <label for="match3" class="check-button">
+                                                <input type="radio" id="match3" class="radio-button" name="match1"
+                                                    checked="">
+                                                <span class="check-button-text">Last GW</span>
+                                            </label>
+                                            <label for="match4" class="check-button">
+                                                <input type="radio" id="match4" class="radio-button" name="match1">
+                                                <span class="check-button-text">Next GW</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <p class="link">FULL SQUAD</p>
+                                </div>
+                                <div class="card-body">
+                                    <div class="player-card-head">
+
+                                    </div>
+                                    <div class="players-wrap">
+                                        <div class="player-card d-flex-v-center">
+                                            <img src="/src/assets/img/user.svg" alt="" class="player-image">
+                                            <div class="player-details flex-grow-1">
+                                                <p class="player-name">J. Oblack</p>
+                                                <p class="player-position">GK</p>
+                                            </div>
+                                            <div class="player-clubs">
+                                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                            <p class="gw-points">19.73</p>
+                                        </div>
+                                        <div class="player-card d-flex-v-center">
+                                            <img src="/src/assets/img/user.svg" alt="" class="player-image">
+                                            <div class="player-details flex-grow-1">
+                                                <p class="player-name">J. Oblack</p>
+                                                <p class="player-position">GK</p>
+                                            </div>
+                                            <div class="player-clubs">
+                                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                            <p class="gw-points">19.73</p>
+                                        </div>
+                                        <div class="player-card d-flex-v-center">
+                                            <img src="/src/assets/img/user.svg" alt="" class="player-image">
+                                            <div class="player-details flex-grow-1">
+                                                <p class="player-name">J. Oblack</p>
+                                                <p class="player-position">GK</p>
+                                            </div>
+                                            <div class="player-clubs">
+                                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                            <p class="gw-points">19.73</p>
+                                        </div>
+                                        <div class="player-card d-flex-v-center">
+                                            <img src="/src/assets/img/user.svg" alt="" class="player-image">
+                                            <div class="player-details flex-grow-1">
+                                                <p class="player-name">J. Oblack</p>
+                                                <p class="player-position">GK</p>
+                                            </div>
+                                            <div class="player-clubs">
+                                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                            <p class="gw-points">19.73</p>
+                                        </div>
+                                        <div class="player-card d-flex-v-center">
+                                            <img src="/src/assets/img/user.svg" alt="" class="player-image">
+                                            <div class="player-details flex-grow-1">
+                                                <p class="player-name">J. Oblack</p>
+                                                <p class="player-position">GK</p>
+                                            </div>
+                                            <div class="player-clubs">
+                                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                            <p class="gw-points">19.73</p>
+                                        </div>
+                                        <div class="player-card d-flex-v-center">
+                                            <img src="/src/assets/img/user.svg" alt="" class="player-image">
+                                            <div class="player-details flex-grow-1">
+                                                <p class="player-name">J. Oblack</p>
+                                                <p class="player-position">GK</p>
+                                            </div>
+                                            <div class="player-clubs">
+                                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                            <p class="gw-points">19.73</p>
+                                        </div>
+                                        <div class="player-card d-flex-v-center">
+                                            <img src="/src/assets/img/user.svg" alt="" class="player-image">
+                                            <div class="player-details flex-grow-1">
+                                                <p class="player-name">J. Oblack</p>
+                                                <p class="player-position">GK</p>
+                                            </div>
+                                            <div class="player-clubs">
+                                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                            <p class="gw-points">19.73</p>
+                                        </div>
+                                        <div class="player-card d-flex-v-center">
+                                            <img src="/src/assets/img/user.svg" alt="" class="player-image">
+                                            <div class="player-details flex-grow-1">
+                                                <p class="player-name">J. Oblack</p>
+                                                <p class="player-position">GK</p>
+                                            </div>
+                                            <div class="player-clubs">
+                                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                            <p class="gw-points">19.73</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
