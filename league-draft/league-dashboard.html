@@ -49,7 +49,7 @@
                 </ul>
             </div>
         </aside>
-        <article class="right-section dashboard">
+        <section class="right-section dashboard">
             <div class="dashboard-left-section">
                 <div class="league-dropdown">
                     <div class="league-selected league-card">
@@ -231,6 +231,10 @@
                         <li class="nav-items">Rules</li>
                     </ul>
                 </nav>
+                <div class="notification" id="notification">
+                    <i class="material-icons">notifications_none</i>
+                    <div class="notification-count">3</div>
+                </div>
                 <div class="league-dashboard-main">
                     <div class="match-week-info-wrap d-flex-space-center">
                         <div class="match-week-card mr-10">
@@ -615,7 +619,179 @@
                     </div>
                 </div>
             </div>
-        </article>
+        </section>
+        <section class="modal-notifications" style="display: none;">
+            <div class="modal--container d-flex">
+                <div class="notifications-detail">
+                    <img src="/src/assets/img/player-popout/close-icon.svg" alt="" class="notifications-close">
+                    <div class="notifications-detail-head d-flex">
+                        <div class="details-left">
+                            <span class="noti-type">Trade Offers</span>
+                            <p class="time">11:15am | Wed 24th April</p>
+                        </div>
+                        <div class="details-right ml-auto">
+                            <img src="/src/assets/img/league-dashboard/message-icon.svg" alt="">
+                            <img src="/src/assets/img/league-dashboard/delete.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="noti-info">
+                        <p class="noti-title">You have 24 hour left to set your lineup!</p>
+                        <p class="noti-desc mt-20 mb-30">You haven’t set your lineup yet for Gameweek 21 and you have 1
+                            hour
+                            remaining! Here are your details:</p>
+                        <div class="noti-card mt-10 d-flex-v-center">
+                            <p class="title">Starting 11</p>
+                            <div class="d-flex-v-center noti-image-count-wrap">
+                                <div class="noti-image-count">
+                                    <img src="/src/assets/img/league-dashboard/injured.svg" alt="">
+                                    <div class="count">5</div>
+                                </div>
+                                <div class="noti-image-count">
+                                    <img src="/src/assets/img/league-dashboard/doubtful.svg" alt="">
+                                    <div class="count">5</div>
+                                </div>
+                                <div class="noti-image-count">
+                                    <img src="/src/assets/img/league-dashboard/card-noti-0.svg" alt="">
+                                    <div class="count">5</div>
+                                </div>
+                                <div class="noti-image-count">
+                                    <img src="/src/assets/img/league-dashboard/card-noti.svg" alt="">
+                                    <div class="count">5</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="noti-card mt-10 mb-20 d-flex-v-center">
+                            <p class="title">Starting 11</p>
+                            <div class="d-flex-v-center noti-image-count-wrap">
+                                <div class="noti-image-count">
+                                    <img src="/src/assets/img/league-dashboard/injured.svg" alt="">
+                                    <div class="count">5</div>
+                                </div>
+                                <div class="noti-image-count">
+                                    <img src="/src/assets/img/league-dashboard/doubtful.svg" alt="">
+                                    <div class="count">5</div>
+                                </div>
+                                <div class="noti-image-count">
+                                    <img src="/src/assets/img/league-dashboard/card-noti-0.svg" alt="">
+                                    <div class="count">5</div>
+                                </div>
+                                <div class="noti-image-count">
+                                    <img src="/src/assets/img/league-dashboard/card-noti.svg" alt="">
+                                    <div class="count">5</div>
+                                    <div class="noti-tooltip">
+                                        Doubtful
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn--primary">Select Lineup</button>
+                    </div>
+                </div>
+                <div class="notifications-short">
+                    <div class="notifications-short-head d-flex-v-center">
+                        <p class="title">Notifications</p>
+                        <p class="mark-all-read ml-auto">Mark all as read</p>
+                    </div>
+                    <div class="notifications-dropdown">
+                        <select class="custom-select">
+                            <option value="All notifications">All notifications</option>
+                        </select>
+                    </div>
+                    <div class="notifications-short-wrap">
+                        <div class="notifications-short-card d-flex-v-center unread">
+                            <div class="details flex-grow-1">
+                                <span class="noti-type">Trade Offers</span>
+                                <p class="title">Ayana Smith sent you a trade offer</p>
+                                <p class="time">3:46pm</p>
+                            </div>
+                            <div class="noti-icon">
+                                <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="notifications-short-card d-flex-v-center">
+                            <div class="details flex-grow-1">
+                                <span class="noti-type">Trade Offers</span>
+                                <p class="title">Ayana Smith sent you a trade offer</p>
+                                <p class="time">3:46pm</p>
+                            </div>
+                            <div class="noti-icon">
+                                <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="notifications-short-card d-flex-v-center">
+                            <div class="details flex-grow-1">
+                                <span class="noti-type">Trade Offers</span>
+                                <p class="title">Ayana Smith sent you a trade offer</p>
+                                <p class="time">3:46pm</p>
+                            </div>
+                            <div class="noti-icon">
+                                <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="notifications-short-card d-flex-v-center">
+                            <div class="details flex-grow-1">
+                                <span class="noti-type">Trade Offers</span>
+                                <p class="title">Ayana Smith sent you a trade offer</p>
+                                <p class="time">3:46pm</p>
+                            </div>
+                            <div class="noti-icon">
+                                <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="notifications-short-card d-flex-v-center">
+                            <div class="details flex-grow-1">
+                                <span class="noti-type">Trade Offers</span>
+                                <p class="title">Ayana Smith sent you a trade offer</p>
+                                <p class="time">3:46pm</p>
+                            </div>
+                            <div class="noti-icon">
+                                <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="notifications-short-card d-flex-v-center">
+                            <div class="details flex-grow-1">
+                                <span class="noti-type">Trade Offers</span>
+                                <p class="title">Ayana Smith sent you a trade offer</p>
+                                <p class="time">3:46pm</p>
+                            </div>
+                            <div class="noti-icon">
+                                <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="notifications-short-card d-flex-v-center">
+                            <div class="details flex-grow-1">
+                                <span class="noti-type">Trade Offers</span>
+                                <p class="title">Ayana Smith sent you a trade offer</p>
+                                <p class="time">3:46pm</p>
+                            </div>
+                            <div class="noti-icon">
+                                <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="notifications-short-card d-flex-v-center">
+                            <div class="details flex-grow-1">
+                                <span class="noti-type">Trade Offers</span>
+                                <p class="title">Ayana Smith sent you a trade offer</p>
+                                <p class="time">3:46pm</p>
+                            </div>
+                            <div class="noti-icon">
+                                <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="notifications-short-card d-flex-v-center">
+                            <div class="details flex-grow-1">
+                                <span class="noti-type">Trade Offers</span>
+                                <p class="title">Ayana Smith sent you a trade offer</p>
+                                <p class="time">3:46pm</p>
+                            </div>
+                            <div class="noti-icon">
+                                <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 <script>
@@ -623,6 +799,15 @@
     let aside = document.querySelector('.dashboard-left-section');
     leagueDropdown.addEventListener('click', () => {
         aside.classList.toggle('open');
+    })
+    let notification = document.getElementById('notification');
+    let notificationModal = document.querySelector('.modal-notifications');
+    let notificationClose = document.querySelector('.notifications-close');
+    notification.addEventListener('click', () => {
+        notificationModal.style.display = "block";
+    });
+    notificationClose.addEventListener('click', () => {
+        notificationModal.style.display = 'none';
     })
 </script>
 
