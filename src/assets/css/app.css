@@ -120,7 +120,7 @@ textarea {
 }
 
 body {
-  color: #2b2b2b;
+  color: #606380;
 }
 
 .d-flex {
@@ -4053,12 +4053,10 @@ html {
 .dashboard .top-team-card .player-name {
   font-size: 12px;
   font-weight: 700;
-  color: #606380;
 }
 .dashboard .top-team-card .player-points {
   font-family: "Bebas Neue";
   font-size: 30px;
-  color: #606380;
 }
 .dashboard .top-team-card .player-position {
   font-size: 12px;
@@ -4099,7 +4097,6 @@ html {
 .dashboard .league-standings-table thead th {
   font-size: 13px;
   font-weight: 700;
-  color: #606380;
   padding: 7px 20px;
   text-align: left;
 }
@@ -4108,10 +4105,16 @@ html {
 }
 .dashboard .league-standings-table tbody tr td {
   font-size: 15px;
-  color: #606380;
   padding: 20px;
 }
 
+.your-team {
+  max-height: 100%;
+}
+.your-team .card-body {
+  max-height: calc(100% - 51px);
+  overflow: auto;
+}
 .your-team .player-card {
   padding: 6px 15px;
   background: #ffffff;
@@ -4154,6 +4157,246 @@ html {
   font-size: 18px;
   color: rgba(96, 99, 128, 0.7);
   margin-left: 25px;
+}
+
+.notification {
+  position: absolute;
+  top: 25px;
+  right: 50px;
+  z-index: 11;
+  cursor: pointer;
+}
+.notification .material-icons {
+  font-size: 30px;
+}
+.notification-count {
+  position: absolute;
+  right: 0px;
+  top: -2px;
+  width: 18px;
+  height: 18px;
+  background: #525cd7;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  line-height: 15px;
+  font-size: 11px;
+  font-weight: bold;
+  border: 2px solid white;
+}
+
+.modal-notifications {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(32, 36, 86, 0.6);
+  z-index: 10;
+}
+.modal-notifications .modal--container {
+  position: absolute;
+  width: 55%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background: #fff;
+}
+.modal-notifications .noti-type {
+  border: 1px solid #c1c5f1;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 6px;
+}
+.modal-notifications .time {
+  font-size: 12px;
+  margin-top: 6px;
+}
+.modal-notifications .notifications-detail {
+  width: 50%;
+  height: 100%;
+}
+.modal-notifications .notifications-detail-head {
+  padding: 15px 35px;
+  margin-top: 20px;
+}
+.modal-notifications .notifications-detail-head .details-right > img {
+  cursor: pointer;
+}
+.modal-notifications .notifications-detail-head .details-right > img:not(:last-child) {
+  margin-right: 5px;
+}
+.modal-notifications .notifications-detail .noti-card {
+  background: #ffffff;
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+  padding: 14px 20px;
+  margin-bottom: 10px;
+}
+.modal-notifications .notifications-detail .noti-info {
+  padding: 15px 35px;
+}
+.modal-notifications .notifications-detail .noti-title {
+  font-size: 17px;
+}
+.modal-notifications .notifications-detail .noti-desc {
+  font-size: 12px;
+}
+.modal-notifications .notifications-detail .noti-image-count {
+  position: relative;
+  cursor: pointer;
+}
+.modal-notifications .notifications-detail .noti-image-count:hover .noti-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-notifications .notifications-detail .noti-image-count:not(:last-child) {
+  margin-right: 15px;
+}
+.modal-notifications .notifications-detail .noti-image-count-wrap {
+  margin-left: 30px;
+}
+.modal-notifications .notifications-detail .noti-image-count .count {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #3d3d41;
+  border: 2px solid white;
+  display: inline-block;
+  font-size: 11px;
+  color: white;
+  text-align: center;
+  font-weight: 700;
+  line-height: 13px;
+  right: -5px;
+  top: -5px;
+}
+.modal-notifications .notifications-detail .noti-image-count .noti-tooltip {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0 -1px 28px -4px rgba(30, 30, 30, 0.22);
+  border-radius: 0 0 8px 8px;
+  background: #ffffff;
+  padding: 5px 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -35px;
+}
+.modal-notifications .notifications-detail .noti-image-count .noti-tooltip::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 11px solid #fff;
+  border-top: 8px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.modal-notifications .notifications-detail .btn--primary {
+  width: 100%;
+  font-size: 11px;
+  font-weight: 700;
+  color: #afe2f1;
+  text-align: center;
+  text-transform: uppercase;
+  background: #2a2871;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+}
+.modal-notifications .notifications-close {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.modal-notifications .notifications-short {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+.modal-notifications .notifications-short::after {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 0;
+  width: 32px;
+  height: 100%;
+  opacity: 0.7;
+  background-image: linear-gradient(270deg, #eeeeee 0%, rgba(255, 255, 255, 0) 100%);
+}
+.modal-notifications .notifications-short-head {
+  padding: 30px 90px 30px 25px;
+}
+.modal-notifications .notifications-short .title {
+  font-size: 13px;
+  font-weight: 700;
+}
+.modal-notifications .notifications-short .mark-all-read {
+  background: #eceef0;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #8e8e8e;
+  padding: 6px 10px;
+}
+.modal-notifications .notifications-short-wrap {
+  height: calc(100% - 143px);
+  overflow-y: auto;
+  position: relative;
+}
+.modal-notifications .notifications-short-card {
+  padding: 15px 25px 15px 50px;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.modal-notifications .notifications-short-card .noti-icon > img {
+  width: 23px;
+  height: 23px;
+  opacity: 0.5;
+}
+.modal-notifications .notifications-short-card.unread {
+  background: rgba(220, 222, 247, 0.5);
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+  position: relative;
+}
+.modal-notifications .notifications-short-card.unread::before {
+  position: absolute;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #525cd7;
+  top: 10px;
+  left: 10px;
+}
+.modal-notifications .notifications-short-card.unread .noti-icon > img {
+  opacity: 1;
+}
+.modal-notifications .notifications-dropdown {
+  padding: 0 25px 20px 25px;
+  position: relative;
+  box-shadow: 0 5px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.modal-notifications .notifications-dropdown .custom-select {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 10px 20px;
+  -webkit-appearance: none;
+  background: url("/src/assets/img/league-dashboard/select-arrow.svg") right 20px center no-repeat;
 }
 
 .card {

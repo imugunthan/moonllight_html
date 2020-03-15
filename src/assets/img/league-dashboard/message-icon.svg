@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="36px" viewBox="0 0 35 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 42</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="League---Notifications" transform="translate(-928.000000, -84.000000)">
+            <g id="Group-35" transform="translate(928.000000, 84.500000)">
+                <g id="Group-42">
+                    <circle id="Oval" fill="#EFEEF8" cx="17.5" cy="17.5" r="17.5"></circle>
+                    <g id="noun_unread_2228272" transform="translate(9.000000, 9.500000)" fill="#3D397B" fill-rule="nonzero">
+                        <path d="M15.8202,5.841 L15.8202,12.8106 L1.1286,12.8106 L1.1286,3.0492 L13.068,3.0492 C13.0284,2.871 13.0284,2.6928 13.0284,2.4948 C13.0284,2.3364 13.0482,2.178 13.068,2.0196 L0.099,2.0196 L0.099,13.86 L16.8498,13.86 L16.8498,5.8806 C16.7112,5.9004 16.5528,5.9202 16.4142,5.9202 C16.2162,5.9004 16.0182,5.8806 15.8202,5.841 Z" id="Path"></path>
+                        <polygon id="Path" points="13.6422 4.4946 8.4744 8.9694 3.3066 4.4946 2.6334 5.2866 5.7024 7.9398 2.6334 10.593 3.3066 11.385 6.4944 8.6328 8.4744 10.3356 10.4544 8.613 13.6422 11.385 14.3154 10.593 11.2464 7.9398 14.3154 5.2866"></polygon>
+                        <circle id="Oval" cx="16.4142" cy="2.5146" r="2.4948"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
