@@ -4899,5 +4899,58 @@ html {
   font-size: 20px;
   color: #5b5b60;
 }
+.gameweek-popup .lineup-card .player-match-details .match-detail {
+  position: relative;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.gameweek-popup .lineup-card .player-match-details .match-detail:hover .match-popup {
+  opacity: 1;
+  visibility: visible;
+}
+.gameweek-popup .lineup-card .player-match-details .match-popup {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 25px;
+  padding: 10px;
+  background: #fff;
+  border-radius: 8px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-top: 3px solid #2b2c78;
+  box-shadow: 0 -1px 28px -4px rgba(30, 30, 30, 0.22);
+}
+.gameweek-popup .lineup-card .player-match-details .match-popup::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 10px solid #2b2c78;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.gameweek-popup .lineup-card .player-match-details .match-text {
+  font-size: 12px;
+  color: #606380;
+  text-decoration: underline;
+}
+.gameweek-popup .lineup-card .player-match-details .match-team {
+  font-size: 12px;
+  font-weight: 500;
+  color: #606380;
+  margin-bottom: 5px;
+}
+.gameweek-popup .lineup-card .player-match-details .match-date {
+  font-size: 12px;
+  color: #606380;
+}
 
 /*# sourceMappingURL=app.css.map */

@@ -389,6 +389,65 @@
           font-size: 20px;
           color: #5b5b60;
         }
+        &-match-details {
+          .match {
+            &-detail {
+              position: relative;
+              cursor: pointer;
+              margin-left: 10px;
+              &:hover {
+                .match-popup {
+                  opacity: 1;
+                  visibility: visible;
+                }
+              }
+            }
+            &-popup {
+              opacity: 0;
+              visibility: hidden;
+              position: absolute;
+              width: max-content;
+              left: 50%;
+              transform: translateX(-50%);
+              top: 25px;
+              padding: 10px;
+              background: $white;
+              border-radius: 8px;
+              border-top-left-radius: 0;
+              border-top-right-radius: 0;
+              border-top: 3px solid #2b2c78;
+              box-shadow: 0 -1px 28px -4px rgba(30, 30, 30, 0.22);
+              &::before {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                border: 10px solid #2b2c78;
+                border-top: 10px solid transparent;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                top: -20px;
+                left: 50%;
+                transform: translateX(-50%);
+              }
+            }
+            &-text {
+              font-size: 12px;
+              color: #606380;
+              text-decoration: underline;
+            }
+            &-team {
+              font-size: 12px;
+              font-weight: 500;
+              color: #606380;
+              margin-bottom: 5px;
+            }
+            &-date {
+              font-size: 12px;
+              color: #606380;
+            }
+          }
+        }
       }
     }
   }
