@@ -239,7 +239,7 @@
                     <div class="match-week-info-wrap d-flex-space-center">
                         <div class="match-week-card mr-10">
                             <div class="match-week-card__title d-flex-v-center">
-                                <p class="title">Prev. Match: <span>GameWeek 7</span></p>
+                                <p class="title">Prev. Match: <span>Gameweek 7</span></p>
                                 <p class="view ml-auto">View</p>
                             </div>
                             <div class="match-week-card__body d-flex">
@@ -271,7 +271,7 @@
                         </div>
                         <div class="match-week-card match-week-card--type2 mr-10">
                             <div class="match-week-card__title d-flex-v-center">
-                                <p class="title">Next. Matchup: <span>GameWeek 8</span></p>
+                                <p class="title">Next. Matchup: <span>Gameweek 8</span></p>
                                 <p class="view ml-auto">View</p>
                             </div>
                             <div class="match-week-card__body d-flex">
@@ -512,8 +512,10 @@
                                     <p class="link">FULL SQUAD</p>
                                 </div>
                                 <div class="card-body">
-                                    <div class="player-card-head">
-
+                                    <div class="player-card-head d-flex-v-center">
+                                        <p class="title">Player</p>
+                                        <p class="title ml-auto mr-20">Club</p>
+                                        <button class="btn btn--primary">GW6</button>
                                     </div>
                                     <div class="players-wrap">
                                         <div class="player-card d-flex-v-center">
@@ -790,6 +792,941 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <section class="gameweek-popup">
+            <div class="gameweek-container mb-30">
+                <div class="gameweek-top">
+                    <div class="top-title-section d-flex-space-center">
+                        <div class="date">
+                            <span class="label">Start:&nbsp;</span>
+                            <span class="value">Friday, Oct 19th 2:30pm EST</span>
+                        </div>
+                        <div class="gameweek-title">Gameweek 8</div>
+                        <div class="date d-flex-v-center">
+                            <span class="label">End: &nbsp;</span>
+                            <span class="value">Friday, Oct 19th 2:30pm EST</span>
+                            <img src="/src/assets/img/league-dashboard/close-icon-2.svg" alt="" class="close-gameweek">
+                        </div>
+                    </div>
+                    <div class="top-wrap">
+                        <div class="team-counter d-flex-space-center">
+                            <p class="my-team">My Team</p>
+                            <div class="counter-wrap d-flex">
+                                <div class="counter">
+                                    <p class="value">08</p>
+                                    <p class="label">D</p>
+                                </div>
+                                <div class="counter">
+                                    <p class="value">11</p>
+                                    <p class="label">H</p>
+                                </div>
+                                <div class="counter">
+                                    <p class="value">56</p>
+                                    <p class="label">M</p>
+                                </div>
+                                <div class="counter">
+                                    <p class="value">08</p>
+                                    <p class="label">S</p>
+                                </div>
+                            </div>
+                            <p class="opponent">Pique Blinders</p>
+                        </div>
+                        <div class="team-info d-flex-space-center">
+                            <div class="team-status">
+                                <div class="top">
+                                    <div class="rank-info d-flex-v-center">
+                                        <span class="rank">5th</span>
+                                        <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                    </div>
+                                    <div class="win-wrap d-flex">
+                                        <p class="win">
+                                            <span>W</span>
+                                        </p>
+                                        <p class="win">
+                                            <span>W</span>
+                                        </p>
+                                        <p class="win">
+                                            <span>W</span>
+                                        </p>
+                                        <p class="win">
+                                            <span>W</span>
+                                        </p>
+                                        <p class="win">
+                                            <span>W</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="prediction d-flex-v-bottom">
+                                    <p class="percentage">75%</p>
+                                    <p class="percentage-text">Chance of winning</p>
+                                </div>
+                            </div>
+                            <div class="you-vs-opponent d-flex-v-center">
+                                <div class="info">
+                                    <div class="info-item">
+                                        <div class="d-flex-v-center">
+                                            <div class="avatar text-center">
+                                                <figure class="user-image">
+                                                    <img src="/src/assets/img/league-dashboard/user-image.svg" alt="">
+                                                </figure>
+                                                <p class="you">You</p>
+                                            </div>
+                                            <div class="points">183.21</div>
+                                        </div>
+                                        <div class="proj-points d-flex-v-center">
+                                            <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                            <span>201.54</span>
+                                        </div>
+                                    </div>
+                                    <div class="game-details">
+                                        <div class="d-flex-v-center">
+                                            <p>2 remaining</p>
+                                            <p class="ml-auto">0/16</p>
+                                        </div>
+                                        <p class="status-red">Triple Captain</p>
+                                    </div>
+                                </div>
+                                <div class="versus">
+                                    <div class="vs">VS</div>
+                                    <p class="proj games">Proj.</p>
+                                    <p class="games">Games</p>
+                                </div>
+                                <div class="info info-opponent">
+                                    <div class="info-item">
+                                        <div class="d-flex-v-center info-cover">
+                                            <div class="avatar text-center">
+                                                <figure class="user-image">
+                                                    <img src="/src/assets/img/league-dashboard/user-image.svg" alt="">
+                                                </figure>
+                                                <p class="you">A. Smith</p>
+                                            </div>
+                                            <div class="points">183.21</div>
+                                        </div>
+                                        <div class="proj-points red d-flex-v-center">
+                                            <span>201.54</span>
+                                            <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="game-details">
+                                        <div class="d-flex-v-center">
+                                            <p>0/16</p>
+                                            <p class="ml-auto">2 remaining</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="team-status opponent">
+                                <div class="top">
+                                    <div class="rank-info d-flex-v-center flex-end">
+                                        <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                        <span class="rank">5th</span>
+                                    </div>
+                                    <div class="win-wrap d-flex">
+                                        <p class="win">
+                                            <span>W</span>
+                                        </p>
+                                        <p class="win">
+                                            <span>W</span>
+                                        </p>
+                                        <p class="win">
+                                            <span>W</span>
+                                        </p>
+                                        <p class="win">
+                                            <span>W</span>
+                                        </p>
+                                        <p class="win">
+                                            <span>W</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="prediction d-flex-v-bottom">
+                                    <p class="percentage-text">Chance of winning</p>
+                                    <p class="percentage red">75%</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="progress-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="lineup d-flex-v-center">
+                    <div class="lineup-title-card d-flex-space-center flex-grow-1">
+                        <img src="/src/assets/img/league-dashboard/lineup.svg" alt="">
+                        <p class="lineup-text">4-4-2</p>
+                    </div>
+                    <p class="lineup-title">Lineup</p>
+                    <div class="lineup-title-card d-flex-space-center flex-grow-1">
+                        <p class="lineup-text">4-5-1</p>
+                        <img src="/src/assets/img/league-dashboard/lineup.svg" alt="">
+                    </div>
+                </div>
+                <div class="lineup-wrap">
+                    <div class="d-flex">
+                        <div class="flex-grow-1 text-center start-title">Starting 11</div>
+                        <div class="flex-grow-1 text-center start-title">Starting 11</div>
+                    </div>
+                    <div class="lineup-info d-flex-v-center">
+                        <div class="lineup-card d-flex-space-center flex-grow-1">
+                            <div class="player-info d-flex-v-center">
+                                <figure class="player-avatar mr-10">
+                                    <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                                </figure>
+                                <div class="player-details">
+                                    <p class="player-name d-flex-v-center">J. Oblack <span
+                                            class="player-position">GK</span> <img
+                                            src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                            class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                        <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                                </div>
+                                <div class="player-match-details d-flex-v-center">
+                                    <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                                    <p class="date">Oct 27 10:30am</p>
+                                    <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="player-points">
+                            23.78
+                        </p>
+                    </div>
+                    <div class="lineup-position">
+                        <div class="player-positions d-flex-v-center">
+                            <p>GK</p>
+                        </div>
+                    </div>
+                    <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                        <div class="player-info d-flex-v-center">
+                            <figure class="player-avatar mr-10">
+                                <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                            </figure>
+                            <div class="player-details">
+                                <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                                    Oblack</p>
+                                <div class="player-clubs">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                                </div>
+                                <div class="player-match-details d-flex-v-center">
+                                    <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                                    <p class="date">Oct 27 10:30am</p>
+                                    <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="player-points">
+                            23.78
+                        </p>
+                    </div>
+                </div>
+                <div class="lineup-info d-flex-v-center">
+                    <div class="lineup-card d-flex-space-center flex-grow-1">
+                        <div class="player-info d-flex-v-center">
+                            <figure class="player-avatar mr-10">
+                                <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                            </figure>
+                            <div class="player-details">
+                                <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                    <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                        class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                            </div>
+                            <div class="player-match-details d-flex-v-center">
+                                <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                                <p class="date">Oct 27 10:30am</p>
+                                <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="player-points">
+                        23.78
+                    </p>
+                </div>
+                <div class="lineup-position">
+                    <div class="player-positions d-flex-v-center">
+                        <p>GK</p>
+                    </div>
+                </div>
+                <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                                Oblack</p>
+                            <div class="player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                            </div>
+                            <div class="player-match-details d-flex-v-center">
+                                <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                                <p class="date">Oct 27 10:30am</p>
+                                <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="player-points">
+                        23.78
+                    </p>
+                </div>
+            </div>
+            <div class="lineup-info d-flex-v-center">
+                <div class="lineup-card d-flex-space-center flex-grow-1">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                    class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            <div class="lineup-position">
+                <div class="player-positions d-flex-v-center">
+                    <p>GK</p>
+                </div>
+            </div>
+            <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                <div class="player-info d-flex-v-center">
+                    <figure class="player-avatar mr-10">
+                        <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                    </figure>
+                    <div class="player-details">
+                        <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                            Oblack</p>
+                        <div class="player-clubs">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            </div>
+            <div class="lineup-info d-flex-v-center">
+                <div class="lineup-card d-flex-space-center flex-grow-1">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                    class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            <div class="lineup-position">
+                <div class="player-positions d-flex-v-center">
+                    <p>GK</p>
+                </div>
+            </div>
+            <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                <div class="player-info d-flex-v-center">
+                    <figure class="player-avatar mr-10">
+                        <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                    </figure>
+                    <div class="player-details">
+                        <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                            Oblack</p>
+                        <div class="player-clubs">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            </div>
+            <div class="lineup-info d-flex-v-center">
+                <div class="lineup-card d-flex-space-center flex-grow-1">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                    class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            <div class="lineup-position">
+                <div class="player-positions d-flex-v-center">
+                    <p>GK</p>
+                </div>
+            </div>
+            <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                <div class="player-info d-flex-v-center">
+                    <figure class="player-avatar mr-10">
+                        <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                    </figure>
+                    <div class="player-details">
+                        <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                            Oblack</p>
+                        <div class="player-clubs">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            </div>
+            <div class="lineup-info d-flex-v-center">
+                <div class="lineup-card d-flex-space-center flex-grow-1">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                    class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            <div class="lineup-position">
+                <div class="player-positions d-flex-v-center">
+                    <p>GK</p>
+                </div>
+            </div>
+            <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                <div class="player-info d-flex-v-center">
+                    <figure class="player-avatar mr-10">
+                        <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                    </figure>
+                    <div class="player-details">
+                        <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                            Oblack</p>
+                        <div class="player-clubs">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            </div>
+            <div class="lineup-info d-flex-v-center">
+                <div class="lineup-card d-flex-space-center flex-grow-1">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                    class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            <div class="lineup-position">
+                <div class="player-positions d-flex-v-center">
+                    <p>GK</p>
+                </div>
+            </div>
+            <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                <div class="player-info d-flex-v-center">
+                    <figure class="player-avatar mr-10">
+                        <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                    </figure>
+                    <div class="player-details">
+                        <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                            Oblack</p>
+                        <div class="player-clubs">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            </div>
+            <div class="lineup-info d-flex-v-center">
+                <div class="lineup-card d-flex-space-center flex-grow-1">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                    class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            <div class="lineup-position">
+                <div class="player-positions d-flex-v-center">
+                    <p>GK</p>
+                </div>
+            </div>
+            <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                <div class="player-info d-flex-v-center">
+                    <figure class="player-avatar mr-10">
+                        <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                    </figure>
+                    <div class="player-details">
+                        <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                            Oblack</p>
+                        <div class="player-clubs">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            </div>
+            <div class="lineup-info d-flex-v-center">
+                <div class="lineup-card d-flex-space-center flex-grow-1">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                    class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            <div class="lineup-position">
+                <div class="player-positions d-flex-v-center">
+                    <p>GK</p>
+                </div>
+            </div>
+            <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                <div class="player-info d-flex-v-center">
+                    <figure class="player-avatar mr-10">
+                        <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                    </figure>
+                    <div class="player-details">
+                        <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                            Oblack</p>
+                        <div class="player-clubs">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            </div>
+            <div class="lineup-info d-flex-v-center">
+                <div class="lineup-card d-flex-space-center flex-grow-1">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                    class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            <div class="lineup-position">
+                <div class="player-positions d-flex-v-center">
+                    <p>GK</p>
+                </div>
+            </div>
+            <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                <div class="player-info d-flex-v-center">
+                    <figure class="player-avatar mr-10">
+                        <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                    </figure>
+                    <div class="player-details">
+                        <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                            Oblack</p>
+                        <div class="player-clubs">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            </div>
+            <div class="d-flex">
+                <div class="flex-grow-1 text-center start-title">Bench</div>
+                <div class="flex-grow-1 text-center start-title">Bench</div>
+            </div>
+            <div class="lineup-info d-flex-v-center">
+                <div class="lineup-card d-flex-space-center flex-grow-1 injured">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                    class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            <div class="lineup-position">
+                <div class="player-positions d-flex-v-center">
+                    <p>GK</p>
+                </div>
+            </div>
+            <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                <div class="player-info d-flex-v-center">
+                    <figure class="player-avatar mr-10">
+                        <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                    </figure>
+                    <div class="player-details">
+                        <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                            Oblack</p>
+                        <div class="player-clubs">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            </div>
+            <div class="lineup-info d-flex-v-center">
+                <div class="lineup-card d-flex-space-center flex-grow-1">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                    class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            <div class="lineup-position">
+                <div class="player-positions d-flex-v-center">
+                    <p>GK</p>
+                </div>
+            </div>
+            <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                <div class="player-info d-flex-v-center">
+                    <figure class="player-avatar mr-10">
+                        <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                    </figure>
+                    <div class="player-details">
+                        <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                            Oblack</p>
+                        <div class="player-clubs">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            </div>
+            <div class="lineup-info d-flex-v-center">
+                <div class="lineup-card d-flex-space-center flex-grow-1">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                    class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            <div class="lineup-position">
+                <div class="player-positions d-flex-v-center">
+                    <p>GK</p>
+                </div>
+            </div>
+            <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                <div class="player-info d-flex-v-center">
+                    <figure class="player-avatar mr-10">
+                        <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                    </figure>
+                    <div class="player-details">
+                        <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                            Oblack</p>
+                        <div class="player-clubs">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            </div>
+            <div class="lineup-info d-flex-v-center">
+                <div class="lineup-card d-flex-space-center flex-grow-1">
+                    <div class="player-info d-flex-v-center">
+                        <figure class="player-avatar mr-10">
+                            <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                        </figure>
+                        <div class="player-details">
+                            <p class="player-name d-flex-v-center">J. Oblack <span class="player-position">GK</span>
+                                <img src="/src/assets/img/league-dashboard/injured-symbol.svg" alt=""
+                                    class="injured-icon""> </p>
+                                    <div class=" player-clubs">
+                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            <div class="lineup-position">
+                <div class="player-positions d-flex-v-center">
+                    <p>GK</p>
+                </div>
+            </div>
+            <div class="lineup-card lineup-card-reverse d-flex-space-center flex-grow-1">
+                <div class="player-info d-flex-v-center">
+                    <figure class="player-avatar mr-10">
+                        <img src="/src/assets/img/league-dashboard/j-oblack.svg" alt="">
+                    </figure>
+                    <div class="player-details">
+                        <p class="player-name d-flex-v-center"><span class="player-position">GK</span> J.
+                            Oblack</p>
+                        <div class="player-clubs">
+                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                            <img src="/src/assets/img/player-popout/inter-milan.svg" alt="">
+                        </div>
+                        <div class="player-match-details d-flex-v-center">
+                            <p class="team">Arsenal (H) Sat, &nbsp;</p>
+                            <p class="date">Oct 27 10:30am</p>
+                            <p class="status ml-10"><strong>3</strong>:0 | <strong>W</strong></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="player-points">
+                    23.78
+                </p>
+            </div>
+            </div>
+            </div>
             </div>
         </section>
     </main>
