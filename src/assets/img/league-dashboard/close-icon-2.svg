@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Group 18</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="12 1.20857126 10.7914286 0 6 4.79142874 1.20857126 0 0 1.20857126 4.79142874 6 0 10.7914286 1.20857126 12 6 7.20857126 10.7914286 12 12 10.7914286 7.20857126 6"></polygon>
+    </defs>
+    <g id="Screens" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Next-Gameweek" transform="translate(-935.000000, -34.000000)">
+            <g id="Group-18" transform="translate(935.000000, 34.000000)">
+                <circle id="Oval" fill="#EFEEF8" opacity="0.134254092" cx="19" cy="19" r="19"></circle>
+                <g id="icon/x" transform="translate(13.000000, 13.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="X-Icon" fill="#BFC0CC" xlink:href="#path-1"></use>
+                    <g id="🎨Color" mask="url(#mask-2)" fill="#BFC0CC">
+                        <rect id="Rectangle" x="0" y="0" width="12" height="12"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

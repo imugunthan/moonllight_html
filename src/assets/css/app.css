@@ -3556,7 +3556,7 @@ html {
 }
 .dashboard-left-section.open .league-dropdown {
   max-height: 400px;
-  z-index: 2;
+  z-index: 5;
 }
 .dashboard-left-section.open::after {
   position: fixed;
@@ -3565,7 +3565,7 @@ html {
   height: 100vh;
   background: rgba(14, 16, 37, 0.6);
   display: inline-block;
-  z-index: 1;
+  z-index: 4;
   top: 0;
   left: 0;
 }
@@ -3882,6 +3882,7 @@ html {
   font-weight: 700;
   color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
+  cursor: pointer;
 }
 .dashboard .match-week-info-wrap .match-week-card__body {
   background: url(/src/assets/img/league-dashboard/football-court.svg) center no-repeat;
@@ -4124,6 +4125,20 @@ html {
   height: calc(100% - 30px);
   overflow: auto;
 }
+.your-team .player-card-head {
+  padding: 5px 15px;
+  background: rgba(220, 222, 247, 0.5);
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.your-team .player-card-head .title {
+  font-weight: 700;
+}
+.your-team .player-card-head .title.mr-20 {
+  margin-right: 30px;
+}
+.your-team .player-card-head .btn {
+  padding: 0px 5px;
+}
 .your-team .player-card .player-image {
   width: 35px;
   height: auto;
@@ -4163,7 +4178,7 @@ html {
   position: absolute;
   top: 25px;
   right: 50px;
-  z-index: 11;
+  z-index: 3;
   cursor: pointer;
 }
 .notification .material-icons {
@@ -4192,7 +4207,7 @@ html {
   width: 100vw;
   height: 100vh;
   background: rgba(32, 36, 86, 0.6);
-  z-index: 10;
+  z-index: 2;
 }
 .modal-notifications .modal--container {
   position: absolute;
@@ -4433,6 +4448,456 @@ html {
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.gameweek-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  background: #777899;
+  z-index: 10;
+}
+.gameweek-popup .gameweek-container {
+  position: absolute;
+  width: 80%;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #faf9fc;
+  border-radius: 10px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1100px) {
+  .gameweek-popup .gameweek-container {
+    width: 90%;
+  }
+}
+.gameweek-popup .gameweek-top {
+  border-radius: 10px 10px 0 0;
+  background-image: url(/src/assets/img/league-dashboard/gameweek-bg.png), linear-gradient(124deg, #2c3282 0%, #2a2266 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.gameweek-popup .gameweek-top .top-title-section {
+  padding: 8px 25px;
+  background: rgba(255, 255, 255, 0.05);
+}
+.gameweek-popup .gameweek-top .top-title-section .date {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.gameweek-popup .gameweek-top .top-title-section .value {
+  opacity: 0.6;
+}
+.gameweek-popup .gameweek-top .top-title-section .gameweek-title {
+  font-family: "Bebas Neue";
+  font-size: 19px;
+  color: #ffffff;
+  margin-left: 40px;
+}
+.gameweek-popup .gameweek-top .top-title-section .close-gameweek {
+  margin-left: 20px;
+  cursor: pointer;
+}
+.gameweek-popup .gameweek-top .top-wrap {
+  padding: 15px 25px;
+  position: relative;
+}
+.gameweek-popup .gameweek-top .top-wrap .progress-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1px;
+  background: #5ac47d;
+}
+.gameweek-popup .gameweek-top .top-wrap .progress-bar::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: -3px;
+  right: 0;
+  display: inline-block;
+  background: #5ac47d;
+  border-radius: 50%;
+}
+.gameweek-popup .gameweek-top .top-wrap .team-counter {
+  -webkit-box-align: flex-start !important;
+  -ms-flex-align: flex-start !important;
+  -webkit-align-items: flex-start !important;
+  -moz-align-items: flex-start !important;
+  align-items: flex-start !important;
+}
+.gameweek-popup .gameweek-top .top-wrap .team-counter .my-team {
+  font-size: 13px;
+  color: #afb1bf;
+  padding: 4px 12px;
+  background: #333589;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+}
+.gameweek-popup .gameweek-top .top-wrap .counter-wrap {
+  margin-left: 30px;
+  padding: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: flex-start !important;
+  -ms-flex-align: flex-start !important;
+  -webkit-align-items: flex-start !important;
+  -moz-align-items: flex-start !important;
+  align-items: flex-start !important;
+}
+.gameweek-popup .gameweek-top .top-wrap .counter-wrap .counter {
+  background: #43479f;
+  box-shadow: 0 5px 5px -4px rgba(3, 3, 3, 0.3);
+  border-radius: 4px;
+  color: #fff;
+}
+.gameweek-popup .gameweek-top .top-wrap .counter-wrap .counter .value {
+  font-size: 14px;
+  font-weight: 700;
+  padding: 6px 5px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px 4px 0 0;
+}
+.gameweek-popup .gameweek-top .top-wrap .counter-wrap .counter .label {
+  font-size: 10px;
+  padding: 3px 5px;
+  font-weight: 700;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.17);
+}
+.gameweek-popup .gameweek-top .top-wrap .counter-wrap .counter:not(:last-child) {
+  margin-right: 5px;
+}
+.gameweek-popup .gameweek-top .top-wrap .opponent {
+  font-size: 17px;
+  color: #ffffff;
+}
+.gameweek-popup .gameweek-top .top-wrap .team-status {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.gameweek-popup .gameweek-top .top-wrap .team-status.opponent .win-wrap {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.gameweek-popup .gameweek-top .top-wrap .team-info {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+}
+.gameweek-popup .gameweek-top .top-wrap .rank-info.flex-end {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.gameweek-popup .gameweek-top .top-wrap .rank-info .rank {
+  font-family: "Bebas Neue";
+  font-size: 34px;
+  color: #f2f2f2;
+}
+.gameweek-popup .gameweek-top .top-wrap .rank-info > img {
+  width: 6px;
+  margin: 0 5px;
+}
+.gameweek-popup .gameweek-top .top-wrap .win-wrap .win {
+  font-size: 9px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #5abf7b;
+  transform: skew(-15deg);
+  text-align: center;
+  padding: 4px 5px 2px 5px;
+  margin-left: 2px;
+}
+.gameweek-popup .gameweek-top .top-wrap .win-wrap .win > span {
+  display: inline-block;
+  transform: skew(15deg);
+}
+.gameweek-popup .gameweek-top .top-wrap .win-wrap .win.red {
+  background: #f86364;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .user-image {
+  width: 53px;
+  height: 53px;
+  border: 4px solid #3b3e91;
+  box-shadow: 0 5px 10px -4px rgba(82, 92, 215, 0.3);
+  background: #bdc7ff;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .user-image > img {
+  object-fit: cover;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .avatar .you {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.23);
+  margin-top: 5px;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .points {
+  font-family: "Bebas Neue";
+  font-size: 42px;
+  color: #f2f2f2;
+  margin-left: 40px;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .proj-points {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+  position: relative;
+  top: -12px;
+  font-size: 21px;
+  color: #56c079;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .proj-points img {
+  width: 6px;
+  margin: 0 7px;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .proj-points span {
+  font-family: "Bebas Neue";
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .proj-points.red {
+  color: #fa6260;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .info-item {
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(140, 140, 140, 0.44);
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .game-details {
+  text-align: right;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .game-details p {
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 5px;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .game-details .status-red {
+  font-size: 10px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #fb295e;
+  border-radius: 2px;
+  display: inline-block;
+  padding: 2px 7px;
+  margin-top: 10px;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .info-opponent .proj-points {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  justify-content: flex-start;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .info-opponent .info-cover {
+  -webkit-box-direction: reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row-reverse;
+  -moz-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .info-opponent .you {
+  color: #fff;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .info-opponent .points {
+  margin-right: 40px;
+  margin-left: 0;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .info-opponent .game-details {
+  text-align: left;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .versus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 12px 20px 25px 20px;
+  align-items: center;
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .versus .vs {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(146, 147, 159, 0.4);
+  background: rgba(255, 255, 255, 0.1);
+}
+.gameweek-popup .gameweek-top .top-wrap .you-vs-opponent .versus .games {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(146, 147, 159, 0.4);
+}
+.gameweek-popup .gameweek-top .top-wrap .prediction {
+  margin-top: auto;
+}
+.gameweek-popup .gameweek-top .top-wrap .prediction .percentage {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  color: #51b681;
+  line-height: 30px;
+}
+.gameweek-popup .gameweek-top .top-wrap .prediction .percentage.red {
+  color: #fa6968;
+}
+.gameweek-popup .gameweek-top .top-wrap .prediction .percentage-text {
+  font-size: 10px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 20px;
+  margin: 0 5px;
+}
+.gameweek-popup .lineup {
+  padding: 8px 12px;
+  background: #ffffff;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
+  border-radius: 3px 3px 0 0;
+  position: relative;
+  top: -3px;
+}
+.gameweek-popup .lineup-title-card {
+  background: rgba(220, 222, 247, 0.5);
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+.gameweek-popup .lineup-title {
+  font-size: 13px;
+  color: rgba(96, 99, 128, 0.5);
+  margin: 0 20px;
+}
+.gameweek-popup .lineup-text {
+  font-size: 16px;
+  color: #5b5b60;
+}
+.gameweek-popup .lineup-info {
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+}
+.gameweek-popup .lineup-wrap .start-title {
+  padding: 6px;
+}
+.gameweek-popup .lineup-position {
+  background: #fff;
+}
+.gameweek-popup .lineup-position .player-positions {
+  opacity: 0.5;
+  font-size: 14px;
+  width: 78px;
+  height: 100%;
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+}
+.gameweek-popup .lineup-card-reverse {
+  -webkit-box-direction: reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row-reverse;
+  -moz-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.gameweek-popup .lineup-card-reverse .player-info {
+  -webkit-box-direction: reverse;
+  -webkit-box-orient: horizontal;
+  -webkit-flex-direction: row-reverse;
+  -moz-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.gameweek-popup .lineup-card-reverse .player-details {
+  text-align: right;
+}
+.gameweek-popup .lineup-card-reverse .player-avatar {
+  margin-left: 10px;
+  margin-right: 0;
+}
+.gameweek-popup .lineup-card-reverse .player-name {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
+}
+.gameweek-popup .lineup-card {
+  padding: 15px;
+  background: #f7f7fa;
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.gameweek-popup .lineup-card.injured {
+  background: rgba(253, 97, 92, 0.11);
+  box-shadow: inset 0 -1px 0 0 #fd615c;
+}
+.gameweek-popup .lineup-card.injured .injured-icon {
+  display: block;
+}
+.gameweek-popup .lineup-card .injured-icon {
+  display: none;
+}
+.gameweek-popup .lineup-card .player-name {
+  font-size: 16px;
+  color: #5b5b60;
+}
+.gameweek-popup .lineup-card .player-position {
+  font-size: 12px;
+  color: rgba(96, 99, 128, 0.5);
+  display: inline-block;
+  margin: 0 5px;
+}
+.gameweek-popup .lineup-card .player-clubs img {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 5px 0;
+}
+.gameweek-popup .lineup-card .player-clubs img:not(:last-child) {
+  margin-right: -10px;
+}
+.gameweek-popup .lineup-card .player-points {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  color: #5b5b60;
 }
 
 /*# sourceMappingURL=app.css.map */
