@@ -5000,4 +5000,318 @@ html {
   color: #56c079 !important;
 }
 
+.calendar-fullview {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(32, 36, 86, 0.6);
+  overflow: auto;
+}
+.calendar-container {
+  min-width: 1216px;
+  width: calc(100% - 110px);
+  height: calc(100% - 60px);
+  margin: 30px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+}
+.calendar-container .key-section {
+  width: 80px;
+  height: 100%;
+  padding: 25px 10px;
+  background: #ffffff;
+  border-radius: 10px 0 0 10px;
+  border-right: 1px solid #e8e8e8;
+}
+.calendar-container .key-section .key-menu {
+  margin-top: 44px;
+}
+.calendar-container .key-section .key-items {
+  margin-bottom: 35px;
+}
+.calendar-container .key-section .key-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  text-transform: uppercase;
+  text-align: center;
+}
+.calendar-container .key-section .key-image {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+}
+.calendar-container .key-section .key-name {
+  font-family: "Bebas Neue";
+  font-size: 15px;
+  color: #606380;
+}
+.calendar-container .day-info {
+  min-width: 388px;
+  height: 100%;
+  background-image: url("/src/assets/img/calendar/calendar-shape.svg"), linear-gradient(124deg, #2c3282 0%, #2a2266 100%);
+  border-radius: 0 10px 10px 0;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.calendar-container .day-info__head {
+  height: 78px;
+  position: relative;
+  background: rgba(65, 73, 172, 0.2);
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.5);
+}
+.calendar-container .day-info__head .day-show {
+  height: 100%;
+}
+.calendar-container .day-info__head .day-show > img {
+  cursor: pointer;
+  margin: 15px 20px 0 20px;
+}
+.calendar-container .day-info__head .gameweek {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.calendar-container .day-info__head .date {
+  font-size: 14px;
+  color: #ffffff;
+}
+.calendar-container .day-info__head .calendar-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.calendar-container .day-info .day-match-info {
+  padding: 25px;
+}
+.calendar-container .day-info .day-match-info .league-name {
+  padding: 10px;
+  text-align: center;
+  background: rgba(70, 77, 188, 0.15);
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+  border-radius: 7px;
+}
+.calendar-main__head {
+  height: 78px;
+  padding: 10px 15px;
+  background: #ffffff;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
+  border-radius: 3px 3px 0 0;
+}
+.calendar-main__head .league-dropdown {
+  max-width: 200px;
+  background: #ffffff;
+  border: 1px solid #d6d6d6;
+  box-shadow: 0 6px 12px -4px rgba(30, 30, 30, 0.17);
+  border-radius: 9px;
+  max-height: 60px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 200px;
+}
+.calendar-main__head .league-dropdown::after {
+  content: "";
+  width: 100vw;
+  height: 100vh;
+  background: rgba(14, 16, 37, 0.6);
+}
+.calendar-main__head .league-dropdown .league-card {
+  padding: 5px 15px;
+  border-bottom: 1px solid rgba(236, 236, 236, 0.12);
+}
+.calendar-main__head .league-dropdown .league-selected {
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3);
+}
+.calendar-main__head .league-dropdown .league-title {
+  font-size: 10px;
+  color: rgba(95, 108, 132, 0.4);
+}
+.calendar-main__head .league-dropdown .league-logo {
+  margin-left: 5px;
+}
+.calendar-main__head .league-dropdown .league-name {
+  font-size: 12px;
+  color: #5f6c84;
+  background: url("/src/assets/img/calendar/league-dropdown.svg") right 10px center no-repeat;
+}
+.calendar-main__head .league-dropdown .league-wrap {
+  padding: 0 15px;
+  max-height: 240px;
+  overflow: auto;
+}
+.calendar-main__head .league-dropdown .league-wrap .league-card {
+  padding: 15px 0;
+}
+.calendar-main__head .league-dropdown .league-dropdown-option {
+  background: #393b8c;
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px 15px;
+  box-shadow: 0 -7px 15px -4px rgba(0, 0, 0, 0.3);
+}
+.calendar-main__head .league-dropdown .league-dropdown-option .btn-action {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+  height: 30px;
+  width: calc(100% / 2 - 4px);
+}
+.calendar-main__head .league-dropdown .league-dropdown-option .btn-action.btn-create {
+  background: #5abf7b;
+}
+.calendar-main__head .league-dropdown .in-use-text {
+  font-size: 10px;
+  color: rgba(96, 99, 128, 0.8);
+}
+.calendar-main__head .league-dropdown .in-use-image > img:not(:last-child) {
+  margin-right: -7px;
+}
+.calendar-days .days {
+  width: calc(100% / 7);
+  padding: 6px;
+  text-align: center;
+}
+.calendar-holder {
+  height: calc(100% - 108px);
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  align-items: stretch;
+}
+.calendar-date {
+  width: calc(100% / 7);
+  height: calc(100% / 5);
+  padding: 6px;
+  background: #ffffff;
+  border: 0.8px solid rgba(200, 200, 200, 0.24);
+  position: relative;
+}
+.calendar-date .date-value {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  color: #606380;
+  text-align: center;
+  line-height: 32px;
+  margin-left: auto;
+}
+.calendar-date .date-value--active {
+  color: #fff;
+  background: #202456;
+}
+.calendar-date .my-player {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+.calendar-date.active-date {
+  background: #ffffff;
+  border: 1px solid #8687c9;
+}
+.calendar-date img {
+  max-width: 20px;
+  max-height: 20px;
+  object-fit: cover;
+}
+.calendar-date .club-images {
+  margin-bottom: 5px;
+}
+.calendar-date .club-images img {
+  margin-right: 5px;
+}
+.calendar-date .match-time {
+  background: #f86364;
+  border-radius: 12px;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 1px 10px 3px 5px;
+}
+.calendar-date .match-time .time {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+}
+.calendar-date .match-time .time-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.calendar-date .date-selection {
+  position: absolute;
+  bottom: 5px;
+  left: 6px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 700;
+  color: #55c97b;
+  letter-spacing: -0.2px;
+  height: 24px;
+  margin: 0 -6px;
+  margin-top: 5px;
+  padding-left: 7px;
+  background: rgba(68, 160, 98, 0.2);
+}
+.calendar-date .date-selection--first {
+  border-left: 3px solid #55c97b;
+}
+.calendar-date .date-selection .info-dropdown {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+.calendar-date .date-selection .info-dropdown .info-icon {
+  cursor: pointer;
+}
+.calendar-month {
+  font-size: 16px;
+  font-weight: 700;
+  color: #606380;
+}
+.calendar-month > img {
+  margin: 15px 20px 0 20px;
+  cursor: pointer;
+}
+
+.select-options {
+  cursor: pointer;
+  padding-right: 40px;
+  background: transparent url("/src/assets/img/player-popout/select-background.svg") right center no-repeat;
+}
+.select-options .label {
+  font-size: 11px;
+  color: #afb1bf;
+  line-height: 24px;
+}
+.select-options .select-btn {
+  font-size: 13px;
+  color: #2b2c78;
+}
+.select-options .material-icons {
+  color: #2b2c78;
+  margin-left: 5px;
+  font-size: 16px;
+  position: relative;
+  top: 1px;
+  cursor: pointer;
+}
+
 /*# sourceMappingURL=app.css.map */

@@ -1,0 +1,328 @@
+.calendar {
+  &-fullview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(#202456, 0.6);
+    overflow: auto;
+  }
+  &-container {
+    min-width: 1216px;
+    width: calc(100% - 110px);
+    height: calc(100% - 60px);
+    margin: 30px auto;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    -webkit-align-items: stretch;
+    -moz-align-items: stretch;
+    align-items: stretch;
+    .key-section {
+      width: 80px;
+      height: 100%;
+      padding: 25px 10px;
+      background: #ffffff;
+      border-radius: 10px 0 0 10px;
+      border-right: 1px solid #e8e8e8;
+      .key {
+        &-menu {
+          margin-top: 44px;
+        }
+        &-items {
+          margin-bottom: 35px;
+        }
+        &-title {
+          font-size: 13px;
+          font-weight: $bold;
+          color: #606380;
+          text-transform: uppercase;
+          text-align: center;
+        }
+        &-image {
+          width: 23px;
+          height: 23px;
+          border-radius: 50%;
+        }
+        &-name {
+          font-family: "Bebas Neue";
+          font-size: 15px;
+          color: #606380;
+        }
+      }
+    }
+    .day-info {
+      min-width: 388px;
+      height: 100%;
+      background-image: url("/src/assets/img/calendar/calendar-shape.svg"),
+        linear-gradient(124deg, #2c3282 0%, #2a2266 100%);
+      border-radius: 0 10px 10px 0;
+      background-repeat: no-repeat;
+      background-position: right bottom;
+      &__head {
+        height: 78px;
+        position: relative;
+        background: rgba(#4149ac, 0.2);
+        box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.5);
+        .day-show {
+          height: 100%;
+          > img {
+            cursor: pointer;
+            margin: 15px 20px 0 20px;
+          }
+        }
+        .gameweek {
+          font-size: 14px;
+          font-weight: $bold;
+          color: #ffffff;
+        }
+        .date {
+          font-size: 14px;
+          color: #ffffff;
+        }
+        .calendar-close {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+        }
+      }
+      .day-match-info {
+        padding: 25px;
+        .league-name {
+          padding: 10px;
+          text-align: center;
+          background: rgba(70, 77, 188, 0.15);
+          box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+          border-radius: 7px;
+        }
+      }
+    }
+  }
+  &-main {
+    &__head {
+      height: 78px;
+      padding: 10px 15px;
+      background: #ffffff;
+      box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
+      border-radius: 3px 3px 0 0;
+      .league-dropdown {
+        max-width: 200px;
+        background: #ffffff;
+        border: 1px solid #d6d6d6;
+        box-shadow: 0 6px 12px -4px rgba(30, 30, 30, 0.17);
+        border-radius: 9px;
+        max-height: 60px;
+        overflow: hidden;
+        cursor: pointer;
+        width: 200px;
+        &::after {
+          content: "";
+          width: 100vw;
+          height: 100vh;
+          background: rgba(#0e1025, 0.6);
+        }
+        .league {
+          &-card {
+            padding: 5px 15px;
+            border-bottom: 1px solid rgba(#ececec, 0.12);
+          }
+          &-selected {
+            box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3);
+          }
+          &-title {
+            font-size: 10px;
+            color: rgba(#5f6c84, 0.4);
+          }
+          &-logo {
+            margin-left: 5px;
+          }
+          &-name {
+            font-size: 12px;
+            color: #5f6c84;
+            background: url("/src/assets/img/calendar/league-dropdown.svg")
+              right 10px center no-repeat;
+          }
+          &-wrap {
+            padding: 0 15px;
+            max-height: 240px;
+            overflow: auto;
+            .league-card {
+              padding: 15px 0;
+            }
+          }
+          &-dropdown-option {
+            background: #393b8c;
+            border-radius: 0px 0px 10px 10px;
+            padding: 10px 15px;
+            box-shadow: 0 -7px 15px -4px rgba(0, 0, 0, 0.3);
+            .btn-action {
+              font-size: 13px;
+              font-weight: $bold;
+              color: #ffffff;
+              box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+                0 12px 20px -16px rgba(158, 117, 255, 0.15);
+              border-radius: 3px;
+              height: 30px;
+              width: calc(100% / 2 - 4px);
+              &.btn-create {
+                background: #5abf7b;
+              }
+            }
+          }
+        }
+        .in-use {
+          &-text {
+            font-size: 10px;
+            color: rgba(#606380, 0.8);
+          }
+          &-image {
+            > img {
+              &:not(:last-child) {
+                margin-right: -7px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &-days {
+    .days {
+      width: calc(100% / 7);
+      padding: 6px;
+      text-align: center;
+    }
+  }
+  &-holder {
+    height: calc(100% - 108px);
+    @include flex-wrap(wrap);
+    @include align-items(stretch);
+  }
+  &-date {
+    width: calc(100% / 7);
+    height: calc(100% / 5);
+    padding: 6px;
+    background: #ffffff;
+    border: 0.8px solid rgba(200, 200, 200, 0.24);
+    position: relative;
+    .date-value {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      font-family: "Bebas Neue";
+      font-size: 18px;
+      color: #606380;
+      text-align: center;
+      line-height: 32px;
+      margin-left: auto;
+      //   margin-bottom: 5px;
+      &--active {
+        color: $white;
+        background: #202456;
+      }
+    }
+    .my-player {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+    &.active-date {
+      background: #ffffff;
+      border: 1px solid #8687c9;
+    }
+    img {
+      max-width: 20px;
+      max-height: 20px;
+      object-fit: cover;
+    }
+    .club-images {
+      margin-bottom: 5px;
+      img {
+        margin-right: 5px;
+      }
+    }
+    .match-time {
+      background: #f86364;
+      border-radius: 12px;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 1px 10px 3px 5px;
+      .time {
+        font-size: 12px;
+        line-height: 12px;
+        font-weight: $medium;
+        color: #ffffff;
+        display: inline-block;
+        vertical-align: middle;
+        &-icon {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+    .date-selection {
+      position: absolute;
+      bottom: 5px;
+      left: 6px;
+      width: 100%;
+      font-size: 13px;
+      font-weight: $bold;
+      color: #55c97b;
+      letter-spacing: -0.2px;
+      height: 24px;
+      margin: 0 -6px;
+      margin-top: 5px;
+      padding-left: 7px;
+      background: rgba(#44a062, 0.2);
+      &--first {
+        border-left: 3px solid #55c97b;
+      }
+      .info-dropdown {
+        margin-top: 3px;
+        margin-left: 5px;
+        .info-icon {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  &-month {
+    font-size: 16px;
+    font-weight: $bold;
+    color: #606380;
+    > img {
+      margin: 15px 20px 0 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.select-options {
+  cursor: pointer;
+  padding-right: 40px;
+  background: transparent
+    url("/src/assets/img/player-popout/select-background.svg") right center
+    no-repeat;
+  .label {
+    font-size: 11px;
+    color: #afb1bf;
+    line-height: 24px;
+  }
+  .select-btn {
+    font-size: 13px;
+    color: #2b2c78;
+  }
+  .material-icons {
+    color: #2b2c78;
+    margin-left: 5px;
+    font-size: 16px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+  }
+}
