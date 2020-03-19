@@ -346,8 +346,20 @@
       .player-name {
         @include justify-content(flex-end);
       }
+      .card-details {
+        text-align: left !important;
+      }
     }
     &-card {
+      width: calc(100% / 2 - 78px);
+      @include align-items(flex-start);
+      .card-details {
+        margin-bottom: 5px;
+        text-align: right;
+        img:not(:last-child) {
+          margin-right: -8px;
+        }
+      }
       &.injured {
         background: rgba(#fd615c, 0.11);
         box-shadow: inset 0 -1px 0 0 #fd615c;
@@ -355,8 +367,24 @@
           display: block;
         }
       }
+      &.success {
+        background: rgba(81, 193, 118, 0.11);
+        box-shadow: inset 0 -1px 0 0 #51c176;
+      }
       .injured-icon {
         display: none;
+      }
+      .player-avatar {
+        position: relative;
+        .captain {
+          position: absolute;
+          left: -10px;
+        }
+        .sub-on {
+          position: absolute;
+          left: -6px;
+          bottom: -12px;
+        }
       }
       padding: 15px;
       background: #f7f7fa;
@@ -388,6 +416,13 @@
           font-family: "Bebas Neue";
           font-size: 20px;
           color: #5b5b60;
+          .proj-points {
+            font-family: "Bebas Neue";
+            font-size: 13px;
+            line-height: 22px;
+            color: #bebfcc;
+            margin: 0 10px;
+          }
         }
         &-match-details {
           .match {
@@ -451,4 +486,11 @@
       }
     }
   }
+}
+
+.clr-red {
+  color: #fa6260 !important;
+}
+.clr-green {
+  color: #56c079 !important;
 }

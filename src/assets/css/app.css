@@ -4859,10 +4859,26 @@ html {
   -moz-justify-content: flex-end;
   justify-content: flex-end;
 }
+.gameweek-popup .lineup-card-reverse .card-details {
+  text-align: left !important;
+}
 .gameweek-popup .lineup-card {
+  width: calc(100% / 2 - 78px);
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
   padding: 15px;
   background: #f7f7fa;
   box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.gameweek-popup .lineup-card .card-details {
+  margin-bottom: 5px;
+  text-align: right;
+}
+.gameweek-popup .lineup-card .card-details img:not(:last-child) {
+  margin-right: -8px;
 }
 .gameweek-popup .lineup-card.injured {
   background: rgba(253, 97, 92, 0.11);
@@ -4871,8 +4887,24 @@ html {
 .gameweek-popup .lineup-card.injured .injured-icon {
   display: block;
 }
+.gameweek-popup .lineup-card.success {
+  background: rgba(81, 193, 118, 0.11);
+  box-shadow: inset 0 -1px 0 0 #51c176;
+}
 .gameweek-popup .lineup-card .injured-icon {
   display: none;
+}
+.gameweek-popup .lineup-card .player-avatar {
+  position: relative;
+}
+.gameweek-popup .lineup-card .player-avatar .captain {
+  position: absolute;
+  left: -10px;
+}
+.gameweek-popup .lineup-card .player-avatar .sub-on {
+  position: absolute;
+  left: -6px;
+  bottom: -12px;
 }
 .gameweek-popup .lineup-card .player-name {
   font-size: 16px;
@@ -4898,6 +4930,13 @@ html {
   font-family: "Bebas Neue";
   font-size: 20px;
   color: #5b5b60;
+}
+.gameweek-popup .lineup-card .player-points .proj-points {
+  font-family: "Bebas Neue";
+  font-size: 13px;
+  line-height: 22px;
+  color: #bebfcc;
+  margin: 0 10px;
 }
 .gameweek-popup .lineup-card .player-match-details .match-detail {
   position: relative;
@@ -4951,6 +4990,14 @@ html {
 .gameweek-popup .lineup-card .player-match-details .match-date {
   font-size: 12px;
   color: #606380;
+}
+
+.clr-red {
+  color: #fa6260 !important;
+}
+
+.clr-green {
+  color: #56c079 !important;
 }
 
 /*# sourceMappingURL=app.css.map */
