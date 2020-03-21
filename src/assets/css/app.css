@@ -4018,6 +4018,8 @@ html {
 }
 .dashboard .card-stats__right {
   width: calc(40% - 20px);
+  height: 575px;
+  overflow: hidden;
 }
 .dashboard .club-images img {
   width: 24px;
@@ -4075,21 +4077,46 @@ html {
   font-style: italic;
   color: #9c9fb9;
 }
+.dashboard .league-standings .table-tbody {
+  height: 177px;
+  overflow: auto;
+}
 .dashboard .league-standings-table {
   width: 100%;
 }
 .dashboard .league-standings-table th:first-child,
 .dashboard .league-standings-table td:first-child {
-  min-width: 10%;
+  width: 40px;
+  max-width: 40px;
   text-align: right;
   display: flex;
   justify-content: flex-end;
-  padding-left: 5px;
+  margin-left: 15px;
 }
 .dashboard .league-standings-table th:first-child > img,
 .dashboard .league-standings-table td:first-child > img {
   width: 5px;
   margin-right: 5px;
+}
+.dashboard .league-standings-table th:nth-child(2),
+.dashboard .league-standings-table td:nth-child(2) {
+  width: 36%;
+  max-width: 36%;
+}
+.dashboard .league-standings-table th:nth-child(3),
+.dashboard .league-standings-table td:nth-child(3) {
+  width: 26%;
+  max-width: 26%;
+}
+.dashboard .league-standings-table th:nth-child(4),
+.dashboard .league-standings-table td:nth-child(4) {
+  width: 15%;
+  max-width: 15%;
+}
+.dashboard .league-standings-table th:last-child(),
+.dashboard .league-standings-table td:last-child() {
+  width: 12%;
+  max-width: 12%;
 }
 .dashboard .league-standings-table thead {
   background: rgba(220, 222, 247, 0.5);
@@ -4101,8 +4128,14 @@ html {
   padding: 7px 20px;
   text-align: left;
 }
-.dashboard .league-standings-table tbody tr:nth-child(odd) {
+.dashboard .league-standings-table tbody tr {
   background: #f7f7fa;
+  border: 1px solid rgba(200, 200, 200, 0.24);
+  cursor: pointer;
+}
+.dashboard .league-standings-table tbody tr:hover {
+  background: #ffffff;
+  box-shadow: 0 13px 34px 0 rgba(43, 43, 118, 0.12);
 }
 .dashboard .league-standings-table tbody tr td {
   font-size: 15px;
@@ -4113,13 +4146,20 @@ html {
   max-height: 100%;
 }
 .your-team .card-body {
-  max-height: calc(100% - 51px);
+  max-height: calc(575px - 51px);
+  overflow: auto;
+}
+.your-team .players-wrap {
+  height: calc(575px - 85px);
   overflow: auto;
 }
 .your-team .player-card {
   padding: 6px 15px;
   background: #ffffff;
   box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.your-team .player-card-left {
+  width: 68%;
 }
 .your-team .player-card-wrap {
   height: calc(100% - 30px);
@@ -4132,6 +4172,9 @@ html {
 }
 .your-team .player-card-head .title {
   font-weight: 700;
+}
+.your-team .player-card-head .title-width {
+  width: 68%;
 }
 .your-team .player-card-head .title.mr-20 {
   margin-right: 30px;
@@ -4157,6 +4200,9 @@ html {
   font-size: 12px;
   color: rgba(96, 99, 128, 0.5);
   line-height: 10px;
+}
+.your-team .player-card .player-clubs {
+  min-width: 50px;
 }
 .your-team .player-card .player-clubs > img {
   width: 30px;
@@ -5093,6 +5139,8 @@ html {
 }
 .calendar-container .day-info .day-match-info {
   padding: 25px;
+  max-height: calc(100% - 78px);
+  overflow: auto;
 }
 .calendar-container .day-info .day-match-info .league-name {
   padding: 10px;
@@ -5100,6 +5148,71 @@ html {
   background: rgba(70, 77, 188, 0.15);
   box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
   border-radius: 7px;
+}
+.calendar-container .day-info .day-match-info .my-player-icon {
+  display: none;
+  position: absolute;
+  left: -25px;
+  top: 1px;
+}
+.calendar-container .day-info .day-match-info .team:not(:last-child) {
+  margin-bottom: 10px;
+}
+.calendar-container .day-info .day-match-info .team-image {
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+.calendar-container .day-info .day-match-info .team-name.my-player {
+  position: relative;
+}
+.calendar-container .day-info .day-match-info .team-name.my-player .my-player-icon {
+  display: inline-block;
+}
+.calendar-container .day-info .day-match-info .team-details {
+  color: white;
+  border-bottom: 1px solid #35368d;
+}
+.calendar-container .day-info .day-match-info .team-details .name {
+  font-size: 14px;
+  font-weight: 500;
+}
+.calendar-container .day-info .day-match-info .team-goal {
+  font-size: 20px;
+}
+.calendar-container .day-info .day-match-info .time {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background: #55c97b;
+  border-radius: 12px;
+  padding: 2px 10px;
+  display: inline-block;
+}
+.calendar-container .day-info .day-match-info .time.fulltime {
+  background: #202456;
+  border-radius: 12px;
+}
+.calendar-container .day-info .day-match-info .match-time {
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+}
+.calendar-container .day-info .day-match-info .league-image {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.calendar-container .day-info .day-match-info .w-60 {
+  width: 60%;
+  padding: 15px;
+}
+.calendar-container .day-info .day-match-info .w-20 {
+  width: 20%;
+  text-align: center;
 }
 .calendar-main__head {
   height: 78px;
@@ -5226,6 +5339,11 @@ html {
   background: #ffffff;
   border: 1px solid #8687c9;
 }
+.calendar-date.event-date {
+  box-shadow: 0 5px 12px 0 rgba(43, 43, 118, 0.15);
+  position: relative;
+  z-index: 1;
+}
 .calendar-date img {
   max-width: 20px;
   max-height: 20px;
@@ -5273,6 +5391,20 @@ html {
 }
 .calendar-date .date-selection--first {
   border-left: 3px solid #55c97b;
+}
+.calendar-date .date-selection-blue {
+  color: #3fc3e4;
+  background: rgba(63, 195, 228, 0.2);
+}
+.calendar-date .date-selection-blue.date-selection--first {
+  border-left: 3px solid #3fc3e4;
+}
+.calendar-date .date-selection-purple {
+  color: #4149ac;
+  background: rgba(65, 73, 172, 0.2);
+}
+.calendar-date .date-selection-purple.date-selection--first {
+  border-left: 3px solid #4149ac;
 }
 .calendar-date .date-selection .info-dropdown {
   margin-top: 3px;
