@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Dashboard</title>
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <aside class="side-nav d-flex">
+            <div class="user-info">
+                <figure class="user-avatar m-auto mb-20">
+                    <img src="/src/assets/img/profile-image.svg" alt="User Image" class="user-image">
+                    <!-- <img src="https://images.vexels.com/media/users/3/140748/isolated/preview/5b078a59390bb4666df98b49f1cdedd0-male-profile-avatar-by-vexels.png"
+                        alt="User Image" class="user-image"> -->
+                </figure>
+                <p class="user-name">L. Vaz</p>
+            </div>
+            <nav class="navmenu">
+                <ul class="navmenu__list">
+                    <li class="navmenu__item mb-30">
+                        <i class="material-icons">home</i>
+                    </li>
+                    <li class="navmenu__item mb-30">
+                        <img src="/src/assets/img/trophy-filed.svg" alt="" class="filled">
+                        <img src="/src/assets/img/trophy.svg" alt="" class="normal">
+                    </li>
+                    <li class="navmenu__item mb-30 active">
+                        <img src="/src/assets/img/chart-filed.svg" class="filled" alt="">
+                        <img src="/src/assets/img/chart.svg" alt="" class="normal">
+                    </li>
+                </ul>
+            </nav>
+            <div class="side-nav__footer">
+                <ul class="">
+                    <li class="text-center help">
+                        <i class="material-icons">help</i>
+                    </li>
+                    <li class="text-center logo">
+                        <img src="/src//assets/img/moonlight-logo.svg" alt="Moonlight Logo">
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="right-section dashboard">
+            <div class="dashboard-left-section">
+                <div class="league-dropdown">
+                    <div class="league-selected league-card">
+                        <p class="league-title d-flex-v-center">
+                            League <img src="/src/assets/img/league-dashboard/league-logo.svg" alt=""
+                                class="league-logo">
+                        </p>
+                        <p class="league-name">Pique Blinders</p>
+                        <div class="in-use d-flex-v-center">
+                            <p class="in-use-text">In use</p>
+                            <div class="in-use-image ml-10">
+                                <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="league-wrap">
+                        <div class="league-card">
+                            <p class="league-title d-flex-v-center">
+                                League <img src="/src/assets/img/league-dashboard/league-logo.svg" alt=""
+                                    class="league-logo">
+                            </p>
+                            <p class="league-name">Pique Blinders</p>
+                            <div class="in-use d-flex-v-center">
+                                <p class="in-use-text">In use</p>
+                                <div class="in-use-image ml-10">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="league-card">
+                            <p class="league-title d-flex-v-center">
+                                League <img src="/src/assets/img/league-dashboard/league-logo.svg" alt=""
+                                    class="league-logo">
+                            </p>
+                            <p class="league-name">Pique Blinders</p>
+                            <div class="in-use d-flex-v-center">
+                                <p class="in-use-text">In use</p>
+                                <div class="in-use-image ml-10">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="league-card">
+                            <p class="league-title d-flex-v-center">
+                                League <img src="/src/assets/img/league-dashboard/league-logo.svg" alt=""
+                                    class="league-logo">
+                            </p>
+                            <p class="league-name">Pique Blinders</p>
+                            <div class="in-use d-flex-v-center">
+                                <p class="in-use-text">In use</p>
+                                <div class="in-use-image ml-10">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="league-dropdown-option d-flex-space-center">
+                        <button class="btn-create btn-action">Create</button>
+                        <button class="btn-join btn-action">Join</button>
+                    </div>
+                </div>
+                <div class="points-rank-holder text-center">
+                    <div class="league-rank d-flex-center">
+                        <div class="rank-status">
+                            <img src="/src/assets/img/player-popout/up-arrow.svg" alt="" class="rank-status-icon">
+                            <p class="status-text">7th</p>
+                        </div>
+                        <p class="rank">5</p>
+                        <p class="rank-text">TH</p>
+                    </div>
+                    <div class="league-rank-text">
+                        <span>League Rank</span>
+                    </div>
+                    <div class="league-point">
+                        <p class="points">1209.33</p>
+                        <p class="points-text">Total Fanatsy Pts</p>
+                    </div>
+                </div>
+                <div class="recent-gameweeks">
+                    <div class="last-5 d-flex-v-center">
+                        <p class="title">Last 5GW</p>
+                        <div class="results-wrap d-flex-v-center ml-10">
+                            <span>L</span>
+                            <span>W</span>
+                            <span>D</span>
+                            <span>L</span>
+                            <span>W</span>
+                        </div>
+                        <p class="all-gw ml-auto">ALL GW</p>
+                    </div>
+                    <div class="recent-gameweeks-points d-flex-center">
+                        <div class="points-wrap d-flex">
+                            <p class="player">You</p>
+                            <p class="points">190.43</p>
+                        </div>
+                        <p class="versus">VS.</p>
+                        <div class="points-wrap d-flex">
+                            <p class="points">135.32</p>
+                            <p class="player">A. Smith</p>
+                        </div>
+                    </div>
+                    <div class="recent-gameweeks-graph d-flex-space-center">
+                        <div class="graph-container">
+                            <div class="graph d-flex-center">
+                                <div class="you"></div>
+                                <div class="opponent red"></div>
+                            </div>
+                            <div class="result red">
+                                <span>L</span>
+                            </div>
+                            <p class="gw">GW3</p>
+                        </div>
+                        <div class="graph-container">
+                            <div class="graph d-flex-center">
+                                <div class="you"></div>
+                                <div class="opponent green"></div>
+                            </div>
+                            <div class="result green">
+                                <span>WIN</span>
+                            </div>
+                            <p class="gw">GW3</p>
+                        </div>
+                        <div class="graph-container">
+                            <div class="graph d-flex-center">
+                                <div class="you"></div>
+                                <div class="opponent grey"></div>
+                            </div>
+                            <div class="result grey">
+                                <span>D</span>
+                            </div>
+                            <p class="gw">GW3</p>
+                        </div>
+                        <div class="graph-container">
+                            <div class="graph d-flex-center">
+                                <div class="you"></div>
+                                <div class="opponent green"></div>
+                            </div>
+                            <div class="result red">
+                                <span>L</span>
+                            </div>
+                            <p class="gw">GW3</p>
+                        </div>
+                        <div class="graph-container">
+                            <div class="graph d-flex-center">
+                                <div class="you"></div>
+                                <div class="opponent red"></div>
+                            </div>
+                            <div class="result grey">
+                                <span>W</span>
+                            </div>
+                            <p class="gw">GW3</p>
+                        </div>
+                    </div>
+                    <img src="/src/assets/img/league-dashboard/calendar.svg" alt=""
+                        style="max-width: 100%; margin-top: 20px;">
+                </div>
+            </div>
+            <div class="dashboard-main">
+                <nav class="nav-bar">
+                    <ul class="nav-menu d-flex-v-center">
+                        <li class="nav-items">Dashboard</li>
+                        <li class="nav-items">My Team</li>
+                        <li class="nav-items">Trades-Wagers</li>
+                        <li class="nav-items">Free Market</li>
+                        <li class="nav-items">Stats</li>
+                        <li class="nav-items active">My League</li>
+                        <li class="nav-items">Rules</li>
+                    </ul>
+                </nav>
+                <div class="notification" id="notification">
+                    <i class="material-icons">notifications_none</i>
+                    <div class="notification-count">3</div>
+                </div>
+                <div class="league-standings-main">
+                    <div class="matchup-standings d-flex-center">
+                        <div class="match-selection d-flex-v-center">
+                            <label for="match1" class="check-button">
+                                <input type="radio" id="match1" class="radio-button" name="match" checked="">
+                                <span class="check-button-text">Standings</span>
+                            </label>
+                            <label for="match2" class="check-button">
+                                <input type="radio" id="match2" class="radio-button" name="match">
+                                <span class="check-button-text">Matchups</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="card graph-card mt-30">
+                        <p class="card-text">Standings Progress</p>
+                        <div class="d-flex-center">
+                            <div class="select-options mr-30">
+                                <label class="label">Compare with:</label>
+                                <button class="select-btn">Select team/Manager</button>
+                            </div>
+                        </div>
+                        <div class="d-flex-v-center">
+                            <div class="card-left">
+                                <img src="/src/assets/img/player-popout/graph.jpg" alt="">
+                            </div>
+                            <div class="card-right flex-grow-1">
+                                <div class="legends d-flex-space-center">
+                                    <p class="legends-text">Highest Position</p>
+                                    <p class="legends-price d-flex-v-bottom">9 <span>TH</span></p>
+                                </div>
+                                <div class="legends d-flex-space-center">
+                                    <p class="legends-text">Highest Position</p>
+                                    <div>
+                                        <p class="legends-price d-flex-v-bottom">9 <span>TH</span></p>
+                                        <div class="gameweek">GW6</div>
+                                    </div>
+                                </div>
+                                <div class="legends d-flex-space-center">
+                                    <div>
+                                        <p class="legends-price d-flex-v-bottom">9 <span>TH</span></p>
+                                        <div class="gameweek">GW6</div>
+                                    </div>
+                                    <p class="legends-text">Highest Position</p>
+                                    <div class="red">
+                                        <p class="legends-price d-flex-v-bottom">9 <span>TH</span></p>
+                                        <div class="gameweek">GW6</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card league-standing mt-30">
+                        <div class="card-header d-flex-space-center">
+                            <h3 class="head-title">League Standings</h3>
+                            <div class="gameweek-title">
+                                <p class="gw">Gamweek 10</p>
+                                <p class="sub-text">Upcoming GW</p>
+                            </div>
+                            <div class="last-updated">
+                                <p>Last Updated:</p>
+                                <p>Today 10:00pm</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="progress"></div>
+                            <table class="league-standings-table">
+                                <thead>
+                                    <tr>
+                                        <th>P</th>
+                                        <th>Team</th>
+                                        <th>Manager</th>
+                                        <th>W-D-L</th>
+                                        <th>Against</th>
+                                        <th>For</th>
+                                        <th>Pts</th>
+                                        <th>Last 5 GW</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <div class="table-tbody">
+                                <table class="league-standings-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Alisson Wonderland</td>
+                                            <td>Ayana Smith</td>
+                                            <td class="points">
+                                                <span class="win">7</span>
+                                                <span>-</span>
+                                                <span class="draw">0</span>
+                                                <span>-</span>
+                                                <span class="loss">1</span>
+                                            </td>
+                                            <td>1,003.48</td>
+                                            <td>1,380.19</td>
+                                            <td>23</td>
+                                            <td>
+                                                <div class="win-wrap d-flex-center">
+                                                    <p class="win">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win loss">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Alisson Wonderland</td>
+                                            <td>Ayana Smith</td>
+                                            <td class="points">
+                                                <span class="win">7</span>
+                                                <span>-</span>
+                                                <span class="draw">0</span>
+                                                <span>-</span>
+                                                <span class="loss">1</span>
+                                            </td>
+                                            <td>1,003.48</td>
+                                            <td>1,380.19</td>
+                                            <td>23</td>
+                                            <td>
+                                                <div class="win-wrap d-flex-center">
+                                                    <p class="win">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win loss">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Alisson Wonderland</td>
+                                            <td>Ayana Smith</td>
+                                            <td class="points">
+                                                <span class="win">7</span>
+                                                <span>-</span>
+                                                <span class="draw">0</span>
+                                                <span>-</span>
+                                                <span class="loss">1</span>
+                                            </td>
+                                            <td>1,003.48</td>
+                                            <td>1,380.19</td>
+                                            <td>23</td>
+                                            <td>
+                                                <div class="win-wrap d-flex-center">
+                                                    <p class="win">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win loss">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Alisson Wonderland</td>
+                                            <td>Ayana Smith</td>
+                                            <td class="points">
+                                                <span class="win">7</span>
+                                                <span>-</span>
+                                                <span class="draw">0</span>
+                                                <span>-</span>
+                                                <span class="loss">1</span>
+                                            </td>
+                                            <td>1,003.48</td>
+                                            <td>1,380.19</td>
+                                            <td>23</td>
+                                            <td>
+                                                <div class="win-wrap d-flex-center">
+                                                    <p class="win">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win loss">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Alisson Wonderland</td>
+                                            <td>Ayana Smith</td>
+                                            <td class="points">
+                                                <span class="win">7</span>
+                                                <span>-</span>
+                                                <span class="draw">0</span>
+                                                <span>-</span>
+                                                <span class="loss">1</span>
+                                            </td>
+                                            <td>1,003.48</td>
+                                            <td>1,380.19</td>
+                                            <td>23</td>
+                                            <td>
+                                                <div class="win-wrap d-flex-center">
+                                                    <p class="win">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win loss">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                    <p class="win draw">
+                                                        <span>W</span>
+                                                    </p>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

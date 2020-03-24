@@ -3574,6 +3574,7 @@ html {
 .dashboard-main {
   width: calc(100% - 300px);
   padding: 20px 40px;
+  background: #faf9fb;
 }
 .dashboard .league-dropdown {
   max-width: 200px;
@@ -5452,6 +5453,247 @@ html {
   position: relative;
   top: 1px;
   cursor: pointer;
+}
+
+.matchup-standings .check-button-text {
+  min-width: 150px;
+}
+
+.league-standings-main .graph-card.card {
+  position: relative;
+  padding: 20px 30px;
+  border-radius: 11px;
+  overflow: hidden;
+}
+.league-standings-main .graph-card.card .card-text {
+  position: absolute;
+  width: 152px;
+  height: 38px;
+  top: 0;
+  left: 0;
+  background: #efeef8;
+  border-radius: 11px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  line-height: 38px;
+  text-align: center;
+}
+.league-standings-main .graph-card.card .legends {
+  padding: 10px 20px;
+}
+.league-standings-main .graph-card.card .legends:not(:last-child) {
+  border-bottom: 1px solid #e7e7ef;
+}
+.league-standings-main .graph-card.card .legends .gameweek {
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  line-height: 14px;
+  background: #444cb4;
+  border-radius: 4px;
+  padding: 3px 10px;
+}
+.league-standings-main .graph-card.card .legends-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: #606380;
+  max-width: 50px;
+}
+.league-standings-main .graph-card.card .legends .red .legends-price {
+  color: #fb295e;
+}
+.league-standings-main .graph-card.card .legends-price {
+  font-family: "Bebas Neue";
+  font-size: 31px;
+  color: #444cb4;
+  letter-spacing: 0.37px;
+  margin-left: 10px;
+  line-height: 1;
+}
+.league-standings-main .graph-card.card .legends-price > span {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  line-height: 24px;
+}
+.league-standings-main .graph-card.card .card-left {
+  width: 57%;
+}
+.league-standings-main .graph-card.card .card-left > img {
+  width: 100%;
+}
+.league-standings-main .graph-card.card .card-right {
+  padding: 0 20px;
+  width: 43%;
+  margin-left: 30px;
+}
+.league-standings-main .league-standing {
+  max-height: 330px;
+}
+.league-standings-main .league-standing .card-body {
+  position: relative;
+}
+.league-standings-main .league-standing .card-body .progress {
+  position: absolute;
+  display: inline-block;
+  width: 50%;
+  height: 1px;
+  top: 0;
+  left: 0;
+  background: #5ec37f;
+  z-index: 1;
+}
+.league-standings-main .league-standing .card-body .progress::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -4px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #5ac47d;
+}
+.league-standings-main .league-standing .table-tbody {
+  height: calc(330px - 88px);
+  overflow: auto;
+}
+.league-standings-main .league-standing .league-standings .last-updated {
+  font-size: 13px;
+  font-style: italic;
+  color: #9c9fb9;
+}
+.league-standings-main .league-standing .league-standings-table {
+  width: 100%;
+}
+.league-standings-main .league-standing .league-standings-table th:first-child {
+  margin-right: -15px;
+}
+.league-standings-main .league-standing .league-standings-table th:first-child,
+.league-standings-main .league-standing .league-standings-table td:first-child {
+  width: 40px;
+  max-width: 40px;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 15px;
+}
+.league-standings-main .league-standing .league-standings-table th:first-child > img,
+.league-standings-main .league-standing .league-standings-table td:first-child > img {
+  width: 5px;
+  margin-right: 5px;
+}
+.league-standings-main .league-standing .league-standings-table th:nth-child(2),
+.league-standings-main .league-standing .league-standings-table td:nth-child(2) {
+  width: 20%;
+  max-width: 20%;
+}
+.league-standings-main .league-standing .league-standings-table th:nth-child(3),
+.league-standings-main .league-standing .league-standings-table td:nth-child(3) {
+  width: 20%;
+  max-width: 20%;
+}
+.league-standings-main .league-standing .league-standings-table th:nth-child(4),
+.league-standings-main .league-standing .league-standings-table td:nth-child(4) {
+  width: 13%;
+  max-width: 13%;
+}
+.league-standings-main .league-standing .league-standings-table th:nth-child(5),
+.league-standings-main .league-standing .league-standings-table td:nth-child(5) {
+  width: 11%;
+  max-width: 11%;
+}
+.league-standings-main .league-standing .league-standings-table th:nth-child(6),
+.league-standings-main .league-standing .league-standings-table td:nth-child(6) {
+  width: 11%;
+  max-width: 11%;
+}
+.league-standings-main .league-standing .league-standings-table th:nth-child(7),
+.league-standings-main .league-standing .league-standings-table td:nth-child(7) {
+  width: 6%;
+  max-width: 6%;
+}
+.league-standings-main .league-standing .league-standings-table thead {
+  background: rgba(220, 222, 247, 0.5);
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.league-standings-main .league-standing .league-standings-table thead th {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 7px 20px;
+  text-align: left;
+}
+.league-standings-main .league-standing .league-standings-table tbody tr {
+  background: #f7f7fa;
+  border: 1px solid rgba(200, 200, 200, 0.24);
+  cursor: pointer;
+}
+.league-standings-main .league-standing .league-standings-table tbody tr:hover {
+  background: #ffffff;
+  box-shadow: 0 13px 34px 0 rgba(43, 43, 118, 0.12);
+}
+.league-standings-main .league-standing .league-standings-table tbody tr:hover td {
+  font-weight: 700;
+}
+.league-standings-main .league-standing .league-standings-table tbody tr td {
+  font-size: 15px;
+  padding: 20px;
+}
+.league-standings-main .league-standing .league-standings-table tbody tr td.points .win,
+.league-standings-main .league-standing .league-standings-table tbody tr td.points .draw,
+.league-standings-main .league-standing .league-standings-table tbody tr td.points .loss {
+  display: inline-block;
+  border-bottom: 2px solid;
+}
+.league-standings-main .league-standing .league-standings-table tbody tr td.points .draw {
+  border-color: #606380;
+}
+.league-standings-main .league-standing .league-standings-table tbody tr td.points .win {
+  border-color: #5abf7b;
+}
+.league-standings-main .league-standing .league-standings-table tbody tr td.points .loss {
+  border-color: #f86364;
+}
+.league-standings-main .league-standing .gameweek-title {
+  text-align: center;
+}
+.league-standings-main .league-standing .gameweek-title .gw {
+  font-size: 17px;
+  font-weight: 700;
+  color: #3d397b;
+}
+.league-standings-main .league-standing .gameweek-title .sub-text {
+  font-size: 12px;
+  color: #3d397b;
+}
+.league-standings-main .league-standing .last-updated {
+  text-align: right;
+}
+.league-standings-main .league-standing .last-updated p {
+  font-style: italic;
+}
+.league-standings-main .league-standing .win-wrap .win {
+  font-size: 9px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #5abf7b;
+  transform: skew(-15deg);
+  text-align: center;
+  padding: 4px 5px 2px 5px;
+  margin-left: 2px;
+}
+.league-standings-main .league-standing .win-wrap .win > span {
+  display: inline-block;
+  transform: skew(15deg);
+}
+.league-standings-main .league-standing .win-wrap .win.loss {
+  background: #f86364;
+}
+.league-standings-main .league-standing .win-wrap .win.draw {
+  background: #a9c7ce;
 }
 
 /*# sourceMappingURL=app.css.map */
