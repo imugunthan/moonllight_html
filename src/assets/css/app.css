@@ -3538,6 +3538,8 @@ html {
   line-height: 10px;
 }
 
+/* img path */
+/* break points*/
 .dashboard {
   min-height: 100vh;
   display: -webkit-box;
@@ -4460,6 +4462,8 @@ html {
   background: url("/src/assets/img/league-dashboard/select-arrow.svg") right 20px center no-repeat;
 }
 
+/* img path */
+/* break points*/
 .card {
   background: #ffffff;
   box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
@@ -4496,6 +4500,8 @@ html {
   flex-wrap: wrap;
 }
 
+/* img path */
+/* break points*/
 .gameweek-popup {
   position: fixed;
   left: 0;
@@ -5046,6 +5052,8 @@ html {
   color: #56c079 !important;
 }
 
+/* img path */
+/* break points*/
 .calendar-fullview {
   position: fixed;
   top: 0;

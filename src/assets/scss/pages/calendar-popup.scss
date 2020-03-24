@@ -1,3 +1,6 @@
+@import "../helpers/mixins.scss";
+@import "../helpers/variable.scss";
+
 .calendar {
   &-fullview {
     position: fixed;
