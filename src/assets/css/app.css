@@ -4501,6 +4501,33 @@ html {
   flex-wrap: wrap;
 }
 
+table {
+  width: 100%;
+}
+table thead {
+  background: rgba(220, 222, 247, 0.5);
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+table thead th {
+  font-size: 13px;
+  font-weight: 700;
+  padding: 7px 20px;
+  text-align: left;
+}
+table tbody tr {
+  background: #f7f7fa;
+  border: 1px solid rgba(200, 200, 200, 0.24);
+  cursor: pointer;
+}
+table tbody tr:hover {
+  background: #ffffff;
+  box-shadow: 0 13px 34px 0 rgba(43, 43, 118, 0.12);
+}
+table tbody td {
+  font-size: 15px;
+  padding: 20px;
+}
+
 /* img path */
 /* break points*/
 .gameweek-popup {
@@ -5566,11 +5593,11 @@ html {
   font-style: italic;
   color: #9c9fb9;
 }
-.league-standings-main .league-standing .league-standings-table {
-  width: 100%;
-}
 .league-standings-main .league-standing .league-standings-table th:first-child {
   margin-right: -15px;
+}
+.league-standings-main .league-standing .league-standings-table tbody tr:hover td {
+  font-weight: 700;
 }
 .league-standings-main .league-standing .league-standings-table th:first-child,
 .league-standings-main .league-standing .league-standings-table td:first-child {
@@ -5616,46 +5643,9 @@ html {
   width: 6%;
   max-width: 6%;
 }
-.league-standings-main .league-standing .league-standings-table thead {
-  background: rgba(220, 222, 247, 0.5);
-  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
-}
-.league-standings-main .league-standing .league-standings-table thead th {
-  font-size: 13px;
-  font-weight: 700;
-  padding: 7px 20px;
-  text-align: left;
-}
-.league-standings-main .league-standing .league-standings-table tbody tr {
-  background: #f7f7fa;
-  border: 1px solid rgba(200, 200, 200, 0.24);
-  cursor: pointer;
-}
-.league-standings-main .league-standing .league-standings-table tbody tr:hover {
-  background: #ffffff;
-  box-shadow: 0 13px 34px 0 rgba(43, 43, 118, 0.12);
-}
-.league-standings-main .league-standing .league-standings-table tbody tr:hover td {
-  font-weight: 700;
-}
 .league-standings-main .league-standing .league-standings-table tbody tr td {
   font-size: 15px;
   padding: 20px;
-}
-.league-standings-main .league-standing .league-standings-table tbody tr td.points .win,
-.league-standings-main .league-standing .league-standings-table tbody tr td.points .draw,
-.league-standings-main .league-standing .league-standings-table tbody tr td.points .loss {
-  display: inline-block;
-  border-bottom: 2px solid;
-}
-.league-standings-main .league-standing .league-standings-table tbody tr td.points .draw {
-  border-color: #606380;
-}
-.league-standings-main .league-standing .league-standings-table tbody tr td.points .win {
-  border-color: #5abf7b;
-}
-.league-standings-main .league-standing .league-standings-table tbody tr td.points .loss {
-  border-color: #f86364;
 }
 .league-standings-main .league-standing .gameweek-title {
   text-align: center;
@@ -5694,6 +5684,153 @@ html {
 }
 .league-standings-main .league-standing .win-wrap .win.draw {
   background: #a9c7ce;
+}
+
+.league-matchup th, .league-matchup td {
+  width: 50%;
+}
+.league-matchup th:last-child, .league-matchup td:last-child {
+  text-align: right;
+}
+.league-matchup td:not(:last-child) {
+  border-right: 3px solid #EEEDF7;
+}
+.league-matchup td {
+  padding-bottom: 10px;
+}
+.league-matchup tbody tr:hover .view-button {
+  opacity: 1;
+  visibility: visible;
+}
+.league-matchup .view-container {
+  position: relative;
+}
+.league-matchup .view-container .view-button {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  right: -46px;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  color: white;
+  font-size: 11px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 46px;
+  text-transform: uppercase;
+  background: #333589;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+}
+.league-matchup .user-image {
+  width: 46px;
+  height: 46px;
+  border: 3px solid #CACACA;
+  box-shadow: 0 5px 10px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 50%;
+  background: #BDC7FF;
+  text-align: center;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.league-matchup .user-image > img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  margin-top: 5px;
+}
+.league-matchup .user-image.win {
+  border-color: #5ABF7B;
+}
+.league-matchup .user-image.loss {
+  border-color: #FA6260;
+}
+.league-matchup .team {
+  font-size: 14px;
+  font-weight: 700;
+}
+.league-matchup .name {
+  font-size: 15px;
+}
+.league-matchup .points {
+  margin: 0 20px;
+}
+.league-matchup .proj {
+  margin-right: 25px;
+  text-align: right;
+  position: relative;
+}
+.league-matchup .proj .win-batch {
+  position: absolute;
+  top: -12px;
+}
+.league-matchup .act-point {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  line-height: 30px;
+  letter-spacing: 0.36px;
+  margin-top: 10px;
+}
+.league-matchup .proj-points {
+  font-family: "BebasNeuePro-BoldItalic";
+  font-size: 16px;
+  letter-spacing: 0.19px;
+}
+.league-matchup .flex-reverse {
+  flex-direction: row-reverse;
+}
+.league-matchup .flex-reverse .proj {
+  text-align: left;
+  margin-right: 0;
+  margin-left: 25px;
+}
+.league-matchup .flex-reverse .user-image {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+table .points .win,
+table .points .draw,
+table .points .loss {
+  display: inline-block;
+  border-bottom: 2px solid;
+}
+table .points .draw {
+  border-color: #606380;
+}
+table .points .win {
+  border-color: #5abf7b;
+}
+table .points .loss {
+  border-color: #f86364;
+}
+
+.loss-clr {
+  color: #f86364 !important;
+}
+
+.win-clr {
+  color: #5abf7b !important;
+}
+
+.draw-clr {
+  color: #F4C85F !important;
+}
+
+.win-batch {
+  display: inline-block;
+  transform: skew(-15deg);
+  padding: 0 12px;
+  text-align: center;
+  background: #5abf7b;
+}
+.win-batch .win-text {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  transform: skew(15deg);
+  display: inline-block;
 }
 
 /*# sourceMappingURL=app.css.map */
