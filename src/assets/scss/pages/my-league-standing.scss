@@ -121,10 +121,10 @@
         th:first-child {
           margin-right: -15px;
         }
-        tbody{
-          tr{
-            &:hover{
-              td{
+        tbody {
+          tr {
+            &:hover {
+              td {
                 font-weight: $bold;
               }
             }
@@ -222,119 +222,139 @@
   }
 }
 
-.league-matchup{
-    th, td{
-      width: 50%;
-      &:last-child{
-        text-align: right;
-      }
+.league-matchup {
+  .last-updated {
+    text-align: right;
+    p {
+      font-style: italic;
     }
-    td:not(:last-child){
-      border-right: 3px solid #EEEDF7;
+  }
+  .gameweek-title {
+    text-align: center;
+    .gw {
+      font-size: 17px;
+      font-weight: $bold;
+      color: #3d397b;
     }
-    td{
-      padding-bottom: 10px;
+    .sub-text {
+      font-size: 12px;
+      color: #3d397b;
     }
-    tbody{
-      tr{
-        &:hover{
-          .view-button{
-            opacity: 1;
-            visibility: visible;
-          }
+  }
+  th,
+  td {
+    width: 50%;
+    &:last-child {
+      text-align: right;
+    }
+  }
+  td:not(:last-child) {
+    border-right: 3px solid #eeedf7;
+  }
+  td {
+    padding-bottom: 10px;
+  }
+  tbody {
+    tr {
+      &:hover {
+        .view-button {
+          opacity: 1;
+          visibility: visible;
         }
       }
     }
-    .view-container{
-  position: relative;
-  .view-button{
-    opacity: 0;
-    visibility: hidden;
-    // transition: all 0.3s ease;
-    position: absolute;
-    right: -46px;
-    width: 46px;
-    height: 46px;
-    border-radius: 50%;
-    color: white;
-    font-size: 11px;
-    font-weight: $bold;
-    text-align: center;
-    line-height: 46px;
-    text-transform: uppercase;
-    background: #333589;
-    box-shadow: 0 7px 15px -4px rgba(0,0,0,0.30), 0 12px 20px -16px rgba(158,117,255,0.15);
   }
-}
-    .user-image{
+  .view-container {
+    position: relative;
+    .view-button {
+      opacity: 0;
+      visibility: hidden;
+      // transition: all 0.3s ease;
+      position: absolute;
+      right: -46px;
       width: 46px;
       height: 46px;
-      border: 3px solid #CACACA;
-      box-shadow: 0 5px 10px -4px rgba(82,92,215,0.30);
       border-radius: 50%;
-      background: #BDC7FF;
-      text-align: center;
-      overflow: hidden;
-      margin-right: 20px;
-      >img{
-        max-width: 100%;
-        max-height: 100%;
-        object-fit: cover;
-        margin-top: 5px;
-      }
-      &.win{
-        border-color: #5ABF7B;
-      }
-      &.loss{
-        border-color:#FA6260;
-      }
-    }
-    .team{
-      font-size: 14px;
+      color: white;
+      font-size: 11px;
       font-weight: $bold;
+      text-align: center;
+      line-height: 46px;
+      text-transform: uppercase;
+      background: #333589;
+      box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+        0 12px 20px -16px rgba(158, 117, 255, 0.15);
     }
-    .name{
-      font-size: 15px;
+  }
+  .user-image {
+    width: 46px;
+    height: 46px;
+    border: 3px solid #cacaca;
+    box-shadow: 0 5px 10px -4px rgba(82, 92, 215, 0.3);
+    border-radius: 50%;
+    background: #bdc7ff;
+    text-align: center;
+    overflow: hidden;
+    margin-right: 20px;
+    > img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+      margin-top: 5px;
     }
-    .points{
-      margin: 0 20px;
+    &.win {
+      border-color: #5abf7b;
     }
-    .proj{
-      margin-right: 25px;
-      text-align: right;
-      position: relative;
-      .win-batch{
-        position: absolute;
-        top: -12px;
-      }
+    &.loss {
+      border-color: #fa6260;
     }
-    .act-point{
-      font-family: "Bebas Neue";
-      font-size: 30px;
-      line-height: 30px;
-      letter-spacing: 0.36px;
-      margin-top: 10px;
+  }
+  .team {
+    font-size: 14px;
+    font-weight: $bold;
+  }
+  .name {
+    font-size: 15px;
+  }
+  .points {
+    margin: 0 20px;
+  }
+  .proj {
+    margin-right: 25px;
+    text-align: right;
+    position: relative;
+    .win-batch {
+      position: absolute;
+      top: -12px;
     }
-    .proj-points{
-      font-family: "BebasNeuePro-BoldItalic";
-      font-size: 16px;
-      letter-spacing: 0.19px;
+  }
+  .act-point {
+    font-family: "Bebas Neue";
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 0.36px;
+    margin-top: 10px;
+  }
+  .proj-points {
+    font-family: "BebasNeuePro-BoldItalic";
+    font-size: 16px;
+    letter-spacing: 0.19px;
+  }
+  .flex-reverse {
+    flex-direction: row-reverse;
+    .proj {
+      text-align: left;
+      margin-right: 0;
+      margin-left: 25px;
     }
-    .flex-reverse{
-      flex-direction: row-reverse;
-      .proj{
-        text-align: left;
-        margin-right: 0;
-        margin-left: 25px;
-      }
-      .user-image{
-        margin-left: 20px;
-        margin-right: 0;
-      }
+    .user-image {
+      margin-left: 20px;
+      margin-right: 0;
     }
+  }
 }
 
-table{
+table {
   .points {
     .win,
     .draw,
@@ -354,28 +374,51 @@ table{
   }
 }
 
-.loss-clr{
+.loss-clr {
   color: #f86364 !important;
 }
-.win-clr{
+.win-clr {
   color: #5abf7b !important;
 }
-.draw-clr{
-  color: #F4C85F !important
+.draw-clr {
+  color: #f4c85f !important;
 }
 
-.win-batch{
+.win-batch {
   display: inline-block;
   transform: skew(-15deg);
   padding: 0 12px;
   text-align: center;
   background: #5abf7b;
-  .win-text{
+  .win-text {
     font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.8);
     transform: skew(15deg);
     display: inline-block;
+  }
+}
+.small {
+  font-weight: normal;
+}
+
+.league-matchup-table--type2 {
+  td {
+    padding: 20px 10px;
+    &:nth-child(2) {
+      width: 40px;
+      min-width: 40px;
+      max-width: 40px;
+      padding: 20px 0;
+      text-align: center;
+      font-size: 12px;
+      font-weight: $bold;
+    }
+  }
+  tr:hover {
+    .view-button {
+      right: -55px;
+    }
   }
 }
