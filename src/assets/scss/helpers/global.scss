@@ -91,6 +91,7 @@
   position: relative;
   width: calc(100vw - 100px);
   margin-left: 100px;
+  min-height: 100vh;
   // overflow: hidden;
 }
 
@@ -137,7 +138,7 @@
 }
 
 .showing-text {
-  color: #172c4e;
+  color: #5f6c83;
   font-size: 13px;
   line-height: 24px;
   .start,

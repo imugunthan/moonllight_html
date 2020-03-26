@@ -1,0 +1,213 @@
+.draftroom {
+  &-header {
+    position: relative;
+    padding: 12px 15px;
+    background: #ffffff;
+    box-shadow: 0 4px 14px 0 rgba(82, 92, 215, 0.23);
+    .draftroom-title {
+      font-size: 17px;
+      color: #3d397b;
+      font-weight: $bold;
+      text-transform: uppercase;
+    }
+    .nav {
+      &-link {
+        position: absolute;
+        left: 15px;
+        cursor: pointer;
+      }
+      &-arrow {
+        @include avatar(24px, 24px, #333589, 50%);
+        box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+          0 12px 20px -16px rgba(158, 117, 255, 0.15);
+        > .material-icons {
+          color: $white;
+          line-height: 24px;
+        }
+      }
+      &-link-text {
+        font-size: 11px;
+        color: #525cd7;
+        font-weight: $bold;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.picker-queue {
+  background: #ffffff;
+  box-shadow: 0 2px 10px 0 rgba(82, 92, 215, 0.15);
+  .timer {
+    width: 84px;
+    text-align: center;
+    &-image {
+      padding: 5px 15px;
+      background: #55c97b;
+    }
+    &-counter {
+      padding: 5px 15px;
+      background: $white;
+      position: relative;
+    }
+    &-progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      background: #ddf4e4;
+    }
+    &-clock {
+      font-size: 14px;
+      font-weight: $bold;
+      color: #55c97b;
+    }
+  }
+  .round {
+    &-no {
+      width: 26px;
+      background: #2a276f;
+    }
+    &-text {
+      font-size: 10px;
+      color: #ffffff;
+      font-weight: $bold;
+      white-space: nowrap;
+      transform: rotate(270deg);
+    }
+    &-wrap {
+      width: calc(100% - 84px);
+      overflow-x: auto;
+    }
+  }
+  .round-card {
+    min-width: 100px;
+    border-right: 1px solid #dfdfe5;
+    text-align: center;
+    padding: 8px;
+    .player-image {
+      width: 35px;
+      height: 35px;
+      margin: 0 auto;
+      border: 2px solid #3b3e91;
+      border-radius: 50%;
+      background: #bdc7ff;
+      box-shadow: 0 5px 10px -4px rgba(82, 92, 215, 0.3);
+      overflow: hidden;
+      text-align: center;
+      > img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        margin-top: 2px;
+      }
+    }
+    .card-no {
+      font-size: 12px;
+      line-height: 10px;
+      text-align: right;
+    }
+    .player-name {
+      font-size: 12px;
+      font-weight: $bold;
+      color: #202456;
+    }
+    &.active {
+      color: $white;
+      background: #4c53c0;
+      .player-name {
+        color: $white;
+      }
+    }
+    .my-player {
+      position: absolute;
+      left: 8px;
+      width: 20px;
+      display: none;
+    }
+    &.my-player {
+      position: relative;
+      .my-player {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.budget-wrap {
+  padding: 20px 10px;
+  .budget-card {
+    width: 50%;
+    margin: 0px 10px;
+    padding: 15px 30px;
+    background: #5abf7b;
+    box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+    border-radius: 10px;
+    &--blue {
+      background: #2b2b75 url("/src/assets/img/draft-room/budget-bg.svg") left
+        no-repeat;
+    }
+    &--green {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 86%;
+        height: 100%;
+        display: inline-block;
+        border-radius: 10px;
+        background: #4fa56b;
+      }
+    }
+    .bud {
+      position: relative;
+      z-index: 1;
+    }
+    .budget {
+      font-family: "Bebas Neue";
+      font-size: 32px;
+      line-height: 34px;
+      color: #fbfbfb;
+      letter-spacing: 0.8px;
+      > span {
+        font-family: "Bebas Neue";
+        font-size: 20px;
+        letter-spacing: 0.5px;
+      }
+    }
+    .sub-text {
+      font-size: 12px;
+      font-weight: $bold;
+      color: #ffffff;
+    }
+    .btn--primary {
+      font-size: 13px;
+      color: #b2e7f4;
+      font-weight: $bold;
+      text-align: center;
+      padding: 8px 17px;
+      background: #333589 url("/src/assets/img/draft-room/btn-shape.svg") right
+        bottom no-repeat;
+      box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+        0 12px 20px -16px rgba(158, 117, 255, 0.15);
+      border-radius: 3px;
+    }
+  }
+}
+.actions-wrap {
+  padding: 0 20px;
+  .btn--filter {
+    font-size: 13px;
+    color: #5159b6;
+    margin-left: 15px;
+    background: #f8fafd;
+    border: 1px solid #dfdfe5;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    .ml-30 {
+      margin-left: 30px;
+    }
+  }
+}

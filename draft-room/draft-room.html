@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draft Room</title>
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <aside class="side-nav d-flex">
+            <div class="user-info">
+                <figure class="user-avatar m-auto mb-20">
+                    <img src="/src/assets/img/profile-image.svg" alt="User Image" class="user-image">
+                    <!-- <img src="https://images.vexels.com/media/users/3/140748/isolated/preview/5b078a59390bb4666df98b49f1cdedd0-male-profile-avatar-by-vexels.png"
+                        alt="User Image" class="user-image"> -->
+                </figure>
+                <p class="user-name">L. Vaz</p>
+            </div>
+            <nav class="navmenu">
+                <ul class="navmenu__list">
+                    <li class="navmenu__item mb-30">
+                        <i class="material-icons">home</i>
+                    </li>
+                    <li class="navmenu__item mb-30">
+                        <img src="/src/assets/img/trophy-filed.svg" alt="" class="filled">
+                        <img src="/src/assets/img/trophy.svg" alt="" class="normal">
+                    </li>
+                    <li class="navmenu__item mb-30 active">
+                        <img src="/src/assets/img/chart-filed.svg" class="filled" alt="">
+                        <img src="/src/assets/img/chart.svg" alt="" class="normal">
+                    </li>
+                </ul>
+            </nav>
+            <div class="side-nav__footer">
+                <ul class="">
+                    <li class="text-center help">
+                        <i class="material-icons">help</i>
+                    </li>
+                    <li class="text-center logo">
+                        <img src="/src//assets/img/moonlight-logo.svg" alt="Moonlight Logo">
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="right-section draftroom">
+            <div class="draftroom-header text-center">
+                <div class="nav-link d-flex-v-center">
+                    <div class="nav-arrow">
+                        <i class="material-icons">keyboard_arrow_left</i>
+                    </div>
+                    <p class="nav-link-text ml-10">League Dashboard</p>
+                </div>
+                <h1 class="draftroom-title">Draftroom</h1>
+            </div>
+            <div class="picker-queue d-flex">
+                <div class="timer">
+                    <div class="timer-image">
+                        <img src="/src/assets/img/draft-room/timer.svg" alt="">
+                    </div>
+                    <div class="timer-counter">
+                        <div class="timer-progress" style="width: 25%;"></div>
+                        <p class="timer-clock">01:59</p>
+                    </div>
+                </div>
+                <div class="round-wrap d-flex">
+                    <div class="round-no d-flex-center">
+                        <p class="round-text">Round 1</p>
+                    </div>
+                    <div class="round-card active">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card my-player">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">You</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-no d-flex-center">
+                        <p class="round-text">Round 2</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                    <div class="round-card">
+                        <img src="/src/assets/img/player-popout/player-status.svg" alt="" class="my-player">
+                        <div class="card-no">#1</div>
+                        <div class="player-image">
+                            <img src="/src/assets/img/profile-image.svg" alt="">
+                        </div>
+                        <p class="player-name">A. Smith</p>
+                    </div>
+                </div>
+            </div>
+            <div class="budget-wrap d-flex">
+                <div class="budget-card budget-card--green d-flex-space-center">
+                    <div class="bud">
+                        <p class="budget">$125.0M</p>
+                        <p class="sub-text">Total budget</p>
+                    </div>
+                    <div class="bud">
+                        <p class="budget">$125.0M</p>
+                        <p class="sub-text">Remaining budget</p>
+                    </div>
+                </div>
+                <div class="budget-card budget-card--blue d-flex-space-center">
+                    <div class="bud">
+                        <p class="budget">$6.0M</p>
+                        <p class="sub-text">Budget per player</p>
+                    </div>
+                    <div class="bud">
+                        <p class="budget">2<span>/16</span></p>
+                        <p class="sub-text">Players picked</p>
+                    </div>
+                    <button class="btn btn--primary">View Drafted Teams</button>
+                </div>
+            </div>
+            <div class="actions-wrap d-flex-space-center">
+                <div class="d-flex-v-center">
+                    <div class="match-selection d-flex-v-center">
+                        <label for="match1" class="check-button">
+                            <input type="radio" id="match1" class="radio-button" name="match" checked="">
+                            <span class="check-button-text">All Players</span>
+                        </label>
+                        <label for="match2" class="check-button">
+                            <input type="radio" id="match2" class="radio-button" name="match">
+                            <span class="check-button-text">My Watchlist</span>
+                        </label>
+                    </div>
+                    <span class="showing-text ml-10">
+                        <span class="start">1-50 </span>
+                        of
+                        <span class="end">&nbsp;3,941</span>
+                    </span>
+                </div>
+                <div class="search-wrap d-flex-v-center">
+                    <input type="text" class="custom-search" placeholder="Search Player...">
+                    <button class="btn ml-5">Search</button>
+                </div>
+                <div class="filters-wrap d-flex-v-center">
+                    <div class="custom-checkbox d-flex-v-center">
+                        <input type="checkbox" id="is_current{{i}}" formControlName="is_current">
+                        <label for="is_current{{i}}" class="checkbox-label d-flex-v-center">
+                            <code class="checkbox-icon-wrap"></code>
+                            <span class="checkbox-txt">Player Speciality</span>
+                        </label>
+                    </div>
+                    <button class="btn btn--filter d-flex-v-center">
+                        Filter Players
+                        <img src="/src/assets/img/draft-room/filter.svg" alt="" class="ml-30">
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
