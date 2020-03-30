@@ -359,6 +359,97 @@
             </div>
             <div class="draftroom-body">
                 <img src="/src/assets/img/draft-room/draftroom-empty.svg" alt="" class="draftroom-empty">
+                <div class="table-buttons">
+                    <button class="btn btn--watch">Watch</button>
+                    <button class="btn btn--draft">Draft</button>
+                    <button class="btn btn--watch btn--acted">Watch</button>
+                    <button class="btn btn--draft btn--acted">Draft</button>
+                    <div class="column-filters add-column">
+                        <button class="btn btn--filters d-flex-v-center">
+                            <span>Add Columns</span>
+                            <img src="/src/assets/img/draft-room/column-filter.svg" alt="">
+                        </button>
+                        <div class="more-dropdown open">
+                            <div class="title">Columns</div>
+
+                            <ul class="search-tab d-flex-v-center">
+                                <div class="match-selection d-flex-v-center">
+                                    <label for="match5" class="check-button">
+                                        <input type="radio" id="match5" class="radio-button" name="match" checked="">
+                                        <span class="check-button-text">General</span>
+                                    </label>
+                                    <label for="match6" class="check-button">
+                                        <input type="radio" id="match6" class="radio-button" name="match">
+                                        <span class="check-button-text">Match Stats</span>
+                                    </label>
+                                </div>
+                                <!-- <li class="search-list active">General</li>
+                                <li class="search-list">Match Stats</li> -->
+                            </ul>
+                            <div class="search-wrap">
+                                <input type="text" class="custom-search" placeholder="Search">
+                            </div>
+                            <div class="additional-filters-wrap">
+                                <span class="clear-filters mb-5 ml-10">Restore defaults</span>
+                                <div class="additional-filters">
+                                    <div class="custom-checkbox mt-15 d-flex-v-center mb-10">
+                                        <input type="checkbox" id="is_current{{i}}" formcontrolname="is_current">
+                                        <label for="is_current{{i}}" class="checkbox-label d-flex-v-center">
+                                            <code class="checkbox-icon-wrap"></code>
+                                            <span class="checkbox-txt">Player Speciality</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-checkbox mt-15 d-flex-v-center mb-10">
+                                        <input type="checkbox" id="is_current{{i}}" formcontrolname="is_current">
+                                        <label for="is_current{{i}}" class="checkbox-label d-flex-v-center">
+                                            <code class="checkbox-icon-wrap"></code>
+                                            <span class="checkbox-txt">Club</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-checkbox mt-15 d-flex-v-center mb-10">
+                                        <input type="checkbox" id="is_current{{i}}" formcontrolname="is_current">
+                                        <label for="is_current{{i}}" class="checkbox-label d-flex-v-center">
+                                            <code class="checkbox-icon-wrap"></code>
+                                            <span class="checkbox-txt">Season</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-checkbox mt-15 d-flex-v-center mb-10">
+                                        <input type="checkbox" id="is_current{{i}}" formcontrolname="is_current">
+                                        <label for="is_current{{i}}" class="checkbox-label d-flex-v-center">
+                                            <code class="checkbox-icon-wrap"></code>
+                                            <span class="checkbox-txt">Home/Away</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-checkbox mt-15 d-flex-v-center mb-10">
+                                        <input type="checkbox" id="is_current{{i}}" formcontrolname="is_current">
+                                        <label for="is_current{{i}}" class="checkbox-label d-flex-v-center">
+                                            <code class="checkbox-icon-wrap"></code>
+                                            <span class="checkbox-txt">Player Speciality</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-checkbox mt-15 d-flex-v-center mb-10">
+                                        <input type="checkbox" id="is_current{{i}}" formcontrolname="is_current">
+                                        <label for="is_current{{i}}" class="checkbox-label d-flex-v-center">
+                                            <code class="checkbox-icon-wrap"></code>
+                                            <span class="checkbox-txt">Status</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-checkbox mt-15 d-flex-v-center mb-10">
+                                        <input type="checkbox" id="is_current{{i}}" formcontrolname="is_current">
+                                        <label for="is_current{{i}}" class="checkbox-label d-flex-v-center">
+                                            <code class="checkbox-icon-wrap"></code>
+                                            <span class="checkbox-txt">Min. Matches Played</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap d-flex-v-center">
+                                    <button class="btn btn-done ml-auto mr-10">Done</button>
+                                    <button class="btn btn-cancel">Cancel</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <aside class="modal-aside modal-aside--right player-picker hide">
                 <div class="player-picker__header">
