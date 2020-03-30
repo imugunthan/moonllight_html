@@ -358,20 +358,23 @@
                 </div>
             </div>
             <div class="draftroom-body">
-                <img src="/src/assets/img/draft-room/draftroom-empty.svg" alt="" class="draftroom-empty">
                 <div class="table-buttons">
                     <button class="btn btn--watch">Watch</button>
                     <button class="btn btn--draft">Draft</button>
                     <button class="btn btn--watch btn--acted">Watch</button>
                     <button class="btn btn--draft btn--acted">Draft</button>
                     <div class="column-filters add-column">
-                        <button class="btn btn--filters d-flex-v-center">
+                        <button class="btn btn--filters d-flex-v-center ml-auto">
                             <span>Add Columns</span>
                             <img src="/src/assets/img/draft-room/column-filter.svg" alt="">
                         </button>
                         <div class="more-dropdown open">
-                            <div class="title">Columns</div>
-
+                            <div class="title d-flex-space-center">
+                                Columns
+                                <div class="clear-filters">Restore defaults
+                                    <i class="material-icons">autorenew</i>
+                                </div>
+                            </div>
                             <ul class="search-tab d-flex-v-center">
                                 <div class="match-selection d-flex-v-center">
                                     <label for="match5" class="check-button">
@@ -390,7 +393,6 @@
                                 <input type="text" class="custom-search" placeholder="Search">
                             </div>
                             <div class="additional-filters-wrap">
-                                <span class="clear-filters mb-5 ml-10">Restore defaults</span>
                                 <div class="additional-filters">
                                     <div class="custom-checkbox mt-15 d-flex-v-center mb-10">
                                         <input type="checkbox" id="is_current{{i}}" formcontrolname="is_current">
@@ -443,13 +445,14 @@
                                     </div>
                                 </div>
                                 <div class="btn-wrap d-flex-v-center">
-                                    <button class="btn btn-done ml-auto mr-10">Done</button>
-                                    <button class="btn btn-cancel">Cancel</button>
+                                    <button class="btn btn-cancel mr-10">Cancel</button>
+                                    <button class="btn btn-done">Done</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <img src="/src/assets/img/draft-room/draftroom-empty.svg" alt="" class="draftroom-empty">
             </div>
             <aside class="modal-aside modal-aside--right player-picker hide">
                 <div class="player-picker__header">
