@@ -1,3 +1,15 @@
+.dashboard-main {
+  @include respond-to(1250px) {
+    padding: 20px;
+  }
+}
+.nav-bar {
+  .nav-items {
+    @include respond-to(1250px) {
+      padding: 8px 10px;
+    }
+  }
+}
 .matchup-standings {
   .check-button-text {
     min-width: 150px;
@@ -5,6 +17,7 @@
 }
 .league-standings-main {
   .graph-card {
+    padding: 20px 0 !important;
     &.card {
       position: relative;
       padding: 20px 30px;
@@ -30,6 +43,25 @@
         padding: 10px 20px;
         &:not(:last-child) {
           border-bottom: 1px solid #e7e7ef;
+          @include respond-to(1250px) {
+            border-bottom: none !important;
+            border-right: 1px solid #e7e7ef;
+          }
+        }
+        @include respond-to(1250px) {
+          padding: 10px;
+          width: calc(100% / 3);
+          div {
+            &:first-child {
+              order: 2;
+            }
+            &:nth-child(2) {
+              order: 1;
+            }
+            &:last-child {
+              order: 3;
+            }
+          }
         }
         .gameweek {
           font-size: 12px;
@@ -69,6 +101,10 @@
       .card {
         &-left {
           width: 57%;
+          @include respond-to(1250px) {
+            width: 100%;
+            padding: 20px;
+          }
           > img {
             width: 100%;
           }
@@ -77,32 +113,54 @@
           padding: 0 20px;
           width: 43%;
           margin-left: 30px;
+          @include respond-to(1250px) {
+            width: 100%;
+            padding: 20px;
+            margin: 0;
+            @include flexbox();
+          }
+        }
+        &-holder {
+          @include respond-to(1250px) {
+            @include flex-wrap(wrap);
+          }
         }
       }
     }
   }
   .league-standing {
+    @include respond-to(1250px) {
+      .card-body {
+        position: relative;
+        min-width: 960px;
+        &-wrap {
+          overflow: auto;
+        }
+      }
+    }
     .card-body {
-      position: relative;
-      .progress {
-        position: absolute;
-        display: inline-block;
-        width: 50%;
-        height: 1px;
-        top: 0;
-        left: 0;
-        background: #5ec37f;
-        z-index: 1;
-        &::after {
-          content: "";
+      &-wrap-main {
+        position: relative;
+        .progress {
           position: absolute;
-          right: 0;
-          top: -4px;
           display: inline-block;
-          width: 8px;
-          height: 8px;
-          border-radius: 50%;
-          background: #5ac47d;
+          width: 50%;
+          height: 1px;
+          top: 0;
+          left: 0;
+          background: #5ec37f;
+          z-index: 1;
+          &::after {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: -4px;
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #5ac47d;
+          }
         }
       }
     }
@@ -295,12 +353,15 @@
     background: #bdc7ff;
     text-align: center;
     overflow: hidden;
-    margin-right: 20px;
+    margin-right: 10px;
     > img {
       max-width: 100%;
       max-height: 100%;
       object-fit: cover;
       margin-top: 5px;
+    }
+    @include respond-to(1250px) {
+      display: none;
     }
     &.win {
       border-color: #5abf7b;
@@ -318,9 +379,13 @@
   }
   .points {
     margin: 0 20px;
+    white-space: nowrap;
+    @include respond-to(1250px) {
+      margin: 0 10px;
+    }
   }
   .proj {
-    margin-right: 25px;
+    margin-right: 5px;
     text-align: right;
     position: relative;
     .win-batch {
@@ -345,10 +410,10 @@
     .proj {
       text-align: left;
       margin-right: 0;
-      margin-left: 25px;
+      margin-left: 5px;
     }
     .user-image {
-      margin-left: 20px;
+      margin-left: 10px;
       margin-right: 0;
     }
   }
@@ -356,6 +421,7 @@
 
 table {
   .points {
+    white-space: nowrap;
     .win,
     .draw,
     .loss {
