@@ -587,3 +587,69 @@
     }
   }
 }
+
+.popup-calendar {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(#0e1025, 0.5);
+  display: inline-block;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  .calendar-body {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 540px;
+    height: 320px;
+    background: #3e3583;
+    box-shadow: 0 24px 35px 0 rgba(0, 0, 0, 0.13);
+    border-radius: 3px;
+  }
+  .calendar-section {
+    height: calc(100% - 52px);
+    padding: 30px 0;
+    .sections {
+      width: 50%;
+      padding: 0 30px;
+      &:first-child {
+        border-right: 1px solid white;
+      }
+    }
+    .est-time {
+      font-size: 13px;
+      font-weight: $bold;
+      color: rgba(#ffffff, 0.4);
+    }
+    .time {
+      .material-icons {
+        color: #b2e7f4;
+      }
+      .number {
+        font-family: "Bebas Neue";
+        font-size: 43px;
+        color: #ffffff;
+      }
+      &.colon {
+        margin: 0 15px;
+      }
+    }
+  }
+  .header {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 3px;
+    padding: 7px 15px;
+    .title {
+      font-size: 13px;
+      font-weight: $bold;
+      color: #ffffff;
+      line-height: 24px;
+    }
+  }
+}
+
+.p-0 {
+  padding: 0 !important;
+}
