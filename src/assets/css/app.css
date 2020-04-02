@@ -6156,12 +6156,12 @@ table .points .loss {
   width: 50%;
   margin: 0px 10px;
   padding: 15px 30px;
-  background: #5abf7b;
+  background: #4e5fc9;
   box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
   border-radius: 10px;
 }
 .budget-wrap .budget-card--blue {
-  background: #2b2b75 url("/src/assets/img/draft-room/budget-bg.svg") left no-repeat;
+  background: rgba(57, 57, 156, 0.93) url("/src/assets/img/draft-room/budget-bg.svg") left no-repeat;
 }
 .budget-wrap .budget-card--green {
   position: relative;
@@ -6175,7 +6175,7 @@ table .points .loss {
   height: 100%;
   display: inline-block;
   border-radius: 10px;
-  background: #4fa56b;
+  background: url("/src/assets/img/draft-room/budget-bg-green.svg") right no-repeat, linear-gradient(90deg, #529ec9 0%, #53d2bd 100%);
 }
 .budget-wrap .budget-card .bud {
   position: relative;
@@ -6382,7 +6382,7 @@ table .points .loss {
 }
 .draftroom-complete-popup .draft-message-container {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 515px;
@@ -6406,7 +6406,7 @@ table .points .loss {
 }
 .draftroom-complete-popup .image {
   position: relative;
-  top: -20px;
+  top: -60px;
   left: 45px;
 }
 
