@@ -132,12 +132,12 @@
                                         </div>
                                     </div>
                                     <img src="/src/assets/img/create-league/classic-league.svg" alt="">
-                                    <div class="league-card-league">Draft League</div>
+                                    <div class="league-card-league">Classic League</div>
                                 </label>
                             </div>
                         </div>
                     </div>
-                    <div class="select-pro-league mt-60">
+                    <div class="select-pro-league mt-60 hide">
                         <p class="league-form-title">SELECT A Pro LEAGUE</p>
                         <div class="pro-leagues-wrap mt-30">
                             <div class="league-list">
@@ -182,10 +182,160 @@
                             </div>
                         </div>
                     </div>
-                    <div class="button-wrap">
-                        <button class="next-button d-flex-center">
-                            <span class="btn-text">Next</span>
+                    <div class="league-settings mt-60">
+                        <div class="league-form-title mt-30 d-flex-center">Select Budget
+                            <div class="info-wrap">
+                                <img src="/src/assets/img/create-league/info-icon.svg" alt="" class="info-icon ml-10">
+                                <div class="info-tooltip">
+                                    Classic leagues are not
+                                    yet avaiable. They will be introduced next season…
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-checkbox d-flex-center mt-20">
+                            <div class="options mr-10">
+                                <input type="radio" id="budget" name="budget">
+                                <label for="budget" class="options-wrap">
+                                    Budget
+                                </label>
+                            </div>
+                            <div class="options">
+                                <input type="radio" id="budget1" name="budget">
+                                <label for="budget1" class="options-wrap">
+                                    No budget
+                                </label>
+                            </div>
+                        </div>
+                        <div class="league-form-title mt-30 d-flex-center">Draft Settings
+                            <div class="info-wrap">
+                                <img src="/src/assets/img/create-league/info-icon.svg" alt="" class="info-icon ml-10">
+                                <div class="info-tooltip">
+                                    Classic leagues are not
+                                    yet avaiable. They will be introduced next season…
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-checkbox d-flex-center mt-20 mb-20">
+                            <div class="options mr-10">
+                                <input type="radio" id="budget2" name="online">
+                                <label for="budget2" class="options-wrap">
+                                    Online
+                                </label>
+                            </div>
+                            <div class="options">
+                                <input type="radio" id="budget3" name="online">
+                                <label for="budget3" class="options-wrap">
+                                    Offline
+                                </label>
+                            </div>
+                        </div>
+                        <p class="label">When?</p>
+                        <div class="d-flex-v-center mt-10 mb-20">
+                            <p class="date-selected">September 19th 2020, 12.45pm</p>
+                            <button class="date-picker">
+                                <img src="/src/assets/img/create-league/date-picker-icon.svg" alt="">
+                            </button>
+                        </div>
+                        <p class="label">When?</p>
+                        <div class="button-checkbox d-flex-center mt-10">
+                            <div class="options mr-10">
+                                <input type="radio" id="budget4" name="draftLimit">
+                                <label for="budget4" class="options-wrap">
+                                    30 seconds
+                                </label>
+                            </div>
+                            <div class="options">
+                                <input type="radio" id="budget5" name="draftLimit">
+                                <label for="budget5" class="options-wrap">
+                                    60 seconds
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="league-details mt-60 hide">
+                        <div class="input-wrap">
+                            <label for="" class="input-label">League Name</label>
+                            <input type="text" class="custom-input">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="" class="input-label">Your team Name</label>
+                            <input type="text" class="custom-input">
+                        </div>
+                        <div class="input-wrap">
+                            <label for="" class="input-label d-flex-v-center">Invite Members
+                                <div class="info-wrap">
+                                    <img src="/src/assets/img/create-league/info-icon.svg" alt=""
+                                        class="info-icon ml-10">
+                                    <div class="info-tooltip">
+                                        Classic leagues are not
+                                        yet avaiable. They will be introduced next season…
+                                    </div>
+                                </div>
+                            </label>
+                            <textarea name="" id="" cols="30" rows="7" class="custom-textarea"
+                                placeholder="Enter an email address"></textarea>
+                            <p class="note-text">By clicking next you will be inviting the above members</p>
+                        </div>
+                        <div class="input-wrap mb-0">
+                            <input type="checkbox" name="" id="allowAll">
+                            <label for="allowAll" class="allow-all d-flex-space-center">
+                                <p class="input-label mb-0">Allow anyone to invite new managers?</p>
+                                <code class="allow-checkbox">
+                                    <i class="material-icons">done</i>
+                                </code>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="confirm-details mt-60 hide">
+                        <p class="league-form-title">Fantasy LEAGUE SUMMARY</p>
+                        <div class="confirmation-details">
+                            <p class="info">
+                                <span class="label">League type:&nbsp;</span>
+                                <span class="value">Draft</span>
+                            </p>
+                            <p class="info">
+                                <span class="label">Leagues:&nbsp;</span>
+                                <span class="value">Premier League, Serie A, La Liga</span>
+                            </p>
+                            <p class="info">
+                                <span class="label">Budget:&nbsp;</span>
+                                <span class="value">No Budget</span>
+                            </p>
+                            <p class="info">
+                                <span class="label">Draft Settings:&nbsp;</span>
+                                <span class="value">Online</span>
+                            </p>
+                            <p class="info">
+                                <span class="label">Draft date:&nbsp;</span>
+                                <span class="value">13th September</span>
+                            </p>
+                            <p class="info">
+                                <span class="label">Draft time:&nbsp;</span>
+                                <span class="value">2:00PM</span>
+                            </p>
+                            <p class="info">
+                                <span class="label">League name:&nbsp;</span>
+                                <span class="value">Barmey Army</span>
+                            </p>
+                            <p class="info">
+                                <span class="label">Your team name:&nbsp;</span>
+                                <span class="value">Wengers Wonder Kids</span>
+                            </p>
+                            <p class="info">
+                                <span class="label">League members:&nbsp;</span>
+                                <span class="value">6</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="button-wrap d-flex-space-center button-wrap--type2">
+                        <!-- <button class="next-button d-flex-center back-button">
+                            <span class="btn-text">Back</span>
                             <img src="/src/assets/img/create-league/arrow-right.svg" alt="" class="btn-arrow">
+                        </button> -->
+                        <button class="next-button d-flex-center">
+                            <!-- <span class="btn-text">Create League</span> -->
+                            <span class="btn-text">Next</span>
+                            <!-- <img src="/src/assets/img/create-league/arrow-right.svg" alt="" class="btn-arrow"> -->
                         </button>
                     </div>
                 </div>
