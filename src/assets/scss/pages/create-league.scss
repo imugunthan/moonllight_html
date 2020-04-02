@@ -47,24 +47,73 @@
     top: calc(47% + 46px);
     left: 50%;
     transform: translate(-50%, -50%);
+    @include respond-to(1250px) {
+      max-width: 600px;
+      height: calc(100vh - 110px);
+      .league-form {
+        padding: 30px;
+        // overflow: auto;
+        height: 100%;
+      }
+    }
+    // &__left {
+    //   position: absolute;
+    //   left: -150px;
+    //   bottom: 10%;
+    //   img:nth-child(2) {
+    //     margin-left: -67px;
+    //     position: relative;
+    //     top: 30px;
+    //   }
+    // }
+    // &__right {
+    //   position: absolute;
+    //   right: -150px;
+    //   bottom: 10%;
+    //   img:first-child {
+    //     margin-right: -49px;
+    //     position: relative;
+    //     top: 13px;
+    //   }
+    // }
     &__left {
       position: absolute;
-      left: -150px;
+      left: -20%;
       bottom: 10%;
-      img:nth-child(2) {
-        margin-left: -67px;
-        position: relative;
-        top: 30px;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      img {
+        // height: 75%;
+        height: 480px;
+        &:nth-child(2) {
+          margin-left: -67px;
+          position: relative;
+          top: 30px;
+        }
+        @include respond-to(1250px) {
+          height: 380px;
+        }
       }
     }
     &__right {
       position: absolute;
-      right: -150px;
+      right: -15%;
       bottom: 10%;
-      img:first-child {
-        margin-right: -49px;
-        position: relative;
-        top: 13px;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+      img {
+        // height: 75%;
+        height: 480px;
+        &:first-child {
+          margin-right: -49px;
+          position: relative;
+          top: 30px;
+        }
+        @include respond-to(1250px) {
+          height: 380px;
+        }
       }
     }
   }
@@ -178,7 +227,7 @@
 .league-form {
   padding: 60px 0;
   .mt-60 {
-    margin-top: 30px;
+    margin-top: 20px;
   }
   &-title {
     font-family: "Bebas Neue";
@@ -188,7 +237,7 @@
   .button-wrap {
     display: inline-block;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 40px;
     &-top {
       margin-top: 30px;
     }
@@ -431,6 +480,9 @@
   }
   .input-wrap {
     margin-bottom: 30px;
+    @include respond-to(1250px) {
+      margin-bottom: 20px;
+    }
     .input-label {
       font-size: 14px;
       font-weight: $bold;

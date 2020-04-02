@@ -6578,25 +6578,57 @@ table .points .loss {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@media only screen and (max-width: 1250px) {
+  .create-league-body {
+    max-width: 600px;
+    height: calc(100vh - 110px);
+  }
+  .create-league-body .league-form {
+    padding: 30px;
+    height: 100%;
+  }
+}
 .create-league-body__left {
   position: absolute;
-  left: -150px;
+  left: -20%;
   bottom: 10%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.create-league-body__left img {
+  height: 480px;
 }
 .create-league-body__left img:nth-child(2) {
   margin-left: -67px;
   position: relative;
   top: 30px;
 }
+@media only screen and (max-width: 1250px) {
+  .create-league-body__left img {
+    height: 380px;
+  }
+}
 .create-league-body__right {
   position: absolute;
-  right: -150px;
+  right: -15%;
   bottom: 10%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+.create-league-body__right img {
+  height: 480px;
 }
 .create-league-body__right img:first-child {
   margin-right: -49px;
   position: relative;
-  top: 13px;
+  top: 30px;
+}
+@media only screen and (max-width: 1250px) {
+  .create-league-body__right img {
+    height: 380px;
+  }
 }
 
 .form-progress .progress-list {
@@ -6696,7 +6728,7 @@ table .points .loss {
   padding: 60px 0;
 }
 .league-form .mt-60 {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .league-form-title {
   font-family: "Bebas Neue";
@@ -6706,7 +6738,7 @@ table .points .loss {
 .league-form .button-wrap {
   display: inline-block;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 .league-form .button-wrap-top {
   margin-top: 30px;
@@ -6929,6 +6961,11 @@ table .points .loss {
 }
 .league-details .input-wrap {
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 1250px) {
+  .league-details .input-wrap {
+    margin-bottom: 20px;
+  }
 }
 .league-details .input-wrap .input-label {
   font-size: 14px;
