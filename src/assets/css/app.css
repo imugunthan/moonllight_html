@@ -6530,8 +6530,10 @@ table .points .loss {
   border-radius: 3px;
 }
 
-.draftroom .btn {
+.draftroom-body .btn {
   width: 62px;
+}
+.draftroom .btn {
   font-size: 13px;
   padding: 4px 0;
   text-align: center;

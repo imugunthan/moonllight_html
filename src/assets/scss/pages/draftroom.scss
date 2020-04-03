@@ -539,8 +539,12 @@
 }
 
 .draftroom {
+  &-body {
+    .btn {
+      width: 62px;
+    }
+  }
   .btn {
-    width: 62px;
     font-size: 13px;
     padding: 4px 0;
     text-align: center;
