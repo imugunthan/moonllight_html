@@ -1009,6 +1009,11 @@ html {
   padding: 8px 16px;
   background: #525cd7;
   border-radius: 21px;
+  transition: all 0.3s ease-in;
+}
+.btn--round-sm {
+  font-size: 16px;
+  padding: 6px 16px;
 }
 
 .side-nav {
@@ -6985,10 +6990,23 @@ table .points .loss {
   text-align: left;
   margin-bottom: 15px;
 }
+.league-details .input-wrap.error .input-label {
+  color: #fb295e;
+}
+.league-details .input-wrap.error .input-label::after {
+  content: "!";
+  margin-left: 5px;
+  color: #fb295e;
+}
+.league-details .input-wrap.checkbox-error .allow-checkbox {
+  background: #fb295e !important;
+  border-color: #fb295e !important;
+}
 .league-details .input-wrap .custom-input {
   width: 100%;
   font-size: 14px;
   color: #fff;
+  font-weight: 700;
   background: none;
   border: none;
   border-bottom: 1px solid rgba(216, 216, 216, 0.5);
@@ -6997,6 +7015,7 @@ table .points .loss {
   width: 100%;
   font-size: 14px;
   color: #b2e7f4;
+  font-weight: 700;
   background: #4b4296;
   border-radius: 8px;
   border: none;
@@ -7161,6 +7180,123 @@ table .points .loss {
   box-shadow: 0 8px 59px 26px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
 }
+.signup-container .div-type1 {
+  width: 100%;
+  height: 100%;
+}
+.signup-container .input-wrap {
+  margin-top: 20px;
+}
+.signup-container .input-wrap .input-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #b2e7f4;
+  line-height: 14px;
+  text-align: left;
+}
+.signup-container .input-wrap .input-label em {
+  font-size: 13px;
+  font-style: italic;
+  color: #b2e7f4;
+}
+.signup-container .input-wrap.error .input-label {
+  color: #fb295e;
+}
+.signup-container .input-wrap.error .input-label::after {
+  content: "!";
+  margin-left: 5px;
+  color: #fb295e;
+}
+.signup-container .input-wrap.checkbox-error .allow-checkbox {
+  background: #fb295e !important;
+  border-color: #fb295e !important;
+}
+.signup-container .input-wrap .custom-input {
+  width: 100%;
+  font-size: 15px;
+  padding: 5px 0px;
+  color: #fff;
+  font-weight: 700;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+  padding-right: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.signup-container .input-wrap .custom-textarea {
+  width: 100%;
+  font-size: 15px;
+  padding: 5px 0px;
+  color: #fff;
+  font-weight: 700;
+  background: #4b4296;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 15px;
+}
+.signup-container .input-wrap .custom-textarea::placeholder {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.46);
+}
+.signup-container .input-wrap .custom-select {
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  background: transparent url(/src/assets/img/signup/custom-select-bg.svg) right 2px center no-repeat;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+  padding-right: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.signup-container .input-wrap .note-text {
+  font-size: 12px;
+  font-style: italic;
+  color: #ffffff;
+  margin-top: 10px;
+  text-align: left;
+}
+.signup-container .input-wrap input[type=checkbox] {
+  display: none;
+}
+.signup-container .input-wrap .allow-all {
+  cursor: pointer;
+}
+.signup-container .input-wrap .allow-all .allow-checkbox {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 1px solid #737071;
+  box-shadow: 0 15px 30px 0 #2f276e;
+  border-radius: 2px;
+}
+.signup-container .input-wrap .allow-all .allow-checkbox > i {
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  display: block;
+  margin-top: 1px;
+  opacity: 0;
+  visibility: hidden;
+}
+.signup-container .input-wrap input[type=checkbox]:checked + .allow-all .allow-checkbox {
+  background: #fb295e;
+}
+.signup-container .input-wrap input[type=checkbox]:checked + .allow-all .allow-checkbox > i {
+  opacity: 1;
+  visibility: visible;
+}
+.signup-container .btn--sent {
+  color: #000000;
+  background: #b2e7f4;
+}
 .signup-avatar {
   max-height: 90%;
   position: absolute;
@@ -7178,100 +7314,14 @@ table .points .loss {
   padding: 30px 20px;
   padding-right: 50px;
 }
-.signup-form .input-wrap {
-  margin-top: 20px;
-}
-.signup-form .input-wrap .input-label {
-  font-size: 14px;
-  font-weight: 700;
-  color: #b2e7f4;
-  line-height: 14px;
-  text-align: left;
-}
-.signup-form .input-wrap .custom-input {
-  width: 100%;
-  font-size: 15px;
-  padding: 5px 0px;
-  color: #fff;
-  font-weight: 700;
-  background: none;
-  border: none;
-  border-bottom: 1px solid rgba(216, 216, 216, 0.5);
-  padding-right: 20px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.signup-form .input-wrap .custom-textarea {
-  width: 100%;
-  font-size: 15px;
-  padding: 5px 0px;
-  color: #fff;
-  font-weight: 700;
-  background: #4b4296;
-  border-radius: 8px;
-  border: none;
-  padding: 10px 15px;
-}
-.signup-form .input-wrap .custom-textarea::placeholder {
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.46);
-}
-.signup-form .input-wrap .custom-select {
-  -webkit-appearance: none;
-  width: 100%;
-  padding: 5px 0px;
-  font-size: 15px;
-  color: #fff;
-  font-weight: 700;
-  background: transparent url(/src/assets/img/signup/custom-select-bg.svg) right 2px center no-repeat;
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid rgba(216, 216, 216, 0.5);
-  padding-right: 20px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-.signup-form .input-wrap .note-text {
-  font-size: 12px;
-  font-style: italic;
-  color: #ffffff;
-  margin-top: 10px;
-  text-align: left;
-}
-.signup-form .input-wrap input[type=checkbox] {
-  display: none;
-}
-.signup-form .input-wrap .allow-all {
-  cursor: pointer;
-}
-.signup-form .input-wrap .allow-all .allow-checkbox {
-  width: 14px;
-  height: 14px;
-  background: #fff;
-  border: 1px solid #737071;
-  box-shadow: 0 15px 30px 0 #2f276e;
-  border-radius: 2px;
-}
-.signup-form .input-wrap .allow-all .allow-checkbox > i {
-  font-size: 10px;
-  font-weight: bold;
-  color: white;
-  display: block;
-  margin-top: 1px;
-  opacity: 0;
-  visibility: hidden;
-}
-.signup-form .input-wrap input[type=checkbox]:checked + .allow-all .allow-checkbox {
-  background: #fb295e;
-}
-.signup-form .input-wrap input[type=checkbox]:checked + .allow-all .allow-checkbox > i {
-  opacity: 1;
-  visibility: visible;
-}
 .signup .terms-conditions {
+  font-size: 12px;
   color: #fff;
+  white-space: nowrap;
+  margin-left: 5px;
+}
+.signup .terms-conditions .link {
+  font-size: 12px;
 }
 
 .title-main {
@@ -7292,6 +7342,56 @@ table .points .loss {
   font-size: 15px;
   font-weight: 700;
   color: #b2e7f4;
+}
+
+.login-form {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.login-form .sub-text {
+  margin-bottom: 50px;
+}
+.login-form .forgot-password {
+  font-size: 13px;
+  color: #525cd7;
+}
+
+.forgot-password .avatar {
+  max-height: 90%;
+  position: absolute;
+  bottom: -7%;
+  left: 50px;
+}
+.forgot-password .avatar-type2 {
+  left: initial;
+  right: 50px;
+}
+.forgot-password .moonlight-logo {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.section-title {
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.top-center {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.email-icon {
+  width: 130px;
 }
 
 /*# sourceMappingURL=app.css.map */

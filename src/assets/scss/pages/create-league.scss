@@ -491,10 +491,27 @@
       text-align: left;
       margin-bottom: 15px;
     }
+    &.error {
+      .input-label {
+        &::after {
+          content: "!";
+          margin-left: 5px;
+          color: #fb295e;
+        }
+        color: #fb295e;
+      }
+    }
+    &.checkbox-error {
+      .allow-checkbox {
+        background: #fb295e !important;
+        border-color: #fb295e !important;
+      }
+    }
     .custom-input {
       width: 100%;
       font-size: 14px;
       color: $white;
+      font-weight: $bold;
       background: none;
       border: none;
       border-bottom: 1px solid rgba(#d8d8d8, 0.5);
@@ -503,6 +520,7 @@
       width: 100%;
       font-size: 14px;
       color: #b2e7f4;
+      font-weight: $bold;
       background: #4b4296;
       border-radius: 8px;
       border: none;

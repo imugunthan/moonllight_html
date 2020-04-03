@@ -21,5 +21,10 @@
     padding: 8px 16px;
     background: #525cd7;
     border-radius: 21px;
+    transition: all 0.3s ease-in;
+  }
+  &--round-sm {
+    font-size: 16px;
+    padding: 6px 16px;
   }
 }
