@@ -36,6 +36,51 @@
   .top-section {
     border: 1px solid rgba(#d1d1d1, 0.59);
     box-shadow: 0 2px 10px 0 rgba(82, 92, 215, 0.15);
+    .error {
+      .error-tooltip {
+        display: block;
+      }
+    }
+    .error-tooltip {
+      position: absolute;
+      top: calc(100% + 10px);
+      width: 220px;
+      font-size: 13px;
+      padding: 15px 10px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 17px;
+      background: #f46869;
+      box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.29);
+      border-radius: 6px 6px 6px 6px;
+      display: none;
+      .error-info {
+        position: absolute;
+        left: 50%;
+        bottom: 0%;
+        transform: translate(-50%, 50%);
+      }
+      &.error-tooltip-budget {
+        width: 440px;
+        top: calc(100% + 15px);
+        &::after {
+          left: 15%;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: 10px solid #f46869;
+        border-top: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        top: -19px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
   }
   &-empty {
     display: block;
@@ -186,35 +231,78 @@
 .budget-wrap {
   padding: 20px 10px;
   .budget-card {
-    width: 50%;
+    width: 35%;
     margin: 0px 10px;
     padding: 15px 30px;
     background: #4e5fc9;
     box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
     border-radius: 10px;
+    position: relative;
     &--blue {
       background: rgba(#39399c, 0.93)
         url("/src/assets/img/draft-room/budget-bg.svg") left no-repeat;
     }
     &--green {
-      position: relative;
-      &::after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 86%;
-        height: 100%;
-        display: inline-block;
-        border-radius: 10px;
-        background: url("/src/assets/img/draft-room/budget-bg-green.svg") right
-            no-repeat,
-          linear-gradient(90deg, #529ec9 0%, #53d2bd 100%);
+      width: 100%;
+      background: url("/src/assets/img/draft-room/budget-bg-green.svg") right
+          no-repeat,
+        linear-gradient(90deg, #529ec9 0%, #53d2bd 100%);
+      .bud-first {
+        display: none;
       }
+      .bud-team {
+        margin-left: 50px;
+      }
+      .count-wrapper {
+        display: flex;
+        margin-right: 0 !important;
+      }
+      .player-count {
+        margin-right: 30px !important;
+      }
+      .btn {
+        margin-left: auto;
+      }
+    }
+    .count-wrapper {
+      margin-right: 20px;
+    }
+    &-progress {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 86%;
+      height: 100%;
+      display: inline-block;
+      border-radius: 10px;
+      background: url("/src/assets/img/draft-room/budget-bg-green.svg") right
+          no-repeat,
+        linear-gradient(90deg, #529ec9 0%, #53d2bd 100%);
     }
     .bud {
       position: relative;
       z-index: 1;
+      &-team {
+        margin-right: 15px;
+      }
+    }
+    .player-count {
+      @include align-items(baseline);
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+      &-no {
+        font-family: "Bebas Neue";
+        font-size: 24px;
+        color: #fbfbfb;
+        letter-spacing: 0.8px;
+        margin-left: 5px;
+        > span {
+          font-family: "Bebas Neue";
+          font-size: 14px;
+          letter-spacing: 0.5px;
+        }
+      }
     }
     .budget {
       font-family: "Bebas Neue";
@@ -401,7 +489,7 @@
   left: 0;
   .draft-message-container {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 515px;
@@ -423,16 +511,39 @@
       line-height: 39.6px;
       margin: 15px 0;
     }
+    .btn {
+      font-weight: $bold;
+    }
   }
   .image {
     position: relative;
     top: -60px;
     left: 45px;
   }
+  &.auto-draft {
+    .message-holder {
+      width: 100%;
+    }
+    .message-sub {
+      font-family: "Bebas Neue";
+      font-size: 30px;
+      color: #fbfbfb;
+      letter-spacing: 0.76px;
+    }
+    .btn--red {
+      background: #ff005a;
+      box-shadow: 0 7px 9px -4px rgba(255, 0, 90, 0.62);
+      border-radius: 3px;
+    }
+  }
 }
 
 .draftroom {
   .btn {
+    width: 62px;
+    font-size: 13px;
+    padding: 4px 0;
+    text-align: center;
     &--watch {
       color: #5159b6;
       background: #f8fafd;
@@ -445,6 +556,12 @@
       background: #55c77c;
       box-shadow: 0 7px 9px -4px rgba(85, 199, 124, 0.62);
       border-radius: 3px;
+      &.disabled {
+        color: #afb1bf;
+        background: #dfdfe5;
+        box-shadow: 0 7px 9px -4px rgba(223, 223, 229, 0.62);
+        border-radius: 3px;
+      }
     }
     &--acted {
       font-weight: $bold;
@@ -546,4 +663,11 @@
       }
     }
   }
+}
+
+.text-red {
+  color: #ff4b5e !important;
+}
+.text-warning {
+  color: #f8c363 !important;
 }

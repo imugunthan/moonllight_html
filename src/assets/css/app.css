@@ -6023,6 +6023,49 @@ table .points .loss {
   border: 1px solid rgba(209, 209, 209, 0.59);
   box-shadow: 0 2px 10px 0 rgba(82, 92, 215, 0.15);
 }
+.draftroom .top-section .error .error-tooltip {
+  display: block;
+}
+.draftroom .top-section .error-tooltip {
+  position: absolute;
+  top: calc(100% + 10px);
+  width: 220px;
+  font-size: 13px;
+  padding: 15px 10px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 17px;
+  background: #f46869;
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.29);
+  border-radius: 6px 6px 6px 6px;
+  display: none;
+}
+.draftroom .top-section .error-tooltip .error-info {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 50%);
+}
+.draftroom .top-section .error-tooltip.error-tooltip-budget {
+  width: 440px;
+  top: calc(100% + 15px);
+}
+.draftroom .top-section .error-tooltip.error-tooltip-budget::after {
+  left: 15%;
+}
+.draftroom .top-section .error-tooltip::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 10px solid #f46869;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+}
 .draftroom-empty {
   display: block;
   margin: 100px auto;
@@ -6168,21 +6211,41 @@ table .points .loss {
   padding: 20px 10px;
 }
 .budget-wrap .budget-card {
-  width: 50%;
+  width: 35%;
   margin: 0px 10px;
   padding: 15px 30px;
   background: #4e5fc9;
   box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
   border-radius: 10px;
+  position: relative;
 }
 .budget-wrap .budget-card--blue {
   background: rgba(57, 57, 156, 0.93) url("/src/assets/img/draft-room/budget-bg.svg") left no-repeat;
 }
 .budget-wrap .budget-card--green {
-  position: relative;
+  width: 100%;
+  background: url("/src/assets/img/draft-room/budget-bg-green.svg") right no-repeat, linear-gradient(90deg, #529ec9 0%, #53d2bd 100%);
 }
-.budget-wrap .budget-card--green::after {
-  content: "";
+.budget-wrap .budget-card--green .bud-first {
+  display: none;
+}
+.budget-wrap .budget-card--green .bud-team {
+  margin-left: 50px;
+}
+.budget-wrap .budget-card--green .count-wrapper {
+  display: flex;
+  margin-right: 0 !important;
+}
+.budget-wrap .budget-card--green .player-count {
+  margin-right: 30px !important;
+}
+.budget-wrap .budget-card--green .btn {
+  margin-left: auto;
+}
+.budget-wrap .budget-card .count-wrapper {
+  margin-right: 20px;
+}
+.budget-wrap .budget-card-progress {
   position: absolute;
   right: 0;
   top: 0;
@@ -6195,6 +6258,31 @@ table .points .loss {
 .budget-wrap .budget-card .bud {
   position: relative;
   z-index: 1;
+}
+.budget-wrap .budget-card .bud-team {
+  margin-right: 15px;
+}
+.budget-wrap .budget-card .player-count {
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  -webkit-align-items: baseline;
+  -moz-align-items: baseline;
+  align-items: baseline;
+}
+.budget-wrap .budget-card .player-count:not(:last-child) {
+  margin-right: 20px;
+}
+.budget-wrap .budget-card .player-count-no {
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  color: #fbfbfb;
+  letter-spacing: 0.8px;
+  margin-left: 5px;
+}
+.budget-wrap .budget-card .player-count-no > span {
+  font-family: "Bebas Neue";
+  font-size: 14px;
+  letter-spacing: 0.5px;
 }
 .budget-wrap .budget-card .budget {
   font-family: "Bebas Neue";
@@ -6397,7 +6485,7 @@ table .points .loss {
 }
 .draftroom-complete-popup .draft-message-container {
   position: absolute;
-  top: 60%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 515px;
@@ -6419,12 +6507,35 @@ table .points .loss {
   line-height: 39.6px;
   margin: 15px 0;
 }
+.draftroom-complete-popup .message-holder .btn {
+  font-weight: 700;
+}
 .draftroom-complete-popup .image {
   position: relative;
   top: -60px;
   left: 45px;
 }
+.draftroom-complete-popup.auto-draft .message-holder {
+  width: 100%;
+}
+.draftroom-complete-popup.auto-draft .message-sub {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  color: #fbfbfb;
+  letter-spacing: 0.76px;
+}
+.draftroom-complete-popup.auto-draft .btn--red {
+  background: #ff005a;
+  box-shadow: 0 7px 9px -4px rgba(255, 0, 90, 0.62);
+  border-radius: 3px;
+}
 
+.draftroom .btn {
+  width: 62px;
+  font-size: 13px;
+  padding: 4px 0;
+  text-align: center;
+}
 .draftroom .btn--watch {
   color: #5159b6;
   background: #f8fafd;
@@ -6436,6 +6547,12 @@ table .points .loss {
   font-weight: 700;
   background: #55c77c;
   box-shadow: 0 7px 9px -4px rgba(85, 199, 124, 0.62);
+  border-radius: 3px;
+}
+.draftroom .btn--draft.disabled {
+  color: #afb1bf;
+  background: #dfdfe5;
+  box-shadow: 0 7px 9px -4px rgba(223, 223, 229, 0.62);
   border-radius: 3px;
 }
 .draftroom .btn--acted {
@@ -6540,6 +6657,14 @@ table .points .loss {
 }
 .column-filters .more-dropdown .additional-filters-wrap .additional-filters {
   max-height: 218px;
+}
+
+.text-red {
+  color: #ff4b5e !important;
+}
+
+.text-warning {
+  color: #f8c363 !important;
 }
 
 .create-league {

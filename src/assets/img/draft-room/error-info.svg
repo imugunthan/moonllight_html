@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 57 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-75.0%" y="-75.0%" width="250.0%" height="250.0%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Draftroom-1366-x-900-(Error-Message-2)" transform="translate(-1017.000000, -260.000000)">
+            <g id="Group-57-Copy" filter="url(#filter-1)" transform="translate(1021.000000, 262.000000)">
+                <g id="Group-14-Copy" fill="#F46869">
+                    <circle id="Oval" cx="8" cy="8" r="8"></circle>
+                </g>
+                <g id="Group-18" transform="translate(7.000000, 3.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <path d="M1.11507132,5.96474659 C1.61065857,5.96474659 2.0177481,5.55765706 2.0177481,5.0620698 L2.0177481,0.902676783 C2.0177481,0.40708953 1.61065857,-4.05009359e-14 1.11507132,-4.05009359e-14 C0.619484067,-4.05009359e-14 0.212394537,0.40708953 0.212394537,0.902676783 L0.212394537,5.04437026 C0.212394537,5.55765706 0.619484067,5.96474659 1.11507132,5.96474659 Z" id="Path"></path>
+                    <circle id="Oval" cx="1.11507132" cy="8.01789378" r="1.11507132"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
