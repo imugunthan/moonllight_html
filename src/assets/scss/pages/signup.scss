@@ -1,0 +1,161 @@
+.bg-type-2 {
+  background: url(/src/assets/img/signup/full-screen-bg.svg) center/cover
+    no-repeat;
+}
+
+.signup {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  &-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1100px;
+    height: 80%;
+    background: #3e3583 url(/src/assets/img/signup/signup-bg.svg) left -110px center
+      no-repeat;
+    box-shadow: 0 8px 59px 26px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+  }
+  &-avatar {
+    max-height: 90%;
+    position: absolute;
+    bottom: -7%;
+    left: 20px;
+  }
+  .moonlight-logo {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
+  &-form {
+    width: 46%;
+    margin-left: auto;
+    padding: 30px 20px;
+    padding-right: 50px;
+    .input-wrap {
+      margin-top: 20px;
+      .input-label {
+        font-size: 14px;
+        font-weight: $bold;
+        color: #b2e7f4;
+        line-height: 14px;
+        text-align: left;
+        // margin-bottom: 5px;
+      }
+      .custom-input {
+        width: 100%;
+        font-size: 15px;
+        padding: 5px 0px;
+        color: $white;
+        font-weight: $bold;
+        background: none;
+        border: none;
+        border-bottom: 1px solid rgba(#d8d8d8, 0.5);
+        padding-right: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .custom-textarea {
+        width: 100%;
+        font-size: 15px;
+        padding: 5px 0px;
+        color: $white;
+        font-weight: $bold;
+        background: #4b4296;
+        border-radius: 8px;
+        border: none;
+        padding: 10px 15px;
+        &::placeholder {
+          font-size: 13px;
+          color: rgba(#ffffff, 0.46);
+        }
+      }
+      .custom-select {
+        -webkit-appearance: none;
+        width: 100%;
+        // height: 22px;
+        padding: 5px 0px;
+        font-size: 15px;
+        color: $white;
+        font-weight: $bold;
+        background: transparent url(/src/assets/img/signup/custom-select-bg.svg)
+          right 2px center no-repeat;
+        border: none;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(#d8d8d8, 0.5);
+        padding-right: 20px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .note-text {
+        font-size: 12px;
+        font-style: italic;
+        color: #ffffff;
+        margin-top: 10px;
+        text-align: left;
+      }
+      input[type="checkbox"] {
+        display: none;
+      }
+      .allow-all {
+        cursor: pointer;
+        .allow-checkbox {
+          width: 14px;
+          height: 14px;
+          //   background: #4b4296;
+          background: $white;
+          border: 1px solid #737071;
+          box-shadow: 0 15px 30px 0 #2f276e;
+          border-radius: 2px;
+          > i {
+            font-size: 10px;
+            font-weight: bold;
+            color: white;
+            display: block;
+            // margin-left: 1px;
+            margin-top: 1px;
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      }
+      input[type="checkbox"]:checked + .allow-all {
+        .allow-checkbox {
+          background: #fb295e;
+          > i {
+            opacity: 1;
+            visibility: visible;
+          }
+        }
+      }
+    }
+  }
+  .terms-conditions {
+    color: $white;
+  }
+}
+
+.title-main {
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.sub-text {
+  font-size: 15px;
+  font-weight: $bold;
+  color: rgba(#ffffff, 0.75);
+  letter-spacing: 0;
+}
+
+.link {
+  font-size: 15px;
+  font-weight: $bold;
+  color: #b2e7f4;
+}

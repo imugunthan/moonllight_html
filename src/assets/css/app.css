@@ -1000,6 +1000,16 @@ html {
   box-shadow: 0 7px 9px -4px rgba(85, 199, 124, 0.62);
   border-radius: 3px;
 }
+.btn--round {
+  width: 100%;
+  font-family: "Bebas Neue";
+  font-size: 21px;
+  color: #ffffff;
+  text-align: center;
+  padding: 8px 16px;
+  background: #525cd7;
+  border-radius: 21px;
+}
 
 .side-nav {
   width: 100px;
@@ -6978,7 +6988,7 @@ table .points .loss {
 .league-details .input-wrap .custom-input {
   width: 100%;
   font-size: 14px;
-  color: #b2e7f4;
+  color: #fff;
   background: none;
   border: none;
   border-bottom: 1px solid rgba(216, 216, 216, 0.5);
@@ -7129,6 +7139,159 @@ table .points .loss {
 
 .p-0 {
   padding: 0 !important;
+}
+
+.bg-type-2 {
+  background: url(/src/assets/img/signup/full-screen-bg.svg) center/cover no-repeat;
+}
+
+.signup {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.signup-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1100px;
+  height: 80%;
+  background: #3e3583 url(/src/assets/img/signup/signup-bg.svg) left -110px center no-repeat;
+  box-shadow: 0 8px 59px 26px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+}
+.signup-avatar {
+  max-height: 90%;
+  position: absolute;
+  bottom: -7%;
+  left: 20px;
+}
+.signup .moonlight-logo {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.signup-form {
+  width: 46%;
+  margin-left: auto;
+  padding: 30px 20px;
+  padding-right: 50px;
+}
+.signup-form .input-wrap {
+  margin-top: 20px;
+}
+.signup-form .input-wrap .input-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #b2e7f4;
+  line-height: 14px;
+  text-align: left;
+}
+.signup-form .input-wrap .custom-input {
+  width: 100%;
+  font-size: 15px;
+  padding: 5px 0px;
+  color: #fff;
+  font-weight: 700;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+  padding-right: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.signup-form .input-wrap .custom-textarea {
+  width: 100%;
+  font-size: 15px;
+  padding: 5px 0px;
+  color: #fff;
+  font-weight: 700;
+  background: #4b4296;
+  border-radius: 8px;
+  border: none;
+  padding: 10px 15px;
+}
+.signup-form .input-wrap .custom-textarea::placeholder {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.46);
+}
+.signup-form .input-wrap .custom-select {
+  -webkit-appearance: none;
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  background: transparent url(/src/assets/img/signup/custom-select-bg.svg) right 2px center no-repeat;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(216, 216, 216, 0.5);
+  padding-right: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.signup-form .input-wrap .note-text {
+  font-size: 12px;
+  font-style: italic;
+  color: #ffffff;
+  margin-top: 10px;
+  text-align: left;
+}
+.signup-form .input-wrap input[type=checkbox] {
+  display: none;
+}
+.signup-form .input-wrap .allow-all {
+  cursor: pointer;
+}
+.signup-form .input-wrap .allow-all .allow-checkbox {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 1px solid #737071;
+  box-shadow: 0 15px 30px 0 #2f276e;
+  border-radius: 2px;
+}
+.signup-form .input-wrap .allow-all .allow-checkbox > i {
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  display: block;
+  margin-top: 1px;
+  opacity: 0;
+  visibility: hidden;
+}
+.signup-form .input-wrap input[type=checkbox]:checked + .allow-all .allow-checkbox {
+  background: #fb295e;
+}
+.signup-form .input-wrap input[type=checkbox]:checked + .allow-all .allow-checkbox > i {
+  opacity: 1;
+  visibility: visible;
+}
+.signup .terms-conditions {
+  color: #fff;
+}
+
+.title-main {
+  font-family: "Bebas Neue";
+  font-size: 50px;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.sub-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.75);
+  letter-spacing: 0;
+}
+
+.link {
+  font-size: 15px;
+  font-weight: 700;
+  color: #b2e7f4;
 }
 
 /*# sourceMappingURL=app.css.map */
