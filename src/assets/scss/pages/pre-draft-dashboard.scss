@@ -1,0 +1,394 @@
+.upcoming-draft {
+  width: 100%;
+  height: 170px;
+  background: #2a276f
+    url(/src/assets/img/pre-draft-dashboard/upcoming-draft-main-bg.svg) right
+    top no-repeat;
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 10px;
+  position: relative;
+  &__main {
+    height: calc(170px - 35px);
+    @include justify-content(space-around);
+    .info-container {
+      .title {
+        margin-bottom: 10px;
+        > p {
+          font-family: "Bebas Neue";
+          font-size: 19px;
+          color: #fbfbfb;
+          letter-spacing: 0.47px;
+          text-shadow: 0 3px 0 rgba(19, 18, 65, 0.2);
+        }
+        .info-wrap {
+          .info-icon {
+            cursor: pointer;
+            margin-left: 5px;
+          }
+          .info-tooltip {
+            width: 350px;
+            background: #151515;
+            box-shadow: 0 9px 10px 0 #2f276e;
+            border-radius: 6px 0 0 0 6px 6px 6px;
+          }
+        }
+      }
+      .time {
+        font-size: 13px;
+        font-weight: $bold;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+      .btn {
+        font-size: 13px;
+        font-weight: $bold;
+        color: #ffffff;
+        text-align: center;
+        background: #5abf7b
+          url("/src/assets/img/pre-draft-dashboard/button-bg.svg") right
+          no-repeat;
+        box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+          0 12px 20px -16px rgba(158, 117, 255, 0.15);
+        border-radius: 3px;
+      }
+    }
+    .counter-wrap {
+      padding: 10px 20px;
+      background: rgba(#43479f, 0.23);
+      box-shadow: 0 5px 5px -4px rgba(3, 3, 3, 0.3);
+      border-radius: 4px;
+      .timer {
+        padding: 0 25px;
+        text-align: center;
+        .value {
+          font-family: "Bebas Neue";
+          font-size: 40px;
+          color: #ffffff;
+          line-height: 45px;
+        }
+        .label {
+          font-family: "Bebas Neue";
+          font-size: 22px;
+          color: #64669f;
+        }
+        &:not(:last-child) {
+          border-right: 1px solid rgba(#d8d8d8, 0.17);
+        }
+        &:first-child {
+          padding-left: 0;
+        }
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  &__bottom {
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 3px 15px;
+    background: #fb295e
+      url(/src/assets/img/pre-draft-dashboard/upcoming-draft-bottom-bg.svg) left
+      no-repeat;
+    border-radius: 0 0 10px 10px;
+    .draft-league-text {
+      font-family: "Bebas Neue";
+      font-size: 26px;
+      color: #fbfbfb;
+      letter-spacing: 0.65px;
+    }
+  }
+}
+
+.managers-table {
+  .manager-image {
+    width: 42px;
+    height: 42px;
+    margin: 0;
+    position: relative;
+    border-radius: 50%;
+    background: #bdc7ff;
+    border: 2px solid #2a276f;
+    box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.1);
+    > img {
+      width: 100%;
+      height: 95%;
+      position: absolute;
+      bottom: 0;
+      border-radius: 50%;
+    }
+  }
+  td {
+    padding: 12px 20px;
+  }
+  td,
+  th {
+    &:first-child {
+      width: 83px;
+      min-width: 83px;
+    }
+    &:nth-child(2) {
+      width: 35%;
+      min-width: 35%;
+      padding-left: 0;
+    }
+    &:nth-child(3) {
+      width: 40%;
+      min-width: 40%;
+      padding-left: 0;
+    }
+    .done {
+      width: 18px;
+      height: 18px;
+      border: 1px solid #5abf7b;
+      border-radius: 50%;
+      text-align: center;
+      > i {
+        font-size: 12px;
+        font-weight: $bold;
+        color: #5abf7b;
+      }
+    }
+  }
+}
+
+.pre-draft-dashboard {
+  .card {
+    .count-wrap {
+      .count {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        font-size: 12px;
+        font-weight: $bold;
+        color: #ffffff;
+        text-align: center;
+        line-height: 20px;
+        background: #2a2871;
+        margin: 0 10px;
+        &-text {
+          font-size: 11px;
+        }
+      }
+    }
+    .invitation-card {
+      padding: 10px 20px;
+      background: #ffffff;
+      box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.1);
+      .name {
+        font-size: 15px;
+      }
+      .league-closed {
+        font-size: 13px;
+        font-style: italic;
+        color: #f86364;
+        margin-right: 5px;
+      }
+    }
+    .name {
+      font-size: 13px;
+      font-weight: $bold;
+      margin-bottom: 5px;
+    }
+    .by {
+      opacity: 0.5;
+      font-size: 12px;
+    }
+    .button-wrap {
+      .button {
+        width: 100px;
+        padding: 7px 0;
+        font-size: 13px;
+        color: #5159b6;
+        text-align: center;
+        background: #ffffff;
+        box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+        border-radius: 3px;
+        &--primary {
+          margin-left: 5px;
+          font-weight: $bold;
+          color: #b2e7f4;
+          background: #333589;
+          box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+            0 12px 20px -16px rgba(158, 117, 255, 0.15);
+          border-radius: 3px;
+        }
+      }
+    }
+    &-stats__right {
+      width: calc(40% - 10px) !important;
+      overflow: initial;
+      .invitations {
+        height: 350px;
+        .card-body {
+          height: calc(350px - 51px);
+          overflow: auto;
+        }
+      }
+    }
+    &-stats__left {
+      width: calc(60% - 10px) !important;
+      .managers {
+        height: 350px;
+        overflow: hidden;
+        .table-tbody {
+          height: calc(350px - 81px);
+          overflow: auto;
+          tr {
+            background: $white;
+          }
+        }
+      }
+    }
+  }
+  .card-stats__right {
+    height: initial;
+  }
+}
+
+.pre-draft-watched {
+  .watched-players-table {
+    max-height: 340px;
+    overflow: auto;
+  }
+  td {
+    padding: 7px 20px;
+  }
+  .font-bebas {
+    font-size: 16px;
+    font-family: "Bebas Neue";
+    &--light {
+      color: #8d8fa5;
+    }
+  }
+  .player-image {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #2a266e;
+    position: relative;
+    margin-right: 10px;
+    > img {
+      width: 100%;
+      height: calc(100% + 5px);
+      border-radius: 50%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  .player-name {
+    font-size: 15px;
+    font-weight: $bold;
+  }
+  .status {
+    display: inline-block;
+    padding: 2px 10px;
+    font-size: 10px;
+    font-weight: $medium;
+    color: #ffffff;
+    border-radius: 10px;
+    &--injured {
+      background: #f86364;
+    }
+    > img {
+      margin-right: 5px;
+    }
+  }
+}
+
+.modal--pre-draft {
+  .modal-holder {
+    position: absolute;
+    width: 515px;
+    height: 255px;
+    background: #2a276f url(/src/assets/img/pre-draft-dashboard/modal-bg.svg)
+      right top no-repeat;
+    box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+    border-radius: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .invite-sent {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      padding-bottom: 10px;
+      .btn--red {
+        margin-top: 160px;
+        margin-right: 65px;
+        font-size: 20px;
+        padding: 10px 20px;
+        font-weight: $bold;
+        color: #ffffff;
+        text-align: center;
+        background: #fb295e;
+        box-shadow: 0 7px 9px -4px rgba(251, 41, 94, 0.62);
+        border-radius: 3px;
+      }
+    }
+    .close-league {
+      max-width: 365px;
+      margin: 0 auto;
+      padding: 35px 0;
+      &-text {
+        font-family: "Bebas Neue";
+        font-size: 21px;
+        color: #ffffff;
+        > span {
+          font-family: "Bebas Neue";
+          font-size: 40px;
+          color: #b2e7f4;
+          line-height: 14px;
+        }
+      }
+      .max-text {
+        font-family: "BebasNeuePro-BoldItalic";
+        font-size: 14px;
+        color: #ffffff;
+      }
+      .confirmation-text {
+        font-size: 14px;
+        font-weight: $bold;
+        color: #ffffff;
+        line-height: 14px;
+      }
+      .btn {
+        display: block;
+        margin-top: 40px;
+      }
+    }
+    .league-details {
+      padding: 20px 0;
+      .btn {
+        display: block;
+        margin: 0 auto;
+        font-size: 13px;
+        font-weight: $bold;
+        color: #ffffff;
+        text-align: center;
+        padding: 2px 10px;
+      }
+      .allow-checkbox {
+        .material-icons {
+          margin-left: 1px;
+          font-weight: $bold;
+        }
+      }
+      .count {
+        width: 23px;
+        height: 23px;
+        border-radius: 50%;
+        font-size: 14px;
+        font-weight: $bold;
+        color: #ffffff;
+        text-align: center;
+        line-height: 23px;
+        background: #525cd7;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

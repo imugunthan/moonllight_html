@@ -540,15 +540,16 @@
 
 .draftroom {
   &-body {
-    .btn {
+    .btn--watch,
+    .btn--draft {
       width: 62px;
     }
   }
   .btn {
     font-size: 13px;
-    padding: 4px 0;
     text-align: center;
     &--watch {
+      padding: 4px 0;
       color: #5159b6;
       background: #f8fafd;
       border: 1px solid #dfdfe5;
@@ -556,6 +557,7 @@
       border-radius: 4px;
     }
     &--draft {
+      padding: 4px 0;
       font-weight: $bold;
       background: #55c77c;
       box-shadow: 0 7px 9px -4px rgba(85, 199, 124, 0.62);

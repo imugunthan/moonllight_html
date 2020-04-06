@@ -175,73 +175,75 @@
   }
 }
 
-.title-main {
-  font-family: "Bebas Neue";
-  font-size: 50px;
-  color: #ffffff;
-  line-height: 1;
-}
+.signup {
+  .title-main {
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    color: #ffffff;
+    line-height: 1;
+  }
 
-.sub-text {
-  font-size: 15px;
-  font-weight: $bold;
-  color: rgba(#ffffff, 0.75);
-  letter-spacing: 0;
-}
-
-.link {
-  font-size: 15px;
-  font-weight: $bold;
-  color: #b2e7f4;
-}
-
-.login-form {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
   .sub-text {
-    margin-bottom: 50px;
+    font-size: 15px;
+    font-weight: $bold;
+    color: rgba(#ffffff, 0.75);
+    letter-spacing: 0;
   }
-  .forgot-password {
-    font-size: 13px;
-    color: #525cd7;
-  }
-}
 
-.forgot-password {
-  .avatar {
-    max-height: 90%;
-    position: absolute;
-    bottom: -7%;
-    left: 50px;
-    &-type2 {
-      left: initial;
-      right: 50px;
+  .link {
+    font-size: 15px;
+    font-weight: $bold;
+    color: #b2e7f4;
+  }
+
+  .login-form {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    .sub-text {
+      margin-bottom: 50px;
+    }
+    .forgot-password {
+      font-size: 13px;
+      color: #525cd7;
     }
   }
-  .moonlight-logo {
-    left: 50%;
-    transform: translateX(-50%);
+
+  .forgot-password {
+    .avatar {
+      max-height: 90%;
+      position: absolute;
+      bottom: -7%;
+      left: 50px;
+      &-type2 {
+        left: initial;
+        right: 50px;
+      }
+    }
+    .moonlight-logo {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
-}
 
-.section-title {
-  font-family: "Bebas Neue";
-  font-size: 24px;
-  color: #ffffff;
-  margin-bottom: 25px;
-}
-.section-subtitle {
-  font-size: 16px;
-  color: #ffffff;
-}
+  .section-title {
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+  .section-subtitle {
+    font-size: 16px;
+    color: #ffffff;
+  }
 
-.top-center {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
+  .top-center {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
-.email-icon {
-  width: 130px;
+  .email-icon {
+    width: 130px;
+  }
 }

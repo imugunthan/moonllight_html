@@ -2353,23 +2353,23 @@ html {
 }
 
 .mb-10 {
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 
 .ml-10 {
-  margin-left: 10px;
+  margin-left: 10px !important;
 }
 
 .mt-10 {
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
 
 .mt-20 {
-  margin-top: 20px;
+  margin-top: 20px !important;
 }
 
 .mt-30 {
-  margin-top: 30px;
+  margin-top: 30px !important;
 }
 
 .match-selection {
@@ -4545,8 +4545,19 @@ table tbody tr:hover {
   box-shadow: 0 13px 34px 0 rgba(43, 43, 118, 0.12);
 }
 table tbody td {
-  font-size: 15px;
+  font-size: 14px;
   padding: 20px;
+}
+
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(14, 16, 37, 0.6);
+  display: inline-block;
+  z-index: 4;
+  top: 0;
+  left: 0;
 }
 
 /* img path */
@@ -6530,15 +6541,16 @@ table .points .loss {
   border-radius: 3px;
 }
 
-.draftroom-body .btn {
+.draftroom-body .btn--watch,
+.draftroom-body .btn--draft {
   width: 62px;
 }
 .draftroom .btn {
   font-size: 13px;
-  padding: 4px 0;
   text-align: center;
 }
 .draftroom .btn--watch {
+  padding: 4px 0;
   color: #5159b6;
   background: #f8fafd;
   border: 1px solid #dfdfe5;
@@ -6546,6 +6558,7 @@ table .points .loss {
   border-radius: 4px;
 }
 .draftroom .btn--draft {
+  padding: 4px 0;
   font-weight: 700;
   background: #55c77c;
   box-shadow: 0 7px 9px -4px rgba(85, 199, 124, 0.62);
@@ -7451,74 +7464,437 @@ table .points .loss {
   font-size: 12px;
 }
 
-.title-main {
+.signup .title-main {
   font-family: "Bebas Neue";
   font-size: 50px;
   color: #ffffff;
   line-height: 1;
 }
-
-.sub-text {
+.signup .sub-text {
   font-size: 15px;
   font-weight: 700;
   color: rgba(255, 255, 255, 0.75);
   letter-spacing: 0;
 }
-
-.link {
+.signup .link {
   font-size: 15px;
   font-weight: 700;
   color: #b2e7f4;
 }
-
-.login-form {
+.signup .login-form {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-.login-form .sub-text {
+.signup .login-form .sub-text {
   margin-bottom: 50px;
 }
-.login-form .forgot-password {
+.signup .login-form .forgot-password {
   font-size: 13px;
   color: #525cd7;
 }
-
-.forgot-password .avatar {
+.signup .forgot-password .avatar {
   max-height: 90%;
   position: absolute;
   bottom: -7%;
   left: 50px;
 }
-.forgot-password .avatar-type2 {
+.signup .forgot-password .avatar-type2 {
   left: initial;
   right: 50px;
 }
-.forgot-password .moonlight-logo {
+.signup .forgot-password .moonlight-logo {
   left: 50%;
   transform: translateX(-50%);
 }
-
-.section-title {
+.signup .section-title {
   font-family: "Bebas Neue";
   font-size: 24px;
   color: #ffffff;
   margin-bottom: 25px;
 }
-
-.section-subtitle {
+.signup .section-subtitle {
   font-size: 16px;
   color: #ffffff;
 }
-
-.top-center {
+.signup .top-center {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
-
-.email-icon {
+.signup .email-icon {
   width: 130px;
+}
+
+.upcoming-draft {
+  width: 100%;
+  height: 170px;
+  background: #2a276f url(/src/assets/img/pre-draft-dashboard/upcoming-draft-main-bg.svg) right top no-repeat;
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 10px;
+  position: relative;
+}
+.upcoming-draft__main {
+  height: calc(170px - 35px);
+  -ms-flex-pack: distribute;
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  justify-content: space-around;
+}
+.upcoming-draft__main .info-container .title {
+  margin-bottom: 10px;
+}
+.upcoming-draft__main .info-container .title > p {
+  font-family: "Bebas Neue";
+  font-size: 19px;
+  color: #fbfbfb;
+  letter-spacing: 0.47px;
+  text-shadow: 0 3px 0 rgba(19, 18, 65, 0.2);
+}
+.upcoming-draft__main .info-container .title .info-wrap .info-icon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+.upcoming-draft__main .info-container .title .info-wrap .info-tooltip {
+  width: 350px;
+  background: #151515;
+  box-shadow: 0 9px 10px 0 #2f276e;
+  border-radius: 6px 0 0 0 6px 6px 6px;
+}
+.upcoming-draft__main .info-container .time {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.upcoming-draft__main .info-container .btn {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background: #5abf7b url("/src/assets/img/pre-draft-dashboard/button-bg.svg") right no-repeat;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+}
+.upcoming-draft__main .counter-wrap {
+  padding: 10px 20px;
+  background: rgba(67, 71, 159, 0.23);
+  box-shadow: 0 5px 5px -4px rgba(3, 3, 3, 0.3);
+  border-radius: 4px;
+}
+.upcoming-draft__main .counter-wrap .timer {
+  padding: 0 25px;
+  text-align: center;
+}
+.upcoming-draft__main .counter-wrap .timer .value {
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  color: #ffffff;
+  line-height: 45px;
+}
+.upcoming-draft__main .counter-wrap .timer .label {
+  font-family: "Bebas Neue";
+  font-size: 22px;
+  color: #64669f;
+}
+.upcoming-draft__main .counter-wrap .timer:not(:last-child) {
+  border-right: 1px solid rgba(216, 216, 216, 0.17);
+}
+.upcoming-draft__main .counter-wrap .timer:first-child {
+  padding-left: 0;
+}
+.upcoming-draft__main .counter-wrap .timer:last-child {
+  padding-right: 0;
+}
+.upcoming-draft__bottom {
+  width: 100%;
+  height: 35px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 3px 15px;
+  background: #fb295e url(/src/assets/img/pre-draft-dashboard/upcoming-draft-bottom-bg.svg) left no-repeat;
+  border-radius: 0 0 10px 10px;
+}
+.upcoming-draft__bottom .draft-league-text {
+  font-family: "Bebas Neue";
+  font-size: 26px;
+  color: #fbfbfb;
+  letter-spacing: 0.65px;
+}
+
+.managers-table .manager-image {
+  width: 42px;
+  height: 42px;
+  margin: 0;
+  position: relative;
+  border-radius: 50%;
+  background: #bdc7ff;
+  border: 2px solid #2a276f;
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.1);
+}
+.managers-table .manager-image > img {
+  width: 100%;
+  height: 95%;
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+}
+.managers-table td {
+  padding: 12px 20px;
+}
+.managers-table td:first-child,
+.managers-table th:first-child {
+  width: 83px;
+  min-width: 83px;
+}
+.managers-table td:nth-child(2),
+.managers-table th:nth-child(2) {
+  width: 35%;
+  min-width: 35%;
+  padding-left: 0;
+}
+.managers-table td:nth-child(3),
+.managers-table th:nth-child(3) {
+  width: 40%;
+  min-width: 40%;
+  padding-left: 0;
+}
+.managers-table td .done,
+.managers-table th .done {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #5abf7b;
+  border-radius: 50%;
+  text-align: center;
+}
+.managers-table td .done > i,
+.managers-table th .done > i {
+  font-size: 12px;
+  font-weight: 700;
+  color: #5abf7b;
+}
+
+.pre-draft-dashboard .card .count-wrap .count {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  background: #2a2871;
+  margin: 0 10px;
+}
+.pre-draft-dashboard .card .count-wrap .count-text {
+  font-size: 11px;
+}
+.pre-draft-dashboard .card .invitation-card {
+  padding: 10px 20px;
+  background: #ffffff;
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.1);
+}
+.pre-draft-dashboard .card .invitation-card .name {
+  font-size: 15px;
+}
+.pre-draft-dashboard .card .invitation-card .league-closed {
+  font-size: 13px;
+  font-style: italic;
+  color: #f86364;
+  margin-right: 5px;
+}
+.pre-draft-dashboard .card .name {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.pre-draft-dashboard .card .by {
+  opacity: 0.5;
+  font-size: 12px;
+}
+.pre-draft-dashboard .card .button-wrap .button {
+  width: 100px;
+  padding: 7px 0;
+  font-size: 13px;
+  color: #5159b6;
+  text-align: center;
+  background: #ffffff;
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 3px;
+}
+.pre-draft-dashboard .card .button-wrap .button--primary {
+  margin-left: 5px;
+  font-weight: 700;
+  color: #b2e7f4;
+  background: #333589;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+}
+.pre-draft-dashboard .card-stats__right {
+  width: calc(40% - 10px) !important;
+  overflow: initial;
+}
+.pre-draft-dashboard .card-stats__right .invitations {
+  height: 350px;
+}
+.pre-draft-dashboard .card-stats__right .invitations .card-body {
+  height: calc(350px - 51px);
+  overflow: auto;
+}
+.pre-draft-dashboard .card-stats__left {
+  width: calc(60% - 10px) !important;
+}
+.pre-draft-dashboard .card-stats__left .managers {
+  height: 350px;
+  overflow: hidden;
+}
+.pre-draft-dashboard .card-stats__left .managers .table-tbody {
+  height: calc(350px - 81px);
+  overflow: auto;
+}
+.pre-draft-dashboard .card-stats__left .managers .table-tbody tr {
+  background: #fff;
+}
+.pre-draft-dashboard .card-stats__right {
+  height: initial;
+}
+
+.pre-draft-watched .watched-players-table {
+  max-height: 340px;
+  overflow: auto;
+}
+.pre-draft-watched td {
+  padding: 7px 20px;
+}
+.pre-draft-watched .font-bebas {
+  font-size: 16px;
+  font-family: "Bebas Neue";
+}
+.pre-draft-watched .font-bebas--light {
+  color: #8d8fa5;
+}
+.pre-draft-watched .player-image {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #2a266e;
+  position: relative;
+  margin-right: 10px;
+}
+.pre-draft-watched .player-image > img {
+  width: 100%;
+  height: calc(100% + 5px);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+.pre-draft-watched .player-name {
+  font-size: 15px;
+  font-weight: 700;
+}
+.pre-draft-watched .status {
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 10px;
+  font-weight: 500;
+  color: #ffffff;
+  border-radius: 10px;
+}
+.pre-draft-watched .status--injured {
+  background: #f86364;
+}
+.pre-draft-watched .status > img {
+  margin-right: 5px;
+}
+
+.modal--pre-draft .modal-holder {
+  position: absolute;
+  width: 515px;
+  height: 255px;
+  background: #2a276f url(/src/assets/img/pre-draft-dashboard/modal-bg.svg) right top no-repeat;
+  box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+  border-radius: 16px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal--pre-draft .modal-holder .invite-sent {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding-bottom: 10px;
+}
+.modal--pre-draft .modal-holder .invite-sent .btn--red {
+  margin-top: 160px;
+  margin-right: 65px;
+  font-size: 20px;
+  padding: 10px 20px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  background: #fb295e;
+  box-shadow: 0 7px 9px -4px rgba(251, 41, 94, 0.62);
+  border-radius: 3px;
+}
+.modal--pre-draft .modal-holder .close-league {
+  max-width: 365px;
+  margin: 0 auto;
+  padding: 35px 0;
+}
+.modal--pre-draft .modal-holder .close-league-text {
+  font-family: "Bebas Neue";
+  font-size: 21px;
+  color: #ffffff;
+}
+.modal--pre-draft .modal-holder .close-league-text > span {
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  color: #b2e7f4;
+  line-height: 14px;
+}
+.modal--pre-draft .modal-holder .close-league .max-text {
+  font-family: "BebasNeuePro-BoldItalic";
+  font-size: 14px;
+  color: #ffffff;
+}
+.modal--pre-draft .modal-holder .close-league .confirmation-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 14px;
+}
+.modal--pre-draft .modal-holder .close-league .btn {
+  display: block;
+  margin-top: 40px;
+}
+.modal--pre-draft .modal-holder .league-details {
+  padding: 20px 0;
+}
+.modal--pre-draft .modal-holder .league-details .btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  padding: 2px 10px;
+}
+.modal--pre-draft .modal-holder .league-details .allow-checkbox .material-icons {
+  margin-left: 1px;
+  font-weight: 700;
+}
+.modal--pre-draft .modal-holder .league-details .count {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  line-height: 23px;
+  background: #525cd7;
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=app.css.map */
