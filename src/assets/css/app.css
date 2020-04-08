@@ -8013,6 +8013,9 @@ table .points .loss {
 .profile-section__left .notification-card .noti-table .circle-checkbox input:checked + .checkbox-custom .checkbox-icon > i {
   display: block;
 }
+.profile-section__left .notification-card.view-notifications .circle-checkbox {
+  pointer-events: none;
+}
 .profile-section__left .profile-details-card {
   padding: 30px;
 }
@@ -8135,7 +8138,7 @@ table .points .loss {
   left: 0;
   height: 8px;
   width: 160px;
-  background-image: linear-gradient(270deg, #5be6d2 5%, #5db6e1 76%);
+  background: linear-gradient(270deg, #5be6d2 5%, #5db6e1 76%);
   border-radius: 3px;
 }
 .profile-section__right .manager-card .rank-progress .progress::after {
@@ -8158,6 +8161,14 @@ table .points .loss {
   background: #2f3180;
   border-radius: 3.5px;
 }
+.profile-section__right .manager-card .rank-progress.points-progress .progress {
+  background: #fb295e;
+  border-radius: 3px;
+}
+.profile-section__right .manager-card .rank-progress.points-progress .progress::after {
+  background: #fb295e;
+  box-shadow: 0 4px 4px 0 rgba(251, 41, 94, 0.35);
+}
 .profile-section__right .manager-card .legend-text {
   padding: 30px 20px;
 }
@@ -8171,6 +8182,156 @@ table .points .loss {
 }
 .profile-section__right .manager-card .legend-text .text.loss {
   color: #f86364;
+}
+
+.referrals .card--blue {
+  height: 380px;
+  background: #2b2972 url(/src/assets/img/profile/referral-card.svg) top right no-repeat;
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 12px;
+  padding: 40px;
+}
+.referrals .card--blue .card-left-section {
+  max-width: 55%;
+}
+.referrals .card--blue .league-card {
+  background: #333589;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 10px 20px 20px;
+  margin-top: 40px;
+}
+.referrals .card--blue .league-card .league {
+  font-size: 11px;
+  color: rgba(175, 177, 191, 0.4);
+  margin-bottom: 5px;
+}
+.referrals .card--blue .league-card .league-name {
+  font-size: 18px;
+  color: #ffffff;
+}
+.referrals .card--blue .league-card .inuse {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.referrals .card--blue .league-card .club-images > img {
+  width: 16px;
+}
+.referrals .card--blue .league-card .club-images > img:not(:last-child) {
+  margin-right: -8px;
+}
+.referrals .card--blue .invite-card {
+  padding: 20px;
+  background: #343379;
+  border-radius: 4px;
+  margin-top: 15px;
+}
+.referrals .card--blue .invite-card .invite-text {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.referrals .card--blue .invite-card .btn {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #5abf7b;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+}
+.referrals .card--blue .card-right-section {
+  width: 45%;
+}
+.referrals .card--blue .card-right-section .circle-holder {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+.referrals .card--blue .card-right-section .circle-holder svg {
+  display: block;
+  margin: 0 auto;
+}
+.referrals .card--blue .card-right-section .circle-holder .counter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Bebas Neue";
+  font-size: 78px;
+  line-height: 78px;
+  color: #56c079;
+  margin-top: 5px;
+}
+.referrals .card--blue .card-right-section .success-text {
+  font-size: 16px;
+  color: #999bbf;
+  text-align: center;
+  max-width: 235px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.referrals .card--blue .card-right-section .success-text > span {
+  color: #fff;
+  font-weight: 700;
+}
+.referrals .card--blue .note-text {
+  font-size: 16px;
+  color: #999bbf;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.referrals .card--blue .highlight {
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+}
+.referrals .card--referral {
+  height: 355px;
+}
+.referrals .card--referral .card-body {
+  height: 305px;
+  overflow: auto;
+}
+.referrals .card--referral .card-header {
+  padding: 0;
+}
+.referrals .card--referral .card-header .head-title {
+  padding: 10px 20px;
+}
+.referrals .card--referral .card-header .head-title:first-child {
+  width: 40%;
+}
+.referrals .card--referral .card-header .head-title:nth-child(2) {
+  width: 20%;
+}
+.referrals .card--referral .card-header .head-title:nth-child(3) {
+  width: 20%;
+}
+.referrals .card--referral .card-header .head-title:last-child {
+  width: 20%;
+}
+.referrals .card--referral .noti-table td:first-child {
+  width: 40%;
+  min-width: 40%;
+}
+.referrals .card--referral .noti-table td:nth-child(2) {
+  width: 20%;
+  min-width: 20%;
+}
+.referrals .card--referral .noti-table td:nth-child(3) {
+  width: 20%;
+  min-width: 20%;
+}
+.referrals .card--referral .noti-table td:last-child {
+  width: 20%;
+  min-width: 20%;
+}
+.referrals .referrals-right {
+  height: 760px;
+  width: calc(30% - 17px);
+  background: url(/src/assets/img/profile/referral-right.svg);
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 12px;
 }
 
 /*# sourceMappingURL=app.css.map */

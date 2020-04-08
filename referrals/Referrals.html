@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <aside class="side-nav d-flex">
+            <div class="user-info">
+                <figure class="user-avatar m-auto mb-20">
+                    <img src="/src/assets/img/profile-image.svg" alt="User Image" class="user-image">
+                    <!-- <img src="https://images.vexels.com/media/users/3/140748/isolated/preview/5b078a59390bb4666df98b49f1cdedd0-male-profile-avatar-by-vexels.png"
+                        alt="User Image" class="user-image"> -->
+                </figure>
+                <p class="user-name">L. Vaz</p>
+            </div>
+            <nav class="navmenu">
+                <ul class="navmenu__list">
+                    <li class="navmenu__item mb-30">
+                        <i class="material-icons">home</i>
+                    </li>
+                    <li class="navmenu__item mb-30">
+                        <img src="/src/assets/img/trophy-filed.svg" alt="" class="filled">
+                        <img src="/src/assets/img/trophy.svg" alt="" class="normal">
+                    </li>
+                    <li class="navmenu__item mb-30 active">
+                        <img src="/src/assets/img/chart-filed.svg" class="filled" alt="">
+                        <img src="/src/assets/img/chart.svg" alt="" class="normal">
+                    </li>
+                </ul>
+            </nav>
+            <div class="side-nav__footer">
+                <ul class="">
+                    <li class="text-center help">
+                        <i class="material-icons">help</i>
+                    </li>
+                    <li class="text-center logo">
+                        <img src="/src//assets/img/moonlight-logo.svg" alt="Moonlight Logo">
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="right-section">
+            <div class="profile referrals">
+                <nav class="nav-bar">
+                    <ul class="nav-menu d-flex-v-center">
+                        <li class="nav-items active">Profile</li>
+                        <li class="nav-items">Billing</li>
+                        <li class="nav-items">Referrals</li>
+                        <li class="nav-items">Help</li>
+                    </ul>
+                </nav>
+                <div class="profile-section d-flex-space-center align-top">
+                    <div class="profile-section__left">
+                        <div class="card card--blue d-flex-v-center">
+                            <div class="card-left-section">
+                                <p class="note-text">Get an extra month of projected points for every friend that joins
+                                    your fantasy league using your code.</p>
+                                <p class="highlight">Max of 5 referrals permitted.</p>
+                                <div class="league-card">
+                                    <p class="league">League</p>
+                                    <div class="d-flex-space-center">
+                                        <p class="league-name">Pique Blinders</p>
+                                        <div class="d-flex-v-center">
+                                            <p class="inuse">In use</p>
+                                            <div class="club-images ml-10">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            </div>
+                                            <img src="/src/assets/img/league-dashboard/league-dropdown.svg" alt=""
+                                                class="ml-10">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="invite-card d-flex-space-center">
+                                    <p class="invite-text">View your league to invite players</p>
+                                    <button class="btn btn--secondary">View League</button>
+                                </div>
+                            </div>
+                            <div class="card-right-section">
+                                <div class="circle-holder">
+                                    <svg class="progress" width="150" height="150" viewBox="0 0 120 120">
+                                        <circle cx="100" cy="100" r="54" fill="none" stroke="transparent"
+                                            stroke-width="6.5">
+                                        </circle>
+                                        <circle cx="60" cy="60" r="54" fill="none" stroke="#56C079" stroke-width="10"
+                                            stroke-dasharray="50 15 55 15 55 15">
+
+                                        </circle>
+
+                                    </svg>
+                                    <div class="counter">3</div>
+                                </div>
+                                <p class="success-text">You have 3 successful referrals! You’ve earned yourself <span>3
+                                        months</span> of free projected points!</p>
+                            </div>
+                        </div>
+                        <div class="card card--referral mt-20">
+                            <div class="card-header d-flex-v-center">
+                                <p class="head-title">Referred Users</p>
+                                <p class="head-title">Date Sent</p>
+                                <p class="head-title">League Referred</p>
+                                <p class="head-title">Status</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="table-tbody">
+                                    <table class="noti-table">
+                                        <tbody>
+                                            <tr>
+                                                <td>Notification Settings number 1</td>
+                                                <td>Aug 7, 2019</td>
+                                                <td>Pique Blinders</td>
+                                                <td>
+                                                    <div class="d-flex-v-center">
+                                                        <img src="/src/assets/img/pre-draft-dashboard/pending-message.svg"
+                                                            alt="">
+                                                        <p class="ml-10">Pending</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Notification Settings number 1</td>
+                                                <td>Aug 7, 2019</td>
+                                                <td>Pique Blinders</td>
+                                                <td>
+                                                    <div class="d-flex-v-center">
+                                                        <img src="/src/assets/img/profile/signed-up.svg" alt="">
+                                                        <p class="ml-10">Pending</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Notification Settings number 1</td>
+                                                <td>Aug 7, 2019</td>
+                                                <td>Pique Blinders</td>
+                                                <td>
+                                                    <div class="d-flex-v-center">
+                                                        <img src="/src/assets/img/profile/done-green.svg" alt="">
+                                                        <p class="ml-10">Pending</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Notification Settings number 1</td>
+                                                <td>Aug 7, 2019</td>
+                                                <td>Pique Blinders</td>
+                                                <td>
+                                                    <div class="d-flex-v-center">
+                                                        <img src="/src/assets/img/pre-draft-dashboard/pending-message.svg"
+                                                            alt="">
+                                                        <p class="ml-10">Pending</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Notification Settings number 1</td>
+                                                <td>Aug 7, 2019</td>
+                                                <td>Pique Blinders</td>
+                                                <td>
+                                                    <div class="d-flex-v-center">
+                                                        <img src="/src/assets/img/pre-draft-dashboard/pending-message.svg"
+                                                            alt="">
+                                                        <p class="ml-10">Pending</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Notification Settings number 1</td>
+                                                <td>Aug 7, 2019</td>
+                                                <td>Pique Blinders</td>
+                                                <td>
+                                                    <div class="d-flex-v-center">
+                                                        <img src="/src/assets/img/pre-draft-dashboard/pending-message.svg"
+                                                            alt="">
+                                                        <p class="ml-10">Pending</p>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-section__right referrals-right">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
