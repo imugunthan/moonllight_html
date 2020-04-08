@@ -1,0 +1,281 @@
+.profile {
+  padding: 20px 40px;
+  &-section {
+    &__left {
+      width: calc(70% - 10px);
+      .profile-card {
+        width: calc(35% - 5px);
+        height: 420px;
+        background: url(/src/assets/img/profile/profile-card-bg.svg) no-repeat,
+          linear-gradient(180deg, #2f3180 0%, #4349b1 82%, #525cd7 100%);
+        box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+        border-radius: 12px;
+        position: relative;
+        .profile {
+          &-image {
+            width: 106px;
+            height: 106px;
+            background: #bdc7ff;
+            border-radius: 50%;
+            position: relative;
+            margin: 0 auto;
+            margin-top: 80px;
+            > img {
+              position: absolute;
+              bottom: 0;
+              width: 100%;
+              height: calc(100% + 5px);
+              border-radius: 50%;
+            }
+          }
+          &-name {
+            font-family: "Bebas Neue";
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+          }
+          &-ageing {
+            font-size: 14px;
+            font-weight: $bold;
+            color: #e8e9f8;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 30px;
+          }
+        }
+        .btn-profile-pic {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      .notification-card {
+        width: 65%;
+        height: 420px;
+        .table-tbody {
+          height: calc(420px - 80px);
+          overflow: auto;
+          td {
+            height: 67px;
+          }
+        }
+        .noti-table {
+          th,
+          td {
+            &:first-child {
+              width: 80%;
+              min-width: 80%;
+            }
+            &:nth-child(2) {
+              width: 85px;
+              min-width: 85px;
+              text-align: center;
+            }
+            &:last-child {
+              width: 85px;
+              min-width: 85px;
+              text-align: center;
+            }
+          }
+          .circle-checkbox {
+            input[type="checkbox"] {
+              display: none;
+            }
+            .checkbox {
+              &-custom {
+                cursor: pointer;
+              }
+              &-icon {
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                background: #dadada;
+                box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.22);
+                > i {
+                  color: white;
+                  font-size: 18px;
+                  font-weight: bold;
+                  margin-top: 2px;
+                  display: none;
+                }
+              }
+            }
+            input:checked + .checkbox-custom .checkbox-icon {
+              background: #fb295e;
+              > i {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+      .profile-details-card {
+        padding: 30px;
+        .w-100 {
+          width: 100%;
+        }
+        .no-bottom {
+          .info-wrap {
+            margin-bottom: 0;
+          }
+        }
+        .info-wrap {
+          width: calc(100% / 3 - 10px);
+          border-bottom: 1px solid rgba(#d8d8d8, 0.8);
+          margin-bottom: 20px;
+          .label {
+            font-size: 13px;
+            font-weight: $bold;
+            color: #525cd7;
+            margin-bottom: 5px;
+          }
+          .value {
+            font-size: 15px;
+            font-weight: $bold;
+            color: #2f3180;
+            margin-bottom: 5px;
+          }
+          &.no-border {
+            border-bottom: 0;
+          }
+        }
+        &--edit {
+          .info-wrap {
+            border-bottom: 0 !important;
+            .profile-edit {
+              -webkit-appearance: none;
+              height: 24px;
+              background: $white;
+              font-size: 15px;
+              font-weight: $bold;
+              color: #2f3180;
+              width: 100%;
+              border: 1px solid #2f3180;
+              border-radius: 4px;
+              padding-left: 5px;
+              &--select {
+                background: white url(/src/assets/img/profile/select-arrow.svg)
+                  right 10px center no-repeat;
+                &.month {
+                  width: 85px;
+                  margin-right: 7px;
+                }
+                &.date {
+                  width: 50px;
+                  margin-right: 7px;
+                }
+                &.year {
+                  width: 72px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &__right {
+      width: calc(30% - 10px);
+      .card {
+        height: 235px;
+      }
+      .league-card {
+        .table-tbody {
+          height: calc(235px - 80px);
+          overflow: auto;
+        }
+        .history-table {
+          td:last-child,
+          th:last-child {
+            width: 80px;
+            min-width: 80px;
+          }
+          .rank {
+            font-family: "Bebas Neue";
+            font-size: 16px;
+            > span {
+              font-family: "Bebas Neue";
+              font-size: 13px;
+            }
+          }
+        }
+      }
+      .manager-card {
+        .legend-value {
+          padding: 20px;
+          .value {
+            font-family: "Bebas Neue";
+            font-size: 42px;
+            > span {
+              font-family: "Bebas Neue";
+              font-size: 20px;
+            }
+          }
+          .color {
+            width: 17px;
+            height: 6px;
+            background: linear-gradient(90deg, #5db2e2 0%, #5be8d1 100%);
+            border-radius: 3px;
+          }
+          .legend-name {
+            font-size: 12px;
+            color: #2f3180;
+            @include flex-grow(1);
+            margin-right: 20px;
+          }
+        }
+        .rank-progress {
+          width: calc(100% - 40px);
+          height: 3px;
+          border-radius: 3px;
+          background: #ececec;
+          margin: 0 20px;
+          position: relative;
+          .progress {
+            position: absolute;
+            top: -2px;
+            left: 0;
+            height: 8px;
+            width: 160px;
+            background-image: linear-gradient(270deg, #5be6d2 5%, #5db6e1 76%);
+            border-radius: 3px;
+            &::after {
+              content: "";
+              position: absolute;
+              right: 0;
+              top: -8px;
+              width: 17px;
+              height: 22px;
+              background: #5be5d2;
+              box-shadow: 0 3px 4px 0 rgba(57, 168, 153, 0.72);
+              border-radius: 8.5px;
+            }
+          }
+          .you {
+            position: absolute;
+            left: 80px;
+            top: -12px;
+            width: 7px;
+            height: 30px;
+            background: #2f3180;
+            border-radius: 3.5px;
+          }
+        }
+        .legend-text {
+          padding: 30px 20px;
+          .text {
+            font-family: "Bebas Neue";
+            font-size: 16px;
+            color: #69c48c;
+            &.draw {
+              color: #606380;
+            }
+            &.loss {
+              color: #f86364;
+            }
+          }
+        }
+      }
+    }
+  }
+}

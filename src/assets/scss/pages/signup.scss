@@ -26,7 +26,7 @@
       margin-top: 20px;
       .input-label {
         font-size: 14px;
-        font-weight: $bold;
+        font-weight: bold;
         color: #b2e7f4;
         line-height: 14px;
         text-align: left;
@@ -57,8 +57,8 @@
         width: 100%;
         font-size: 15px;
         padding: 5px 0px;
-        color: $white;
-        font-weight: $bold;
+        color: white;
+        font-weight: bold;
         background: none;
         border: none;
         border-bottom: 1px solid rgba(#d8d8d8, 0.5);
@@ -71,8 +71,8 @@
         width: 100%;
         font-size: 15px;
         padding: 5px 0px;
-        color: $white;
-        font-weight: $bold;
+        color: white;
+        font-weight: bold;
         background: #4b4296;
         border-radius: 8px;
         border: none;
@@ -88,8 +88,8 @@
         // height: 22px;
         padding: 5px 0px;
         font-size: 15px;
-        color: $white;
-        font-weight: $bold;
+        color: white;
+        font-weight: bold;
         background: transparent url(/src/assets/img/signup/custom-select-bg.svg)
           right 2px center no-repeat;
         border: none;
@@ -116,7 +116,7 @@
           width: 14px;
           height: 14px;
           //   background: #4b4296;
-          background: $white;
+          background: white;
           border: 1px solid #737071;
           box-shadow: 0 15px 30px 0 #2f276e;
           border-radius: 2px;
@@ -166,7 +166,7 @@
   }
   .terms-conditions {
     font-size: 12px;
-    color: $white;
+    color: white;
     white-space: nowrap;
     margin-left: 5px;
     .link {
@@ -185,14 +185,14 @@
 
   .sub-text {
     font-size: 15px;
-    font-weight: $bold;
+    font-weight: bold;
     color: rgba(#ffffff, 0.75);
     letter-spacing: 0;
   }
 
   .link {
     font-size: 15px;
-    font-weight: $bold;
+    font-weight: bold;
     color: #b2e7f4;
   }
 

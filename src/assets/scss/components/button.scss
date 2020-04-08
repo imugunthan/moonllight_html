@@ -7,6 +7,15 @@
   border-radius: 3px;
   border: 0 solid #7880f3;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.15);
+  &--primary {
+    font-size: 13px;
+    font-weight: $bold;
+    background: #333589;
+    box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+      0 12px 20px -16px rgba(158, 117, 255, 0.15);
+    color: #b2e7f4;
+    text-align: center;
+  }
   &--secondary {
     background: #55c77c;
     box-shadow: 0 7px 9px -4px rgba(85, 199, 124, 0.62);
