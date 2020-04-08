@@ -8332,6 +8332,29 @@ table .points .loss {
   background: url(/src/assets/img/profile/referral-right.svg);
   box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
   border-radius: 12px;
+  position: relative;
+}
+.referrals .referrals-right .rescue {
+  position: absolute;
+  top: 530px;
+  left: 0;
+  width: 200px;
+}
+.referrals .referrals-right .rescue .bold {
+  font-family: "Bebas Neue";
+  font-size: 29px;
+  color: #000000;
+  letter-spacing: 1.78px;
+  text-align: right;
+  line-height: 22px;
+}
+.referrals .referrals-right .rescue .normal {
+  font-family: "Bebas Neue";
+  font-size: 21px;
+  color: #000000;
+  text-align: right;
+  text-transform: uppercase;
+  line-height: 22px;
 }
 
 /*# sourceMappingURL=app.css.map */
