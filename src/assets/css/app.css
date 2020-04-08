@@ -8357,4 +8357,24 @@ table .points .loss {
   line-height: 22px;
 }
 
+.main-circle .circle:nth-child(2) {
+  stroke: #56c079;
+}
+
+.main-circle .circle:nth-child(4) {
+  stroke: #56c079;
+}
+
+.main-circle .circle:nth-child(6) {
+  stroke: #56c079;
+}
+
+.main-circle .circle:nth-child(8) {
+  stroke: #56c079;
+}
+
+.main-circle .circle:nth-child(10) {
+  stroke: #56c079;
+}
+
 /*# sourceMappingURL=app.css.map */
