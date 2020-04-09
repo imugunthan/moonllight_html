@@ -8377,6 +8377,90 @@ table .points .loss {
   stroke: #56c079;
 }
 
+.modal--profile-update .modal-holder {
+  width: 625px;
+  height: 475px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2a276f url(/src/assets/img/profile/profile-selection-bg.svg) right top 20px no-repeat;
+  box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+  border-radius: 16px;
+  padding: 15px 35px;
+}
+.modal--profile-update .modal-holder .modal-title {
+  font-family: "Bebas Neue";
+  font-size: 36px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+}
+.modal--profile-update .modal-holder .modal-top-section {
+  align-items: flex-end;
+  margin-top: -20px;
+}
+.modal--profile-update .modal-holder .profile-image {
+  width: 106px;
+  height: 106px;
+  background: #bdc7ff;
+  border-radius: 50%;
+  position: relative;
+}
+.modal--profile-update .modal-holder .profile-image > img {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: calc(100% + 5px);
+  border-radius: 50%;
+}
+.modal--profile-update .modal-holder .profile-name {
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  color: #ffffff;
+}
+.modal--profile-update .modal-holder .profile-holder {
+  background: white;
+  height: 240px;
+  margin-top: 15px;
+  padding: 25px 0;
+  overflow: auto;
+}
+.modal--profile-update .modal-holder .profile-holder .player-card {
+  padding: 0px 25px;
+  width: calc(100% / 4);
+  min-width: calc(100% / 4);
+  height: 100%;
+  border-right: 1px solid rgba(151, 151, 151, 0.28);
+}
+.modal--profile-update .modal-holder .profile-holder .player-card .text-small {
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
+.modal--profile-update .modal-holder .profile-holder .player-card .text-large {
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 30px;
+  margin-top: 20px;
+}
+.modal--profile-update .modal-holder .profile-holder .player-image {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  background: #2a266e;
+  position: relative;
+  margin: 0 auto;
+}
+.modal--profile-update .modal-holder .profile-holder .player-image > img {
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .create-league--empty {
   padding: 0 50px;
 }
