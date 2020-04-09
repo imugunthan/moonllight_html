@@ -1,0 +1,112 @@
+.create-league--empty {
+  padding: 0 50px;
+  .create-league-left {
+    width: 40%;
+    height: 100vh;
+    position: relative;
+    .body {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .title {
+      font-family: "Bebas Neue";
+      font-size: 51px;
+      color: #ffffff;
+      letter-spacing: 1.27px;
+    }
+    .sub-text {
+      max-width: 450px;
+      font-size: 21px;
+      color: #f8f8f8;
+    }
+    .btn-wrap {
+      .btn-label {
+        font-size: 21px;
+        color: #f8f8f8;
+        margin-top: 35px;
+      }
+      .btn--primary {
+        width: 190px;
+        padding: 11px 20px;
+        font-family: "Bebas Neue";
+        font-size: 23px;
+        font-weight: normal;
+        background: #333589
+          url(/src/assets/img/create-league/create-button-bg.svg) right bottom
+          no-repeat;
+      }
+    }
+  }
+  .create-league-right {
+    width: 60%;
+    height: 100vh;
+    position: relative;
+    background: url(/src/assets/img/create-league/create-league-empty.svg) right
+      top no-repeat;
+    // box-shadow: 0 8px 59px 26px rgba(0, 0, 0, 0.15);
+    .image-holder {
+      position: absolute;
+      max-width: 625px;
+      bottom: 100px;
+      right: 0;
+      .img-wrap {
+        position: relative;
+        > img {
+          height: 550px;
+        }
+        .club-name {
+          position: absolute;
+          bottom: 0;
+          z-index: 1;
+          width: max-content;
+          display: inline-block;
+          font-family: "Bebas Neue";
+          padding: 8px 20px;
+          font-size: 29px;
+          color: #ffffff;
+          text-align: center;
+          background: #fb295e;
+          border-radius: 5px;
+        }
+        &:first-child {
+          .club-name {
+            left: -30px;
+            bottom: -30px;
+          }
+        }
+        &:nth-child(2) {
+          margin-bottom: -40px;
+          margin-left: -30px;
+          > img {
+            height: 580px;
+          }
+          .club-name {
+            left: -30px;
+            bottom: -30px;
+            background: #525cd7;
+          }
+        }
+        &:nth-child(3) {
+          margin-bottom: -40px;
+          margin-left: -30px;
+          > img {
+            height: 590px;
+          }
+          .club-name {
+            left: 40px;
+            bottom: -30px;
+          }
+        }
+        &:last-child {
+          margin-left: -20px;
+          .club-name {
+            left: 60px;
+            bottom: -10px;
+            background: #525cd7;
+          }
+        }
+      }
+    }
+  }
+}

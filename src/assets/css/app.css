@@ -6695,7 +6695,7 @@ table .points .loss {
 }
 
 .create-league {
-  background: url(/src/assets/img/create-league/create-league-bg.svg) center/cover no-repeat;
+  background: url(/src/assets/img/create-league/create-league-bg-1.svg) center/cover no-repeat;
   position: relative;
 }
 .create-league-header {
@@ -8375,6 +8375,111 @@ table .points .loss {
 
 .main-circle .circle:nth-child(10) {
   stroke: #56c079;
+}
+
+.create-league--empty {
+  padding: 0 50px;
+}
+.create-league--empty .create-league-left {
+  width: 40%;
+  height: 100vh;
+  position: relative;
+}
+.create-league--empty .create-league-left .body {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.create-league--empty .create-league-left .title {
+  font-family: "Bebas Neue";
+  font-size: 51px;
+  color: #ffffff;
+  letter-spacing: 1.27px;
+}
+.create-league--empty .create-league-left .sub-text {
+  max-width: 450px;
+  font-size: 21px;
+  color: #f8f8f8;
+}
+.create-league--empty .create-league-left .btn-wrap .btn-label {
+  font-size: 21px;
+  color: #f8f8f8;
+  margin-top: 35px;
+}
+.create-league--empty .create-league-left .btn-wrap .btn--primary {
+  width: 190px;
+  padding: 11px 20px;
+  font-family: "Bebas Neue";
+  font-size: 23px;
+  font-weight: normal;
+  background: #333589 url(/src/assets/img/create-league/create-button-bg.svg) right bottom no-repeat;
+}
+.create-league--empty .create-league-right {
+  width: 60%;
+  height: 100vh;
+  position: relative;
+  background: url(/src/assets/img/create-league/create-league-empty.svg) right top no-repeat;
+}
+.create-league--empty .create-league-right .image-holder {
+  position: absolute;
+  max-width: 625px;
+  bottom: 100px;
+  right: 0;
+}
+.create-league--empty .create-league-right .image-holder .img-wrap {
+  position: relative;
+}
+.create-league--empty .create-league-right .image-holder .img-wrap > img {
+  height: 550px;
+}
+.create-league--empty .create-league-right .image-holder .img-wrap .club-name {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  width: max-content;
+  display: inline-block;
+  font-family: "Bebas Neue";
+  padding: 8px 20px;
+  font-size: 29px;
+  color: #ffffff;
+  text-align: center;
+  background: #fb295e;
+  border-radius: 5px;
+}
+.create-league--empty .create-league-right .image-holder .img-wrap:first-child .club-name {
+  left: -30px;
+  bottom: -30px;
+}
+.create-league--empty .create-league-right .image-holder .img-wrap:nth-child(2) {
+  margin-bottom: -40px;
+  margin-left: -30px;
+}
+.create-league--empty .create-league-right .image-holder .img-wrap:nth-child(2) > img {
+  height: 580px;
+}
+.create-league--empty .create-league-right .image-holder .img-wrap:nth-child(2) .club-name {
+  left: -30px;
+  bottom: -30px;
+  background: #525cd7;
+}
+.create-league--empty .create-league-right .image-holder .img-wrap:nth-child(3) {
+  margin-bottom: -40px;
+  margin-left: -30px;
+}
+.create-league--empty .create-league-right .image-holder .img-wrap:nth-child(3) > img {
+  height: 590px;
+}
+.create-league--empty .create-league-right .image-holder .img-wrap:nth-child(3) .club-name {
+  left: 40px;
+  bottom: -30px;
+}
+.create-league--empty .create-league-right .image-holder .img-wrap:last-child {
+  margin-left: -20px;
+}
+.create-league--empty .create-league-right .image-holder .img-wrap:last-child .club-name {
+  left: 60px;
+  bottom: -10px;
+  background: #525cd7;
 }
 
 /*# sourceMappingURL=app.css.map */
