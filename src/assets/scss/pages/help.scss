@@ -1,0 +1,101 @@
+.help {
+  padding: 0 40px;
+  .how-can-we-help {
+    width: 100%;
+    padding: 30px;
+    background: url(/src/assets/img/profile/profile-card-bg.svg) right 210px top
+        no-repeat,
+      linear-gradient(180deg, #2f3180 0%, #4349b1 82%, #525cd7 100%);
+    box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+    border-radius: 12px;
+    .title {
+      font-family: "Bebas Neue";
+      font-size: 60px;
+      color: #ffffff;
+      text-align: center;
+    }
+    .search-wrap {
+      width: 70%;
+      margin: 0 auto;
+      .search-box {
+        padding: 5px 15px;
+        background: rgba(229, 221, 221, 0.47);
+        border: none;
+        border-radius: 2px;
+        font-size: 21px;
+        color: white;
+        font-weight: bold;
+        &::placeholder {
+          font-size: 21px;
+          color: rgba(#ffffff, 0.75);
+        }
+      }
+      .btn--primary {
+        padding: 8px 20px;
+        width: 135px;
+      }
+    }
+  }
+  .help-card {
+    max-width: 280px;
+    min-width: 280px;
+    height: 255px;
+    background: #ffffff;
+    box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+    border-radius: 5px;
+    margin: 25px 50px;
+    cursor: pointer;
+    &-wrap {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      padding-bottom: 25px;
+    }
+    &-head {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 61px;
+      padding: 2px 35px;
+      font-size: 24px;
+      font-weight: $bold;
+      color: #686ed9;
+      text-align: center;
+      line-height: 29px;
+      box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
+      border-radius: 3px 3px 0 0;
+    }
+    &-body {
+      height: calc(255px - 61px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > img {
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+    &:hover {
+      background: #fb295e url(/src/assets/img/help/help-card-bg.svg) left center
+        no-repeat;
+      box-shadow: 0 6px 30px 0 rgba(47, 39, 110, 0.69);
+      border-radius: 5px;
+      .help-card {
+        &-head {
+          color: white;
+          background: rgba(#ffffff, 0.15);
+        }
+        &-body {
+          > img {
+            &:first-child {
+              display: none;
+            }
+            &:last-child {
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

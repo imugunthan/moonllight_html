@@ -324,6 +324,10 @@ body {
   font-weight: 700;
 }
 
+.pd-20-40 {
+  padding: 20px 40px;
+}
+
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
@@ -8564,6 +8568,97 @@ table .points .loss {
   left: 60px;
   bottom: -10px;
   background: #525cd7;
+}
+
+.help {
+  padding: 0 40px;
+}
+.help .how-can-we-help {
+  width: 100%;
+  padding: 30px;
+  background: url(/src/assets/img/profile/profile-card-bg.svg) right 210px top no-repeat, linear-gradient(180deg, #2f3180 0%, #4349b1 82%, #525cd7 100%);
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 12px;
+}
+.help .how-can-we-help .title {
+  font-family: "Bebas Neue";
+  font-size: 60px;
+  color: #ffffff;
+  text-align: center;
+}
+.help .how-can-we-help .search-wrap {
+  width: 70%;
+  margin: 0 auto;
+}
+.help .how-can-we-help .search-wrap .search-box {
+  padding: 5px 15px;
+  background: rgba(229, 221, 221, 0.47);
+  border: none;
+  border-radius: 2px;
+  font-size: 21px;
+  color: white;
+  font-weight: bold;
+}
+.help .how-can-we-help .search-wrap .search-box::placeholder {
+  font-size: 21px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.help .how-can-we-help .search-wrap .btn--primary {
+  padding: 8px 20px;
+  width: 135px;
+}
+.help .help-card {
+  max-width: 280px;
+  min-width: 280px;
+  height: 255px;
+  background: #ffffff;
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 5px;
+  margin: 25px 50px;
+  cursor: pointer;
+}
+.help .help-card-wrap {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 25px;
+}
+.help .help-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 61px;
+  padding: 2px 35px;
+  font-size: 24px;
+  font-weight: 700;
+  color: #686ed9;
+  text-align: center;
+  line-height: 29px;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
+  border-radius: 3px 3px 0 0;
+}
+.help .help-card-body {
+  height: calc(255px - 61px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.help .help-card-body > img:last-child {
+  display: none;
+}
+.help .help-card:hover {
+  background: #fb295e url(/src/assets/img/help/help-card-bg.svg) left center no-repeat;
+  box-shadow: 0 6px 30px 0 rgba(47, 39, 110, 0.69);
+  border-radius: 5px;
+}
+.help .help-card:hover .help-card-head {
+  color: white;
+  background: rgba(255, 255, 255, 0.15);
+}
+.help .help-card:hover .help-card-body > img:first-child {
+  display: none;
+}
+.help .help-card:hover .help-card-body > img:last-child {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=app.css.map */
