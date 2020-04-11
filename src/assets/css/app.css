@@ -8393,6 +8393,21 @@ table .points .loss {
   border-radius: 16px;
   padding: 15px 35px;
 }
+.modal--profile-update .modal-holder .options-wrap .match-selection {
+  background: #4b4296;
+}
+.modal--profile-update .modal-holder .options-wrap .check-button-text {
+  min-width: 82px;
+  background: #4b4296;
+  transition: none;
+}
+.modal--profile-update .modal-holder .options-wrap input:checked + .check-button-text {
+  color: white;
+  font-weight: bold;
+  background: #fb295e url(/src/assets/img/profile/button-bg.svg) right top no-repeat;
+  box-shadow: 0 5px 12px -4px rgba(45, 47, 69, 0.54);
+  border-radius: 3px;
+}
 .modal--profile-update .modal-holder .modal-title {
   font-family: "Bebas Neue";
   font-size: 36px;
@@ -8425,17 +8440,24 @@ table .points .loss {
 }
 .modal--profile-update .modal-holder .profile-holder {
   background: white;
-  height: 240px;
+  height: 200px;
   margin-top: 15px;
-  padding: 25px 0;
   overflow: auto;
+  background: rgba(75, 66, 150, 0.82);
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 10px;
 }
 .modal--profile-update .modal-holder .profile-holder .player-card {
-  padding: 0px 25px;
   width: calc(100% / 4);
   min-width: calc(100% / 4);
   height: 100%;
+  padding: 25px;
+  color: white;
   border-right: 1px solid rgba(151, 151, 151, 0.28);
+}
+.modal--profile-update .modal-holder .profile-holder .player-card.selected {
+  background: #fb295e url(/src/assets/img/profile/profile-bg.svg) left center no-repeat;
+  box-shadow: 0 15px 30px 0 #1a184f;
 }
 .modal--profile-update .modal-holder .profile-holder .player-card .text-small {
   font-size: 12px;
@@ -8456,6 +8478,9 @@ table .points .loss {
   background: #2a266e;
   position: relative;
   margin: 0 auto;
+}
+.modal--profile-update .modal-holder .profile-holder .player-image.empty-player > img {
+  border-radius: 0;
 }
 .modal--profile-update .modal-holder .profile-holder .player-image > img {
   position: absolute;

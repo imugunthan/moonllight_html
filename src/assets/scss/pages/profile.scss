@@ -508,6 +508,24 @@
     box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
     border-radius: 16px;
     padding: 15px 35px;
+    .options-wrap {
+      .match-selection {
+        background: #4b4296;
+      }
+      .check-button-text {
+        min-width: 82px;
+        background: #4b4296;
+        transition: none;
+      }
+      input:checked + .check-button-text {
+        color: white;
+        font-weight: bold;
+        background: #fb295e url(/src/assets/img/profile/button-bg.svg) right top
+          no-repeat;
+        box-shadow: 0 5px 12px -4px rgba(45, 47, 69, 0.54);
+        border-radius: 3px;
+      }
+    }
     .modal-title {
       font-family: "Bebas Neue";
       font-size: 36px;
@@ -541,16 +559,24 @@
       }
       &-holder {
         background: white;
-        height: 240px;
+        height: 200px;
         margin-top: 15px;
-        padding: 25px 0;
         overflow: auto;
+        background: rgba(#4b4296, 0.82);
+        box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+        border-radius: 10px;
         .player-card {
-          padding: 0px 25px;
           width: calc(100% / 4);
           min-width: calc(100% / 4);
           height: 100%;
+          padding: 25px;
+          color: white;
           border-right: 1px solid rgba(151, 151, 151, 0.28);
+          &.selected {
+            background: #fb295e url(/src/assets/img/profile/profile-bg.svg) left
+              center no-repeat;
+            box-shadow: 0 15px 30px 0 #1a184f;
+          }
           .text-small {
             font-size: 12px;
             font-weight: bold;
@@ -571,6 +597,11 @@
           background: #2a266e;
           position: relative;
           margin: 0 auto;
+          &.empty-player {
+            > img {
+              border-radius: 0;
+            }
+          }
           > img {
             position: absolute;
             bottom: 0;
