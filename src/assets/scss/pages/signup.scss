@@ -247,3 +247,25 @@
     width: 130px;
   }
 }
+
+.error--2 {
+  .custom-select {
+    background: transparent !important;
+  }
+  .select-wrap {
+    position: relative;
+    .custom-select {
+      color: #fb295e;
+    }
+    &::after {
+      content: "\E001";
+      font-family: "Material Icons";
+      font-size: 20px;
+      display: inline-block;
+      color: #fb295e;
+      position: absolute;
+      top: 5px;
+      right: 5px;
+    }
+  }
+}

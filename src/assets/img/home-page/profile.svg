@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="39px" height="39px" viewBox="0 0 39 39" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 24 Copy 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="10.7999011" cy="10.8" r="10.8"></circle>
+        <filter x="-69.4%" y="-55.6%" width="238.9%" height="238.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="3" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="4.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.118771853 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Homepage" transform="translate(-113.000000, -156.000000)">
+            <g id="Group-24-Copy-11" transform="translate(122.000000, 162.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <circle id="Oval" fill="#525CD7" cx="10.7999011" cy="10.8" r="9"></circle>
+                <g id="noun_person_1393453" transform="translate(5.399901, 5.400000)" fill="#FFFFFF" fill-rule="nonzero">
+                    <g id="Group" transform="translate(0.720000, 0.000000)">
+                        <g transform="translate(0.000000, 5.730612)" id="Path">
+                            <path d="M3.35777778,0.121536735 C1.48488889,0.467761224 0.111111111,1.43802551 0.111111111,3.62950714 L0.111111111,4.12902551 L9,4.12902551 L9,3.62950714 C9,1.43802551 7.62622222,0.467761224 5.75344444,0.121417347"></path>
+                        </g>
+                        <g transform="translate(1.888889, 0.000000)" id="Path">
+                            <path d="M5.18411111,2.87390204 C5.18411111,4.36792041 4.05688889,6.3579949 2.66666667,6.3579949 C1.27644444,6.3579949 0.149222222,4.36792041 0.149222222,2.87390204 C0.149222222,1.38000306 1.27644444,0.168933673 2.66666667,0.168933673 C4.05688889,0.168933673 5.18411111,1.38012245 5.18411111,2.87390204 Z"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
