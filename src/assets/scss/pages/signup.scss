@@ -269,3 +269,44 @@
     }
   }
 }
+
+.error-float-tooltip {
+  display: none;
+}
+
+.float-error {
+  position: relative;
+  .error-float-tooltip {
+    display: block;
+    font-size: 13px;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 10px;
+    width: max-content;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    background: #f46869;
+    box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.29);
+    border-radius: 6px;
+    > img {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      border: 10px solid #f46869;
+      border-bottom: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      bottom: -19px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
