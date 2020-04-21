@@ -7615,10 +7615,12 @@ table .points .loss {
 }
 .upcoming-draft__main {
   height: calc(170px - 35px);
-  -ms-flex-pack: distribute;
-  -webkit-justify-content: space-around;
-  -moz-justify-content: space-around;
-  justify-content: space-around;
+  padding: 0 50px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
 }
 .upcoming-draft__main .info-container .title {
   margin-bottom: 10px;
@@ -7629,6 +7631,12 @@ table .points .loss {
   color: #fbfbfb;
   letter-spacing: 0.47px;
   text-shadow: 0 3px 0 rgba(19, 18, 65, 0.2);
+}
+.upcoming-draft__main .info-container .title .draft-missed {
+  font-size: 33px;
+  line-height: 24px;
+  color: #f46869;
+  letter-spacing: 0.82px;
 }
 .upcoming-draft__main .info-container .title .info-wrap .info-icon {
   cursor: pointer;
@@ -7645,6 +7653,7 @@ table .points .loss {
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 10px;
+  max-width: 555px;
 }
 .upcoming-draft__main .info-container .btn {
   font-size: 13px;
@@ -7976,6 +7985,8 @@ table .points .loss {
   margin-bottom: 10px;
 }
 
+/* img path */
+/* break points*/
 .profile {
   padding: 20px 40px;
 }

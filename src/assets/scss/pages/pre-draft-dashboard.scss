@@ -9,7 +9,8 @@
   position: relative;
   &__main {
     height: calc(170px - 35px);
-    @include justify-content(space-around);
+    padding: 0 50px;
+    @include justify-content(space-between);
     .info-container {
       .title {
         margin-bottom: 10px;
@@ -19,6 +20,12 @@
           color: #fbfbfb;
           letter-spacing: 0.47px;
           text-shadow: 0 3px 0 rgba(19, 18, 65, 0.2);
+        }
+        .draft-missed {
+          font-size: 33px;
+          line-height: 24px;
+          color: #f46869;
+          letter-spacing: 0.82px;
         }
         .info-wrap {
           .info-icon {
@@ -38,6 +45,7 @@
         font-weight: $bold;
         color: #ffffff;
         margin-bottom: 10px;
+        max-width: 555px;
       }
       .btn {
         font-size: 13px;
