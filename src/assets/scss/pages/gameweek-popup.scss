@@ -2,28 +2,32 @@
 @import "../helpers/variable.scss";
 
 .gameweek-popup {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  overflow: scroll;
-  background: #777899;
-  z-index: 10;
-  .gameweek {
-    &-container {
-      position: absolute;
-      width: 80%;
-      top: 30px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #faf9fc;
-      border-radius: 10px;
-      overflow: hidden;
-      @include respond-to(1100px) {
-        width: 90%;
+  &--full {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    background: #777899;
+    z-index: 10;
+    .gameweek {
+      &-container {
+        position: absolute;
+        width: 80%;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #faf9fc;
+        border-radius: 10px;
+        overflow: hidden;
+        @include respond-to(1100px) {
+          width: 90%;
+        }
       }
     }
+  }
+  .gameweek {
     &-top {
       border-radius: 10px 10px 0 0;
       background-image: url(/src/assets/img/league-dashboard/gameweek-bg.png),

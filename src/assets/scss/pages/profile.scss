@@ -617,3 +617,14 @@
     }
   }
 }
+
+.info-wrap.error {
+  .label {
+    color: #fb295e !important;
+    &::after {
+      content: "!";
+      margin-left: 5px;
+      color: #fb295e;
+    }
+  }
+}

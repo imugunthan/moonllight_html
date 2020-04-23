@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Player-Card---State-1-(Injured)" transform="translate(-61.000000, -166.000000)">
+            <g id="Group" transform="translate(61.000000, 166.000000)">
+                <g id="Group-57-Copy" fill="#F1C351">
+                    <g id="Group-14-Copy">
+                        <circle id="Oval" cx="12" cy="12" r="12"></circle>
+                    </g>
+                </g>
+                <g id="Group-6" transform="translate(3.000000, 6.000000)" fill="#202058" fill-rule="nonzero">
+                    <path d="M14.72625,3.24999456 L18,6.49998912 L15.54525,6.49998912 C15.54525,10.0915286 12.616875,12.9999892 9,12.9999892 C7.77271631,13.0022391 6.56796076,12.6537703 5.51475,11.991889 L6.7095,10.8065274 C7.387875,11.1728904 8.173125,11.374981 9,11.374981 C11.707875,11.374981 13.9095,9.18862098 13.9095,6.49998912 L11.45475,6.49998912 L14.727375,3.24999456 L14.72625,3.24999456 Z M4.091625,6.49998912 L6.546375,6.49998912 L3.27375,9.74998368 L0,6.49998912 L2.45475,6.49998912 C2.45475,2.90844968 5.383125,0 9,0 C10.28475,0 11.4795,0.37345392 12.48525,1.00690741 L11.2905,2.19345087 C10.5805969,1.81617422 9.79556965,1.62134708 9,1.62499728 C6.292125,1.62499728 4.0905,3.81135726 4.0905,6.49998912 L4.091625,6.49998912 Z" id="Shape-Copy"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

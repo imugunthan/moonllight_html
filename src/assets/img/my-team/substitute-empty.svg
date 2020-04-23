@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="122px" height="167px" viewBox="0 0 122 167" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Group 19</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.7">
+        <g id="Bench---Switch-Priority" transform="translate(-363.000000, -153.000000)">
+            <g id="Group-19" transform="translate(363.000000, 153.000000)">
+                <rect id="Rectangle" fill="#35347B" x="0" y="0" width="122" height="167" rx="15"></rect>
+                <g id="noun_profile_1489105" transform="translate(30.000000, 24.000000)">
+                    <path d="M31,0 C13.9068782,0 0,13.9059557 0,31 C0,48.0940443 13.9068782,62 31,62 C48.0931218,62 62,48.0940443 62,31 C62,13.9059557 48.0931218,0 31,0 Z M48.2738066,47.5352295 C44.3380555,41.6810589 37.9237432,38.0629841 31,38.0629841 C24.0904773,38.0629841 17.6652905,41.6835686 13.7278664,47.5377392 C9.6072479,43.2353671 7.07013141,37.4113123 7.07013141,30.9991635 C7.07013141,17.8042745 17.8041501,7.06800335 31,7.06800335 C44.1958499,7.06800335 54.9298686,17.805111 54.9298686,31 C54.9298686,37.4096392 52.3910791,43.2362037 48.2738066,47.5352295 Z M31,9.22211728 C23.811085,9.22211728 17.9622494,15.0712686 17.9622494,22.2605716 C17.9622494,29.4498745 23.811085,35.2973527 31,35.2973527 C38.188915,35.2973527 44.0377506,29.4498745 44.0377506,22.2605716 C44.0377506,15.0712686 38.188915,9.22211728 31,9.22211728 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero" opacity="0.0610584077"></path>
+                    <rect id="Rectangle" fill="#414083" x="0" y="86" width="62" height="8" rx="3"></rect>
+                    <rect id="Rectangle-Copy" fill="#414083" x="0" y="104" width="62" height="8" rx="3"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

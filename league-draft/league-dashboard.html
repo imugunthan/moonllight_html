@@ -812,7 +812,7 @@
                 </div>
             </div>
         </section>
-        <section class="modal-notifications" style="display: none;">
+        <section class="modal-notifications">
             <div class="modal--container d-flex">
                 <div class="notifications-detail">
                     <img src="/src/assets/img/player-popout/close-icon.svg" alt="" class="notifications-close">
@@ -884,10 +884,54 @@
                         <p class="title">Notifications</p>
                         <p class="mark-all-read ml-auto">Mark all as read</p>
                     </div>
-                    <div class="notifications-dropdown">
+                    <div class="notifications-dropdown d-flex-v-center column-filters add-column">
                         <select class="custom-select">
                             <option value="All notifications">All notifications</option>
                         </select>
+                        <select class="custom-select ml-10">
+                            <option value="All notifications">All notifications</option>
+                        </select>
+                        <div class="more-dropdown open">
+                            <div class="title d-flex-space-center">
+                                Notification Types
+                            </div>
+                            <div class="additional-filters-wrap">
+                                <div class="additional-filters">
+                                    <!-- <div class="custom-checkbox mt-15 d-flex-v-center mb-10">
+                                        <input type="checkbox" id="is_current{{i}}" formcontrolname="is_current">
+                                        <label for="is_current{{i}}" class="checkbox-label d-flex-v-center">
+                                            <code class="checkbox-icon-wrap"></code>
+                                            <span class="checkbox-txt">Gameweek Match Updates</span>
+                                        </label>
+                                    </div> -->
+                                    <div class="custom-checkbox mt-15 d-flex-v-center mb-10">
+                                        <input type="checkbox" id="is_current{{i}}" formcontrolname="is_current">
+                                        <label for="is_current{{i}}" class="checkbox-label d-flex-v-center">
+                                            <code class="checkbox-icon-wrap"></code>
+                                            <span class="checkbox-txt">Trade/Wagers</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-checkbox mt-15 d-flex-v-center mb-10">
+                                        <input type="checkbox" id="is_current{{i}}" formcontrolname="is_current">
+                                        <label for="is_current{{i}}" class="checkbox-label d-flex-v-center">
+                                            <code class="checkbox-icon-wrap"></code>
+                                            <span class="checkbox-txt">Player Injuries</span>
+                                        </label>
+                                    </div>
+                                    <div class="custom-checkbox mt-15 d-flex-v-center mb-10">
+                                        <input type="checkbox" id="is_current{{i}}" formcontrolname="is_current">
+                                        <label for="is_current{{i}}" class="checkbox-label d-flex-v-center">
+                                            <code class="checkbox-icon-wrap"></code>
+                                            <span class="checkbox-txt">Website Notifications</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="btn-wrap d-flex-v-center">
+                                    <button class="btn btn-cancel mr-10">Cancel</button>
+                                    <button class="btn btn-done">Done</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="notifications-short-wrap">
                         <div class="notifications-short-card d-flex-v-center unread">
@@ -897,6 +941,7 @@
                                 <p class="time">3:46pm</p>
                             </div>
                             <div class="noti-icon">
+                                <p class="noti-text">League 123</p>
                                 <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
                             </div>
                         </div>
@@ -907,7 +952,8 @@
                                 <p class="time">3:46pm</p>
                             </div>
                             <div class="noti-icon">
-                                <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
+                                <p class="noti-text">League 123</p>
+                                <img src="/src/assets/img/league-dashboard/schedule.svg" alt="">
                             </div>
                         </div>
                         <div class="notifications-short-card d-flex-v-center">
@@ -917,7 +963,8 @@
                                 <p class="time">3:46pm</p>
                             </div>
                             <div class="noti-icon">
-                                <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
+                                <p class="noti-text">League 123</p>
+                                <img src="/src/assets/img/league-dashboard/draft.svg" alt="">
                             </div>
                         </div>
                         <div class="notifications-short-card d-flex-v-center">
@@ -927,7 +974,8 @@
                                 <p class="time">3:46pm</p>
                             </div>
                             <div class="noti-icon">
-                                <img src="/src/assets/img/league-dashboard/trade.svg" alt="">
+                                <p class="noti-text">League 123</p>
+                                <img src="/src/assets/img/league-dashboard/line-up.svg" alt="">
                             </div>
                         </div>
                         <div class="notifications-short-card d-flex-v-center">
@@ -984,7 +1032,7 @@
                 </div>
             </div>
         </section>
-        <section class="gameweek-popup" style="display: none;">
+        <section class="gameweek-popup gameweek-popup--full" style="display: none;">
             <div class="gameweek-container mb-30">
                 <div class="gameweek-top">
                     <div class="top-title-section d-flex-space-center">

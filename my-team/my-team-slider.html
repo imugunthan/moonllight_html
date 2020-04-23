@@ -520,425 +520,143 @@
                 </div>
             </div>
         </section>
-        <section class="player-stats-popout hide">
-            <div class="player-stats-popout__head d-flex-space-center">
-                <div class="options-wrap">
-                    <div class="match-selection d-flex-v-center">
-                        <label for="match1" class="check-button">
-                            <input type="radio" id="match1" class="radio-button" name="match" checked="">
-                            <span class="check-button-text">Match 1</span>
-                        </label>
-                        <label for="match2" class="check-button">
-                            <input type="radio" id="match2" class="radio-button" name="match">
-                            <span class="check-button-text">Match 2</span>
-                        </label>
-                    </div>
-                </div>
+        <section class="fixture-slider slider scrollleft">
+            <div class="slider__header d-flex-space-center">
+                <ul class="list d-flex-v-center">
+                    <li class="list-item active">All</li>
+                    <li class="list-item material-icons">person</li>
+                </ul>
+                <p class="title">Fixtures</p>
                 <img src="/src/assets/img/league-dashboard/close-icon-2.svg" alt="">
             </div>
-            <div class="player-stats-popout__top d-flex-v-center">
-                <div class="team-info">
-                    <img src="/src/assets/img/player-popout/inter-milan.svg" alt="" class="team-logo">
-                    <p class="team-name">Inter Milan (A)</p>
-                    <div class="rank-wrap d-flex-v-center">
-                        <img src="/src/assets/img/player-popout/down-arrow.svg" alt="">
-                        <p class="rank">47th</p>
-                        <div class="team-difficulty diff-2">2</div>
-                    </div>
-                </div>
-                <div class="points-wrap">
-                    <div class="team-goal">
-                        <b>2</b> : 1
-                        <span>W</span>
-                    </div>
-                    <p class="points">27.38</p>
-                    <p class="proj-points">29.33</p>
-                </div>
-            </div>
-            <div class="player-stats-popout__stats overview">
-                <div class="current-info-stats">
-                    <ul class="tab-list d-flex-v-center">
-                        <li class="tab-items">Category</li>
-                        <li class="tab-items">Stat</li>
-                        <li class="tab-items">Pts</li>
-                    </ul>
-                    <div class="stats-table">
-                        <div class="table">
-                            <div class="head">General</div>
-                            <div class="table-items d-flex-v-center">
-                                <p class="value">Minutes</p>
-                                <p class="value">83'</p>
-                                <p class="value value--green">2.0</p>
+            <div class="fixture-slider__body">
+                <ul class="d-flex-center">
+                    <li class="league-nav active">
+                        <img src="/src/assets/img/calendar/bundesliga.svg" alt="">
+                    </li>
+                    <li class="league-nav">
+                        <img src="/src/assets/img/calendar/Premier-league.svg" alt="">
+                    </li>
+                    <li class="league-nav">
+                        <img src="/src/assets/img/calendar/la-liga.svg" alt="">
+                    </li>
+                    <li class="league-nav">
+                        <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                    </li>
+                </ul>
+                <div class="fixture-container">
+                    <p class="date">Friday, Oct 19th</p>
+                    <div class="fixture-card d-flex-v-center">
+                        <div class="team-details d-flex-v-center flex-grow-1">
+                            <div class="w-60">
+                                <div class="team d-flex-space-center">
+                                    <div class="team-name d-flex-v-center">
+                                        <img src="/src/assets/img/calendar/my-player.svg" alt="" class="my-player-icon">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="name">Leicester(12)</p>
+                                    </div>
+                                    <p class="team-goal">2</p>
+                                </div>
+                                <div class="team d-flex-space-center">
+                                    <div class="team-name d-flex-v-center my-team">
+                                        <img src="/src/assets/img/calendar/my-player.svg" alt="" class="my-player-icon">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="name">Leicester(12)</p>
+                                    </div>
+                                    <p class="team-goal">2</p>
+                                </div>
                             </div>
-                            <div class="table-items d-flex-v-center">
-                                <p class="value">Yellow Card</p>
-                                <p class="value">0</p>
-                                <p class="value">0</p>
+                            <div class="w-20">
+                                <div class="time fulltime">FT</div>
                             </div>
-                            <div class="table-items d-flex-v-center">
-                                <p class="value">Red Card</p>
-                                <p class="value">0</p>
-                                <p class="value">0</p>
-                            </div>
-                        </div>
-                        <div class="table">
-                            <div class="head">General</div>
-                            <div class="table-items d-flex-v-center">
-                                <p class="value">Goals Scored</p>
-                                <p class="value">12</p>
-                                <p class="value value--green">31</p>
-                            </div>
-                            <div class="table-items d-flex-v-center">
-                                <p class="value">Shots On Goal</p>
-                                <p class="value">24</p>
-                                <p class="value">36</p>
-                            </div>
-                            <div class="table-items d-flex-v-center">
-                                <p class="value">Minutes</p>
-                                <p class="value">83'</p>
-                                <p class="value">2.0</p>
+                            <div class="league-img">
+                                <img src="/src/assets//img/calendar/la-liga.svg" alt="" class="league-image">
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="player-stats-popout__bottom">
-                <button class="btn btn--secondary">View Profile</button>
-            </div>
-        </section>
-        <section class="live-upcoming hide">
-            <div class="live-upcoming__head d-flex-space-center">
-                <p class="title">Live & Upcoming GWs</p>
-                <img src="/src/assets/img/league-dashboard/close-icon-2.svg" alt="">
-            </div>
-            <div class="live-upcoming__body">
-                <div class="gameweek-row d-flex-v-center">
-                    <div class="gw d-flex-v-center active">GW3</div>
-                    <div class="team-info-wrap flex-grow-1">
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points">24<span>PTS</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameweek-row d-flex-v-center">
-                    <div class="gw d-flex-v-center">GW3</div>
-                    <div class="team-info-wrap flex-grow-1">
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points">24<span>PTS</span></div>
-                        </div>
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points points-proj">24<span>PTS</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameweek-row d-flex-v-center">
-                    <div class="gw d-flex-v-center">GW3</div>
-                    <div class="team-info-wrap flex-grow-1">
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points">24<span>PTS</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameweek-row d-flex-v-center">
-                    <div class="gw d-flex-v-center">GW3</div>
-                    <div class="team-info-wrap flex-grow-1">
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points points-proj">24<span>PTS</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameweek-row d-flex-v-center">
-                    <div class="gw d-flex-v-center">GW3</div>
-                    <div class="team-info-wrap flex-grow-1">
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points">24<span>PTS</span></div>
-                        </div>
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points points-proj">24<span>PTS</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameweek-row d-flex-v-center">
-                    <div class="gw d-flex-v-center">GW3</div>
-                    <div class="team-info-wrap flex-grow-1">
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points">24<span>PTS</span></div>
-                        </div>
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points points-proj">24<span>PTS</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameweek-row d-flex-v-center">
-                    <div class="gw d-flex-v-center">GW3</div>
-                    <div class="team-info-wrap flex-grow-1">
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points">24<span>PTS</span></div>
-                        </div>
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points points-proj">24<span>PTS</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameweek-row d-flex-v-center">
-                    <div class="gw d-flex-v-center">GW3</div>
-                    <div class="team-info-wrap flex-grow-1">
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points">24<span>PTS</span></div>
-                        </div>
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points points-proj">24<span>PTS</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameweek-row d-flex-v-center">
-                    <div class="gw d-flex-v-center">GW3</div>
-                    <div class="team-info-wrap flex-grow-1">
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points">24<span>PTS</span></div>
-                        </div>
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points points-proj">24<span>PTS</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gameweek-row d-flex-v-center">
-                    <div class="gw d-flex-v-center">GW3</div>
-                    <div class="team-info-wrap flex-grow-1">
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points">24<span>PTS</span></div>
-                        </div>
-                        <div class="team-info d-flex-v-center">
-                            <p class="team-name flex-grow-1">Wolves (H)</p>
-                            <div class="ft">FT</div>
-                            <div class="team-difficulty diff-2 ml-auto">2</div>
-                            <div class="points points-proj">24<span>PTS</span></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="live-upcoming__bottom">
-                <button class="btn btn--secondary">View Profile</button>
-            </div>
-        </section>
-        <section class="bench-players-popup scrollup">
-            <div class="head d-flex-space-center">
-                <div class="remaining d-flex-v-center">
-                    <div class="count">3</div>
-                    <p class="rem-text">Substitutions remaining</p>
-                </div>
-                <p class="title">Your Bench</p>
-                <img src="/src/assets/img/league-dashboard/close-icon-2.svg" alt="" class="cursor-pointer">
-            </div>
-            <div class="bench-body d-flex-v-center">
-                <div class="player-card-holder">
-                    <div class="player-card swap">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                            <img src="/src/assets/img/my-team/swap-white.svg" alt="" class="swap swap-white">
-                            <img src="/src/assets/img/my-team/swap-blue-light.svg" alt="" class="swap swap-blue">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
+                    <div class="fixture-card d-flex-v-center">
+                        <div class="team-details d-flex-v-center flex-grow-1">
+                            <div class="w-60">
+                                <div class="team d-flex-space-center">
+                                    <div class="team-name d-flex-v-center">
+                                        <img src="/src/assets/img/calendar/my-player.svg" alt="" class="my-player-icon">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="name">Leicester(12)</p>
+                                    </div>
+                                    <p class="team-goal">2</p>
+                                </div>
+                                <div class="team d-flex-space-center">
+                                    <div class="team-name d-flex-v-center my-team">
+                                        <img src="/src/assets/img/calendar/my-player.svg" alt="" class="my-player-icon">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="name">Leicester(12)</p>
+                                    </div>
+                                    <p class="team-goal">2</p>
+                                </div>
                             </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
+                            <div class="w-20">
+                                <div class="time">75'</div>
                             </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitue-blue.svg" alt="" class="sub">
+                            <div class="league-img">
+                                <img src="/src/assets//img/calendar/la-liga.svg" alt="" class="league-image">
+                            </div>
                         </div>
                     </div>
-                    <img src="/src/assets/img/my-team/bench-bottom.svg" alt="" class="bench-bottom">
-                    <div class="player-pos">GK</div>
-                    <img src="/src/assets/img/my-team/substitute-empty.svg" alt="" class="drag-sub-empty">
-                </div>
-                <div class="player-card-holder">
-                    <div class="player-card ">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                            <img src="/src/assets/img/my-team/swap-white.svg" alt="" class="swap swap-white">
-                            <img src="/src/assets/img/my-team/swap-blue-light.svg" alt="" class="swap swap-blue">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
+                    <div class="fixture-card d-flex-v-center">
+                        <div class="team-details d-flex-v-center flex-grow-1">
+                            <div class="w-60">
+                                <div class="team d-flex-space-center">
+                                    <div class="team-name d-flex-v-center">
+                                        <img src="/src/assets/img/calendar/my-player.svg" alt="" class="my-player-icon">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="name">Leicester(12)</p>
+                                    </div>
+                                    <p class="team-goal">2</p>
+                                </div>
+                                <div class="team d-flex-space-center">
+                                    <div class="team-name d-flex-v-center my-team">
+                                        <img src="/src/assets/img/calendar/my-player.svg" alt="" class="my-player-icon">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="name">Leicester(12)</p>
+                                    </div>
+                                    <p class="team-goal">2</p>
+                                </div>
                             </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
+                            <div class="w-20">
+                                <div class="time hours">5:30pm</div>
                             </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitue-blue.svg" alt="" class="sub">
+                            <div class="league-img">
+                                <img src="/src/assets//img/calendar/la-liga.svg" alt="" class="league-image">
+                            </div>
                         </div>
                     </div>
-                    <img src="/src/assets/img/my-team/bench-bottom.svg" alt="" class="bench-bottom">
-                    <div class="player-pos">GK</div>
-                </div>
-                <div class="player-card-holder">
-                    <div class="player-card vice-captain">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
+                    <div class="fixture-card d-flex-v-center">
+                        <div class="team-details d-flex-v-center flex-grow-1">
+                            <div class="w-60">
+                                <div class="team d-flex-space-center">
+                                    <div class="team-name d-flex-v-center">
+                                        <img src="/src/assets/img/calendar/my-player.svg" alt="" class="my-player-icon">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="name">Leicester(12)</p>
+                                    </div>
+                                    <p class="team-goal">2</p>
+                                </div>
+                                <div class="team d-flex-space-center">
+                                    <div class="team-name d-flex-v-center my-team">
+                                        <img src="/src/assets/img/calendar/my-player.svg" alt="" class="my-player-icon">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="name">Leicester(12)</p>
+                                    </div>
+                                    <p class="team-goal">2</p>
+                                </div>
                             </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
+                            <div class="w-20">
+                                <div class="time fulltime">FT</div>
                             </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitue-blue.svg" alt="" class="sub">
-                        </div>
-                    </div>
-                    <img src="/src/assets/img/my-team/bench-bottom.svg" alt="" class="bench-bottom">
-                    <div class="player-pos">GK</div>
-                </div>
-                <div class="player-card-holder">
-                    <div class="player-card vice-captain">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
+                            <div class="league-img">
+                                <img src="/src/assets//img/calendar/la-liga.svg" alt="" class="league-image">
                             </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitue-blue.svg" alt="" class="sub">
                         </div>
-                    </div>
-                    <img src="/src/assets/img/my-team/bench-bottom.svg" alt="" class="bench-bottom">
-                    <div class="player-pos">GK</div>
-                </div>
-                <div class="player-card-holder">
-                    <div class="player-card vice-captain">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitue-blue.svg" alt="" class="sub">
-                        </div>
-                    </div>
-                    <img src="/src/assets/img/my-team/bench-bottom.svg" alt="" class="bench-bottom">
-                    <div class="player-pos">GK</div>
-                </div>
-                <div class="player-card-holder">
-                    <div class="switch-players">
-                        <img src="/src/assets/img/my-team/swap-blue.svg" alt="" class="cursor-pointer">
-                    </div>
-                    <div class="switch-players">
-                        <img src="/src/assets/img/my-team/swap-white.svg" alt="" class="cursor-pointer">
-                        <p class="drag-text">CLICK AND DRAG TO REORDER</p>
                     </div>
                 </div>
             </div>
