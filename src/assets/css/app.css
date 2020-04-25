@@ -8696,56 +8696,64 @@ table .points .loss {
 }
 
 .help {
-  padding: 0 40px;
+  padding: 75px 40px 40px 40px;
 }
 .help .how-can-we-help {
   width: 100%;
-  padding: 30px;
-  background: url(/src/assets/img/profile/profile-card-bg.svg) right 210px top no-repeat, linear-gradient(180deg, #2f3180 0%, #4349b1 82%, #525cd7 100%);
+  padding: 0 20px;
+  background: #2a276f url(/src/assets/img/help/how-can-we-help-bg.svg) right top no-repeat;
   box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
-  border-radius: 12px;
+  border-radius: 8px;
+  height: 210px;
+}
+.help .how-can-we-help .help-image {
+  align-self: flex-end;
 }
 .help .how-can-we-help .title {
   font-family: "Bebas Neue";
-  font-size: 60px;
+  font-size: 36px;
   color: #ffffff;
-  text-align: center;
 }
 .help .how-can-we-help .search-wrap {
-  width: 70%;
-  margin: 0 auto;
+  width: 63%;
+  margin-left: 60px;
 }
 .help .how-can-we-help .search-wrap .search-box {
-  padding: 5px 15px;
-  background: rgba(229, 221, 221, 0.47);
+  padding: 15px 25px;
+  background: #ffffff;
   border: none;
-  border-radius: 2px;
+  border-radius: 10px 0 0 10px;
   font-size: 21px;
   color: white;
-  font-weight: bold;
+  height: 57px;
 }
 .help .how-can-we-help .search-wrap .search-box::placeholder {
-  font-size: 21px;
-  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  color: #2f276e;
 }
-.help .how-can-we-help .search-wrap .btn--primary {
-  padding: 8px 20px;
-  width: 135px;
+.help .how-can-we-help .search-wrap .btn {
+  height: 57px;
+  background: #525cd7;
+  padding: 17px 25px;
+  border-radius: 0px 10px 10px 0px;
+}
+.help .how-can-we-help .search-wrap .btn i {
+  font-size: 16px;
 }
 .help .help-card {
-  max-width: 280px;
-  min-width: 280px;
-  height: 255px;
+  width: calc(100% / 3 - 30px);
+  height: 235px;
   background: #ffffff;
   box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
   border-radius: 5px;
-  margin: 25px 50px;
+  margin: 15px;
   cursor: pointer;
 }
 .help .help-card-wrap {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding-bottom: 25px;
+  margin: 0 -15px;
 }
 .help .help-card-head {
   display: flex;
@@ -8753,37 +8761,123 @@ table .points .loss {
   justify-content: center;
   height: 61px;
   padding: 2px 35px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
-  color: #686ed9;
   text-align: center;
   line-height: 29px;
-  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
-  border-radius: 3px 3px 0 0;
+  border-radius: 0 0 3px 3px;
+  border-top: 1px solid #e3e3e3;
 }
 .help .help-card-body {
-  height: calc(255px - 61px);
+  height: calc(235px - 61px);
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.help .help-card-body > img:last-child {
+.help .help-card-body .image-holder {
+  width: 132px;
+  height: 132px;
+  background: #f3f3f3;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.help .help-card-body .image-holder > img:last-child {
   display: none;
 }
 .help .help-card:hover {
-  background: #fb295e url(/src/assets/img/help/help-card-bg.svg) left center no-repeat;
+  background: #fb295e url(/src/assets/img/help/help-card-bg.svg) right top no-repeat;
   box-shadow: 0 6px 30px 0 rgba(47, 39, 110, 0.69);
   border-radius: 5px;
 }
 .help .help-card:hover .help-card-head {
   color: white;
   background: rgba(255, 255, 255, 0.15);
+  border-top: none;
 }
-.help .help-card:hover .help-card-body > img:first-child {
+.help .help-card:hover .help-card-body .image-holder {
+  background: white;
+}
+.help .help-card:hover .help-card-body .image-holder > img:first-child {
   display: none;
 }
-.help .help-card:hover .help-card-body > img:last-child {
+.help .help-card:hover .help-card-body .image-holder > img:last-child {
   display: inline-block;
+}
+
+.help-2 .help-menu {
+  width: 300px;
+  height: 100vh;
+  padding: 0 30px;
+  border-right: 1px solid rgba(151, 151, 151, 0.52);
+}
+.help-2 .help-menu .title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #2f3180;
+  padding: 15px 15px 15px 32px;
+}
+.help-2 .help-menu .nav-items {
+  padding: 0;
+}
+.help-2 .help-menu .nav-items .menu-content {
+  margin-bottom: 10px;
+}
+.help-2 .help-menu .nav-items .menu-content.active .menu-icon g {
+  fill: #525cd7;
+}
+.help-2 .help-menu .nav-items .menu-content.active .menu-name {
+  color: #525cd7;
+}
+.help-2 .help-menu .nav-items .menu-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #6d6d6d;
+  margin-left: 10px;
+}
+.help-2 .help-menu .nav-items .sub-menu {
+  padding-left: 50px;
+  margin-bottom: 10px;
+}
+.help-2 .help-menu .nav-items .sub-menu-name {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  color: #6d6d6d;
+}
+.help-2 .help-menu .nav-items .sub-menu-name.active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #525cd7;
+}
+.help-2 .help-description {
+  width: calc(100% - 300px);
+  height: 100vh;
+  overflow: auto;
+  padding: 50px;
+  background: url(/src/assets/img/help/help-2-bh.svg) top right no-repeat;
+}
+.help-2 .help-description .title-main {
+  font-family: "Bebas Neue";
+  font-size: 36px;
+  color: #2f3180;
+}
+.help-2 .help-description .desc-main {
+  font-size: 16px;
+  color: #6d6d6d;
+  line-height: 29px;
+}
+.help-2 .help-description .title-sub {
+  font-size: 16px;
+  font-weight: bold;
+  color: #525cd7;
+  line-height: 29px;
+}
+.help-2 .help-description .desc-sub {
+  font-size: 14px;
+  color: #6d6d6d;
+  line-height: 29px;
 }
 
 .home-page {
@@ -10516,6 +10610,150 @@ table .points .loss {
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.article {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.article-menu {
+  width: 330px;
+  height: 100vh;
+  overflow: auto;
+  background: #ffffff;
+  box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.17);
+}
+.article-menu .header {
+  background: #ffffff;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.25);
+  border-radius: 3px 3px 0 0;
+  padding: 15px 25px;
+}
+.article-menu .header .title {
+  font-size: 17px;
+  font-weight: bold;
+  color: #3d397b;
+  text-align: center;
+}
+.article-menu .header .custom-select {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 10px 20px;
+  -webkit-appearance: none;
+  background: url(/src/assets/img/league-dashboard/select-arrow.svg) right 20px center no-repeat;
+}
+.article-menu .article-card {
+  padding: 40px 25px;
+  border-bottom: 1px solid #cdd0ea;
+}
+.article-menu .article-card.active {
+  background: #ffffff;
+  box-shadow: 0 9px 23px 0 rgba(0, 0, 0, 0.18);
+  border-right: 3px solid #2f3180;
+}
+.article-container {
+  width: calc(100% - 330px);
+  height: 100vh;
+  overflow: auto;
+  background: url(/src/assets/img/article/article-bg.svg) top right no-repeat;
+  padding: 100px;
+}
+.article-container .article-wrap {
+  max-width: 570px;
+}
+.article-container .article-date {
+  font-size: 13px;
+  color: #9c9fb9;
+  line-height: 29px;
+}
+.article-container .article-title {
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  color: #525cd7;
+  letter-spacing: 1px;
+}
+.article-container .article-sub {
+  font-size: 18px;
+  color: #3e3583;
+  line-height: 26px;
+}
+.article-container .article-desc {
+  font-size: 15px;
+  line-height: 24px;
+}
+.article-container .article-title-sub {
+  font-family: "Bebas Neue";
+  font-size: 27px;
+  letter-spacing: 0.68px;
+  line-height: 36px;
+}
+.article-container .article-points {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+.article-container .article-points li {
+  margin-bottom: 5px;
+}
+.article-container .link2 {
+  color: #3e3583;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.article-add {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  background-image: linear-gradient(180deg, rgba(247, 248, 253, 0) 21%, #edeefb 45%);
+  box-shadow: -2px 0 8px 0 rgba(0, 0, 0, 0.17);
+}
+.article-add .article-add-holder {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.article-add .article-add-holder .manager-image {
+  position: relative;
+  right: 40px;
+  bottom: -3px;
+}
+.article-add .article-add-holder .ones-to-watch {
+  padding: 15px;
+  background: #ffffff url(/src/assets/img/article/inssta.svg) right bottom no-repeat;
+  box-shadow: 0 -1px 14px -6px rgba(0, 0, 0, 0.5);
+}
+.article-add .article-add-holder .ones-to-watch .main-text {
+  font-family: "Bebas Neue";
+  font-size: 40px;
+  color: #3d397b;
+  letter-spacing: 1px;
+  line-height: 36px;
+}
+.article-add .article-add-holder .ones-to-watch .game-week {
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  font-size: 31px;
+  color: #3d397b;
+  letter-spacing: 0.77px;
+  line-height: 36px;
+}
+.article-add .article-add-holder .follow {
+  padding: 6px 10px;
+  background: #333589;
+  box-shadow: 0 -1px 14px -6px rgba(0, 0, 0, 0.5);
+}
+.article-add .article-add-holder .follow p {
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=app.css.map */

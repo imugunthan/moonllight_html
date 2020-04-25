@@ -1,54 +1,61 @@
 .help {
-  padding: 0 40px;
+  padding: 75px 40px 40px 40px;
   .how-can-we-help {
     width: 100%;
-    padding: 30px;
-    background: url(/src/assets/img/profile/profile-card-bg.svg) right 210px top
-        no-repeat,
-      linear-gradient(180deg, #2f3180 0%, #4349b1 82%, #525cd7 100%);
+    padding: 0 20px;
+    background: #2a276f url(/src/assets/img/help/how-can-we-help-bg.svg) right
+      top no-repeat;
     box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
-    border-radius: 12px;
+    border-radius: 8px;
+    height: 210px;
+    .help-image {
+      align-self: flex-end;
+    }
     .title {
       font-family: "Bebas Neue";
-      font-size: 60px;
+      font-size: 36px;
       color: #ffffff;
-      text-align: center;
     }
     .search-wrap {
-      width: 70%;
-      margin: 0 auto;
+      width: 63%;
+      margin-left: 60px;
       .search-box {
-        padding: 5px 15px;
-        background: rgba(229, 221, 221, 0.47);
+        padding: 15px 25px;
+        background: #ffffff;
         border: none;
-        border-radius: 2px;
+        border-radius: 10px 0 0 10px;
         font-size: 21px;
         color: white;
-        font-weight: bold;
+        height: 57px;
         &::placeholder {
-          font-size: 21px;
-          color: rgba(#ffffff, 0.75);
+          font-size: 16px;
+          color: #2f276e;
         }
       }
-      .btn--primary {
-        padding: 8px 20px;
-        width: 135px;
+      .btn {
+        height: 57px;
+        background: #525cd7;
+        padding: 17px 25px;
+        border-radius: 0px 10px 10px 0px;
+        i {
+          font-size: 16px;
+        }
       }
     }
   }
   .help-card {
-    max-width: 280px;
-    min-width: 280px;
-    height: 255px;
+    width: calc(100% / 3 - 30px);
+    height: 235px;
     background: #ffffff;
     box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
     border-radius: 5px;
-    margin: 25px 50px;
+    margin: 15px;
     cursor: pointer;
     &-wrap {
       flex-wrap: wrap;
       justify-content: space-evenly;
       padding-bottom: 25px;
+      margin: 0 -15px;
     }
     &-head {
       display: flex;
@@ -56,27 +63,35 @@
       justify-content: center;
       height: 61px;
       padding: 2px 35px;
-      font-size: 24px;
+      font-size: 20px;
       font-weight: $bold;
-      color: #686ed9;
       text-align: center;
       line-height: 29px;
-      box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
-      border-radius: 3px 3px 0 0;
+      border-radius: 0 0 3px 3px;
+      border-top: 1px solid #e3e3e3;
     }
     &-body {
-      height: calc(255px - 61px);
+      height: calc(235px - 61px);
       display: flex;
       align-items: center;
       justify-content: center;
-      > img {
-        &:last-child {
-          display: none;
+      .image-holder {
+        width: 132px;
+        height: 132px;
+        background: #f3f3f3;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        > img {
+          &:last-child {
+            display: none;
+          }
         }
       }
     }
     &:hover {
-      background: #fb295e url(/src/assets/img/help/help-card-bg.svg) left center
+      background: #fb295e url(/src/assets/img/help/help-card-bg.svg) right top
         no-repeat;
       box-shadow: 0 6px 30px 0 rgba(47, 39, 110, 0.69);
       border-radius: 5px;
@@ -84,18 +99,100 @@
         &-head {
           color: white;
           background: rgba(#ffffff, 0.15);
+          border-top: none;
         }
         &-body {
-          > img {
-            &:first-child {
-              display: none;
-            }
-            &:last-child {
-              display: inline-block;
+          .image-holder {
+            background: white;
+            > img {
+              &:first-child {
+                display: none;
+              }
+              &:last-child {
+                display: inline-block;
+              }
             }
           }
         }
       }
+    }
+  }
+}
+
+.help-2 {
+  .help-menu {
+    width: 300px;
+    height: 100vh;
+    padding: 0 30px;
+    border-right: 1px solid rgba(151, 151, 151, 0.52);
+    .title {
+      font-size: 28px;
+      font-weight: bold;
+      color: #2f3180;
+      padding: 15px 15px 15px 32px;
+    }
+    .nav-items {
+      padding: 0;
+      .menu-content {
+        margin-bottom: 10px;
+        &.active {
+          .menu-icon g {
+            fill: #525cd7;
+          }
+          .menu-name {
+            color: #525cd7;
+          }
+        }
+      }
+      .menu-name {
+        font-size: 14px;
+        font-weight: bold;
+        color: #6d6d6d;
+        margin-left: 10px;
+      }
+      .sub-menu {
+        padding-left: 50px;
+        margin-bottom: 10px;
+        &-name {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 8px;
+          color: #6d6d6d;
+          &.active {
+            font-weight: bold;
+            text-decoration: underline;
+            color: #525cd7;
+          }
+        }
+      }
+    }
+  }
+  .help-description {
+    width: calc(100% - 300px);
+    height: 100vh;
+    overflow: auto;
+    padding: 50px;
+    background: url(/src/assets/img/help/help-2-bh.svg) top right no-repeat;
+    .title-main {
+      font-family: "Bebas Neue";
+      font-size: 36px;
+      color: #2f3180;
+    }
+    .desc-main {
+      font-size: 16px;
+      color: #6d6d6d;
+      line-height: 29px;
+    }
+    .title-sub {
+      font-size: 16px;
+      font-weight: bold;
+      color: #525cd7;
+      line-height: 29px;
+    }
+    .desc-sub {
+      font-size: 14px;
+      color: #6d6d6d;
+      line-height: 29px;
     }
   }
 }

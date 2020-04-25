@@ -1,0 +1,153 @@
+.article {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  &-menu {
+    width: 330px;
+    height: 100vh;
+    overflow: auto;
+    background: #ffffff;
+    box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.17);
+    .header {
+      background: #ffffff;
+      box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.25);
+      border-radius: 3px 3px 0 0;
+      padding: 15px 25px;
+      .title {
+        font-size: 17px;
+        font-weight: bold;
+        color: #3d397b;
+        text-align: center;
+      }
+      .custom-select {
+        width: 100%;
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+        border-radius: 4px;
+        font-size: 12px;
+        padding: 10px 20px;
+        -webkit-appearance: none;
+        background: url(/src/assets/img/league-dashboard/select-arrow.svg) right
+          20px center no-repeat;
+      }
+    }
+    .article {
+      &-card {
+        padding: 40px 25px;
+        border-bottom: 1px solid #cdd0ea;
+        &.active {
+          background: #ffffff;
+          box-shadow: 0 9px 23px 0 rgba(0, 0, 0, 0.18);
+          border-right: 3px solid #2f3180;
+        }
+      }
+    }
+  }
+  &-container {
+    width: calc(100% - 330px);
+    height: 100vh;
+    overflow: auto;
+    background: url(/src/assets/img/article/article-bg.svg) top right no-repeat;
+    padding: 100px;
+    .article {
+      &-wrap {
+        max-width: 570px;
+      }
+      &-date {
+        font-size: 13px;
+        color: #9c9fb9;
+        line-height: 29px;
+      }
+      &-title {
+        font-family: "Bebas Neue";
+        font-size: 40px;
+        color: #525cd7;
+        letter-spacing: 1px;
+      }
+      &-sub {
+        font-size: 18px;
+        color: #3e3583;
+        line-height: 26px;
+      }
+      &-desc {
+        font-size: 15px;
+        line-height: 24px;
+      }
+      &-title-sub {
+        font-family: "Bebas Neue";
+        font-size: 27px;
+        letter-spacing: 0.68px;
+        line-height: 36px;
+      }
+      &-points {
+        padding-left: 20px;
+        list-style-type: disc;
+        li {
+          margin-bottom: 5px;
+        }
+      }
+    }
+    .link2 {
+      color: #3e3583;
+      font-weight: bold;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  &-add {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    background-image: linear-gradient(
+      180deg,
+      rgba(247, 248, 253, 0) 21%,
+      #edeefb 45%
+    );
+    box-shadow: -2px 0 8px 0 rgba(0, 0, 0, 0.17);
+    .article-add-holder {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      .manager-image {
+        position: relative;
+        right: 40px;
+        bottom: -3px;
+      }
+      .ones-to-watch {
+        padding: 15px;
+        background: #ffffff url(/src/assets/img/article/inssta.svg) right bottom
+          no-repeat;
+        box-shadow: 0 -1px 14px -6px rgba(0, 0, 0, 0.5);
+        .main-text {
+          font-family: "Bebas Neue";
+          font-size: 40px;
+          color: #3d397b;
+          letter-spacing: 1px;
+          line-height: 36px;
+        }
+        .game-week {
+          font-family: "Bebas Neue";
+          font-weight: normal;
+          font-size: 31px;
+          color: #3d397b;
+          letter-spacing: 0.77px;
+          line-height: 36px;
+        }
+      }
+      .follow {
+        padding: 6px 10px;
+        background: #333589;
+        box-shadow: 0 -1px 14px -6px rgba(0, 0, 0, 0.5);
+        p {
+          font-family: "Bebas Neue";
+          font-size: 18px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+}
