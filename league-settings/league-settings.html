@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Dashboard</title>
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <aside class="side-nav d-flex">
+            <div class="user-info">
+                <figure class="user-avatar m-auto mb-20">
+                    <img src="/src/assets/img/profile-image.svg" alt="User Image" class="user-image">
+                    <!-- <img src="https://images.vexels.com/media/users/3/140748/isolated/preview/5b078a59390bb4666df98b49f1cdedd0-male-profile-avatar-by-vexels.png"
+                        alt="User Image" class="user-image"> -->
+                </figure>
+                <p class="user-name">L. Vaz</p>
+            </div>
+            <nav class="navmenu">
+                <ul class="navmenu__list">
+                    <li class="navmenu__item mb-30">
+                        <i class="material-icons">home</i>
+                    </li>
+                    <li class="navmenu__item mb-30">
+                        <img src="/src/assets/img/trophy-filed.svg" alt="" class="filled">
+                        <img src="/src/assets/img/trophy.svg" alt="" class="normal">
+                    </li>
+                    <li class="navmenu__item mb-30 active">
+                        <img src="/src/assets/img/chart-filed.svg" class="filled" alt="">
+                        <img src="/src/assets/img/chart.svg" alt="" class="normal">
+                    </li>
+                </ul>
+            </nav>
+            <div class="side-nav__footer">
+                <ul class="">
+                    <li class="text-center help">
+                        <i class="material-icons">help</i>
+                    </li>
+                    <li class="text-center logo">
+                        <img src="/src//assets/img/moonlight-logo.svg" alt="Moonlight Logo">
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="right-section dashboard">
+            <div class="dashboard-left-section">
+                <div class="league-dropdown">
+                    <div class="league-selected league-card">
+                        <p class="league-title d-flex-v-center">
+                            League <img src="/src/assets/img/league-dashboard/league-logo.svg" alt=""
+                                class="league-logo">
+                        </p>
+                        <p class="league-name">Pique Blinders</p>
+                        <div class="in-use d-flex-v-center">
+                            <p class="in-use-text">In use</p>
+                            <div class="in-use-image ml-10">
+                                <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="league-wrap">
+                        <div class="league-card">
+                            <p class="league-title d-flex-v-center">
+                                League <img src="/src/assets/img/league-dashboard/league-logo.svg" alt=""
+                                    class="league-logo">
+                            </p>
+                            <p class="league-name">Pique Blinders</p>
+                            <div class="in-use d-flex-v-center">
+                                <p class="in-use-text">In use</p>
+                                <div class="in-use-image ml-10">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="league-card">
+                            <p class="league-title d-flex-v-center">
+                                League <img src="/src/assets/img/league-dashboard/league-logo.svg" alt=""
+                                    class="league-logo">
+                            </p>
+                            <p class="league-name">Pique Blinders</p>
+                            <div class="in-use d-flex-v-center">
+                                <p class="in-use-text">In use</p>
+                                <div class="in-use-image ml-10">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="league-card">
+                            <p class="league-title d-flex-v-center">
+                                League <img src="/src/assets/img/league-dashboard/league-logo.svg" alt=""
+                                    class="league-logo">
+                            </p>
+                            <p class="league-name">Pique Blinders</p>
+                            <div class="in-use d-flex-v-center">
+                                <p class="in-use-text">In use</p>
+                                <div class="in-use-image ml-10">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                    <img src="/src/assets/img/league-dashboard/Serie A Copy 3.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="league-dropdown-option d-flex-space-center">
+                        <button class="btn-create btn-action">Create</button>
+                        <button class="btn-join btn-action">Join</button>
+                    </div>
+                </div>
+                <div class="points-rank-holder text-center">
+                    <div class="league-rank d-flex-center">
+                        <div class="rank-status">
+                            <img src="/src/assets/img/player-popout/up-arrow.svg" alt="" class="rank-status-icon">
+                            <p class="status-text">7th</p>
+                        </div>
+                        <p class="rank">5</p>
+                        <p class="rank-text">TH</p>
+                    </div>
+                    <div class="league-rank-text">
+                        <span>League Rank</span>
+                    </div>
+                    <div class="league-point">
+                        <p class="points">1209.33</p>
+                        <p class="points-text">Total Fanatsy Pts</p>
+                    </div>
+                </div>
+                <div class="recent-gameweeks">
+                    <div class="last-5 d-flex-v-center">
+                        <p class="title">Last 5GW</p>
+                        <div class="results-wrap d-flex-v-center ml-10">
+                            <span>L</span>
+                            <span>W</span>
+                            <span>D</span>
+                            <span>L</span>
+                            <span>W</span>
+                        </div>
+                        <p class="all-gw ml-auto">ALL GW</p>
+                    </div>
+                    <div class="recent-gameweeks-points d-flex-center">
+                        <div class="points-wrap d-flex">
+                            <p class="player">You</p>
+                            <p class="points">190.43</p>
+                        </div>
+                        <p class="versus">VS.</p>
+                        <div class="points-wrap d-flex">
+                            <p class="points">135.32</p>
+                            <p class="player">A. Smith</p>
+                        </div>
+                    </div>
+                    <div class="recent-gameweeks-graph d-flex-space-center">
+                        <div class="graph-container">
+                            <div class="graph d-flex-center">
+                                <div class="you"></div>
+                                <div class="opponent red"></div>
+                            </div>
+                            <div class="result red">
+                                <span>L</span>
+                            </div>
+                            <p class="gw">GW3</p>
+                        </div>
+                        <div class="graph-container">
+                            <div class="graph d-flex-center">
+                                <div class="you"></div>
+                                <div class="opponent green"></div>
+                            </div>
+                            <div class="result green">
+                                <span>WIN</span>
+                            </div>
+                            <p class="gw">GW3</p>
+                        </div>
+                        <div class="graph-container">
+                            <div class="graph d-flex-center">
+                                <div class="you"></div>
+                                <div class="opponent grey"></div>
+                            </div>
+                            <div class="result grey">
+                                <span>D</span>
+                            </div>
+                            <p class="gw">GW3</p>
+                        </div>
+                        <div class="graph-container">
+                            <div class="graph d-flex-center">
+                                <div class="you"></div>
+                                <div class="opponent green"></div>
+                            </div>
+                            <div class="result red">
+                                <span>L</span>
+                            </div>
+                            <p class="gw">GW3</p>
+                        </div>
+                        <div class="graph-container">
+                            <div class="graph d-flex-center">
+                                <div class="you"></div>
+                                <div class="opponent red"></div>
+                            </div>
+                            <div class="result grey">
+                                <span>W</span>
+                            </div>
+                            <p class="gw">GW3</p>
+                        </div>
+                    </div>
+                    <img src="/src/assets/img/league-dashboard/calendar.svg" alt=""
+                        style="max-width: 100%; margin-top: 20px;">
+                </div>
+            </div>
+            <div class="dashboard-main">
+                <nav class="nav-bar">
+                    <ul class="nav-menu d-flex-v-center">
+                        <li class="nav-items active">Dashboard</li>
+                        <li class="nav-items">My Team</li>
+                        <li class="nav-items">Trades-Wagers</li>
+                        <li class="nav-items">Free Market</li>
+                        <li class="nav-items">Stats</li>
+                        <li class="nav-items">My League</li>
+                        <li class="nav-items">Rules</li>
+                    </ul>
+                </nav>
+                <div class="notification" id="notification">
+                    <i class="material-icons">notifications_none</i>
+                    <div class="notification-count">3</div>
+                </div>
+                <div class="league-setting">
+                    <div class="card mt-30">
+                        <div class="card-header d-flex-space-center">
+                            <p class="head-title">Points as Moonlight Manager:</p>
+                            <button class="btn btn--primary">Update Details</button>
+                        </div>
+                        <div class="card-body profile-details-card">
+                            <div class="row align-end">
+                                <div class="col-3">
+                                    <div class="info-wrap">
+                                        <p class="label">League Name</p>
+                                        <p class="value">Pique Blinders</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="info-wrap">
+                                        <p class="label">Fantasy League Type</p>
+                                        <p class="value">Draft</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="info-wrap">
+                                        <p class="label">Budget Option</p>
+                                        <p class="value">with Budget</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="info-wrap">
+                                        <p class="label">Draft Settings</p>
+                                        <p class="value">Online</p>
+                                    </div>
+                                </div>
+                                <div class="col-5">
+                                    <div class="info-wrap">
+                                        <p class="label">Pro-Leagues</p>
+                                        <p class="value">Premier League, Seria A, La Liga, Bundesliga</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="info-wrap">
+                                        <p class="label">Draft Date & Time</p>
+                                        <p class="value">September 13th at 2:00pm EST</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="info-wrap">
+                                        <p class="label">Allow anyone to invite new managers?</p>
+                                        <p class="value">Yes</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card--referral mt-30">
+                        <div class="card-header d-flex-v-center">
+                            <p class="head-title">Manager Name</p>
+                            <p class="head-title">Email Address</p>
+                            <p class="head-title">Data Sent</p>
+                            <p class="head-title">Status</p>
+                            <p class="head-title"></p>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-tbody">
+                                <table class="noti-table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Pique Blinders</td>
+                                            <td>jakefrank1234@gmail.com</td>
+                                            <td>Aug 7, 2019</td>
+                                            <td>
+                                                <div class="d-flex-v-center">
+                                                    <img src="/src/assets/img/pre-draft-dashboard/pending-message.svg"
+                                                        alt="">
+                                                    <p class="ml-10">Pending</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn--remove">Remove</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pique Blinders</td>
+                                            <td>jakefrank1234@gmail.com</td>
+                                            <td>Aug 7, 2019</td>
+                                            <td>
+                                                <div class="d-flex-v-center">
+                                                    <img src="/src/assets/img/pre-draft-dashboard/pending-message.svg"
+                                                        alt="">
+                                                    <p class="ml-10">Pending</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn--remove">Remove</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pique Blinders</td>
+                                            <td>jakefrank1234@gmail.com</td>
+                                            <td>Aug 7, 2019</td>
+                                            <td>
+                                                <div class="d-flex-v-center">
+                                                    <img src="/src/assets/img/pre-draft-dashboard/pending-message.svg"
+                                                        alt="">
+                                                    <p class="ml-10">Pending</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn--remove">Remove</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pique Blinders</td>
+                                            <td>jakefrank1234@gmail.com</td>
+                                            <td>Aug 7, 2019</td>
+                                            <td>
+                                                <div class="d-flex-v-center">
+                                                    <img src="/src/assets/img/pre-draft-dashboard/pending-message.svg"
+                                                        alt="">
+                                                    <p class="ml-10">Pending</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn--remove">Remove</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pique Blinders</td>
+                                            <td>jakefrank1234@gmail.com</td>
+                                            <td>Aug 7, 2019</td>
+                                            <td>
+                                                <div class="d-flex-v-center">
+                                                    <img src="/src/assets/img/pre-draft-dashboard/pending-message.svg"
+                                                        alt="">
+                                                    <p class="ml-10">Pending</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn--remove">Remove</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pique Blinders</td>
+                                            <td>jakefrank1234@gmail.com</td>
+                                            <td>Aug 7, 2019</td>
+                                            <td>
+                                                <div class="d-flex-v-center">
+                                                    <img src="/src/assets/img/pre-draft-dashboard/pending-message.svg"
+                                                        alt="">
+                                                    <p class="ml-10">Pending</p>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button class="btn btn--remove">Remove</button>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-30 card--delete">
+                        <div class="card-header d-flex-space-center">
+                            <p class="head-title">Delete Fantasy League?</p>
+                            <button class="btn btn--remove">Delete League</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="modal modal--remove">
+        <div class="modal-holder">
+            <div class="cont">
+                <div class="confirmation-text">are you sure you want to delete this fantasy league?</div>
+                <div class="name mb-20">Janice White</div>
+                <div class="desc mb-30">If you delete this fantasy league, all league managers will be removed and all
+                    fantasy
+                    league data will be lost.</div>
+                <div class="btn-wrap text-center">
+                    <button class="btn btn--cancel">Cancel</button>
+                    <button class="btn btn--remove ml-10">Delete League</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

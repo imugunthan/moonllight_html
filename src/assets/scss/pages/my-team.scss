@@ -722,7 +722,7 @@
     .gameweek-row {
       margin-bottom: 10px;
       align-items: stretch;
-      .gw {
+      .gwk {
         font-size: 12px;
         font-weight: bold;
         color: #868de3;
@@ -790,7 +790,7 @@
   }
 }
 
-.gw {
+.gwk {
   font-size: 12px;
   font-weight: bold;
   color: #525cd7;
@@ -824,7 +824,7 @@
 .player-card__gw {
   padding: 20px 0;
   margin-left: -20px;
-  .gw-row {
+  .gwk-row {
     margin-bottom: 5px;
     align-items: stretch;
     .team-name {

@@ -1,0 +1,170 @@
+.league-setting {
+  .profile-details-card {
+    padding: 30px;
+    .w-100 {
+      width: 100%;
+    }
+    .no-bottom {
+      .info-wrap {
+        margin-bottom: 0;
+      }
+    }
+    .align-end {
+      align-items: flex-end;
+    }
+    .info-wrap {
+      //   width: calc(100% / 3 - 10px);
+      border-bottom: 1px solid rgba(#d8d8d8, 0.8);
+      margin-bottom: 20px;
+      .label {
+        font-size: 13px;
+        font-weight: $bold;
+        color: #525cd7;
+        margin-bottom: 5px;
+      }
+      .value {
+        font-size: 15px;
+        font-weight: $bold;
+        color: #2f3180;
+        margin-bottom: 5px;
+      }
+      &.no-border {
+        border-bottom: 0;
+      }
+    }
+    &--edit {
+      .info-wrap {
+        border-bottom: 0 !important;
+        .profile-edit {
+          -webkit-appearance: none;
+          height: 24px;
+          background: $white;
+          font-size: 15px;
+          font-weight: $bold;
+          color: #2f3180;
+          width: 100%;
+          border: 1px solid #2f3180;
+          border-radius: 4px;
+          padding-left: 5px;
+          &--select {
+            background: white url(/src/assets/img/profile/select-arrow.svg)
+              right 10px center no-repeat;
+            &.month {
+              width: 85px;
+              margin-right: 7px;
+            }
+            &.date {
+              width: 50px;
+              margin-right: 7px;
+            }
+            &.year {
+              width: 72px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn--remove {
+    width: 100px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    line-height: 22px;
+    background: #f86364;
+    box-shadow: 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+    border-radius: 3px;
+  }
+  .card--referral {
+    .noti-table td {
+      padding: 15px 20px;
+    }
+    .card-header,
+    .noti-table {
+      .head-title,
+      td {
+        &:first-child {
+          width: 20%;
+        }
+        &:nth-child(2) {
+          width: 30%;
+        }
+        &:nth-child(3) {
+          width: 15%;
+        }
+        &:nth-child(4) {
+          width: 20%;
+        }
+        &:nth-child(4) {
+          width: 15%;
+        }
+      }
+    }
+  }
+  .card--delete {
+    overflow: hidden;
+    .card-header {
+      padding: 18px 20px;
+      .btn--remove {
+        width: 150px;
+      }
+    }
+  }
+}
+
+.modal--remove {
+  .modal-holder {
+    width: 515px;
+    padding: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #2a276f url(/src/assets/img/article/modal-bg.svg) right top
+      no-repeat;
+    box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+    border-radius: 16px;
+    .cont {
+      max-width: 380px;
+      margin: 0 auto;
+    }
+    .confirmation-text {
+      font-family: "Bebas Neue";
+      font-size: 21px;
+      color: #ffffff;
+    }
+    .name {
+      font-family: "BebasNeuePro-BoldItalic";
+      font-size: 24px;
+      color: #ffffff;
+    }
+    .desc {
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .btn {
+      &--cancel {
+        font-size: 13px;
+        font-weight: bold;
+        color: #3d397b;
+        text-align: center;
+        line-height: 24px;
+        background: #e9e9e9;
+        border-radius: 3px;
+      }
+      &--remove {
+        width: 125px;
+        font-size: 13px;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        line-height: 22px;
+        background: #f86364;
+        box-shadow: 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+        border-radius: 3px;
+      }
+    }
+  }
+}

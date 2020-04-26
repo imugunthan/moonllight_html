@@ -8380,47 +8380,6 @@ table .points .loss {
   font-weight: 700;
   color: white;
 }
-.referrals .card--referral {
-  height: 355px;
-}
-.referrals .card--referral .card-body {
-  height: 305px;
-  overflow: auto;
-}
-.referrals .card--referral .card-header {
-  padding: 0;
-}
-.referrals .card--referral .card-header .head-title {
-  padding: 10px 20px;
-}
-.referrals .card--referral .card-header .head-title:first-child {
-  width: 40%;
-}
-.referrals .card--referral .card-header .head-title:nth-child(2) {
-  width: 20%;
-}
-.referrals .card--referral .card-header .head-title:nth-child(3) {
-  width: 20%;
-}
-.referrals .card--referral .card-header .head-title:last-child {
-  width: 20%;
-}
-.referrals .card--referral .noti-table td:first-child {
-  width: 40%;
-  min-width: 40%;
-}
-.referrals .card--referral .noti-table td:nth-child(2) {
-  width: 20%;
-  min-width: 20%;
-}
-.referrals .card--referral .noti-table td:nth-child(3) {
-  width: 20%;
-  min-width: 20%;
-}
-.referrals .card--referral .noti-table td:last-child {
-  width: 20%;
-  min-width: 20%;
-}
 .referrals .referrals-right {
   height: 760px;
   width: calc(30% - 17px);
@@ -8588,6 +8547,48 @@ table .points .loss {
   content: "!";
   margin-left: 5px;
   color: #fb295e;
+}
+
+.card--referral {
+  height: 355px;
+}
+.card--referral .card-body {
+  height: 305px;
+  overflow: auto;
+}
+.card--referral .card-header {
+  padding: 0;
+}
+.card--referral .card-header .head-title {
+  padding: 10px 20px;
+}
+.card--referral .card-header .head-title:first-child {
+  width: 40%;
+}
+.card--referral .card-header .head-title:nth-child(2) {
+  width: 20%;
+}
+.card--referral .card-header .head-title:nth-child(3) {
+  width: 20%;
+}
+.card--referral .card-header .head-title:last-child {
+  width: 20%;
+}
+.card--referral .noti-table td:first-child {
+  width: 40%;
+  min-width: 40%;
+}
+.card--referral .noti-table td:nth-child(2) {
+  width: 20%;
+  min-width: 20%;
+}
+.card--referral .noti-table td:nth-child(3) {
+  width: 20%;
+  min-width: 20%;
+}
+.card--referral .noti-table td:last-child {
+  width: 20%;
+  min-width: 20%;
 }
 
 .create-league--empty {
@@ -10182,7 +10183,7 @@ table .points .loss {
   margin-bottom: 10px;
   align-items: stretch;
 }
-.live-upcoming__body .gameweek-row .gw {
+.live-upcoming__body .gameweek-row .gwk {
   font-size: 12px;
   font-weight: bold;
   color: #868de3;
@@ -10191,7 +10192,7 @@ table .points .loss {
   border-radius: 4px;
   padding: 2px 8px;
 }
-.live-upcoming__body .gameweek-row .gw.active {
+.live-upcoming__body .gameweek-row .gwk.active {
   background: #56c079;
   color: white;
 }
@@ -10245,7 +10246,7 @@ table .points .loss {
   font-family: "BebasNeuePro-BoldItalic";
 }
 
-.gw {
+.gwk {
   font-size: 12px;
   font-weight: bold;
   color: #525cd7;
@@ -10254,7 +10255,7 @@ table .points .loss {
   border-radius: 4px;
   padding: 2px 8px;
 }
-.gw.active {
+.gwk.active {
   background: #56c079;
   color: white;
 }
@@ -10283,11 +10284,11 @@ table .points .loss {
   padding: 20px 0;
   margin-left: -20px;
 }
-.player-card__gw .gw-row {
+.player-card__gw .gwk-row {
   margin-bottom: 5px;
   align-items: stretch;
 }
-.player-card__gw .gw-row .team-name {
+.player-card__gw .gwk-row .team-name {
   margin-left: 10px;
   font-family: "Bebas Neue";
   font-size: 18px;
@@ -10298,10 +10299,10 @@ table .points .loss {
   text-align: center;
   border-bottom: 1px solid #b2e7f4;
 }
-.player-card__gw .gw-row .team-name.none {
+.player-card__gw .gwk-row .team-name.none {
   border-bottom: 0;
 }
-.player-card__gw .gw-row .team-info-wrap .team-info:not(:last-child) {
+.player-card__gw .gwk-row .team-info-wrap .team-info:not(:last-child) {
   margin-bottom: 3px;
 }
 
@@ -10704,6 +10705,85 @@ table .points .loss {
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+.article-container .link2:hover .link-popup {
+  opacity: 1;
+  visibility: visible;
+}
+.article-container .link2 .link-popup {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  width: 140px;
+  background: #ffffff;
+  box-shadow: 0 0 12px -4px rgba(82, 92, 215, 0.5);
+  border-radius: 10px;
+  padding: 20px 5px;
+  bottom: 30px;
+  right: -100%;
+  transition: all 0.3s ease;
+}
+.article-container .link2 .link-popup::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 10px solid white;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  bottom: -20px;
+  right: 60px;
+}
+.article-container .link2 .link-popup .player-image {
+  width: 74px;
+  height: 74px;
+  border-radius: 50%;
+  background: rgba(216, 216, 216, 0.2);
+  position: relative;
+  margin: 0 auto;
+}
+.article-container .link2 .link-popup .player-image > img {
+  width: 100%;
+  height: calc(100% + 10px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+}
+.article-container .link2 .link-popup .player-name {
+  font-size: 15px;
+  font-weight: bold;
+  color: #525cd7;
+}
+.article-container .link2 .link-popup .player-pos {
+  font-size: 12px;
+  color: #676986;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 10px;
+  margin-bottom: 10px;
+}
+.article-container .link2 .link-popup .player-points {
+  font-family: "Bebas Neue";
+  font-size: 26px;
+  color: #606380;
+}
+.article-container .link2 .link-popup .club-image > img {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+}
+.article-container .link2 .link-popup .club-image > img:not(:last-child) {
+  margin-right: -10px;
+}
+.article-container .link2 .link-popup .btn span {
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  color: #ffffff;
+  margin-right: 10px;
 }
 .article-add {
   position: absolute;
@@ -10754,6 +10834,171 @@ table .points .loss {
   font-family: "Bebas Neue";
   font-size: 18px;
   color: #ffffff;
+}
+
+.league-setting .profile-details-card {
+  padding: 30px;
+}
+.league-setting .profile-details-card .w-100 {
+  width: 100%;
+}
+.league-setting .profile-details-card .no-bottom .info-wrap {
+  margin-bottom: 0;
+}
+.league-setting .profile-details-card .align-end {
+  align-items: flex-end;
+}
+.league-setting .profile-details-card .info-wrap {
+  border-bottom: 1px solid rgba(216, 216, 216, 0.8);
+  margin-bottom: 20px;
+}
+.league-setting .profile-details-card .info-wrap .label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #525cd7;
+  margin-bottom: 5px;
+}
+.league-setting .profile-details-card .info-wrap .value {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2f3180;
+  margin-bottom: 5px;
+}
+.league-setting .profile-details-card .info-wrap.no-border {
+  border-bottom: 0;
+}
+.league-setting .profile-details-card--edit .info-wrap {
+  border-bottom: 0 !important;
+}
+.league-setting .profile-details-card--edit .info-wrap .profile-edit {
+  -webkit-appearance: none;
+  height: 24px;
+  background: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  color: #2f3180;
+  width: 100%;
+  border: 1px solid #2f3180;
+  border-radius: 4px;
+  padding-left: 5px;
+}
+.league-setting .profile-details-card--edit .info-wrap .profile-edit--select {
+  background: white url(/src/assets/img/profile/select-arrow.svg) right 10px center no-repeat;
+}
+.league-setting .profile-details-card--edit .info-wrap .profile-edit--select.month {
+  width: 85px;
+  margin-right: 7px;
+}
+.league-setting .profile-details-card--edit .info-wrap .profile-edit--select.date {
+  width: 50px;
+  margin-right: 7px;
+}
+.league-setting .profile-details-card--edit .info-wrap .profile-edit--select.year {
+  width: 72px;
+}
+.league-setting .btn--remove {
+  width: 100px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 22px;
+  background: #f86364;
+  box-shadow: 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+}
+.league-setting .card--referral .noti-table td {
+  padding: 15px 20px;
+}
+.league-setting .card--referral .card-header .head-title:first-child,
+.league-setting .card--referral .card-header td:first-child,
+.league-setting .card--referral .noti-table .head-title:first-child,
+.league-setting .card--referral .noti-table td:first-child {
+  width: 20%;
+}
+.league-setting .card--referral .card-header .head-title:nth-child(2),
+.league-setting .card--referral .card-header td:nth-child(2),
+.league-setting .card--referral .noti-table .head-title:nth-child(2),
+.league-setting .card--referral .noti-table td:nth-child(2) {
+  width: 30%;
+}
+.league-setting .card--referral .card-header .head-title:nth-child(3),
+.league-setting .card--referral .card-header td:nth-child(3),
+.league-setting .card--referral .noti-table .head-title:nth-child(3),
+.league-setting .card--referral .noti-table td:nth-child(3) {
+  width: 15%;
+}
+.league-setting .card--referral .card-header .head-title:nth-child(4),
+.league-setting .card--referral .card-header td:nth-child(4),
+.league-setting .card--referral .noti-table .head-title:nth-child(4),
+.league-setting .card--referral .noti-table td:nth-child(4) {
+  width: 20%;
+}
+.league-setting .card--referral .card-header .head-title:nth-child(4),
+.league-setting .card--referral .card-header td:nth-child(4),
+.league-setting .card--referral .noti-table .head-title:nth-child(4),
+.league-setting .card--referral .noti-table td:nth-child(4) {
+  width: 15%;
+}
+.league-setting .card--delete {
+  overflow: hidden;
+}
+.league-setting .card--delete .card-header {
+  padding: 18px 20px;
+}
+.league-setting .card--delete .card-header .btn--remove {
+  width: 150px;
+}
+
+.modal--remove .modal-holder {
+  width: 515px;
+  padding: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #2a276f url(/src/assets/img/article/modal-bg.svg) right top no-repeat;
+  box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+  border-radius: 16px;
+}
+.modal--remove .modal-holder .cont {
+  max-width: 380px;
+  margin: 0 auto;
+}
+.modal--remove .modal-holder .confirmation-text {
+  font-family: "Bebas Neue";
+  font-size: 21px;
+  color: #ffffff;
+}
+.modal--remove .modal-holder .name {
+  font-family: "BebasNeuePro-BoldItalic";
+  font-size: 24px;
+  color: #ffffff;
+}
+.modal--remove .modal-holder .desc {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+}
+.modal--remove .modal-holder .btn--cancel {
+  font-size: 13px;
+  font-weight: bold;
+  color: #3d397b;
+  text-align: center;
+  line-height: 24px;
+  background: #e9e9e9;
+  border-radius: 3px;
+}
+.modal--remove .modal-holder .btn--remove {
+  width: 125px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 22px;
+  background: #f86364;
+  box-shadow: 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
 }
 
 /*# sourceMappingURL=app.css.map */
