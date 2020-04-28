@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Dashboard</title>
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <aside class="side-nav d-flex">
+            <div class="user-info">
+                <figure class="user-avatar m-auto mb-20">
+                    <img src="/src/assets/img/profile-image.svg" alt="User Image" class="user-image">
+                    <!-- <img src="https://images.vexels.com/media/users/3/140748/isolated/preview/5b078a59390bb4666df98b49f1cdedd0-male-profile-avatar-by-vexels.png"
+                        alt="User Image" class="user-image"> -->
+                </figure>
+                <p class="user-name">L. Vaz</p>
+            </div>
+            <nav class="navmenu">
+                <ul class="navmenu__list">
+                    <li class="navmenu__item mb-30">
+                        <i class="material-icons">home</i>
+                    </li>
+                    <li class="navmenu__item mb-30">
+                        <img src="/src/assets/img/trophy-filed.svg" alt="" class="filled">
+                        <img src="/src/assets/img/trophy.svg" alt="" class="normal">
+                    </li>
+                    <li class="navmenu__item mb-30 active">
+                        <img src="/src/assets/img/chart-filed.svg" class="filled" alt="">
+                        <img src="/src/assets/img/chart.svg" alt="" class="normal">
+                    </li>
+                </ul>
+            </nav>
+            <div class="side-nav__footer">
+                <ul class="">
+                    <li class="text-center help">
+                        <i class="material-icons">help</i>
+                    </li>
+                    <li class="text-center logo">
+                        <img src="/src//assets/img/moonlight-logo.svg" alt="Moonlight Logo">
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="right-section home-page">
+            <div class="gameweek-section">
+                <div class="gameweek-section-header text-center">
+                    <a href="" class="link">Full Gameweek</a>
+                    <h2 class="gameweek-title">Gameweek 10</h2>
+                    <p class="gameweek-date">Friday, Oct 19th 2020</p>
+                    <ul class="gameweek-nav d-flex-center">
+                        <li class="gameweek-list active">
+                            <img src="/src/assets/img/calendar/Premier-league.svg" alt="">
+                        </li>
+                        <li class="gameweek-list">
+                            <img src="/src/assets/img/calendar/bundesliga.svg" alt="">
+                        </li>
+                        <li class="gameweek-list">
+                            <img src="/src/assets/img/calendar/la-liga.svg" alt="">
+                        </li>
+                        <li class="gameweek-list">
+                            <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="gameweek-section-body">
+                    <div class="empty-state">
+                        <img src="/src/assets/img/home-page/sad.svg" alt="">
+                        <p class="empty-state-text">No matches on this day</p>
+                    </div>
+                </div>
+            </div>
+            <div class="home-page-main">
+                <div class="main-card d-flex-v-center">
+                    <div class="your-league">
+                        <div class="title">Your League</div>
+                        <div class="league-card-wrap">
+                            <div class="league-card">
+                                <div class="league-card__head d-flex-space-center">
+                                    <p class="league d-flex-v-center">
+                                        League
+                                        <img src="/src/assets/img/league-dashboard/league-logo.svg" alt=""
+                                            class="league-logo">
+                                    </p>
+                                    <div class="in-use-wrap d-flex-v-center">
+                                        <p class="in-use">In use</p>
+                                        <div class="club-wrap">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="league-card__body d-flex-v-center">
+                                    <div class="league-details">
+                                        <p class="name">Pique Blinders</p>
+                                        <p class="sub-text">Alisson Wonderland</p>
+                                    </div>
+                                    <div class="rank-diff">
+                                        <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                        <p class="diff-count">7TH</p>
+                                    </div>
+                                    <p class="rank-no d-flex-v-center">
+                                        5<span>th</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="league-card active">
+                                <div class="league-card__head d-flex-space-center">
+                                    <p class="league d-flex-v-center">
+                                        League
+                                        <img src="/src/assets/img/league-dashboard/league-logo.svg" alt=""
+                                            class="league-logo">
+                                    </p>
+                                    <div class="in-use-wrap d-flex-v-center">
+                                        <p class="in-use">In use</p>
+                                        <div class="club-wrap">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="league-card__body d-flex-v-center">
+                                    <div class="league-details">
+                                        <p class="name">Pique Blinders</p>
+                                        <p class="sub-text">Alisson Wonderland</p>
+                                    </div>
+                                    <div class="rank-diff">
+                                        <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                        <p class="diff-count">7TH</p>
+                                    </div>
+                                    <p class="rank-no d-flex-v-center">
+                                        5<span>th</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="league-card">
+                                <div class="league-card__head d-flex-space-center">
+                                    <p class="league d-flex-v-center">
+                                        League
+                                        <img src="/src/assets/img/league-dashboard/league-logo.svg" alt=""
+                                            class="league-logo">
+                                    </p>
+                                    <div class="in-use-wrap d-flex-v-center">
+                                        <p class="in-use">In use</p>
+                                        <div class="club-wrap">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="league-card__body d-flex-v-center">
+                                    <div class="league-details">
+                                        <p class="name">Pique Blinders</p>
+                                        <p class="sub-text">Alisson Wonderland</p>
+                                    </div>
+                                    <div class="rank-diff">
+                                        <img src="/src/assets/img/player-popout/up-arrow.svg" alt="">
+                                        <p class="diff-count">7TH</p>
+                                    </div>
+                                    <p class="rank-no d-flex-v-center">
+                                        5<span>th</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="create-league-btn">Create League</button>
+                    </div>
+                    <div class="home-page-stats-wrap">
+                        <div class="notifications-wrap">
+                            <div class="notification" id="notification">
+                                <i class="material-icons">notifications_none</i>
+                                <div class="notification-count">3</div>
+                            </div>
+                        </div>
+                        <div class="home-page-stats d-flex">
+                            <div class="stats-section text-center">
+                                <p class="top-value">7-0-0</p>
+                                <p class="label mb-20">Overall Record</p>
+                                <p class="last-5 mb-10">Last 5 GW</p>
+                                <div class="win-loss-wrap d-flex-center">
+                                    <p class="status status--loss">
+                                        <span>L</span>
+                                    </p>
+                                    <p class="status status--win">
+                                        <span>W</span>
+                                    </p>
+                                    <p class="status status--draw">
+                                        <span>D</span>
+                                    </p>
+                                    <p class="status status--loss">
+                                        <span>L</span>
+                                    </p>
+                                    <p class="status status--win">
+                                        <span>W</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="stats-section text-center">
+                                <p class="top-value">1209.33</p>
+                                <p class="label">Total Fantasy Pts</p>
+                            </div>
+                            <div class="stats-section text-center">
+                                <div class="league-rank d-flex-center">
+                                    <div class="rank-status">
+                                        <img src="/src/assets/img/player-popout/up-arrow.svg" alt=""
+                                            class="rank-status-icon">
+                                        <p class="status-text">7th</p>
+                                    </div>
+                                    <p class="rank">5</p>
+                                    <p class="rank-text">TH</p>
+                                </div>
+                                <div class="league-rank-text">
+                                    <span>League Rank</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="your-top-players d-flex-v-center">
+                            <div class="top-players-wrap">
+                                <p class="top-players-title">Your top players</p>
+                                <div class="d-flex-v-center">
+                                    <div class="top-player text-center ml-30">
+                                        <figure class="player-image">
+                                            <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                            <p class="count">1</p>
+                                        </figure>
+                                        <p class="player-name">C. Ronaldo</p>
+                                        <p class="player-position">GW</p>
+                                        <p class="player-points">174.93</p>
+                                    </div>
+                                    <div class="top-player text-center">
+                                        <figure class="player-image">
+                                            <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                            <p class="count">1</p>
+                                        </figure>
+                                        <p class="player-name">C. Ronaldo</p>
+                                        <p class="player-position">GW</p>
+                                        <p class="player-points">174.93</p>
+                                    </div>
+                                    <div class="top-player text-center">
+                                        <figure class="player-image">
+                                            <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                            <p class="count">1</p>
+                                        </figure>
+                                        <p class="player-name">C. Ronaldo</p>
+                                        <p class="player-position">GW</p>
+                                        <p class="player-points">174.93</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn--rounded d-flex-v-center ml-30 mt-30">
+                                <span>View League</span>
+                                <img src="/src/assets/img/create-league/arrow-right.svg" alt="" class="ml-10">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-player-holder mt-20 d-flex-space-center">
+                    <div class="card news-holder no-news">
+                        <div class="news-section">
+                            <div class="news-container">
+                                <p class="news-title mb-0 mt-80">Welcome To</p>
+                                <img src="/src/assets/img/home-page/moonlight-name.svg" alt="">
+                                <p class="logo-sub">The Ultimate Fanatsy Experience</p>
+                            </div>
+                            <div class="news-nav">
+                                <a href="" class="news-list active"></a>
+                                <a href="" class="news-list"></a>
+                            </div>
+                        </div>
+                        <img src="/src/assets/img/home-page/lewandoski.svg" alt="" class="news-image">
+                        <div class="insta d-flex-v-center">
+                            <img src="/src/assets/img/article/instagram.png" alt="">
+                            <p class="insta-text ml-10">Moonlightmanager</p>
+                        </div>
+                    </div>
+                    <div class="card top-players-info-wrap">
+                        <div class="top-players-head">
+                            <div class="head d-flex-space-center">
+                                <p class="title">Top Players</p>
+                                <button class="btn-dropdown">Most Clean Sheets</button>
+                            </div>
+                            <div class="first-player d-flex">
+                                <div class="info-wrap">
+                                    <p class="player-name">C. Ronaldo</p>
+                                    <p class="player-position">FW</p>
+                                    <p class="player-points">
+                                        12<span>PTS</span>
+                                    </p>
+                                    <p class="count">1.</p>
+                                </div>
+                                <div class="club-images">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                </div>
+                                <div class="player-images">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Player</th>
+                                    <th>Club</th>
+                                    <th>CS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="no">2.</div>
+                                    </td>
+                                    <td>
+                                        <div class="player-info">
+                                            <p class="player-name">J. Oblack</p>
+                                            <p class="player-position">GK</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="club-images d-flex-center">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="cs">11</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="no">3.</div>
+                                    </td>
+                                    <td>
+                                        <div class="player-info">
+                                            <p class="player-name">J. Oblack</p>
+                                            <p class="player-position">GK</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="club-images d-flex-center">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="cs">11</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="no">4.</div>
+                                    </td>
+                                    <td>
+                                        <div class="player-info">
+                                            <p class="player-name">J. Oblack</p>
+                                            <p class="player-position">GK</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="club-images d-flex-center">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="cs">11</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="no">5.</div>
+                                    </td>
+                                    <td>
+                                        <div class="player-info">
+                                            <p class="player-name">J. Oblack</p>
+                                            <p class="player-position">GK</p>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="club-images d-flex-center">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                            <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                        </div>
+                                    </td>
+                                    <td class="cs">11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="" class="link">VIEW MORE</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

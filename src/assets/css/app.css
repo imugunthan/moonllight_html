@@ -9030,6 +9030,20 @@ table .points .loss {
   height: calc(100vh - 145px);
   overflow: auto;
 }
+.home-page .gameweek-section-body .empty-state {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.home-page .gameweek-section-body .empty-state-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(96, 99, 128, 0.5);
+  text-align: center;
+  line-height: 29px;
+}
 .home-page .gameweek-section-body .gameweek-card {
   padding: 20px 40px;
   border-bottom: 1px solid rgba(205, 208, 234, 0.5);
@@ -9371,6 +9385,27 @@ table .points .loss {
   padding: 35px 40px;
   position: relative;
 }
+.home-page-main .news-holder.no-news {
+  padding-top: 100px;
+}
+.home-page-main .news-holder.no-news .insta {
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.home-page-main .news-holder.no-news .insta .insta-text {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: -0.01px;
+}
+.home-page-main .news-holder .logo-sub {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  color: #2b2b76;
+  margin-top: -20px;
+}
 .home-page-main .news-holder .news-section {
   max-width: 300px;
 }
@@ -9388,6 +9423,9 @@ table .points .loss {
   margin-bottom: 30px;
   max-width: 90%;
 }
+.home-page-main .news-holder .news-title.mb-0 {
+  margin-bottom: 0;
+}
 .home-page-main .news-holder .news-desc {
   font-size: 15px;
   line-height: 26px;
@@ -9396,7 +9434,7 @@ table .points .loss {
 }
 .home-page-main .news-holder .news-image {
   position: absolute;
-  max-height: 380px;
+  max-height: 400px;
   right: 10%;
   bottom: -10px;
 }
@@ -9570,6 +9608,21 @@ table .points .loss {
 
 .ml-30 {
   margin-left: 30px !important;
+}
+
+.empty-state {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.empty-state-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(96, 99, 128, 0.5);
+  text-align: center;
+  line-height: 29px;
 }
 
 .my-team-main {
