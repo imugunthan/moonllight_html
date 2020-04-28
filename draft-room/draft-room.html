@@ -57,8 +57,10 @@
                             <i class="material-icons">keyboard_arrow_left</i>
                         </div>
                         <p class="nav-link-text ml-10">League Dashboard</p>
+
                     </div>
                     <h1 class="draftroom-title">Draftroom</h1>
+                    <button class="btn btn--end">End Draft</button>
                 </div>
                 <div class="picker-queue d-flex">
                     <div class="timer">
@@ -647,8 +649,21 @@
             <div class="draft-message-container d-flex-v-center">
                 <div class="message-holder">
                     <p class="message-sub">You have been idle for 2 picks.</p>
-                    <h1 class="message">Auto-Draft has been enabled.</h1>
+                    <p class="message">Auto-Draft has been enabled.</p>
                     <button class="btn btn--secondary btn--red mt-20">Disable Auto-draft</button>
+                </div>
+            </div>
+        </section>
+        <section class="draftroom-complete-popup auto-draft delete-draft hide">
+            <div class="draft-message-container d-flex-v-center">
+                <div class="message-holder">
+                    <p class="message">End draft and delete the fantasy league?</p>
+                    <p class="message-sub">everyone will be kicked out of the draft
+                        and the league will be deleted.</p>
+                    <div class="btn-wrap mt-20">
+                        <button class="btn btn--cancel">Cancel</button>
+                        <button class="btn btn--secondary btn--red ml-10">Delete League</button>
+                    </div>
                 </div>
             </div>
         </section>

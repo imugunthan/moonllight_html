@@ -6042,6 +6042,18 @@ table .points .loss {
   font-weight: 700;
   text-transform: uppercase;
 }
+.draftroom-header .btn--end {
+  position: absolute;
+  right: 30px;
+  top: 6px;
+  background: #f86364;
+  box-shadow: 0 1px 4px 1px rgba(58, 58, 58, 0.25);
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+}
 .draftroom-header .nav-link {
   position: absolute;
   left: 15px;
@@ -6716,6 +6728,20 @@ table .points .loss {
 
 .text-warning {
   color: #f8c363 !important;
+}
+
+.delete-draft .message-sub {
+  max-width: 410px;
+  margin: 0 auto;
+  font-size: 26px !important;
+}
+.delete-draft .btn {
+  width: 140px;
+}
+.delete-draft .btn--cancel {
+  background: transparent;
+  border: 1px solid #979797;
+  border-radius: 3px;
 }
 
 .create-league {
