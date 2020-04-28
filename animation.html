@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+</head>
+
+<body>
+    <section class="animation">
+        <img src="src/assets/img/animation/page1.svg" alt="" class="image" id="image1">
+        <img src="src/assets/img/animation/page3.svg" alt="" class="image">
+        <img src="src/assets/img/animation/page4.png" alt="" class="image">
+        <img src="src/assets/img/animation/page5.svg" alt="" class="image">
+    </section>
+</body>
+
+<script>
+
+    let image = document.querySelectorAll('.image');
+    let counter = 0;
+    imageFunction();
+    function imageFunction() {
+        console.log('working');
+        setInterval(() => {
+            counter = counter + 1;
+            counter > 3 ? counter = 0 : '';
+            let counter2 = counter - 1;
+            counter2 == -1 ? counter2 = 3 : '';
+            console.log(counter2, counter);
+            image[counter2].classList.add('de-active');
+            image[counter].classList.add('active');
+            image.forEach((img, index) => {
+                if (index != counter && index != counter2) {
+                    img.classList.remove('active');
+                    img.classList.remove('de-active');
+                }
+            })
+        }, 5000);
+    }
+</script>
+
+</html>

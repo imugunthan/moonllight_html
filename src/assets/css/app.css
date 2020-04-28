@@ -1015,6 +1015,7 @@ html {
   background: #55c77c;
   box-shadow: 0 7px 9px -4px rgba(85, 199, 124, 0.62);
   border-radius: 3px;
+  font-weight: bold;
 }
 .btn--round {
   width: 100%;
@@ -8002,6 +8003,48 @@ table .points .loss {
   margin-bottom: 10px;
 }
 
+.modal--invite .modal-holder {
+  width: 768px;
+  padding: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #3e3583;
+  box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+  border-radius: 16px;
+}
+.modal--invite .modal-holder .bg {
+  position: absolute;
+  right: -65px;
+  top: 0;
+}
+.modal--invite .modal-holder .confirmation-text {
+  font-family: "Bebas Neue";
+  font-size: 21px;
+  color: #ffffff;
+}
+.modal--invite .modal-holder .name {
+  font-family: "Bebas Neue";
+  font-size: 34px;
+  color: #ffffff;
+  margin-left: 15px;
+}
+.modal--invite .modal-holder .desc {
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  color: #ffffff;
+}
+.modal--invite .modal-holder .confirmation-details,
+.modal--invite .modal-holder .body {
+  width: 350px;
+  margin: 0 auto;
+}
+.modal--invite .modal-holder .btn--secondary {
+  background: #55c77c;
+  font-weight: normal;
+}
+
 /* img path */
 /* break points*/
 .profile {
@@ -8881,6 +8924,8 @@ table .points .loss {
   line-height: 29px;
 }
 
+/* img path */
+/* break points*/
 .home-page {
   display: -webkit-box;
   display: -webkit-flex;
@@ -9873,6 +9918,7 @@ table .points .loss {
   border-radius: 15px;
   margin-bottom: 30px;
   position: relative;
+  cursor: pointer;
 }
 .my-team .player-card:not(:last-child) {
   margin-right: 75px;
@@ -10030,6 +10076,7 @@ table .points .loss {
   color: black;
 }
 .my-team .player-card .sub-tool-tip {
+  display: none;
   width: 160px;
   font-size: 12px;
   font-weight: 500;
@@ -10055,11 +10102,17 @@ table .points .loss {
   left: -17px;
   transform: translateY(-50%);
 }
+.my-team .player-card:hover .sub-tool-tip {
+  display: block;
+}
 .my-team .player-card .sub {
   position: absolute;
   left: 50%;
   bottom: -12px;
   transform: translateX(-50%);
+}
+.my-team .player-card__type2:hover .arrow-bottom {
+  display: block;
 }
 .my-team .player-card__type2 .player-card__top {
   height: 65px;
@@ -10111,9 +10164,11 @@ table .points .loss {
   background: #56c079;
 }
 .my-team .player-card__type2 .arrow-bottom {
+  display: none;
   position: absolute;
   bottom: -5px;
   right: -5px;
+  cursor: pointer;
 }
 .my-team .player-card__type2 .club-logo {
   display: flex;
@@ -10975,6 +11030,12 @@ table .points .loss {
   font-size: 24px;
   color: #ffffff;
 }
+.modal--remove .modal-holder .name.normal {
+  font-family: "Bebas Neue";
+  font-size: 31px;
+  color: #ffffff;
+  margin-left: 15px;
+}
 .modal--remove .modal-holder .desc {
   font-size: 14px;
   font-weight: bold;
@@ -10999,6 +11060,54 @@ table .points .loss {
   background: #f86364;
   box-shadow: 0 12px 20px -16px rgba(158, 117, 255, 0.15);
   border-radius: 3px;
+}
+
+.animation {
+  width: 100vw;
+  height: 100vh;
+  background: white url(/src/assets/img/animation/Oval.svg) top left/cover no-repeat;
+  position: relative;
+}
+.animation .image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.animation .image.active {
+  animation: slide-in 2s forwards;
+}
+.animation .image.de-active {
+  animation: slide-out 2s forwards;
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translate(-50%, -50%) scale(1) rotateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5) rotateX(-180deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes slide-in {
+  0% {
+    transform: translate(-50%, -50%) scale(1.5) rotateX(180deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -391,6 +391,7 @@
     border-radius: 15px;
     margin-bottom: 30px;
     position: relative;
+    cursor: pointer;
     &:not(:last-child) {
       margin-right: 75px;
     }
@@ -560,6 +561,7 @@
       }
     }
     .sub-tool-tip {
+      display: none;
       width: 160px;
       font-size: 12px;
       font-weight: 500;
@@ -585,6 +587,11 @@
         transform: translateY(-50%);
       }
     }
+    &:hover {
+      .sub-tool-tip {
+        display: block;
+      }
+    }
     .sub {
       position: absolute;
       left: 50%;
@@ -592,6 +599,11 @@
       transform: translateX(-50%);
     }
     &__type2 {
+      &:hover {
+        .arrow-bottom {
+          display: block;
+        }
+      }
       .player-card {
         &__top {
           height: 65px;
@@ -649,9 +661,11 @@
         }
       }
       .arrow-bottom {
+        display: none;
         position: absolute;
         bottom: -5px;
         right: -5px;
+        cursor: pointer;
       }
       .club-logo {
         display: flex;

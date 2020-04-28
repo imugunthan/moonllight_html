@@ -1,0 +1,49 @@
+.animation {
+  width: 100vw;
+  height: 100vh;
+  background: white url(/src/assets/img/animation/Oval.svg) top left/cover
+    no-repeat;
+  position: relative;
+  .image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    &.active {
+      animation: slide-in 2s forwards;
+    }
+    &.de-active {
+      animation: slide-out 2s forwards;
+    }
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translate(-50%, -50%) scale(1) rotateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5) rotateX(-180deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translate(-50%, -50%) scale(1.5) rotateX(180deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}

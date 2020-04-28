@@ -400,3 +400,47 @@
     }
   }
 }
+
+.modal--invite {
+  .modal-holder {
+    width: 768px;
+    padding: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #3e3583;
+    box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+    border-radius: 16px;
+    .bg {
+      position: absolute;
+      right: -65px;
+      top: 0;
+    }
+    .confirmation-text {
+      font-family: "Bebas Neue";
+      font-size: 21px;
+      color: #ffffff;
+    }
+    .name {
+      font-family: "Bebas Neue";
+      font-size: 34px;
+      color: #ffffff;
+      margin-left: 15px;
+    }
+    .desc {
+      font-family: "Bebas Neue";
+      font-size: 24px;
+      color: #ffffff;
+    }
+    .confirmation-details,
+    .body {
+      width: 350px;
+      margin: 0 auto;
+    }
+    .btn--secondary {
+      background: #55c77c;
+      font-weight: normal;
+    }
+  }
+}

@@ -138,6 +138,12 @@
       font-family: "BebasNeuePro-BoldItalic";
       font-size: 24px;
       color: #ffffff;
+      &.normal {
+        font-family: "Bebas Neue";
+        font-size: 31px;
+        color: #ffffff;
+        margin-left: 15px;
+      }
     }
     .desc {
       font-size: 14px;
