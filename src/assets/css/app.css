@@ -9625,6 +9625,33 @@ table .points .loss {
   line-height: 29px;
 }
 
+.league-card-wrap.text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.league-card-wrap.text-center .empty-text {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 19px;
+  max-width: 200px;
+}
+.league-card-wrap.text-center .btn--create {
+  width: 185px;
+  padding: 10px 25px;
+  font-family: "Bebas Neue";
+  font-size: 23px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+  background: #5abf7b url(/src/assets/img/home-page/create-league-btn-bg.svg) right top no-repeat;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+}
+
 .my-team-main {
   background: url(/src/assets/img/my-team/my-team-bg.svg) center/cover no-repeat;
 }
