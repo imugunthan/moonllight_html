@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="664px" height="381px" viewBox="0 0 664 381" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 58</title>
+    <defs>
+        <linearGradient x1="149.345602%" y1="-7.25562284%" x2="149.345602%" y2="110.572556%" id="linearGradient-1">
+            <stop stop-color="#2F276E" offset="0%"></stop>
+            <stop stop-color="#2F276E" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="149.345602%" y1="-7.25562284%" x2="149.345602%" y2="110.572556%" id="linearGradient-2">
+            <stop stop-color="#2F276E" offset="0%"></stop>
+            <stop stop-color="#2F276E" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="149.345602%" y1="-7.25562284%" x2="149.345602%" y2="110.572556%" id="linearGradient-3">
+            <stop stop-color="#2F276E" offset="0%"></stop>
+            <stop stop-color="#2F276E" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.411156064">
+        <g id="Concept-1-(CTA)" transform="translate(159.000000, -3441.000000)" fill-rule="nonzero">
+            <g id="Group-58" transform="translate(-158.201278, 3441.000000)">
+                <polygon id="Fill-4" fill="url(#linearGradient-1)" opacity="0.2" points="117.977658 381 0.201277955 381 136.396863 2 254.201278 2"></polygon>
+                <path d="M421.155511,2 L293.782513,2 L261.448418,93.7976687 L287.988463,93.7976687 C298.093727,93.7976687 305.343154,102.231209 302.404939,110.581836 L207.201278,381 L322.574275,381 L423.681826,93.7976687 L444.812261,33.7797606 L446.775648,28.1889865 C447.009058,26.9689658 447.201278,25.7489452 447.201278,24.4578554 C447.201278,12.0562865 435.544527,2 421.155511,2" id="Fill-8" fill="url(#linearGradient-2)" opacity="0.2"></path>
+                <path d="M510.691581,0 L478.759835,91.3132483 L504.969629,91.3132483 C514.962706,91.3132483 522.108367,99.7022842 519.220272,108.008845 L425.201278,377 L539.125072,377 L638.974492,91.3132483 L659.84199,31.6120574 L661.780945,26.050786 C662.011451,24.8372035 662.201278,23.623621 662.201278,22.3393443 C662.201278,10.003219 650.689579,0 636.493171,0 L510.691581,0 Z" id="Fill-12" fill="url(#linearGradient-3)" opacity="0.2"></path>
+            </g>
+        </g>
+    </g>
+</svg>

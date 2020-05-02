@@ -29,7 +29,7 @@
     visibility: visible;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1.5) rotateX(-180deg);
+    transform: translate(-50%, -50%) scale(0.5) rotateX(-180deg);
     opacity: 0;
     visibility: hidden;
   }
@@ -37,7 +37,7 @@
 
 @keyframes slide-in {
   0% {
-    transform: translate(-50%, -50%) scale(1.5) rotateX(180deg);
+    transform: translate(-50%, -50%) scale(0.5) rotateX(180deg);
     opacity: 0;
     visibility: hidden;
   }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1366px" height="1159px" viewBox="0 0 1366 1159" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path 19</title>
+    <defs>
+        <filter x="-10.3%" y="-16.3%" width="120.5%" height="132.7%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.400000006">
+        <g id="Concept-1-(Email)" transform="translate(0.000000, -4721.000000)" fill="#4B3A91">
+            <polygon id="Path-19" filter="url(#filter-1)" points="643.810555 4896.63294 73.4413542 5285.80114 0 5686.35483 1460 5758 1459.62419 4840"></polygon>
+        </g>
+    </g>
+</svg>

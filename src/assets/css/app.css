@@ -11198,14 +11198,649 @@ table .points .loss {
     visibility: visible;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1.5) rotateX(-180deg);
+    transform: translate(-50%, -50%) scale(0.5) rotateX(-180deg);
     opacity: 0;
     visibility: hidden;
   }
 }
 @keyframes slide-in {
   0% {
-    transform: translate(-50%, -50%) scale(1.5) rotateX(180deg);
+    transform: translate(-50%, -50%) scale(0.5) rotateX(180deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1) rotateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.landing-page {
+  background: #edf1f4;
+}
+.landing-page .slide {
+  height: 100vh;
+}
+.landing-page .circle-mask {
+  width: 100vw;
+  height: 105vh;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.landing-page .circle {
+  height: 300vh;
+  width: 300vh;
+  border-radius: 150vh;
+  border: 10vw solid #fb285e;
+  position: absolute;
+  bottom: 0vh;
+  left: -14vw;
+}
+.landing-page .combo-search-bar {
+  box-shadow: 0 14px 35px 0 rgba(47, 39, 110, 0.63);
+  display: flex;
+  overflow: hidden;
+  width: 35vw;
+  margin: 0 auto;
+}
+.landing-page .combo-search-bar input {
+  height: calc(30px + 1.3vw);
+  padding: 0 20px;
+  border: 0;
+  flex-basis: calc(100% - 4vw);
+  font-size: 1vw;
+  border-radius: 6px 0 0 6px;
+}
+.landing-page .combo-search-bar input::placeholder {
+  color: #2f276e;
+}
+.landing-page .combo-search-bar button {
+  flex-basis: 4vw;
+  background-color: #525cd7;
+  border: 0;
+  border-radius: 0 6px 6px 0;
+}
+.landing-page .hero {
+  width: 100vw;
+  background: #2f276e url(../../assets/img/landing-page/hero-main-bg.png) right top no-repeat;
+  padding: 10vh;
+  min-height: 600px;
+  position: relative;
+}
+.landing-page .hero .top-nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  padding: 20px 30px;
+}
+.landing-page .hero-title {
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #8194c3;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+.landing-page .hero .button {
+  width: 150px;
+  height: 45px;
+  font-family: "Bebas Neue";
+  font-size: 19px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 4px;
+}
+.landing-page .hero .button--login {
+  border: 1px solid #ffffff;
+}
+.landing-page .hero .button--register {
+  background: #fb285e;
+  box-shadow: 0 20px 20px -10px rgba(255, 132, 163, 0.25);
+}
+.landing-page .hero-card {
+  position: relative;
+  height: 77vh;
+  margin: 0 auto;
+  z-index: 1;
+  margin-top: 3vh;
+  border-radius: 15px;
+  background: #3e3583 url(../../assets/img/signup/signup-bg-2.svg) left 0 top/cover no-repeat;
+  box-shadow: 0 8px 59px 26px rgba(0, 0, 0, 0.15);
+}
+.landing-page .hero-card::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(../../assets/img/landing-page/hero-card-number-bg.png) right top no-repeat;
+}
+.landing-page .hero-card .left,
+.landing-page .hero-card .right {
+  flex-basis: 50%;
+  position: relative;
+  z-index: 1;
+}
+.landing-page .hero-card .right img {
+  height: 85vh;
+  position: relative;
+  z-index: 1;
+}
+.landing-page .hero-card .left img {
+  width: 30vh;
+}
+.landing-page .hero-card .left .content {
+  margin-top: -30px;
+}
+.landing-page .hero-card .left p {
+  font-family: "Bebas Neue";
+  font-size: 2.6vw;
+  color: #ffffff;
+  text-align: center;
+}
+.landing-page .hero .scroll-down {
+  font-family: "Bebas Neue";
+  opacity: 0.6;
+  color: white;
+  transform: rotate(-90deg);
+  position: absolute;
+  z-index: 2;
+  left: 0px;
+  bottom: 80px;
+  cursor: pointer;
+}
+.landing-page .hero .scroll-down svg {
+  margin-right: 20px;
+}
+.landing-page .hero .scroll-down label {
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  color: #7a8abb;
+  cursor: pointer;
+}
+.landing-page .zig-zag {
+  display: flex;
+}
+.landing-page .zig-zag .content {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.landing-page .zig-zag .content .content-wrapper {
+  max-width: 25vw;
+}
+.landing-page .zig-zag .image {
+  flex-basis: 55%;
+}
+.landing-page .base {
+  height: 100vh;
+  width: 100%;
+  background: url("/src/assets/img/landing-page/map.svg") right -50px center/contain no-repeat;
+  position: relative;
+}
+.landing-page .leagues a img {
+  width: 3.3vw;
+  margin-right: 2vw;
+}
+.landing-page .player-geo-card {
+  width: 10vw;
+  position: absolute;
+  perspective: 1000px;
+}
+.landing-page .player-geo-card .flip-card {
+  transition: all 1s ease;
+  transform-style: preserve-3d;
+}
+.landing-page .player-geo-card.active .flip-card {
+  transform: rotateY(180deg);
+}
+.landing-page .player-geo-card img {
+  width: 10vw;
+}
+.landing-page .player-geo-card .flip-card-front,
+.landing-page .player-geo-card .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.landing-page .player-geo-card .flip-card-back {
+  transform: rotateY(180deg);
+}
+.landing-page .player-geo-card.top {
+  top: 18%;
+  left: 25%;
+}
+.landing-page .player-geo-card.middle {
+  top: 35%;
+  left: 50%;
+}
+.landing-page .player-geo-card.bottom-left {
+  top: 55%;
+  left: 15%;
+}
+.landing-page .player-geo-card.bottom-right {
+  top: 63%;
+  left: 65%;
+}
+.landing-page h1 {
+  font-size: 4.5vw;
+  line-height: 4.7vw;
+  margin-top: 0;
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  color: #151515;
+}
+.landing-page h1 .primary {
+  color: #525cd7;
+  font-family: "Bebas Neue";
+}
+.landing-page .line {
+  width: 120px;
+  height: 5px;
+  background: #525cd7;
+  margin: 2vh 0;
+  border-radius: 2px;
+}
+.landing-page .content-text {
+  font-size: calc(5px + 1.3vw);
+  color: #151515;
+}
+.landing-page .m-auto {
+  margin: 0 auto;
+}
+.landing-page .pages {
+  min-height: 100vh;
+  width: 100vw;
+}
+.landing-page .pages .page-slider {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.landing-page .pages .circle-mask {
+  height: 100vh;
+}
+.landing-page .pages .circle {
+  bottom: initial;
+  left: -35vw;
+}
+.landing-page .pages img {
+  margin-top: 30px;
+  width: 75vw;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+.landing-page .pages img.active {
+  animation: slide-in 2s forwards;
+}
+.landing-page .pages img.de-active {
+  animation: slide-out 2s forwards;
+}
+.landing-page .real-analysis {
+  margin-top: 5vw;
+  width: 100vw;
+}
+.landing-page .real-analysis .image {
+  width: 50vw;
+  background: url(/src/assets/img/animation/real-analysis-bg.svg) left bottom no-repeat;
+  background-size: 65%;
+}
+.landing-page .real-analysis .image img {
+  height: 55vw;
+}
+.landing-page .real-analysis .right {
+  width: 50vw;
+}
+.landing-page .real-analysis .right .content-wrapper {
+  width: 60%;
+}
+.landing-page .real-analysis .right .content-wrapper .key {
+  margin-top: 10px;
+  font-size: calc(5px + 0.9vw);
+  color: #151515;
+}
+.landing-page .real-analysis .right .content-wrapper .features-wrap {
+  flex-wrap: wrap;
+}
+.landing-page .real-analysis .right .content-wrapper .feature {
+  flex-basis: 50%;
+  width: 50%;
+  margin-top: 30px;
+}
+.landing-page .compare-players {
+  background: #2f276e;
+  width: 100vw;
+  position: relative;
+}
+.landing-page .compare-players .player-pickers {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+.landing-page .compare-players .player-list {
+  width: 4.3vw;
+  height: 4.3vw;
+  border-radius: 50%;
+  background: white;
+  opacity: 0.3;
+  cursor: pointer;
+  margin-bottom: 1vw;
+  border: 0.3vw solid transparent;
+}
+.landing-page .compare-players .player-list.active {
+  opacity: 1;
+  border-color: #525cd7;
+}
+.landing-page .compare-players .player-list img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.landing-page .compare-players .player-image {
+  height: 45vw;
+  position: absolute;
+  left: 15%;
+  top: 6%;
+}
+.landing-page .compare-players .player-info {
+  width: 50%;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  text-align: right;
+}
+.landing-page .compare-players .player-name {
+  font-family: "Bebas Neue";
+  font-size: 3.8vw;
+  line-height: 3.4vw;
+  color: #ffffff;
+  letter-spacing: 0;
+}
+.landing-page .compare-players .player-position {
+  font-size: 1.1vw;
+  font-weight: bold;
+  color: #a4d4e8;
+}
+.landing-page .compare-players .player-team, .landing-page .compare-players .player-rank {
+  justify-content: flex-end;
+}
+.landing-page .compare-players .player-team img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-left: 12px;
+}
+.landing-page .compare-players .player-team .team-name {
+  font-size: 1.4vw;
+  font-weight: bold;
+  color: #ffffff;
+}
+.landing-page .compare-players .player-rank {
+  align-items: baseline;
+}
+.landing-page .compare-players .player-rank p {
+  font-family: "Bebas Neue";
+  font-size: 2.9vw;
+  line-height: 11vw;
+  color: #24bfa8;
+  text-shadow: 0 9px 10px rgba(0, 0, 0, 0.4);
+  margin-left: 5px;
+}
+.landing-page .compare-players .player-rank .rank {
+  font-size: 9.7vw;
+}
+.landing-page .compare-players .ranking-value {
+  position: absolute;
+  bottom: 2%;
+  left: 10%;
+  text-align: center;
+}
+.landing-page .compare-players .ranking-value div {
+  margin-right: 3vw;
+}
+.landing-page .compare-players .ranking-value .label {
+  font-size: 16px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.56);
+  text-transform: uppercase;
+}
+.landing-page .compare-players .ranking-value .value {
+  font-family: "Bebas Neue";
+  font-size: 34px;
+  color: #ffffff;
+}
+.landing-page .compare-players .ranking-value .value span {
+  font-family: "Bebas Neue";
+  font-size: 19px;
+}
+.landing-page .compare-players .left,
+.landing-page .compare-players .right {
+  width: 50vw;
+  height: 100vh;
+  flex-basis: 50vw;
+  position: relative;
+}
+.landing-page .compare-players .left {
+  background: url(/src/assets/img/animation/comparison-left.svg) left center/cover no-repeat;
+}
+.landing-page .compare-players .right {
+  background: url(/src/assets/img/animation/comparison-right.svg) right center/cover no-repeat;
+}
+.landing-page .compare-players .right .player-pickers {
+  right: 2%;
+  left: initial;
+}
+.landing-page .compare-players .right .player-image {
+  right: 15%;
+  left: initial;
+}
+.landing-page .compare-players .right .player-info {
+  right: initial;
+  left: 10%;
+  text-align: left;
+}
+.landing-page .compare-players .right .player-team, .landing-page .compare-players .right .player-rank {
+  justify-content: flex-start;
+}
+.landing-page .compare-players .right .player-team img {
+  margin-left: 0;
+  margin-right: 12px;
+}
+.landing-page .compare-players .right .player-rank p {
+  color: #fb295e;
+}
+.landing-page .compare-players .right .ranking-value {
+  left: initial;
+  right: 10%;
+}
+.landing-page .compare-players .right .ranking-value div {
+  margin-right: 0;
+  margin-left: 3vw;
+}
+.landing-page .compare-players .stats-comparison {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.landing-page .compare-players .stats-comparison .stats-card {
+  width: 45vw;
+  height: 5vw;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  margin-bottom: 10px;
+  color: white;
+}
+.landing-page .compare-players .stats-comparison .stats-card .stats-left, .landing-page .compare-players .stats-comparison .stats-card .stats-right {
+  width: 40%;
+  padding: 1vw 2vw;
+}
+.landing-page .compare-players .stats-comparison .stats-card .stats-left .value, .landing-page .compare-players .stats-comparison .stats-card .stats-right .value {
+  font-family: "Bebas Neue";
+  font-size: 2.1vw;
+  color: #ffffff;
+  letter-spacing: 0.37px;
+  line-height: 24px;
+}
+.landing-page .compare-players .stats-comparison .stats-card .stats-left .points, .landing-page .compare-players .stats-comparison .stats-card .stats-right .points {
+  font-family: "Bebas Neue";
+  font-size: 2vw;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 0.56px;
+  line-height: 24px;
+}
+.landing-page .compare-players .stats-comparison .stats-card .stats-left .points span, .landing-page .compare-players .stats-comparison .stats-card .stats-right .points span {
+  font-family: "Bebas Neue";
+  font-size: 1.1vw;
+  color: #afb1bf;
+  letter-spacing: 0.32px;
+  line-height: 24px;
+  margin: 0 5px;
+}
+.landing-page .compare-players .stats-comparison .stats-card .stats-left .progress, .landing-page .compare-players .stats-comparison .stats-card .stats-right .progress {
+  width: 100%;
+  height: 3px;
+  border-radius: 10px;
+  background: rgba(220, 220, 220, 0.3);
+  margin-top: 5px;
+  position: relative;
+}
+.landing-page .compare-players .stats-comparison .stats-card .stats-left .progress-bar, .landing-page .compare-players .stats-comparison .stats-card .stats-right .progress-bar {
+  position: absolute;
+  left: 0;
+  width: 70%;
+  height: 3px;
+  border-radius: 10px;
+  background: #29bba5;
+}
+.landing-page .compare-players .stats-comparison .stats-card .stats-right .progress-bar {
+  left: initial;
+  right: 0;
+  background: #fb295e;
+}
+.landing-page .compare-players .stats-comparison .stats-card .stats-title {
+  width: 20%;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 1.3vw;
+  color: #ffffff;
+  text-align: center;
+  line-height: 14px;
+}
+.landing-page .testimonials {
+  background: #2f276e url(/src/assets/img/animation/testimonials.svg) bottom right/cover no-repeat;
+  padding-top: 10rem;
+  overflow-x: hidden;
+}
+.landing-page .testimonials-container {
+  min-height: 100vh;
+  background: url(/src/assets/img/animation/testimonials-m.svg) top left no-repeat;
+  padding: 4vw 8vw;
+  width: 90vw;
+  margin: 0 auto;
+  position: relative;
+}
+.landing-page .testimonials .what-people-say {
+  font-family: "Bebas Neue";
+  font-size: 3.3vw;
+  color: #ffffff;
+}
+.landing-page .testimonials .testimonials-head {
+  margin-bottom: 5vw;
+}
+.landing-page .testimonials .nav-arrow {
+  width: 44px;
+  height: 44px;
+  border: 1px solid white;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.landing-page .testimonials .nav-arrow:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.landing-page .testimonials .nav-arrow:hover > i {
+  margin-right: 5px;
+}
+.landing-page .testimonials .nav-arrow.right:hover > i {
+  margin-right: 0;
+  margin-left: 5px;
+}
+.landing-page .testimonials .nav-arrow > i {
+  color: white;
+  font-weight: medium;
+  line-height: 44px;
+  transition: all 0.3s ease;
+}
+.landing-page .testimonials .nav-arrow.right > i {
+  transform: rotate(180deg);
+}
+.landing-page .testimonials .scroller {
+  width: max-content;
+}
+.landing-page .testimonials .testimonials-content {
+  width: 35vw;
+  margin-right: 5vw;
+}
+.landing-page .testimonials .testimonials-content p {
+  font-size: 1.65vw;
+  color: #ffffff;
+  margin-bottom: 3vw;
+}
+.landing-page .testimonials .testimonials-content .author {
+  font-size: 14px;
+  font-weight: bold;
+  color: #88a0cd;
+}
+.landing-page .search-container {
+  margin: 12vw 0;
+}
+.landing-page .search-container img {
+  width: 5vw;
+  margin-bottom: 1.5vw;
+}
+.landing-page .search-container p {
+  font-family: "Bebas Neue";
+  font-size: 4.1vw;
+  line-height: 4.5vw;
+  color: #ffffff;
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translate(-50%, -50%) scale(1) rotateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.3) rotateX(-180deg);
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes slide-in {
+  0% {
+    transform: translate(-50%, -50%) scale(1.3) rotateX(180deg);
     opacity: 0;
     visibility: hidden;
   }
