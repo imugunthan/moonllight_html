@@ -11909,12 +11909,16 @@ body {
   line-height: 3.4vw;
   color: #ffffff;
   letter-spacing: 0;
+  display: none;
 }
 @media only screen and (max-width: 768px) {
   .landing-page .compare-players .player-name {
     font-size: 25px !important;
     line-height: 25px;
   }
+}
+.landing-page .compare-players .player-name.active {
+  display: block;
 }
 .landing-page .compare-players .player-position {
   font-size: 1.1vw;

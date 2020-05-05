@@ -640,9 +640,13 @@ body {
         line-height: 3.4vw;
         color: #ffffff;
         letter-spacing: 0;
+        display: none;
         @include respond-to(768px) {
           font-size: 25px !important;
           line-height: 25px;
+        }
+        &.active {
+          display: block;
         }
       }
       &-position {

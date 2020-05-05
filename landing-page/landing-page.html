@@ -189,7 +189,9 @@
                     <img src="/src/assets/img/animation/zlatan.svg" alt="" class="player-image player-image-left">
                     <img src="/src/assets/img/animation/heung.svg" alt="" class="player-image player-image-left heung">
                     <div class="player-info">
-                        <p class="player-name mb-10">Pierre-emirik aubameyang</p>
+                        <p class="player-name mb-10 player-name-left active">Pierre-emirik <br> aubameyang</p>
+                        <p class="player-name mb-10 player-name-left">zlatan <br> ibrahimovic</p>
+                        <p class="player-name mb-10 player-name-left">heung-min <br> son</p>
                         <p class="player-position mb-20">FWD</p>
                         <div class="player-team d-flex">
                             <p class="team-name">Arsenal</p>
@@ -231,7 +233,9 @@
                         class="player-image player-image-right abraham">
                     <img src="/src/assets/img/animation/karim.svg" alt="" class="player-image player-image-right karim">
                     <div class="player-info">
-                        <p class="player-name mb-10">robert lewandowski</p>
+                        <p class="player-name mb-10 player-name-right active">robert <br> lewandowski</p>
+                        <p class="player-name mb-10 player-name-right">tammy <br> abraham</p>
+                        <p class="player-name mb-10 player-name-right">karim <br> benzema</p>
                         <p class="player-position mb-20">FWD</p>
                         <div class="player-team d-flex">
                             <img src="/src/assets/img/animation/arsenal.svg" alt="">
@@ -514,6 +518,8 @@
         let playerPickerRight = document.querySelectorAll('.player-list-right');
         let playerImageLeft = document.querySelectorAll('.player-image-left');
         let playerImageRight = document.querySelectorAll('.player-image-right');
+        let playerNameLeft = document.querySelectorAll('.player-name-left');
+        let playerNameRight = document.querySelectorAll('.player-name-right');
         playerPickerLeft.forEach((e, index) => {
             e.addEventListener('click', () => {
                 playerImageLeft.forEach(x => {
@@ -522,9 +528,15 @@
                 });
                 playerPickerLeft.forEach(y => {
                     y.classList.remove('active');
-                })
+                });
+                playerNameLeft.forEach(z => {
+                    z.classList.remove('active');
+                    z.classList.add('de-active');
+                });
                 playerImageLeft[index].classList.remove('de-active');
                 playerImageLeft[index].classList.add('active');
+                playerNameLeft[index].classList.remove('de-active');
+                playerNameLeft[index].classList.add('active');
                 e.classList.add('active');
             });
         });
@@ -537,8 +549,14 @@
                 playerPickerRight.forEach(y => {
                     y.classList.remove('active');
                 })
+                playerNameRight.forEach(z => {
+                    z.classList.remove('active');
+                    z.classList.add('de-active');
+                })
                 playerImageRight[index].classList.remove('de-active');
                 playerImageRight[index].classList.add('active');
+                playerNameRight[index].classList.remove('de-active');
+                playerNameRight[index].classList.add('active');
                 e.classList.add('active');
             });
         });
