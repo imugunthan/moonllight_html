@@ -28,7 +28,7 @@
                         <img src="/src/assets/img/landing-page/hero-logo.svg" alt="" class="mb-20">
                         <p>THE ULTIMATE FANTASY EXPERIENCE</p>
                         <div class="combo-search-bar mt-30">
-                            <input type="text" placeholder="Enter your email address to get involved">
+                            <input type="text" placeholder="Enter your email address">
                             <button>
                                 <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -44,7 +44,7 @@
                     <img src="/src/assets/img/landing-page/heroimage.png" alt="">
                 </div>
             </div>
-            <div class="scroll-down d-flex-center">
+            <div class="scroll-down d-flex-center" onclick="scrollDown()">
                 <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M3.43853 5.60465H16V7.54401H3.66575L7.68767 11.6804L6.19954 13L0.593203 7.23415L6.17385e-07 6.62407L0.541718 5.97178L5.50117 3.25336e-07L7.09227 1.20511L3.43853 5.60465Z"
@@ -56,7 +56,7 @@
                 <div class="circle"></div>
             </div>
         </div>
-        <div class="slide zig-zag">
+        <div class="slide zig-zag" id="zigZag">
             <div class="content">
                 <div class="content-wrapper">
                     <h1><span class="primary">Build your<br> perfect team.</span> <br>Pick from the <br>best OF THE
@@ -140,7 +140,7 @@
         </div>
         <div class="real-analysis slide d-flex-v-center" id="realAnalysis">
             <div class="image">
-                <img src="/src/assets/img/animation//real-analysis.svg" alt="">
+                <img src="/src/assets/img/animation/real-analysis.svg" alt="">
             </div>
             <div class="right">
                 <div class="content-wrapper ml-30">
@@ -173,18 +173,21 @@
         <div class="compare-players slide d-flex-v-center">
             <div class="left">
                 <div class="player-pickers">
-                    <div class="player-list">
+                    <div class="player-list player-list-left active">
                         <img src="/src/assets/img/animation/salah.svg" alt="">
                     </div>
-                    <div class="player-list active">
+                    <div class="player-list player-list-left">
                         <img src="/src/assets/img/animation/salah.svg" alt="">
                     </div>
-                    <div class="player-list">
+                    <div class="player-list player-list-left">
                         <img src="/src/assets/img/animation/salah.svg" alt="">
                     </div>
                 </div>
                 <div class="player-wrap">
-                    <img src="/src/assets/img/animation/Aubameyang.svg" alt="" class="player-image">
+                    <img src="/src/assets/img/animation/Aubameyang.svg" alt=""
+                        class="player-image player-image-left active">
+                    <img src="/src/assets/img/animation/zlatan.svg" alt="" class="player-image player-image-left">
+                    <img src="/src/assets/img/animation/heung.svg" alt="" class="player-image player-image-left heung">
                     <div class="player-info">
                         <p class="player-name mb-10">Pierre-emirik aubameyang</p>
                         <p class="player-position mb-20">FWD</p>
@@ -211,18 +214,22 @@
             </div>
             <div class="right">
                 <div class="player-pickers">
-                    <div class="player-list">
+                    <div class="player-list player-list-right active">
                         <img src="/src/assets/img/animation/salah.svg" alt="">
                     </div>
-                    <div class="player-list active">
+                    <div class="player-list  player-list-right">
                         <img src="/src/assets/img/animation/salah.svg" alt="">
                     </div>
-                    <div class="player-list">
+                    <div class="player-list player-list-right">
                         <img src="/src/assets/img/animation/salah.svg" alt="">
                     </div>
                 </div>
                 <div class="player-wrap">
-                    <img src="/src/assets/img/animation/Lewandowski.png" alt="" class="player-image">
+                    <img src="/src/assets/img/animation/Lewandowski.png" alt=""
+                        class="player-image active player-image-right">
+                    <img src="/src/assets/img/animation/abraham.svg" alt=""
+                        class="player-image player-image-right abraham">
+                    <img src="/src/assets/img/animation/karim.svg" alt="" class="player-image player-image-right karim">
                     <div class="player-info">
                         <p class="player-name mb-10">robert lewandowski</p>
                         <p class="player-position mb-20">FWD</p>
@@ -335,32 +342,44 @@
             </div>
         </div>
         <div class="testimonials">
-            <div class="testimonials-container">
+            <div class="testimonials-container" id="containterTest">
                 <div class="d-flex testimonials-head">
                     <div class="what-people-say">What people say</div>
                     <div class="actions-wrap d-flex-v-center ml-auto">
-                        <div class="nav-arrow">
+                        <div class="nav-arrow disabled" id="navArrowLeft">
                             <i class="material-icons">keyboard_backspace</i>
                         </div>
-                        <div class="nav-arrow right ml-30">
+                        <div class="nav-arrow right ml-30" id="navArrowRight">
                             <i class="material-icons">keyboard_backspace</i>
                         </div>
                     </div>
                 </div>
-                <div class="scroller d-flex">
-                    <div class="testimonials-content">
+                <div class="scroller d-flex row">
+                    <div class="testimonials-content col-6">
                         <p class="">“Finally, a fantasy soccer website that combines the English Premier League,
                             La Liga, Bundesliga, and Serie A all into
                             one fantasy league. This is the experience that all soccer fans have been waiting for!”</p>
                         <div class="author">Conor Smith</div>
                     </div>
-                    <div class="testimonials-content">
+                    <div class="testimonials-content col-6">
                         <p class="">“What a great experience. Easy to use, and really easy to master. The realtime data
                             allows you to make decisions with
                             ease!”</p>
                         <div class="author">Paul Wright</div>
                     </div>
-                    <div class="testimonials-content">
+                    <div class="testimonials-content col-6">
+                        <p class="">“What a great experience. Easy to use, and really easy to master. The realtime data
+                            allows you to make decisions with
+                            ease!”</p>
+                        <div class="author">Paul Wright</div>
+                    </div>
+                    <div class="testimonials-content col-6">
+                        <p class="">“What a great experience. Easy to use, and really easy to master. The realtime data
+                            allows you to make decisions with
+                            ease!”</p>
+                        <div class="author">Paul Wright</div>
+                    </div>
+                    <div class="testimonials-content col-6">
                         <p class="">“What a great experience. Easy to use, and really easy to master. The realtime data
                             allows you to make decisions with
                             ease!”</p>
@@ -371,7 +390,7 @@
                     <img src="/src/assets/img/signup/moonlight-logo.svg" alt="">
                     <p>Enjoy the new home of fantasy football.</p>
                     <div class="combo-search-bar mt-30">
-                        <input type="text" placeholder="Enter your email address to get involved">
+                        <input type="text" placeholder="Enter your email address">
                         <button>
                             <svg width="16" height="14" viewBox="0 0 16 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -381,9 +400,24 @@
                             </svg>
                         </button>
                     </div>
+                    <div class="nav-actions d-flex-center mt-30">
+                        <button class="button button--login">Login</button>
+                        <button class="button button--register ml-10">Register</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <footer class="footer d-flex-space-center">
+            <ul class="footer-nav d-flex-v-center">
+                <li class="nav-list">Terms & Conditions</li>
+                <li class="nav-list">Privacy Policy</li>
+                <li class="nav-list">Disclaimer</li>
+            </ul>
+            <a href="" class="insta-link d-flex-v-center">
+                <span>Follow us ON INSTAGRAM</span>
+                <img src="/src/assets/img/animation/instagram-blue.png" alt="" class="">
+            </a>
+        </footer>
     </main>
 </body>
 <script>
@@ -425,6 +459,92 @@
         var scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
         let pos = section.offsetTop + (((section2.offsetTop - section.offsetTop) * 20 / 100) + 50);
     }
+    let zig = document.getElementById('zigZag');
+    function scrollDown() {
+        zig.scrollIntoView({ behavior: 'smooth' });
+    }
+    let testimonialsCounter = 0;
+    let testimonials = document.querySelectorAll('.testimonials-content');
+    let testimonialContainer = document.querySelector('.scroller');
+    let leftNav = document.getElementById('navArrowLeft');
+    let rightNav = document.getElementById('navArrowRight');
+    leftNav.addEventListener('click', () => {
+        scroller(1);
+    });
+    rightNav.addEventListener('click', () => {
+        scroller(-1);
+    });
+    let countscroll = testimonialContainer.clientWidth / testimonials[0].clientWidth;
+    reduceOpacity(countscroll, countscroll);
+    function scroller(countValue) {
+        let scrollCount = testimonialContainer.clientWidth / testimonials[0].clientWidth;
+        testimonialsCounter = testimonialsCounter - countValue;
+        let hideVal = ((testimonialsCounter + 1) * scrollCount);
+        if (hideVal == scrollCount) {
+            leftNav.classList.add('disabled')
+        } else {
+            leftNav.classList.remove('disabled');
+        }
+        if (hideVal >= testimonials.length) {
+            rightNav.classList.add('disabled')
+        } else {
+            rightNav.classList.remove('disabled');
+        }
+        translateValue = (((testimonialsCounter * scrollCount) * testimonials[0].clientWidth) * -1) + 'px';
+        testimonialContainer.style.transform = `translateX(${translateValue})`;
+        reduceOpacity(hideVal, scrollCount);
+    }
+    function reduceOpacity(hideVal, count) {
+        testimonials.forEach((item, index) => {
+            item.style.opacity = 1;
+            if (count == 2) {
+                if (!(index == hideVal - 1 || index == hideVal - 2)) {
+                    item.style.opacity = 0.3;
+                }
+            } else if (count == 1) {
+                if (!(index == hideVal - 1)) {
+                    item.style.opacity = 0.3;
+                }
+            }
+        })
+    }
+
+    function watchClick() {
+        let playerPickerLeft = document.querySelectorAll('.player-list-left');
+        let playerPickerRight = document.querySelectorAll('.player-list-right');
+        let playerImageLeft = document.querySelectorAll('.player-image-left');
+        let playerImageRight = document.querySelectorAll('.player-image-right');
+        playerPickerLeft.forEach((e, index) => {
+            e.addEventListener('click', () => {
+                playerImageLeft.forEach(x => {
+                    x.classList.remove('active');
+                    x.classList.add('de-active');
+                });
+                playerPickerLeft.forEach(y => {
+                    y.classList.remove('active');
+                })
+                playerImageLeft[index].classList.remove('de-active');
+                playerImageLeft[index].classList.add('active');
+                e.classList.add('active');
+            });
+        });
+        playerPickerRight.forEach((e, index) => {
+            e.addEventListener('click', () => {
+                playerImageRight.forEach(x => {
+                    x.classList.remove('active');
+                    x.classList.add('de-active');
+                });
+                playerPickerRight.forEach(y => {
+                    y.classList.remove('active');
+                })
+                playerImageRight[index].classList.remove('de-active');
+                playerImageRight[index].classList.add('active');
+                e.classList.add('active');
+            });
+        });
+
+    }
+    watchClick();
 </script>
 
 </html>

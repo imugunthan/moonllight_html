@@ -7649,6 +7649,8 @@ table .points .loss {
   transform: translateX(-50%);
 }
 
+/* img path */
+/* break points*/
 .upcoming-draft {
   width: 100%;
   height: 170px;
@@ -11215,6 +11217,11 @@ table .points .loss {
     visibility: visible;
   }
 }
+body {
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 700ms ease;
+}
+
 .landing-page {
   background: #edf1f4;
 }
@@ -11228,6 +11235,15 @@ table .points .loss {
   position: absolute;
   top: 0;
   left: 0;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page h1 {
+    font-size: 40px !important;
+    line-height: 40px !important;
+  }
+  .landing-page p {
+    font-size: 16px !important;
+  }
 }
 .landing-page .circle {
   height: 300vh;
@@ -11245,22 +11261,64 @@ table .points .loss {
   width: 35vw;
   margin: 0 auto;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .combo-search-bar {
+    width: 100%;
+  }
+}
 .landing-page .combo-search-bar input {
   height: calc(30px + 1.3vw);
   padding: 0 20px;
   border: 0;
   flex-basis: calc(100% - 4vw);
-  font-size: 1vw;
+  font-size: 14px;
   border-radius: 6px 0 0 6px;
 }
 .landing-page .combo-search-bar input::placeholder {
   color: #2f276e;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .combo-search-bar input {
+    flex-basis: calc(100% - 50px);
+    width: calc(100% - 50px);
+    padding: 20px;
+    height: 50px;
+  }
+}
 .landing-page .combo-search-bar button {
-  flex-basis: 4vw;
+  width: 60px;
   background-color: #525cd7;
   border: 0;
   border-radius: 0 6px 6px 0;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .combo-search-bar button {
+    width: 50px;
+    min-width: 50px;
+  }
+}
+.landing-page .button {
+  width: 150px;
+  height: 45px;
+  font-family: "Bebas Neue";
+  font-size: 19px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+  border-radius: 4px;
+}
+.landing-page .button--login {
+  border: 1px solid #ffffff;
+}
+.landing-page .button--register {
+  background: #fb285e;
+  box-shadow: 0 20px 20px -10px rgba(255, 132, 163, 0.25);
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .button {
+    width: 120px;
+    height: 40px;
+  }
 }
 .landing-page .hero {
   width: 100vw;
@@ -11277,6 +11335,22 @@ table .points .loss {
   z-index: 1;
   padding: 20px 30px;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .hero .top-nav {
+    padding: 20px 5vh;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .hero .combo-search-bar {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    bottom: -35px;
+    margin: 15px auto !important;
+    box-shadow: 0 14px 35px 0 rgba(47, 39, 110, 0.63);
+  }
+}
 .landing-page .hero-title {
   font-size: 1.5vw;
   font-weight: bold;
@@ -11284,22 +11358,15 @@ table .points .loss {
   line-height: 34px;
   text-transform: uppercase;
 }
-.landing-page .hero .button {
-  width: 150px;
-  height: 45px;
-  font-family: "Bebas Neue";
-  font-size: 19px;
-  color: #ffffff;
-  text-align: center;
-  line-height: 24px;
-  border-radius: 4px;
+@media only screen and (max-width: 768px) {
+  .landing-page .hero-title {
+    display: none;
+  }
 }
-.landing-page .hero .button--login {
-  border: 1px solid #ffffff;
-}
-.landing-page .hero .button--register {
-  background: #fb285e;
-  box-shadow: 0 20px 20px -10px rgba(255, 132, 163, 0.25);
+@media only screen and (max-width: 600px) {
+  .landing-page .hero {
+    padding: 5vh;
+  }
 }
 .landing-page .hero-card {
   position: relative;
@@ -11324,25 +11391,67 @@ table .points .loss {
 .landing-page .hero-card .left,
 .landing-page .hero-card .right {
   flex-basis: 50%;
-  position: relative;
   z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .hero-card .left,
+.landing-page .hero-card .right {
+    flex-basis: 100%;
+  }
 }
 .landing-page .hero-card .right img {
   height: 85vh;
   position: relative;
   z-index: 1;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .hero-card .right img {
+    height: 40vh;
+  }
+}
 .landing-page .hero-card .left img {
   width: 30vh;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .hero-card .left img {
+    width: 20vh;
+    margin-bottom: 10px !important;
+  }
+}
 .landing-page .hero-card .left .content {
   margin-top: -30px;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .hero-card .left .content {
+    margin-top: 0;
+    width: 90%;
+  }
 }
 .landing-page .hero-card .left p {
   font-family: "Bebas Neue";
   font-size: 2.6vw;
   color: #ffffff;
   text-align: center;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .hero-card .left p {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .hero-card {
+    flex-wrap: wrap;
+    padding: 30px;
+    margin-top: 6vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .hero-card {
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-top: 6vh;
+    background: #3e3583;
+  }
 }
 .landing-page .hero .scroll-down {
   font-family: "Bebas Neue";
@@ -11364,6 +11473,11 @@ table .points .loss {
   color: #7a8abb;
   cursor: pointer;
 }
+@media only screen and (max-width: 600px) {
+  .landing-page .hero .scroll-down label {
+    display: none;
+  }
+}
 .landing-page .zig-zag {
   display: flex;
 }
@@ -11380,11 +11494,52 @@ table .points .loss {
 .landing-page .zig-zag .image {
   flex-basis: 55%;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .zig-zag {
+    height: 60vh;
+  }
+  .landing-page .zig-zag .base {
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .zig-zag {
+    flex-wrap: wrap;
+    height: auto;
+    min-height: 100vh;
+  }
+  .landing-page .zig-zag .content,
+.landing-page .zig-zag .image {
+    flex-basis: 100%;
+  }
+  .landing-page .zig-zag .content {
+    padding: 30px;
+    padding-bottom: 0;
+  }
+  .landing-page .zig-zag .content .content-wrapper {
+    max-width: 90% !important;
+  }
+  .landing-page .zig-zag .content .content-wrapper .content-text {
+    font-size: 18px;
+  }
+  .landing-page .zig-zag .content .content-wrapper .leagues img {
+    width: 30px;
+    margin-right: 20px;
+  }
+  .landing-page .zig-zag .image .flip-card img {
+    width: 25vw;
+  }
+}
 .landing-page .base {
   height: 100vh;
   width: 100%;
   background: url("/src/assets/img/landing-page/map.svg") right -50px center/contain no-repeat;
   position: relative;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .base {
+    background-size: 110%;
+  }
 }
 .landing-page .leagues a img {
   width: 3.3vw;
@@ -11398,6 +11553,12 @@ table .points .loss {
 .landing-page .player-geo-card .flip-card {
   transition: all 1s ease;
   transform-style: preserve-3d;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .player-geo-card .flip-card {
+    min-width: 25vw;
+    min-height: 20vw;
+  }
 }
 .landing-page .player-geo-card.active .flip-card {
   transform: rotateY(180deg);
@@ -11420,17 +11581,51 @@ table .points .loss {
   top: 18%;
   left: 25%;
 }
+@media only screen and (max-width: 1100px) {
+  .landing-page .player-geo-card.top {
+    top: 25%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .player-geo-card.top {
+    top: 10%;
+    left: 25%;
+  }
+}
 .landing-page .player-geo-card.middle {
   top: 35%;
   left: 50%;
 }
+@media only screen and (max-width: 600px) {
+  .landing-page .player-geo-card.middle {
+    top: 25%;
+    left: 55%;
+  }
+}
 .landing-page .player-geo-card.bottom-left {
-  top: 55%;
+  top: 45%;
   left: 15%;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .player-geo-card.bottom-left {
+    top: 50%;
+    left: 10%;
+  }
 }
 .landing-page .player-geo-card.bottom-right {
   top: 63%;
   left: 65%;
+}
+@media only screen and (max-width: 1100px) {
+  .landing-page .player-geo-card.bottom-right {
+    top: 55%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .player-geo-card.bottom-right {
+    top: 60%;
+    left: 70%;
+  }
 }
 .landing-page h1 {
   font-size: 4.5vw;
@@ -11462,10 +11657,33 @@ table .points .loss {
   min-height: 100vh;
   width: 100vw;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .pages {
+    height: auto !important;
+    min-height: 80vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .pages {
+    height: auto !important;
+  }
+}
 .landing-page .pages .page-slider {
   position: relative;
   height: 100vh;
   width: 100vw;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .pages .page-slider {
+    height: 60vh;
+    min-height: 50vh;
+    overflow: hidden;
+  }
+  .landing-page .pages .page-slider img {
+    width: auto !important;
+    height: 60vh;
+    margin-top: 0 !important;
+  }
 }
 .landing-page .pages .circle-mask {
   height: 100vh;
@@ -11474,24 +11692,47 @@ table .points .loss {
   bottom: initial;
   left: -35vw;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .pages .circle {
+    height: 200vh;
+    width: 200vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .pages .circle {
+    height: 130vh;
+    width: 130vh;
+  }
+}
 .landing-page .pages img {
   margin-top: 30px;
   width: 75vw;
   position: absolute;
   z-index: 1;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  visibility: hidden;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
+  top: 0;
+  left: 0;
 }
-.landing-page .pages img.active {
-  animation: slide-in 2s forwards;
+@media only screen and (max-width: 768px) {
+  .landing-page .pages img:not(:first-child) {
+    display: none;
+  }
 }
-.landing-page .pages img.de-active {
-  animation: slide-out 2s forwards;
+@media (min-width: 768px) {
+  .landing-page .pages img {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    visibility: hidden;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+  }
+  .landing-page .pages img.active {
+    animation: slide-in 2s forwards;
+  }
+  .landing-page .pages img.de-active {
+    animation: slide-out 2s forwards;
+  }
 }
 .landing-page .real-analysis {
   margin-top: 5vw;
@@ -11524,15 +11765,78 @@ table .points .loss {
   width: 50%;
   margin-top: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .real-analysis {
+    height: 60vh;
+  }
+  .landing-page .real-analysis .image {
+    width: 40vw;
+  }
+  .landing-page .real-analysis .right {
+    width: 60vw;
+  }
+  .landing-page .real-analysis .right .content-wrapper {
+    width: 80%;
+    margin-left: 60px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .real-analysis {
+    min-height: 100vh;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .landing-page .real-analysis .image,
+.landing-page .real-analysis .right {
+    width: 100%;
+    background: transparent;
+  }
+  .landing-page .real-analysis .image {
+    order: 2;
+  }
+  .landing-page .real-analysis .image img {
+    width: 100%;
+    height: auto;
+  }
+  .landing-page .real-analysis .right {
+    order: 1;
+    padding: 30px;
+  }
+  .landing-page .real-analysis .right .content-wrapper {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+  .landing-page .real-analysis .right .content-wrapper .feature img {
+    width: 32px;
+  }
+  .landing-page .real-analysis .right .content-wrapper .key {
+    font-size: 13px !important;
+  }
+}
 .landing-page .compare-players {
   background: #2f276e;
   width: 100vw;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players {
+    overflow: hidden;
+  }
+  .landing-page .compare-players .left,
+.landing-page .compare-players .right {
+    height: auto;
+  }
+}
 .landing-page .compare-players .player-pickers {
   position: absolute;
   top: 2%;
   left: 2%;
+  z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .player-pickers {
+    display: flex;
+  }
 }
 .landing-page .compare-players .player-list {
   width: 4.3vw;
@@ -11543,6 +11847,15 @@ table .points .loss {
   cursor: pointer;
   margin-bottom: 1vw;
   border: 0.3vw solid transparent;
+  transition: all 0.3s ease;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .player-list {
+    width: 35px;
+    height: 35px;
+    margin-right: 10px;
+    border: 3px solid transparent;
+  }
 }
 .landing-page .compare-players .player-list.active {
   opacity: 1;
@@ -11559,6 +11872,24 @@ table .points .loss {
   position: absolute;
   left: 15%;
   top: 6%;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+.landing-page .compare-players .player-image.heung {
+  left: 12%;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .player-image {
+    left: -30%;
+    top: 20%;
+    height: 60vh;
+  }
+  .landing-page .compare-players .player-image.heung {
+    left: -40%;
+  }
+}
+.landing-page .compare-players .player-image.active {
+  transform: scale(1);
 }
 .landing-page .compare-players .player-info {
   width: 50%;
@@ -11567,6 +11898,11 @@ table .points .loss {
   right: 10%;
   text-align: right;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .player-info {
+    width: 70%;
+  }
+}
 .landing-page .compare-players .player-name {
   font-family: "Bebas Neue";
   font-size: 3.8vw;
@@ -11574,13 +11910,29 @@ table .points .loss {
   color: #ffffff;
   letter-spacing: 0;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .player-name {
+    font-size: 25px !important;
+    line-height: 25px;
+  }
+}
 .landing-page .compare-players .player-position {
   font-size: 1.1vw;
   font-weight: bold;
   color: #a4d4e8;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .player-position {
+    margin-bottom: 10px !important;
+  }
+}
 .landing-page .compare-players .player-team, .landing-page .compare-players .player-rank {
   justify-content: flex-end;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .player-team {
+    margin-bottom: 10px;
+  }
 }
 .landing-page .compare-players .player-team img {
   width: 20px;
@@ -11593,6 +11945,11 @@ table .points .loss {
   font-size: 1.4vw;
   font-weight: bold;
   color: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .player-team .team-name {
+    display: none;
+  }
 }
 .landing-page .compare-players .player-rank {
   align-items: baseline;
@@ -11607,6 +11964,16 @@ table .points .loss {
 }
 .landing-page .compare-players .player-rank .rank {
   font-size: 9.7vw;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .player-rank p {
+    font-size: 20px !important;
+    line-height: 20px !important;
+  }
+  .landing-page .compare-players .player-rank .rank {
+    font-size: 65px !important;
+    line-height: 65px !important;
+  }
 }
 .landing-page .compare-players .ranking-value {
   position: absolute;
@@ -11632,6 +11999,19 @@ table .points .loss {
   font-family: "Bebas Neue";
   font-size: 19px;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .ranking-value {
+    display: block;
+    bottom: 1%;
+  }
+  .landing-page .compare-players .ranking-value .value {
+    font-size: 21px !important;
+    line-height: 42.84px;
+  }
+  .landing-page .compare-players .ranking-value .value span {
+    font-size: 12px !important;
+  }
+}
 .landing-page .compare-players .left,
 .landing-page .compare-players .right {
   width: 50vw;
@@ -11642,16 +12022,49 @@ table .points .loss {
 .landing-page .compare-players .left {
   background: url(/src/assets/img/animation/comparison-left.svg) left center/cover no-repeat;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .left {
+    background: url(/src/assets/img/animation/compare-left-bg-mobile.svg) left center/cover no-repeat;
+  }
+}
 .landing-page .compare-players .right {
   background: url(/src/assets/img/animation/comparison-right.svg) right center/cover no-repeat;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .right {
+    background: url(/src/assets/img/animation/compare-right-bg-mobile.svg) right center/cover no-repeat;
+  }
 }
 .landing-page .compare-players .right .player-pickers {
   right: 2%;
   left: initial;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .right .player-list {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
 .landing-page .compare-players .right .player-image {
   right: 15%;
   left: initial;
+}
+.landing-page .compare-players .right .player-image.abraham {
+  right: -3%;
+}
+.landing-page .compare-players .right .player-image.karim {
+  right: 10%;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .compare-players .right .player-image {
+    right: -30%;
+  }
+  .landing-page .compare-players .right .player-image.abraham {
+    right: -83%;
+  }
+  .landing-page .compare-players .right .player-image.karim {
+    right: -44%;
+  }
 }
 .landing-page .compare-players .right .player-info {
   right: initial;
@@ -11682,6 +12095,11 @@ table .points .loss {
   left: 50%;
   transform: translateX(-50%);
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .stats-comparison {
+    top: 45%;
+  }
+}
 .landing-page .compare-players .stats-comparison .stats-card {
   width: 45vw;
   height: 5vw;
@@ -11690,9 +12108,31 @@ table .points .loss {
   margin-bottom: 10px;
   color: white;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .stats-comparison .stats-card {
+    background: transparent;
+    flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  .landing-page .compare-players .stats-comparison .stats-card .stats-left {
+    order: 2;
+  }
+  .landing-page .compare-players .stats-comparison .stats-card .stats-left .value {
+    margin-left: auto;
+  }
+  .landing-page .compare-players .stats-comparison .stats-card .stats-right {
+    order: 3;
+  }
+}
 .landing-page .compare-players .stats-comparison .stats-card .stats-left, .landing-page .compare-players .stats-comparison .stats-card .stats-right {
   width: 40%;
   padding: 1vw 2vw;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .stats-comparison .stats-card .stats-left, .landing-page .compare-players .stats-comparison .stats-card .stats-right {
+    width: 50%;
+  }
 }
 .landing-page .compare-players .stats-comparison .stats-card .stats-left .value, .landing-page .compare-players .stats-comparison .stats-card .stats-right .value {
   font-family: "Bebas Neue";
@@ -11707,6 +12147,11 @@ table .points .loss {
   color: rgba(255, 255, 255, 0.8);
   letter-spacing: 0.56px;
   line-height: 24px;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .stats-comparison .stats-card .stats-left .points, .landing-page .compare-players .stats-comparison .stats-card .stats-right .points {
+    display: none;
+  }
 }
 .landing-page .compare-players .stats-comparison .stats-card .stats-left .points span, .landing-page .compare-players .stats-comparison .stats-card .stats-right .points span {
   font-family: "Bebas Neue";
@@ -11746,10 +12191,23 @@ table .points .loss {
   text-align: center;
   line-height: 14px;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .compare-players .stats-comparison .stats-card .stats-title {
+    width: 100%;
+    order: 1;
+    font-size: 16px;
+    line-height: 14px;
+  }
+}
 .landing-page .testimonials {
   background: #2f276e url(/src/assets/img/animation/testimonials.svg) bottom right/cover no-repeat;
   padding-top: 10rem;
   overflow-x: hidden;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .testimonials {
+    padding: 5rem 0;
+  }
 }
 .landing-page .testimonials-container {
   min-height: 100vh;
@@ -11759,13 +12217,43 @@ table .points .loss {
   margin: 0 auto;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .testimonials-container {
+    min-height: auto;
+    background-size: 30%;
+    width: 100vw;
+  }
+}
 .landing-page .testimonials .what-people-say {
   font-family: "Bebas Neue";
   font-size: 3.3vw;
   color: #ffffff;
 }
+@media only screen and (max-width: 600px) {
+  .landing-page .testimonials .what-people-say {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .testimonials .actions-wrap {
+    padding: 0;
+  }
+  .landing-page .testimonials .actions-wrap .nav-arrow {
+    width: 30px;
+    height: 30px;
+  }
+  .landing-page .testimonials .actions-wrap .nav-arrow > i {
+    line-height: 30px;
+    font-size: 20px;
+  }
+}
 .landing-page .testimonials .testimonials-head {
   margin-bottom: 5vw;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .testimonials .testimonials-head {
+    margin-bottom: 30px;
+  }
 }
 .landing-page .testimonials .nav-arrow {
   width: 44px;
@@ -11775,6 +12263,10 @@ table .points .loss {
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+.landing-page .testimonials .nav-arrow.disabled {
+  opacity: 0.2;
+  pointer-events: none;
 }
 .landing-page .testimonials .nav-arrow:hover {
   background: rgba(255, 255, 255, 0.2);
@@ -11796,16 +12288,26 @@ table .points .loss {
   transform: rotate(180deg);
 }
 .landing-page .testimonials .scroller {
-  width: max-content;
+  width: 100%;
+  flex-wrap: nowrap;
+  transition: all 1s ease;
 }
-.landing-page .testimonials .testimonials-content {
-  width: 35vw;
-  margin-right: 5vw;
+@media only screen and (max-width: 600px) {
+  .landing-page .testimonials .testimonials-content {
+    width: 100%;
+    min-width: 100%;
+    flex-basis: 100%;
+  }
 }
 .landing-page .testimonials .testimonials-content p {
   font-size: 1.65vw;
   color: #ffffff;
   margin-bottom: 3vw;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .testimonials .testimonials-content p {
+    margin-bottom: 20px;
+  }
 }
 .landing-page .testimonials .testimonials-content .author {
   font-size: 14px;
@@ -11815,15 +12317,32 @@ table .points .loss {
 .landing-page .search-container {
   margin: 12vw 0;
 }
+@media only screen and (max-width: 768px) {
+  .landing-page .search-container {
+    margin-bottom: 0;
+  }
+}
 .landing-page .search-container img {
   width: 5vw;
   margin-bottom: 1.5vw;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .search-container img {
+    width: 50px;
+    margin-bottom: 15px;
+  }
 }
 .landing-page .search-container p {
   font-family: "Bebas Neue";
   font-size: 4.1vw;
   line-height: 4.5vw;
   color: #ffffff;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .search-container p {
+    font-size: 30px !important;
+    line-height: 30px !important;
+  }
 }
 
 @keyframes slide-out {
@@ -11849,6 +12368,44 @@ table .points .loss {
     opacity: 1;
     visibility: visible;
   }
+}
+.footer {
+  background: white;
+  padding: 30px 40px;
+}
+.footer .nav-list {
+  font-size: 14px;
+  color: #1b1b1b;
+  cursor: pointer;
+}
+.footer .nav-list:not(:last-child)::after {
+  content: "/";
+  margin: 0 5px;
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 15px;
+  }
+  .footer .nav-list {
+    font-size: 12px;
+  }
+}
+.footer .insta-link {
+  align-items: flex-end !important;
+}
+@media only screen and (max-width: 600px) {
+  .footer .insta-link {
+    margin-top: 20px;
+  }
+}
+.footer .insta-link span {
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  color: #2f276e;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=app.css.map */

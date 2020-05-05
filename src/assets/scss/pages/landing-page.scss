@@ -1,3 +1,7 @@
+body {
+  transform: translate3d(0px, 0px, 0px);
+  transition: all 700ms ease;
+}
 .landing-page {
   background: #edf1f4;
   .slide {
@@ -10,6 +14,15 @@
     position: absolute;
     top: 0;
     left: 0;
+  }
+  @include respond-to(600px) {
+    h1 {
+      font-size: 40px !important;
+      line-height: 40px !important;
+    }
+    p {
+      font-size: 16px !important;
+    }
   }
   .circle {
     height: 300vh;
@@ -26,22 +39,56 @@
     overflow: hidden;
     width: 35vw;
     margin: 0 auto;
+    @include respond-to(768px) {
+      width: 100%;
+    }
     input {
       height: calc(30px + 1.3vw);
       padding: 0 20px;
       border: 0;
       flex-basis: calc(100% - 4vw);
-      font-size: 1vw;
+      font-size: 14px;
       border-radius: 6px 0 0 6px;
       &::placeholder {
         color: #2f276e;
       }
+      @include respond-to(768px) {
+        flex-basis: calc(100% - 50px);
+        width: calc(100% - 50px);
+        padding: 20px;
+        height: 50px;
+      }
     }
     button {
-      flex-basis: 4vw;
+      width: 60px;
       background-color: #525cd7;
       border: 0;
       border-radius: 0 6px 6px 0;
+      @include respond-to(768px) {
+        width: 50px;
+        min-width: 50px;
+      }
+    }
+  }
+  .button {
+    width: 150px;
+    height: 45px;
+    font-family: "Bebas Neue";
+    font-size: 19px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 4px;
+    &--login {
+      border: 1px solid #ffffff;
+    }
+    &--register {
+      background: #fb285e;
+      box-shadow: 0 20px 20px -10px rgba(255, 132, 163, 0.25);
+    }
+    @include respond-to(600px) {
+      width: 120px;
+      height: 40px;
     }
   }
   .hero {
@@ -58,6 +105,20 @@
       left: 0;
       z-index: 1;
       padding: 20px 30px;
+      @include respond-to(768px) {
+        padding: 20px 5vh;
+        justify-content: center;
+      }
+    }
+    .combo-search-bar {
+      @include respond-to(768px) {
+        position: absolute;
+        width: 90%;
+        left: 5%;
+        bottom: -35px;
+        margin: 15px auto !important;
+        box-shadow: 0 14px 35px 0 rgba(47, 39, 110, 0.63);
+      }
     }
     &-title {
       font-size: 1.5vw;
@@ -65,23 +126,12 @@
       color: #8194c3;
       line-height: 34px;
       text-transform: uppercase;
+      @include respond-to(768px) {
+        display: none;
+      }
     }
-    .button {
-      width: 150px;
-      height: 45px;
-      font-family: "Bebas Neue";
-      font-size: 19px;
-      color: #ffffff;
-      text-align: center;
-      line-height: 24px;
-      border-radius: 4px;
-      &--login {
-        border: 1px solid #ffffff;
-      }
-      &--register {
-        background: #fb285e;
-        box-shadow: 0 20px 20px -10px rgba(255, 132, 163, 0.25);
-      }
+    @include respond-to(600px) {
+      padding: 5vh;
     }
     &-card {
       position: relative;
@@ -107,29 +157,57 @@
       .left,
       .right {
         flex-basis: 50%;
-        position: relative;
+        // position: relative;
         z-index: 1;
+        @include respond-to(768px) {
+          flex-basis: 100%;
+        }
       }
       .right {
         img {
           height: 85vh;
           position: relative;
           z-index: 1;
+          @include respond-to(768px) {
+            height: 40vh;
+          }
         }
       }
       .left {
         img {
           width: 30vh;
+          @include respond-to(768px) {
+            width: 20vh;
+            margin-bottom: 10px !important;
+          }
         }
         .content {
           margin-top: -30px;
+          @include respond-to(768px) {
+            margin-top: 0;
+            width: 90%;
+          }
         }
         p {
           font-family: "Bebas Neue";
           font-size: 2.6vw;
           color: #ffffff;
           text-align: center;
+          @include respond-to(600px) {
+            font-size: 18px;
+          }
         }
+      }
+      @include respond-to(768px) {
+        flex-wrap: wrap;
+        padding: 30px;
+        margin-top: 6vh;
+      }
+      @include respond-to(600px) {
+        flex-wrap: wrap;
+        padding: 15px;
+        margin-top: 6vh;
+        background: #3e3583;
       }
     }
 
@@ -152,6 +230,12 @@
         color: #7a8abb;
         cursor: pointer;
       }
+      @include respond-to(600px) {
+        // bottom: 40px;
+        label {
+          display: none;
+        }
+      }
     }
   }
 
@@ -170,6 +254,45 @@
     .image {
       flex-basis: 55%;
     }
+    @include respond-to(768px) {
+      height: 60vh;
+      .base {
+        height: 60vh;
+      }
+    }
+    @include respond-to(600px) {
+      flex-wrap: wrap;
+      height: auto;
+      min-height: 100vh;
+      .content,
+      .image {
+        flex-basis: 100%;
+      }
+      .base {
+        // height: 50vh;
+      }
+      .content {
+        padding: 30px;
+        padding-bottom: 0;
+        .content-wrapper {
+          max-width: 90% !important;
+          .content-text {
+            font-size: 18px;
+          }
+          .leagues img {
+            width: 30px;
+            margin-right: 20px;
+          }
+        }
+      }
+      .image {
+        .flip-card {
+          img {
+            width: 25vw;
+          }
+        }
+      }
+    }
   }
 
   .base {
@@ -178,6 +301,9 @@
     background: url("/src/assets/img/landing-page/map.svg") right -50px center/contain
       no-repeat;
     position: relative;
+    @include respond-to(600px) {
+      background-size: 110%;
+    }
   }
   .leagues a {
     img {
@@ -192,6 +318,10 @@
     .flip-card {
       transition: all 1s ease;
       transform-style: preserve-3d;
+      @include respond-to(600px) {
+        min-width: 25vw;
+        min-height: 20vw;
+      }
     }
     &.active {
       .flip-card {
@@ -215,18 +345,40 @@
     &.top {
       top: 18%;
       left: 25%;
+      @include respond-to(1100px) {
+        top: 25%;
+      }
+      @include respond-to(600px) {
+        top: 10%;
+        left: 25%;
+      }
     }
     &.middle {
       top: 35%;
       left: 50%;
+      @include respond-to(600px) {
+        top: 25%;
+        left: 55%;
+      }
     }
     &.bottom-left {
-      top: 55%;
+      top: 45%;
       left: 15%;
+      @include respond-to(600px) {
+        top: 50%;
+        left: 10%;
+      }
     }
     &.bottom-right {
       top: 63%;
       left: 65%;
+      @include respond-to(1100px) {
+        top: 55%;
+      }
+      @include respond-to(600px) {
+        top: 60%;
+        left: 70%;
+      }
     }
   }
   h1 {
@@ -258,10 +410,27 @@
   .pages {
     min-height: 100vh;
     width: 100vw;
+    @include respond-to(768px) {
+      height: auto !important;
+      min-height: 80vh;
+    }
+    @include respond-to(600px) {
+      height: auto !important;
+    }
     .page-slider {
       position: relative;
       height: 100vh;
       width: 100vw;
+      @include respond-to(768px) {
+        height: 60vh;
+        min-height: 50vh;
+        overflow: hidden;
+        img {
+          width: auto !important;
+          height: 60vh;
+          margin-top: 0 !important;
+        }
+      }
     }
     .circle-mask {
       height: 100vh;
@@ -269,6 +438,14 @@
     .circle {
       bottom: initial;
       left: -35vw;
+      @include respond-to(768px) {
+        height: 200vh;
+        width: 200vh;
+      }
+      @include respond-to(600px) {
+        height: 130vh;
+        width: 130vh;
+      }
     }
     img {
       margin-top: 30px;
@@ -276,18 +453,27 @@
       width: 75vw;
       position: absolute;
       z-index: 1;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      visibility: hidden;
-      transform-style: preserve-3d;
-      backface-visibility: hidden;
-      &.active {
-        animation: slide-in 2s forwards;
+      top: 0;
+      left: 0;
+      @include respond-to(768px) {
+        &:not(:first-child) {
+          display: none;
+        }
       }
-      &.de-active {
-        animation: slide-out 2s forwards;
+      @media (min-width: 768px) {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+        &.active {
+          animation: slide-in 2s forwards;
+        }
+        &.de-active {
+          animation: slide-out 2s forwards;
+        }
       }
     }
   }
@@ -323,16 +509,71 @@
         }
       }
     }
+    @include respond-to(768px) {
+      height: 60vh;
+      .image {
+        width: 40vw;
+      }
+      .right {
+        width: 60vw;
+        .content-wrapper {
+          width: 80%;
+          margin-left: 60px !important;
+        }
+      }
+    }
+    @include respond-to(600px) {
+      min-height: 100vh;
+      height: auto;
+      flex-wrap: wrap;
+      .image,
+      .right {
+        width: 100%;
+        background: transparent;
+      }
+      .image {
+        order: 2;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      .right {
+        order: 1;
+        padding: 30px;
+        .content-wrapper {
+          width: 100%;
+          margin-left: 0 !important;
+          .feature img {
+            width: 32px;
+          }
+          .key {
+            font-size: 13px !important;
+          }
+        }
+      }
+    }
   }
   .compare-players {
     background: #2f276e;
     width: 100vw;
     position: relative;
+    @include respond-to(768px) {
+      overflow: hidden;
+      .left,
+      .right {
+        height: auto;
+      }
+    }
     .player {
       &-pickers {
         position: absolute;
         top: 2%;
         left: 2%;
+        z-index: 1;
+        @include respond-to(768px) {
+          display: flex;
+        }
       }
       &-list {
         width: 4.3vw;
@@ -343,6 +584,13 @@
         cursor: pointer;
         margin-bottom: 1vw;
         border: 0.3vw solid transparent;
+        transition: all 0.3s ease;
+        @include respond-to(768px) {
+          width: 35px;
+          height: 35px;
+          margin-right: 10px;
+          border: 3px solid transparent;
+        }
         &.active {
           opacity: 1;
           border-color: #525cd7;
@@ -359,6 +607,22 @@
         position: absolute;
         left: 15%;
         top: 6%;
+        transform: scale(0);
+        transition: all 0.5s ease;
+        &.heung {
+          left: 12%;
+        }
+        @include respond-to(768px) {
+          left: -30%;
+          top: 20%;
+          height: 60vh;
+          &.heung {
+            left: -40%;
+          }
+        }
+        &.active {
+          transform: scale(1);
+        }
       }
       &-info {
         width: 50%;
@@ -366,6 +630,9 @@
         top: 10%;
         right: 10%;
         text-align: right;
+        @include respond-to(768px) {
+          width: 70%;
+        }
       }
       &-name {
         font-family: "Bebas Neue";
@@ -373,17 +640,27 @@
         line-height: 3.4vw;
         color: #ffffff;
         letter-spacing: 0;
+        @include respond-to(768px) {
+          font-size: 25px !important;
+          line-height: 25px;
+        }
       }
       &-position {
         font-size: 1.1vw;
         font-weight: bold;
         color: #a4d4e8;
+        @include respond-to(768px) {
+          margin-bottom: 10px !important;
+        }
       }
       &-team,
       &-rank {
         justify-content: flex-end;
       }
       &-team {
+        @include respond-to(768px) {
+          margin-bottom: 10px;
+        }
         img {
           width: 20px;
           height: 20px;
@@ -395,6 +672,9 @@
           font-size: 1.4vw;
           font-weight: bold;
           color: #ffffff;
+          @include respond-to(768px) {
+            display: none;
+          }
         }
       }
       &-rank {
@@ -403,6 +683,7 @@
           font-family: "Bebas Neue";
           font-size: 2.9vw;
           line-height: 11vw;
+
           //   background: linear-gradient(
           //     180deg,
           //     #24bfa8 0%,
@@ -418,6 +699,16 @@
         .rank {
           font-size: 9.7vw;
         }
+        @include respond-to(768px) {
+          p {
+            font-size: 20px !important;
+            line-height: 20px !important;
+          }
+          .rank {
+            font-size: 65px !important;
+            line-height: 65px !important;
+          }
+        }
       }
     }
     .ranking-value {
@@ -425,6 +716,7 @@
       bottom: 2%;
       left: 10%;
       text-align: center;
+
       div {
         margin-right: 3vw;
       }
@@ -443,6 +735,17 @@
           font-size: 19px;
         }
       }
+      @include respond-to(768px) {
+        display: block;
+        bottom: 1%;
+        .value {
+          font-size: 21px !important;
+          line-height: 42.84px;
+          span {
+            font-size: 12px !important;
+          }
+        }
+      }
     }
     .left,
     .right {
@@ -454,18 +757,47 @@
     .left {
       background: url(/src/assets/img/animation/comparison-left.svg) left
         center/cover no-repeat;
+      @include respond-to(768px) {
+        background: url(/src/assets/img/animation/compare-left-bg-mobile.svg)
+          left center/cover no-repeat;
+      }
     }
     .right {
       background: url(/src/assets/img/animation/comparison-right.svg) right
         center/cover no-repeat;
+      @include respond-to(768px) {
+        background: url(/src/assets/img/animation/compare-right-bg-mobile.svg)
+          right center/cover no-repeat;
+      }
       .player {
         &-pickers {
           right: 2%;
           left: initial;
         }
+        &-list {
+          @include respond-to(768px) {
+            margin-right: 0;
+            margin-left: 10px;
+          }
+        }
         &-image {
           right: 15%;
           left: initial;
+          &.abraham {
+            right: -3%;
+          }
+          &.karim {
+            right: 10%;
+          }
+          @include respond-to(600px) {
+            right: -30%;
+            &.abraham {
+              right: -83%;
+            }
+            &.karim {
+              right: -44%;
+            }
+          }
         }
         &-info {
           right: initial;
@@ -502,6 +834,9 @@
       top: 55%;
       left: 50%;
       transform: translateX(-50%);
+      @include respond-to(768px) {
+        top: 45%;
+      }
       .stats-card {
         width: 45vw;
         height: 5vw;
@@ -509,11 +844,29 @@
         border-radius: 15px;
         margin-bottom: 10px;
         color: white;
+        @include respond-to(768px) {
+          background: transparent;
+          flex-wrap: wrap;
+          height: auto;
+          margin-bottom: 10px;
+          .stats-left {
+            order: 2;
+            .value {
+              margin-left: auto;
+            }
+          }
+          .stats-right {
+            order: 3;
+          }
+        }
         .stats {
           &-left,
           &-right {
             width: 40%;
             padding: 1vw 2vw;
+            @include respond-to(768px) {
+              width: 50%;
+            }
             .value {
               font-family: "Bebas Neue";
               font-size: 2.1vw;
@@ -527,6 +880,9 @@
               color: rgba(#ffffff, 0.8);
               letter-spacing: 0.56px;
               line-height: 24px;
+              @include respond-to(768px) {
+                display: none;
+              }
               span {
                 font-family: "Bebas Neue";
                 font-size: 1.1vw;
@@ -570,6 +926,12 @@
             color: #ffffff;
             text-align: center;
             line-height: 14px;
+            @include respond-to(768px) {
+              width: 100%;
+              order: 1;
+              font-size: 16px;
+              line-height: 14px;
+            }
           }
         }
       }
@@ -581,6 +943,9 @@
       right/cover no-repeat;
     padding-top: 10rem;
     overflow-x: hidden;
+    @include respond-to(768px) {
+      padding: 5rem 0;
+    }
     &-container {
       min-height: 100vh;
       background: url(/src/assets/img/animation/testimonials-m.svg) top left
@@ -589,14 +954,38 @@
       width: 90vw;
       margin: 0 auto;
       position: relative;
+      @include respond-to(768px) {
+        min-height: auto;
+        background-size: 30%;
+        width: 100vw;
+      }
     }
     .what-people-say {
       font-family: "Bebas Neue";
       font-size: 3.3vw;
       color: #ffffff;
+      @include respond-to(600px) {
+        font-size: 25px;
+      }
+    }
+    @include respond-to(600px) {
+      .actions-wrap {
+        padding: 0;
+        .nav-arrow {
+          width: 30px;
+          height: 30px;
+          > i {
+            line-height: 30px;
+            font-size: 20px;
+          }
+        }
+      }
     }
     .testimonials-head {
       margin-bottom: 5vw;
+      @include respond-to(600px) {
+        margin-bottom: 30px;
+      }
     }
     .nav-arrow {
       width: 44px;
@@ -606,6 +995,10 @@
       text-align: center;
       cursor: pointer;
       transition: all 0.3s ease;
+      &.disabled {
+        opacity: 0.2;
+        pointer-events: none;
+      }
       &:hover {
         background: rgba(white, 0.2);
         > i {
@@ -633,15 +1026,27 @@
       }
     }
     .scroller {
-      width: max-content;
+      // width: max-content;
+      width: 100%;
+      flex-wrap: nowrap;
+      transition: all 1s ease;
     }
     .testimonials-content {
-      width: 35vw;
-      margin-right: 5vw;
+      // width: 35vw;
+      // margin-right: 5vw;
+      @include respond-to(600px) {
+        width: 100%;
+        min-width: 100%;
+        flex-basis: 100%;
+        // margin-right: 30px;
+      }
       p {
         font-size: 1.65vw;
         color: #ffffff;
         margin-bottom: 3vw;
+        @include respond-to(600px) {
+          margin-bottom: 20px;
+        }
       }
       .author {
         font-size: 14px;
@@ -652,15 +1057,26 @@
   }
   .search-container {
     margin: 12vw 0;
+    @include respond-to(768px) {
+      margin-bottom: 0;
+    }
     img {
       width: 5vw;
       margin-bottom: 1.5vw;
+      @include respond-to(600px) {
+        width: 50px;
+        margin-bottom: 15px;
+      }
     }
     p {
       font-family: "Bebas Neue";
       font-size: 4.1vw;
       line-height: 4.5vw;
       color: #ffffff;
+      @include respond-to(768px) {
+        font-size: 30px !important;
+        line-height: 30px !important;
+      }
     }
   }
 }
@@ -692,3 +1108,38 @@
 }
 // background-image: linear-gradient(180deg, #24BFA8 0%, #28B6A1 54%, #1F7568 79%);
 // box-shadow: 0 9px 10px 0 rgba(0,0,0,0.40), inset 0 4px 8px 0 rgba(255,255,255,0.15);
+
+.footer {
+  background: white;
+  padding: 30px 40px;
+  .nav-list {
+    font-size: 14px;
+    color: #1b1b1b;
+    cursor: pointer;
+    &:not(:last-child)::after {
+      content: "/";
+      margin: 0 5px;
+    }
+  }
+  @include respond-to(600px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px 15px;
+    .nav-list {
+      font-size: 12px;
+    }
+  }
+  .insta-link {
+    align-items: flex-end !important;
+    @include respond-to(600px) {
+      margin-top: 20px;
+    }
+    span {
+      font-family: "Bebas Neue";
+      font-size: 18px;
+      color: #2f276e;
+      display: inline-block;
+      margin-right: 20px;
+    }
+  }
+}
