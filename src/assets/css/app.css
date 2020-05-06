@@ -8482,23 +8482,53 @@ table .points .loss {
   line-height: 22px;
 }
 
-.main-circle .circle:nth-child(2) {
-  stroke: #56c079;
+.main-circle .circle {
+  stroke: rgba(239, 239, 242, 0.3);
 }
 
-.main-circle .circle:nth-child(4) {
+.circle-holder.one .main-circle .circle:nth-child(2) {
   stroke: #56c079;
 }
-
-.main-circle .circle:nth-child(6) {
+.circle-holder.two .main-circle .circle:nth-child(2) {
   stroke: #56c079;
 }
-
-.main-circle .circle:nth-child(8) {
+.circle-holder.two .main-circle .circle:nth-child(4) {
   stroke: #56c079;
 }
-
-.main-circle .circle:nth-child(10) {
+.circle-holder.three .main-circle .circle:nth-child(2) {
+  stroke: #56c079;
+}
+.circle-holder.three .main-circle .circle:nth-child(4) {
+  stroke: #56c079;
+}
+.circle-holder.three .main-circle .circle:nth-child(6) {
+  stroke: #56c079;
+}
+.circle-holder.four .main-circle .circle:nth-child(2) {
+  stroke: #56c079;
+}
+.circle-holder.four .main-circle .circle:nth-child(4) {
+  stroke: #56c079;
+}
+.circle-holder.four .main-circle .circle:nth-child(6) {
+  stroke: #56c079;
+}
+.circle-holder.four .main-circle .circle:nth-child(8) {
+  stroke: #56c079;
+}
+.circle-holder.five .main-circle .circle:nth-child(2) {
+  stroke: #56c079;
+}
+.circle-holder.five .main-circle .circle:nth-child(4) {
+  stroke: #56c079;
+}
+.circle-holder.five .main-circle .circle:nth-child(6) {
+  stroke: #56c079;
+}
+.circle-holder.five .main-circle .circle:nth-child(8) {
+  stroke: #56c079;
+}
+.circle-holder.five .main-circle .circle:nth-child(10) {
   stroke: #56c079;
 }
 
@@ -8660,6 +8690,30 @@ table .points .loss {
 .card--referral .noti-table td:last-child {
   width: 20%;
   min-width: 20%;
+}
+
+.league-card-wrap {
+  position: relative;
+}
+.league-card-wrap .league-card-dropdown {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  max-height: 250px;
+  overflow: auto;
+  background: #333589;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
+.league-card-wrap .league-card-dropdown .league-card {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.league-card-wrap.open .league-card-dropdown {
+  display: block;
 }
 
 .create-league--empty {
