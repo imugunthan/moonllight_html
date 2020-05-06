@@ -8878,6 +8878,14 @@ table .points .loss {
   display: inline-block;
 }
 
+.help-2.league-rules .help-menu {
+  height: calc(100vh - 95px);
+}
+.help-2.league-rules .help-description {
+  height: calc(100vh - 95px);
+  padding-top: 0;
+  background: transparent;
+}
 .help-2 .help-menu {
   width: 300px;
   height: 100vh;
@@ -8930,9 +8938,13 @@ table .points .loss {
   padding: 50px;
   background: url(/src/assets/img/help/help-2-bh.svg) top right no-repeat;
 }
+.help-2 .help-description .descrition-wrap {
+  max-width: 88%;
+}
 .help-2 .help-description .title-main {
   font-family: "Bebas Neue";
   font-size: 36px;
+  font-weight: normal;
   color: #2f3180;
 }
 .help-2 .help-description .desc-main {
@@ -8941,15 +8953,25 @@ table .points .loss {
   line-height: 29px;
 }
 .help-2 .help-description .title-sub {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   color: #525cd7;
+  line-height: 29px;
+}
+.help-2 .help-description .title-sub2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #6d6d6d;
   line-height: 29px;
 }
 .help-2 .help-description .desc-sub {
   font-size: 14px;
   color: #6d6d6d;
   line-height: 29px;
+}
+
+.pd-30 {
+  padding: 30px 30px 0 30px;
 }
 
 /* img path */
