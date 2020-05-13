@@ -4264,7 +4264,7 @@ html {
 .notification {
   position: absolute;
   top: 25px;
-  right: 50px;
+  right: 30px;
   z-index: 3;
   cursor: pointer;
 }
@@ -4561,7 +4561,7 @@ table {
 }
 table thead {
   background: rgba(220, 222, 247, 0.5);
-  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+  border-bottom: 1px solid rgba(82, 92, 215, 0.27);
 }
 table thead th {
   font-size: 13px;
@@ -6083,7 +6083,7 @@ table .points .loss {
   box-shadow: 0 2px 10px 0 rgba(82, 92, 215, 0.15);
 }
 .draftroom .top-section .error .error-tooltip {
-  display: block;
+  display: none;
 }
 .draftroom .top-section .error-tooltip {
   position: absolute;
@@ -8165,6 +8165,8 @@ table .points .loss {
   border-radius: 50%;
   background: #dadada;
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.22);
+  -moz-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.22);
+  -webkit-box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.22);
 }
 .profile-section__left .notification-card .noti-table .circle-checkbox .checkbox-icon > i {
   color: white;
@@ -8701,7 +8703,7 @@ table .points .loss {
   left: 0;
   width: 100%;
   z-index: 10;
-  max-height: 250px;
+  height: 250px;
   overflow: auto;
   background: #333589;
   padding: 10px;
@@ -11301,6 +11303,11 @@ body {
 .landing-page {
   background: #edf1f4;
 }
+@media only screen and (max-width: 600px) {
+  .landing-page {
+    top: 0 !important;
+  }
+}
 .landing-page .slide {
   height: 100vh;
 }
@@ -12209,6 +12216,12 @@ body {
   width: 40%;
   padding: 1vw 2vw;
 }
+.landing-page .compare-players .stats-comparison .stats-card .stats-left-value, .landing-page .compare-players .stats-comparison .stats-card .stats-right-value {
+  display: none;
+}
+.landing-page .compare-players .stats-comparison .stats-card .stats-left-value.active, .landing-page .compare-players .stats-comparison .stats-card .stats-right-value.active {
+  display: flex;
+}
 @media only screen and (max-width: 768px) {
   .landing-page .compare-players .stats-comparison .stats-card .stats-left, .landing-page .compare-players .stats-comparison .stats-card .stats-right {
     width: 50%;
@@ -12486,6 +12499,534 @@ body {
   color: #2f276e;
   display: inline-block;
   margin-right: 20px;
+}
+
+.home-page .gameweek-section {
+  transition: all 0.3s ease;
+}
+.home-page .gameweek-link {
+  font-size: 16px;
+  display: none;
+}
+.home-page .mobile-close-icon {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .home-page .home-page-main .home-page-stats-wrap {
+    padding: 1.5vw;
+  }
+  .home-page .home-page-main .stats-section .top-value {
+    font-size: 2.8vw !important;
+  }
+  .home-page .home-page-main .stats-section .rank {
+    font-size: 6.3vw !important;
+    line-height: calc(20px + 8vw);
+  }
+  .home-page .home-page-main .top-player .player-image {
+    width: 6.7vw;
+    height: 6.7vw;
+  }
+  .home-page .home-page-main .news-holder {
+    width: initial;
+    flex-grow: 1;
+    margin-right: 20px;
+  }
+  .home-page .home-page-main .top-players-info-wrap {
+    min-width: 310px;
+  }
+  .home-page .home-page-main .first-player .player-images {
+    width: 5.8vw !important;
+    height: 5.8vw !important;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .home-page .gameweek-section {
+    width: 280px;
+  }
+  .home-page .gameweek-section .gameweek-card {
+    padding: 20px 20px 20px 40px;
+  }
+  .home-page-main {
+    width: calc(100% - 280px);
+  }
+  .home-page-main .main-card {
+    min-height: 420px;
+    height: auto;
+    align-items: stretch;
+  }
+  .home-page-main .your-league {
+    height: auto !important;
+  }
+  .home-page-main .your-top-players {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .home-page-main {
+    width: 100%;
+    padding-bottom: 15vh;
+  }
+  .home-page .gameweek-section {
+    width: 330px;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+  }
+  .home-page .gameweek-section.open {
+    transform: translateX(0);
+  }
+  .home-page .gameweek-section .mobile-close-icon {
+    display: block;
+  }
+  .home-page .gameweek-section .gameweek-section-header .link {
+    text-align: left;
+  }
+  .home-page .gameweek-section-body {
+    height: calc(100% - 210px);
+  }
+  .home-page .gameweek-link {
+    display: block;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .home-page .gameweek-section {
+    width: 100%;
+  }
+  .home-page-main {
+    width: 100vw;
+    height: 100%;
+  }
+  .home-page-main .main-card .your-league {
+    width: 100%;
+  }
+  .home-page-main .home-page-stats-wrap {
+    display: none;
+  }
+  .home-page-main .news-player-holder {
+    flex-wrap: wrap;
+  }
+  .home-page-main .news-holder,
+.home-page-main .top-players-info-wrap {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .home-page-main .news-holder {
+    position: relative;
+  }
+  .home-page-main .news-holder .news-image {
+    display: none;
+  }
+  .home-page-main .news-holder .news-nav {
+    margin-top: 0;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+  .home-page-main .top-players-info-wrap .first-player .player-images {
+    width: 50px !important;
+    height: 50px !important;
+    margin-left: 10px !important;
+  }
+}
+.side-nav {
+  transition: all 0.3s ease;
+}
+.side-nav .close-mobile-menu {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .side-nav {
+    z-index: 1000000;
+    transform: translateX(-100%);
+    overflow: auto;
+  }
+  .side-nav.open {
+    transform: translateX(0%);
+  }
+  .side-nav .close-mobile-menu {
+    display: block;
+  }
+}
+.mobile-close-icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  display: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-size: 16px !important;
+  text-align: center;
+  line-height: 20px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .right-section {
+    width: 100%;
+    margin-left: 0;
+    height: 100vh;
+  }
+
+  .main {
+    position: relative;
+    top: 65px;
+    min-height: calc(100vh - 65px);
+    overflow: scroll;
+  }
+
+  .d-none-mobile {
+    display: none !important;
+  }
+}
+.mobile-header {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    z-index: 100000;
+    background: white;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.25);
+  }
+
+  .mobile-logo {
+    width: 35px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .mobile-menu-icon {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 35px !important;
+    cursor: pointer;
+  }
+
+  .notifications-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 35px !important;
+    cursor: pointer;
+  }
+}
+.draftroom .picker-queue .timer-image {
+  padding: 5px 15px;
+  background: #55c97b;
+  height: calc(100% - 28px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.draftroom .bud-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .draftroom-header {
+    display: none;
+  }
+  .draftroom .picker-queue .timer {
+    width: 60px;
+  }
+  .draftroom .picker-queue .round-wrap {
+    width: calc(100% - 60px);
+  }
+  .draftroom .round-card {
+    min-width: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 78px;
+  }
+  .draftroom .round-card .card-no {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .draftroom .round-card .player-image {
+    display: none;
+  }
+  .draftroom .round-card .my-player {
+    width: 10px;
+    position: initial;
+    padding-bottom: 5px;
+  }
+  .draftroom .round-card .player-name {
+    transform: rotate(180deg);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    word-break: break-all;
+  }
+  .draftroom .budget-wrap {
+    padding: 20px 0;
+  }
+  .draftroom .budget-card:first-child {
+    display: none;
+  }
+  .draftroom .budget-card {
+    margin: 0;
+    border-radius: 0;
+    padding: 15px;
+    align-items: flex-start;
+  }
+  .draftroom .budget-card .bud-team,
+.draftroom .budget-card .btn {
+    display: none;
+  }
+  .draftroom .budget-card .bud:not(:last-child) {
+    margin-right: 15px;
+  }
+  .draftroom .budget-card .bud-mobile {
+    display: block !important;
+    margin-right: 0 !important;
+  }
+  .draftroom .filter-section {
+    margin-top: 20px;
+  }
+  .draftroom .filter-section .select-wrap--type2 {
+    width: calc((100% - 20px) / 2);
+    margin-bottom: 15px;
+  }
+  .draftroom .filter-section .select-wrap--type2:last-child {
+    width: 100%;
+  }
+  .draftroom .filter-section .select-wrap--type2:last-child ul {
+    margin-top: 0;
+  }
+  .draftroom .actions-wrap .search-wrap {
+    width: 50%;
+    min-width: initial;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dashboard .dashboard-left-section {
+    display: none;
+  }
+  .dashboard .dashboard-main {
+    width: 100%;
+  }
+  .dashboard .dashboard-main .upcoming-draft {
+    background: #2a276f;
+  }
+  .dashboard .dashboard-main .upcoming-draft__main {
+    padding: 0 15px;
+  }
+  .dashboard .dashboard-main .upcoming-draft__main .info-container {
+    text-align: center;
+  }
+  .dashboard .dashboard-main .upcoming-draft__main .info-container .title {
+    justify-content: center;
+  }
+  .dashboard .dashboard-main .upcoming-draft__main .counter-wrap {
+    padding: 0;
+  }
+  .dashboard .dashboard-main .upcoming-draft__main .counter-wrap .timer {
+    padding: 0;
+    background: #43479f;
+    border-radius: 4px;
+  }
+  .dashboard .dashboard-main .upcoming-draft__main .counter-wrap .timer:not(:last-child) {
+    margin-right: 4px;
+  }
+  .dashboard .dashboard-main .upcoming-draft__main .counter-wrap .value {
+    font-size: 14px;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px 4px 0 0;
+  }
+  .dashboard .dashboard-main .upcoming-draft__main .counter-wrap .label {
+    font-size: 10px;
+    padding: 5px 10px;
+    height: 26px;
+    border-radius: 0 0 4px 4px;
+  }
+  .dashboard .dashboard-main .upcoming-draft__main img {
+    display: none;
+  }
+  .dashboard .dashboard-main .card .head-title {
+    line-height: 16px;
+  }
+  .dashboard .dashboard-main .count-text {
+    white-space: nowrap;
+  }
+  .dashboard .dashboard-main .card-stats {
+    flex-wrap: wrap;
+  }
+  .dashboard .dashboard-main .card-stats__left, .dashboard .dashboard-main .card-stats__right {
+    width: 100% !important;
+    margin-bottom: 15px;
+  }
+  .dashboard .dashboard-main .card-stats__left .button-wrap .button:first-child, .dashboard .dashboard-main .card-stats__right .button-wrap .button:first-child {
+    display: none;
+  }
+  .dashboard .dashboard-main .card-stats__left .managers-table th,
+.dashboard .dashboard-main .card-stats__left .managers-table td, .dashboard .dashboard-main .card-stats__right .managers-table th,
+.dashboard .dashboard-main .card-stats__right .managers-table td {
+    vertical-align: top;
+  }
+  .dashboard .dashboard-main .card-stats__left .managers-table th:first-child,
+.dashboard .dashboard-main .card-stats__left .managers-table td:first-child, .dashboard .dashboard-main .card-stats__right .managers-table th:first-child,
+.dashboard .dashboard-main .card-stats__right .managers-table td:first-child {
+    display: none;
+  }
+  .dashboard .dashboard-main .card-stats__left .managers-table th:nth-child(2),
+.dashboard .dashboard-main .card-stats__left .managers-table td:nth-child(2), .dashboard .dashboard-main .card-stats__right .managers-table th:nth-child(2),
+.dashboard .dashboard-main .card-stats__right .managers-table td:nth-child(2) {
+    width: 45%;
+    min-width: 45%;
+    padding-left: 20px;
+  }
+  .dashboard .dashboard-main .card-stats__left .managers-table .manager-image, .dashboard .dashboard-main .card-stats__right .managers-table .manager-image {
+    display: none;
+  }
+  .dashboard .dashboard-main .card-stats__left .managers-table .by, .dashboard .dashboard-main .card-stats__right .managers-table .by {
+    display: none;
+  }
+  .dashboard .dashboard-main .watched-players-table table {
+    min-width: 600px;
+  }
+  .dashboard .dashboard-main .watched-players-table th,
+.dashboard .dashboard-main .watched-players-table td {
+    width: 70px;
+    max-width: 70px;
+    padding: 20px 10px;
+  }
+  .dashboard .dashboard-main .watched-players-table th:first-child,
+.dashboard .dashboard-main .watched-players-table td:first-child {
+    width: 30px;
+    max-width: 30px;
+  }
+  .dashboard .dashboard-main .watched-players-table th:nth-child(2),
+.dashboard .dashboard-main .watched-players-table td:nth-child(2) {
+    width: 90px;
+    max-width: 90px;
+  }
+  .dashboard .dashboard-main .watched-players-table th:nth-child(4),
+.dashboard .dashboard-main .watched-players-table td:nth-child(4) {
+    width: 80px;
+    max-width: 80px;
+  }
+  .dashboard .dashboard-main .watched-players-table th:nth-child(5),
+.dashboard .dashboard-main .watched-players-table td:nth-child(5) {
+    width: 90px;
+    max-width: 90px;
+  }
+  .dashboard .dashboard-main .watched-players-table th:nth-child(3),
+.dashboard .dashboard-main .watched-players-table td:nth-child(3) {
+    width: 40px;
+    max-width: 40px;
+  }
+  .dashboard .dashboard-main .watched-players-table th .status > img,
+.dashboard .dashboard-main .watched-players-table td .status > img {
+    margin-right: 0;
+  }
+  .dashboard .dashboard-main .watched-players-table th .status .status-text,
+.dashboard .dashboard-main .watched-players-table td .status .status-text {
+    display: none;
+  }
+  .dashboard .dashboard-main .watched-players-table .player-image {
+    display: none;
+  }
+  .dashboard .dashboard-main .watched-players-table .player-name {
+    white-space: nowrap;
+  }
+}
+@media screen and (max-width: 600px) {
+  .dashboard .match-week-info-wrap .match-week-card {
+    width: 100% !important;
+    margin-right: 0;
+    margin-bottom: 20px !important;
+  }
+
+  .dashboard .match-week-info-wrap .match-week-card__body {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+
+  .dashboard .notification {
+    display: none;
+  }
+
+  .dashboard .card-stats {
+    margin-top: 0 !important;
+  }
+
+  .dashboard .card.league-standings {
+    margin-bottom: 0 !important;
+  }
+
+  .dashboard .player-card {
+    min-width: calc(100% / 3);
+  }
+
+  .dashboard .match-week-info-wrap {
+    flex-wrap: wrap !important;
+  }
+
+  .dashboard .league-standings-table th:nth-child(4),
+.dashboard .league-standings-table th:nth-child(5),
+.dashboard .league-standings-table td:nth-child(4),
+.dashboard .league-standings-table td:nth-child(5) {
+    display: none;
+  }
+
+  .dashboard .league-standings-table th:nth-child(2),
+.dashboard .league-standings-table th:nth-child(3),
+.dashboard .league-standings-table td:nth-child(2),
+.dashboard .league-standings-table td:nth-child(3) {
+    width: 40% !important;
+    max-width: 40% !important;
+  }
+
+  .dashboard .your-team .player-card-head .title-width,
+.dashboard .your-team .player-card-left {
+    width: 60%;
+  }
+
+  .dashboard .your-team .player-card-head .title.mr-20,
+.dashboard .your-team .player-card .player-clubs {
+    width: 20%;
+    text-align: center;
+  }
+
+  .dashboard .your-team .player-card-head .btn,
+.dashboard .your-team .player-card .gw-points {
+    width: 20%;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

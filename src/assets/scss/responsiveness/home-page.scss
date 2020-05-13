@@ -1,0 +1,176 @@
+.home-page {
+  .gameweek-section {
+    transition: all 0.3s ease;
+  }
+  .gameweek-link {
+    font-size: 16px;
+    display: none;
+  }
+  .mobile-close-icon {
+    display: none;
+  }
+  @media screen and (min-width: 600px) {
+    .home-page {
+      &-main {
+        .home-page-stats-wrap {
+          padding: 1.5vw;
+        }
+        .stats-section {
+          .top-value {
+            font-size: 2.8vw !important;
+          }
+          .rank {
+            font-size: 6.3vw !important;
+            line-height: calc(20px + 8vw);
+          }
+        }
+        .top-player .player-image {
+          width: 6.7vw;
+          height: 6.7vw;
+        }
+        .news-holder {
+          width: initial;
+          flex-grow: 1;
+          margin-right: 20px;
+        }
+        .top-players-info-wrap {
+          min-width: 310px;
+        }
+        .first-player .player-images {
+          width: 5.8vw !important;
+          height: 5.8vw !important;
+        }
+      }
+    }
+  }
+}
+@include respond-to(1300px) {
+  .home-page {
+    .gameweek-section {
+      width: 280px;
+      .gameweek-card {
+        padding: 20px 20px 20px 40px;
+      }
+    }
+    &-main {
+      width: calc(100% - 280px);
+      .main-card {
+        min-height: 420px;
+        height: auto;
+        align-items: stretch;
+      }
+      .your-league {
+        height: auto !important;
+      }
+      .your-top-players {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@include respond-to(1200px) {
+  .home-page {
+    &-main {
+      width: 100%;
+      padding-bottom: 15vh;
+      // .news-player-holder {
+      //   flex-wrap: wrap;
+      // }
+      // .news-holder,
+      // .top-players-info-wrap {
+      //   width: 100% !important;
+      //   margin-right: 0;
+      //   margin-bottom: 20px;
+      // }
+    }
+    .gameweek-section {
+      width: 330px;
+      height: 100%;
+      position: absolute;
+      z-index: 1;
+      transform: translateX(-100%);
+      transition: all 0.3s ease;
+      &.open {
+        transform: translateX(0);
+      }
+      .mobile-close-icon {
+        display: block;
+      }
+      .gameweek-section-header {
+        .link {
+          text-align: left;
+        }
+      }
+    }
+    .gameweek-section-body {
+      height: calc(100% - 210px);
+    }
+    .gameweek-link {
+      display: block;
+    }
+  }
+}
+@include respond-to(600px) {
+  .home-page {
+    .gameweek-section {
+      width: 100%;
+      //   position: absolute;
+      //   z-index: 1;
+      //   transform: translateX(-100%);
+      //   transition: all 0.3s ease;
+      //   &.open {
+      //     transform: translateX(0);
+      //   }
+      //   .mobile-close-icon {
+      //     display: block;
+      //   }
+      //   .gameweek-section-header {
+      //     .link {
+      //       text-align: left;
+      //     }
+      //   }
+    }
+    // .gameweek-link{
+    //   display: block;
+    // }
+    &-main {
+      width: 100vw;
+      height: 100%;
+      .main-card .your-league {
+        width: 100%;
+      }
+      .home-page-stats-wrap {
+        display: none;
+      }
+      .news-player-holder {
+        flex-wrap: wrap;
+      }
+      .news-holder,
+      .top-players-info-wrap {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      .news-holder {
+        position: relative;
+        .news-image {
+          display: none;
+        }
+        .news-nav {
+          margin-top: 0;
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+        }
+      }
+      .top-players-info-wrap {
+        .first-player .player-images {
+          width: 50px !important;
+          height: 50px !important;
+          margin-left: 10px !important;
+        }
+      }
+    }
+  }
+}

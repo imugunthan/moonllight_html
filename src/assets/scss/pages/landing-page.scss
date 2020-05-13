@@ -4,6 +4,9 @@ body {
 }
 .landing-page {
   background: #edf1f4;
+  @include respond-to(600px) {
+    top: 0 !important;
+  }
   .slide {
     height: 100vh;
   }
@@ -866,6 +869,12 @@ body {
         .stats {
           &-left,
           &-right {
+            &-value {
+              display: none;
+              &.active {
+                display: flex;
+              }
+            }
             width: 40%;
             padding: 1vw 2vw;
             @include respond-to(768px) {

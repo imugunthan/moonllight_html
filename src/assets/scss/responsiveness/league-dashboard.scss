@@ -1,0 +1,53 @@
+@media screen and (max-width: 600px) {
+  .dashboard .match-week-info-wrap .match-week-card {
+    width: 100% !important;
+    margin-right: 0;
+    margin-bottom: 20px !important;
+  }
+  .dashboard .match-week-info-wrap .match-week-card__body {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
+  .dashboard .notification {
+    display: none;
+  }
+  .dashboard .card-stats {
+    margin-top: 0 !important;
+  }
+  .dashboard .card.league-standings {
+    margin-bottom: 0 !important;
+  }
+  .dashboard .player-card {
+    min-width: calc(100% / 3);
+  }
+  .dashboard .match-week-info-wrap {
+    flex-wrap: wrap !important;
+  }
+  .dashboard .league-standings-table th:nth-child(4),
+  .dashboard .league-standings-table th:nth-child(5),
+  .dashboard .league-standings-table td:nth-child(4),
+  .dashboard .league-standings-table td:nth-child(5) {
+    display: none;
+  }
+  .dashboard .league-standings-table th:nth-child(2),
+  .dashboard .league-standings-table th:nth-child(3),
+  .dashboard .league-standings-table td:nth-child(2),
+  .dashboard .league-standings-table td:nth-child(3) {
+    width: 40% !important;
+    max-width: 40% !important;
+  }
+  .dashboard .your-team .player-card-head .title-width,
+  .dashboard .your-team .player-card-left {
+    width: 60%;
+  }
+  .dashboard .your-team .player-card-head .title.mr-20,
+  .dashboard .your-team .player-card .player-clubs {
+    width: 20%;
+    text-align: center;
+  }
+  .dashboard .your-team .player-card-head .btn,
+  .dashboard .your-team .player-card .gw-points {
+    width: 20%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,92 @@
+.draftroom {
+  .picker-queue .timer-image {
+    padding: 5px 15px;
+    background: #55c97b;
+    height: calc(100% - 28px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bud-mobile {
+    display: none;
+  }
+}
+@include respond-to(600px) {
+  .draftroom {
+    &-header {
+      display: none;
+    }
+    .picker-queue .timer {
+      width: 60px;
+    }
+    .picker-queue .round-wrap {
+      width: calc(100% - 60px);
+    }
+    .round-card {
+      min-width: initial;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      max-height: 78px;
+      .card-no {
+        margin-bottom: 5px;
+        text-align: center;
+      }
+      .player-image {
+        display: none;
+      }
+      .my-player {
+        width: 10px;
+        position: initial;
+        padding-bottom: 5px;
+      }
+      .player-name {
+        transform: rotate(180deg);
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        word-break: break-all;
+      }
+    }
+    .budget-wrap {
+      padding: 20px 0;
+    }
+    .budget-card:first-child {
+      display: none;
+    }
+    .budget-card {
+      margin: 0;
+      border-radius: 0;
+      padding: 15px;
+      align-items: flex-start;
+      .bud-team,
+      .btn {
+        display: none;
+      }
+      .bud:not(:last-child) {
+        margin-right: 15px;
+      }
+      .bud-mobile {
+        display: block !important;
+        margin-right: 0 !important;
+      }
+    }
+    .filter-section {
+      margin-top: 20px;
+    }
+    .filter-section .select-wrap--type2 {
+      width: calc((100% - 20px) / 2);
+      margin-bottom: 15px;
+      &:last-child {
+        width: 100%;
+        ul {
+          margin-top: 0;
+        }
+      }
+    }
+    .actions-wrap .search-wrap {
+      width: 50%;
+      min-width: initial;
+    }
+  }
+}

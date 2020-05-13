@@ -13,46 +13,56 @@
 </head>
 
 <body>
+    <div class="mobile-header">
+        <div class="mobile-menu-icon material-icons" onclick="togglemobileNav()">menu</div>
+        <img src="/src/assets/img/signup/moonlight-logo.svg" alt="" class="mobile-logo">
+        <div class="notifications-icon material-icons">notifications_none</div>
+    </div>
     <main class="main">
         <aside class="side-nav d-flex">
-            <div class="user-info">
-                <figure class="user-avatar m-auto mb-20">
-                    <img src="/src/assets/img/profile-image.svg" alt="User Image" class="user-image">
-                    <!-- <img src="https://images.vexels.com/media/users/3/140748/isolated/preview/5b078a59390bb4666df98b49f1cdedd0-male-profile-avatar-by-vexels.png"
-                        alt="User Image" class="user-image"> -->
-                </figure>
-                <p class="user-name">L. Vaz</p>
-            </div>
-            <nav class="navmenu">
-                <ul class="navmenu__list">
-                    <li class="navmenu__item mb-30">
-                        <i class="material-icons">home</i>
-                    </li>
-                    <li class="navmenu__item mb-30">
-                        <img src="/src/assets/img/trophy-filed.svg" alt="" class="filled">
-                        <img src="/src/assets/img/trophy.svg" alt="" class="normal">
-                    </li>
-                    <li class="navmenu__item mb-30 active">
-                        <img src="/src/assets/img/chart-filed.svg" class="filled" alt="">
-                        <img src="/src/assets/img/chart.svg" alt="" class="normal">
-                    </li>
-                </ul>
-            </nav>
-            <div class="side-nav__footer">
-                <ul class="">
-                    <li class="text-center help">
-                        <i class="material-icons">help</i>
-                    </li>
-                    <li class="text-center logo">
-                        <img src="/src//assets/img/moonlight-logo.svg" alt="Moonlight Logo">
-                    </li>
-                </ul>
+            <div class="close-mobile-menu material-icons" onclick="togglemobileNav()">close</div>
+            <div class="side-nav-wrap">
+                <div class="user-info">
+                    <figure class="user-avatar m-auto mb-20">
+                        <img src="/src/assets/img/profile-image.svg" alt="User Image" class="user-image">
+                        <!-- <img src="https://images.vexels.com/media/users/3/140748/isolated/preview/5b078a59390bb4666df98b49f1cdedd0-male-profile-avatar-by-vexels.png"
+                            alt="User Image" class="user-image"> -->
+                    </figure>
+                    <p class="user-name">L. Vaz</p>
+                </div>
+                <nav class="navmenu">
+                    <ul class="navmenu__list">
+                        <li class="navmenu__item mb-30">
+                            <i class="material-icons">home</i>
+                        </li>
+                        <li class="navmenu__item mb-30">
+                            <img src="/src/assets/img/trophy-filed.svg" alt="" class="filled">
+                            <img src="/src/assets/img/trophy.svg" alt="" class="normal">
+                        </li>
+                        <li class="navmenu__item mb-30 active">
+                            <img src="/src/assets/img/chart-filed.svg" class="filled" alt="">
+                            <img src="/src/assets/img/chart.svg" alt="" class="normal">
+                        </li>
+                    </ul>
+                </nav>
+                <div class="side-nav__footer">
+                    <ul class="">
+                        <li class="text-center help">
+                            <i class="material-icons">help</i>
+                        </li>
+                        <li class="text-center logo">
+                            <img src="/src//assets/img/moonlight-logo.svg" alt="Moonlight Logo">
+                        </li>
+                    </ul>
+                </div>
             </div>
         </aside>
         <section class="right-section home-page">
             <div class="gameweek-section">
                 <div class="gameweek-section-header text-center">
                     <a href="" class="link">Full Gameweek</a>
+                    <div class="mobile-close-icon material-icons" onclick="toggleGameWeek()">
+                        close</div>
                     <h2 class="gameweek-title">Gameweek 10</h2>
                     <p class="gameweek-date">Friday, Oct 19th 2020</p>
                     <ul class="gameweek-nav d-flex-center">
@@ -234,6 +244,7 @@
                 </div>
             </div>
             <div class="home-page-main">
+                <p class="gameweek-link link text-right mb-20" onclick="toggleGameWeek()">View Gameweek</p>
                 <div class="main-card d-flex-v-center">
                     <div class="your-league">
                         <div class="title">Your League</div>
@@ -556,5 +567,18 @@
         </section>
     </main>
 </body>
+
+<script>
+    function togglemobileNav() {
+        let sideNav = document.querySelector('.side-nav');
+        sideNav.classList.toggle('open');
+    }
+
+    function toggleGameWeek() {
+        let gameWeekSection = document.querySelector('.gameweek-section');
+        gameWeekSection.classList.toggle('open');
+    }
+
+</script>
 
 </html>

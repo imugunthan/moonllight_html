@@ -53,7 +53,8 @@
     box-shadow: 0 2px 10px 0 rgba(82, 92, 215, 0.15);
     .error {
       .error-tooltip {
-        display: block;
+        display: none;
+        // display: block;
       }
     }
     .error-tooltip {

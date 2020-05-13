@@ -1,0 +1,35 @@
+.mobile-header {
+  display: none;
+}
+@include respond-to(600px) {
+  .mobile-header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    z-index: 100000;
+    background: white;
+    box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.25);
+  }
+  .mobile-logo {
+    width: 35px;
+    margin: 0 auto;
+    display: block;
+  }
+  .mobile-menu-icon {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 35px !important;
+    cursor: pointer;
+  }
+  .notifications-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 35px !important;
+    cursor: pointer;
+  }
+}
