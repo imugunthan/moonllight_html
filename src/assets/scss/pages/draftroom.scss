@@ -709,3 +709,114 @@
     border-radius: 3px;
   }
 }
+
+.welcome-popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(14, 16, 37, 0.6);
+  display: inline-block;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  .welcome-popup-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 565px;
+    min-height: 700px;
+    background: #3e3583;
+    box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+    border-radius: 16px;
+  }
+  .welcome-message {
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 40px 0;
+    text-align: center;
+  }
+  .welcome-to {
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    color: #b2e7f4;
+    line-height: 24px;
+    margin-bottom: 10px;
+  }
+  .league-name {
+    font-family: "Bebas Neue";
+    font-size: 34px;
+    color: #ffffff;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+  .note-text {
+    max-width: 300px;
+    font-family: "Bebas Neue";
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0 auto;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+  .league-wrapper {
+    background: #4b4296;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: left;
+    margin-bottom: 40px;
+  }
+  .questions {
+    margin-bottom: 35px;
+  }
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #b2e7f4;
+    line-height: 19px;
+    margin-bottom: 12px;
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+  }
+  .input-value {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    background: none;
+    border: none;
+    padding-bottom: 7px;
+    border-bottom: 1px solid rgba(#d8d8d8, 0.5);
+  }
+  .button-wrap {
+    .btn {
+      background: #6458c2;
+      box-shadow: 0 12px 24px 0 #2f276e;
+      border-radius: 4px;
+      padding: 5px 15px;
+      line-height: 25px;
+      width: 130px;
+    }
+    .btn--teritary {
+      font-size: 13px;
+      font-weight: bold;
+      color: #ffffff;
+      text-align: center;
+      background: #fb295e url(/src/assets/img/draft-room/button-bg-red-big.svg)
+        right top no-repeat;
+      box-shadow: 0 12px 24px 0 #2f276e;
+      border-radius: 4px;
+    }
+  }
+  .btn--watchlist {
+    width: 168px;
+    padding: 5px;
+    font-family: "Bebas Neue";
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+    background: #55c77c;
+    border-radius: 21.5px;
+  }
+}
