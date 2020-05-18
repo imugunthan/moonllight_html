@@ -25,6 +25,7 @@ body {
     }
     p {
       font-size: 16px !important;
+      line-height: 24px !important;
     }
   }
   .circle {
@@ -35,6 +36,10 @@ body {
     position: absolute;
     bottom: 0vh;
     left: -14vw;
+    @include respond-to(768px) {
+      border-width: 20vw;
+      border-radius: 110vh;
+    }
   }
   .combo-search-bar {
     box-shadow: 0 14px 35px 0 rgba(47, 39, 110, 0.63);
@@ -121,6 +126,17 @@ body {
         bottom: -35px;
         margin: 15px auto !important;
         box-shadow: 0 14px 35px 0 rgba(47, 39, 110, 0.63);
+      }
+    }
+    .learn-to-play {
+      font-family: "Bebas Neue";
+      font-size: 22px;
+      color: #a4d5e5;
+      text-align: center;
+      font-weight: normal;
+      margin-top: 15px;
+      @include respond-to(768px) {
+        margin-bottom: 10px;
       }
     }
     &-title {
@@ -633,8 +649,12 @@ body {
         top: 10%;
         right: 10%;
         text-align: right;
+        display: none;
         @include respond-to(768px) {
           width: 70%;
+        }
+        &.active {
+          display: block;
         }
       }
       &-name {
@@ -643,7 +663,7 @@ body {
         line-height: 3.4vw;
         color: #ffffff;
         letter-spacing: 0;
-        display: none;
+        // display: none;
         @include respond-to(768px) {
           font-size: 25px !important;
           line-height: 25px;

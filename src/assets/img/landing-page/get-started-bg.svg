@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1366px" height="923px" viewBox="0 0 1366 923" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Path 19 Copy</title>
+    <defs>
+        <filter x="-10.3%" y="-22.2%" width="120.5%" height="144.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="50" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.400000006">
+        <g id="V1" transform="translate(0.000000, -1976.000000)" fill="#4B3A91">
+            <polygon id="Path-19-Copy" filter="url(#filter-1)" points="643.810555 2139.76525 73.4413542 2426.7662 0 2722.16364 1460 2775 1459.62419 2098"></polygon>
+        </g>
+    </g>
+</svg>
