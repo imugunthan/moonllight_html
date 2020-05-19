@@ -9,7 +9,8 @@
 .profile-section__left .profile-card {
   width: calc(35% - 5px);
   height: 420px;
-  background: url(/src/assets/img/profile/profile-card-bg.svg) no-repeat, linear-gradient(180deg, #2f3180 0%, #4349b1 82%, #525cd7 100%);
+  background: url(/src/assets/img/profile/profile-card-bg.svg) no-repeat,
+    linear-gradient(180deg, #2f3180 0%, #4349b1 82%, #525cd7 100%);
   box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
   border-radius: 12px;
   position: relative;
@@ -78,30 +79,60 @@
   min-width: 85px;
   text-align: center;
 }
-.profile-section__left .notification-card .noti-table .circle-checkbox input[type=checkbox] {
+.profile-section__left
+  .notification-card
+  .noti-table
+  .circle-checkbox
+  input[type="checkbox"] {
   display: none;
 }
-.profile-section__left .notification-card .noti-table .circle-checkbox .checkbox-custom {
+.profile-section__left
+  .notification-card
+  .noti-table
+  .circle-checkbox
+  .checkbox-custom {
   cursor: pointer;
 }
-.profile-section__left .notification-card .noti-table .circle-checkbox .checkbox-icon {
+.profile-section__left
+  .notification-card
+  .noti-table
+  .circle-checkbox
+  .checkbox-icon {
   width: 22px;
   height: 22px;
   border-radius: 50%;
   background: #dadada;
   box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.22);
 }
-.profile-section__left .notification-card .noti-table .circle-checkbox .checkbox-icon > i {
+.profile-section__left
+  .notification-card
+  .noti-table
+  .circle-checkbox
+  .checkbox-icon
+  > i {
   color: white;
   font-size: 18px;
   font-weight: bold;
   margin-top: 2px;
   display: none;
 }
-.profile-section__left .notification-card .noti-table .circle-checkbox input:checked + .checkbox-custom .checkbox-icon {
+.profile-section__left
+  .notification-card
+  .noti-table
+  .circle-checkbox
+  input:checked
+  + .checkbox-custom
+  .checkbox-icon {
   background: #fb295e;
 }
-.profile-section__left .notification-card .noti-table .circle-checkbox input:checked + .checkbox-custom .checkbox-icon > i {
+.profile-section__left
+  .notification-card
+  .noti-table
+  .circle-checkbox
+  input:checked
+  + .checkbox-custom
+  .checkbox-icon
+  > i {
   display: block;
 }
 .profile-section__left .notification-card.view-notifications .circle-checkbox {
@@ -132,6 +163,7 @@
   font-weight: 700;
   color: #2f3180;
   margin-bottom: 5px;
+  height: 21px;
 }
 .profile-section__left .profile-details-card .info-wrap.no-border {
   border-bottom: 0;
@@ -151,18 +183,31 @@
   border-radius: 4px;
   padding-left: 5px;
 }
-.profile-section__left .profile-details-card--edit .info-wrap .profile-edit--select {
-  background: white url(/src/assets/img/profile/select-arrow.svg) right 10px center no-repeat;
+.profile-section__left
+  .profile-details-card--edit
+  .info-wrap
+  .profile-edit--select {
+  background: white url(/src/assets/img/profile/select-arrow.svg) right 10px
+    center no-repeat;
 }
-.profile-section__left .profile-details-card--edit .info-wrap .profile-edit--select.month {
+.profile-section__left
+  .profile-details-card--edit
+  .info-wrap
+  .profile-edit--select.month {
   width: 85px;
   margin-right: 7px;
 }
-.profile-section__left .profile-details-card--edit .info-wrap .profile-edit--select.date {
+.profile-section__left
+  .profile-details-card--edit
+  .info-wrap
+  .profile-edit--select.date {
   width: 50px;
   margin-right: 7px;
 }
-.profile-section__left .profile-details-card--edit .info-wrap .profile-edit--select.year {
+.profile-section__left
+  .profile-details-card--edit
+  .info-wrap
+  .profile-edit--select.year {
   width: 72px;
 }
 .profile-section__right {
@@ -256,7 +301,10 @@
   background: #fb295e;
   border-radius: 3px;
 }
-.profile-section__right .manager-card .rank-progress.points-progress .progress::after {
+.profile-section__right
+  .manager-card
+  .rank-progress.points-progress
+  .progress::after {
   background: #fb295e;
   box-shadow: 0 4px 4px 0 rgba(251, 41, 94, 0.35);
 }
@@ -277,7 +325,8 @@
 
 .referrals .card--blue {
   height: 380px;
-  background: #2b2972 url(/src/assets/img/profile/referral-card.svg) top right no-repeat;
+  background: #2b2972 url(/src/assets/img/profile/referral-card.svg) top right
+    no-repeat;
   box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
   border-radius: 12px;
   padding: 40px;
@@ -327,7 +376,8 @@
   font-weight: 700;
   color: #ffffff;
   background: #5abf7b;
-  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+    0 12px 20px -16px rgba(158, 117, 255, 0.15);
   border-radius: 3px;
 }
 .referrals .card--blue .card-right-section {
@@ -475,7 +525,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #2a276f url(/src/assets/img/profile/profile-selection-bg.svg) right top 20px no-repeat;
+  background: #2a276f url(/src/assets/img/profile/profile-selection-bg.svg)
+    right top 20px no-repeat;
   box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
   border-radius: 16px;
   padding: 15px 35px;
@@ -488,10 +539,15 @@
   background: #4b4296;
   transition: none;
 }
-.modal--profile-update .modal-holder .options-wrap input:checked + .check-button-text {
+.modal--profile-update
+  .modal-holder
+  .options-wrap
+  input:checked
+  + .check-button-text {
   color: white;
   font-weight: bold;
-  background: #fb295e url(/src/assets/img/profile/button-bg.svg) right top no-repeat;
+  background: #fb295e url(/src/assets/img/profile/button-bg.svg) right top
+    no-repeat;
   box-shadow: 0 5px 12px -4px rgba(45, 47, 69, 0.54);
   border-radius: 3px;
 }
@@ -543,7 +599,8 @@
   border-right: 1px solid rgba(151, 151, 151, 0.28);
 }
 .modal--profile-update .modal-holder .profile-holder .player-card.selected {
-  background: #fb295e url(/src/assets/img/profile/profile-bg.svg) left center no-repeat;
+  background: #fb295e url(/src/assets/img/profile/profile-bg.svg) left center
+    no-repeat;
   box-shadow: 0 15px 30px 0 #1a184f;
 }
 .modal--profile-update .modal-holder .profile-holder .player-card .text-small {
@@ -566,7 +623,11 @@
   position: relative;
   margin: 0 auto;
 }
-.modal--profile-update .modal-holder .profile-holder .player-image.empty-player > img {
+.modal--profile-update
+  .modal-holder
+  .profile-holder
+  .player-image.empty-player
+  > img {
   border-radius: 0;
 }
 .modal--profile-update .modal-holder .profile-holder .player-image > img {
@@ -578,3 +639,13 @@
 }
 
 /*# sourceMappingURL=profile.css.map */
+
+@media screen and (max-width: 1000px) {
+  .profile-section {
+    flex-wrap: wrap;
+  }
+  .profile-section__left,
+  .profile-section__right {
+    width: 100px;
+  }
+}
