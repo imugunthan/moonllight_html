@@ -1,3 +1,6 @@
+@import "../helpers/mixins.scss";
+@import "../helpers/variable.scss";
+
 .landing-page {
   &.how-to-play {
     .no-wrap {
@@ -125,7 +128,7 @@
     font-size: calc(6px + 1vw);
     color: #151515;
     line-height: calc(6px + 1.4vw);
-    @include respond-to(mobile) {
+    @include respond-to(768px) {
       font-size: 16px;
       line-height: 24px;
     }
@@ -179,7 +182,7 @@
         font-size: 4.5vw;
         color: #525cd7;
         line-height: 4.5vw;
-        @include respond-to(mobile) {
+        @include respond-to(768px) {
           font-size: 35px !important;
           margin-bottom: 10px;
         }
@@ -188,7 +191,7 @@
         font-size: calc(6px + 1vw);
         color: #ffffff;
         line-height: calc(6px + 1.4vw);
-        @include respond-to(mobile) {
+        @include respond-to(768px) {
           font-size: 16px;
           line-height: 24px;
         }

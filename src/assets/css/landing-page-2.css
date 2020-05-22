@@ -1,0 +1,266 @@
+/* img path */
+/* break points*/
+.landing-page.how-to-play .no-wrap {
+  white-space: nowrap;
+}
+.landing-page.how-to-play .back-to-main {
+  font-size: 1.5vw;
+  color: #8194c3;
+  line-height: 2vw;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page.how-to-play .back-to-main {
+    display: none;
+  }
+}
+.landing-page.how-to-play .hero-image-container {
+  width: 28%;
+  position: relative;
+}
+.landing-page.how-to-play .hero-image-container img {
+  height: 65vh;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page.how-to-play .hero-image-container img {
+    height: 40vh;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing-page.how-to-play .hero-image-container {
+    position: absolute;
+  }
+  .landing-page.how-to-play .hero-image-container-left {
+    left: -15%;
+    bottom: 0;
+  }
+  .landing-page.how-to-play .hero-image-container-right {
+    right: -15%;
+    bottom: 0;
+  }
+}
+.landing-page.how-to-play .center {
+  max-width: 43%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page.how-to-play .center {
+    max-width: 80vw;
+  }
+  .landing-page.how-to-play .center img {
+    width: 60px !important;
+    margin-bottom: 15px !important;
+  }
+}
+.landing-page.how-to-play .center .content {
+  padding-top: 5vw;
+}
+.landing-page.how-to-play .center img {
+  width: 10vw;
+}
+.landing-page.how-to-play .center .log-sub-text {
+  font-family: "Bebas Neue";
+  font-size: 2.6vw;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page.how-to-play .center .log-sub-text {
+    font-size: 24px !important;
+    margin-bottom: 15px !important;
+  }
+}
+.landing-page.how-to-play .center .hero-main-text {
+  font-size: 1.4vw;
+  color: #ffffff;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 1.9vw;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page.how-to-play .center .hero-main-text {
+    font-size: 14px !important;
+    line-height: 24px !important;
+  }
+}
+.landing-page.how-to-play .center .get-started {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page.how-to-play .center .get-started {
+    bottom: 0;
+  }
+}
+.landing-page.how-to-play .center .get-started p {
+  font-family: "Bebas Neue";
+  font-size: 16px;
+  color: #7a8abb;
+}
+.landing-page.how-to-play .center .get-started svg {
+  transform: rotate(-90deg);
+  margin-top: 10px;
+}
+.landing-page .min-page-height {
+  min-height: 100vh;
+}
+.landing-page .image-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.landing-page .image-container > img {
+  width: 50vw;
+}
+.landing-page .content-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.landing-page .content-holder {
+  max-width: 29vw;
+}
+.landing-page .content-desc {
+  font-size: calc(6px + 1vw);
+  color: #151515;
+  line-height: calc(6px + 1.4vw);
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .content-desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.landing-page .order-reverse div:first-child {
+  order: 2;
+}
+.landing-page .order-reverse div:last-child {
+  order: 1;
+}
+.landing-page .how-it-works {
+  padding: 10vw 0;
+}
+.landing-page .how-it-works .second-content {
+  margin-top: 10vw;
+}
+.landing-page .get-started-main {
+  background: #2f276e url(/src/assets/img/landing-page/get-started-bg.svg) center right/cover no-repeat;
+  padding: 10vw;
+  text-align: center;
+}
+.landing-page .get-started-main .search-container {
+  margin: 0;
+  max-width: 50vw;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .get-started-main .search-container {
+    max-width: 80vw;
+  }
+}
+.landing-page .get-started-main .search-container .content-desc {
+  color: white;
+  margin: 3vw 0;
+}
+.landing-page .get-started-main h1 {
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  .landing-page .get-started-main h1 {
+    margin-bottom: 50px;
+  }
+}
+.landing-page .get-started-main .step {
+  max-width: 22vw;
+  text-align: left;
+}
+.landing-page .get-started-main .step-wrap {
+  justify-content: space-between;
+  margin-top: 8vw;
+}
+.landing-page .get-started-main .step-no {
+  font-family: "Bebas neue";
+  font-size: 4.5vw;
+  color: #525cd7;
+  line-height: 4.5vw;
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .get-started-main .step-no {
+    font-size: 35px !important;
+    margin-bottom: 10px;
+  }
+}
+.landing-page .get-started-main .step-text {
+  font-size: calc(6px + 1vw);
+  color: #ffffff;
+  line-height: calc(6px + 1.4vw);
+}
+@media only screen and (max-width: 768px) {
+  .landing-page .get-started-main .step-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.landing-page .page-bottom .content-holder {
+  max-width: 31vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .how-it-works .content-holder {
+    margin-bottom: 50px;
+  }
+  .how-it-works .image-container {
+    margin-bottom: 30px;
+  }
+
+  .split-section {
+    flex-wrap: wrap;
+  }
+  .split-section .content-container,
+.split-section .image-container {
+    width: 100%;
+  }
+  .split-section .content-container .content-holder,
+.split-section .image-container .content-holder {
+    max-width: 80vw;
+  }
+  .split-section .content-container img,
+.split-section .image-container img {
+    width: 80vw;
+    margin-left: auto;
+  }
+
+  .get-started-main .step-wrap {
+    flex-wrap: wrap;
+  }
+  .get-started-main .step-wrap .step {
+    max-width: 80vw;
+    margin-bottom: 30px;
+  }
+
+  .order-reverse .content-container {
+    order: 1 !important;
+  }
+  .order-reverse .image-container {
+    order: 2 !important;
+  }
+  .order-reverse .image-container img {
+    margin-left: initial;
+  }
+}
+
+/*# sourceMappingURL=landing-page-2.css.map */
