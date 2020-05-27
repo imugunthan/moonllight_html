@@ -10,7 +10,16 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        .draft-live {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+        }
+    </style>
 </head>
+
 
 <body>
     <div class="mobile-header">
@@ -241,6 +250,30 @@
                 </div>
                 <div class="league-dashboard-main">
                     <div class="upcoming-draft">
+                        <div class="upcoming-draft__main d-flex-v-center">
+                            <div class="info-container">
+                                <div class="title d-flex-v-center">
+                                    <p>Upcoming Draft</p>
+                                    <div class="info-wrap">
+                                        <img src="/src/assets/img/pre-draft-dashboard/info-red.svg" alt=""
+                                            class="info-icon">
+                                        <div class="info-tooltip">
+                                            League will be deleted if you don’t reach the minimum of 4 managers required
+                                            by the time of the draft.
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="time">Friday, Oct 19th 2:30pm EST</p>
+                                <button class="btn btn--secondary">Enter draftroom</button>
+                            </div>
+                            <img src="/src/assets/img/draft-live.svg" alt="" class="draft-live">
+                        </div>
+                        <div class="upcoming-draft__bottom d-flex-space-center">
+                            <p class="draft-league-text">Draft League</p>
+                            <img src="/src/assets/img/pre-draft-dashboard/user.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="upcoming-draft hide">
                         <div class="upcoming-draft__main d-flex-v-center">
                             <div class="info-container">
                                 <div class="title d-flex-v-center">

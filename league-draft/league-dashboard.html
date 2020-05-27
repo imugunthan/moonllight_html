@@ -10,6 +10,104 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        .league-dashboard-main .upcoming-draft__main {
+            padding: 0;
+        }
+
+        .upcoming-draft__header {
+            height: 50px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 3px;
+            padding: 0 20px;
+        }
+
+        .upcoming-draft__header .upcoming {
+            font-size: 13px;
+            font-weight: bold;
+            color: rgba(#FFFFFF, 0.5);
+            line-height: 24px;
+        }
+
+        .upcoming-draft__header .upcoming span {
+            color: #FFFFFF;
+        }
+
+        .upcoming-draft__header .view {
+            font-size: 11px;
+            font-weight: bold;
+            color: #BDC0FF;
+            text-align: right;
+            line-height: 24px;
+            text-transform: uppercase;
+        }
+
+        .upcoming-draft__header .date {
+            font-size: 15px;
+            font-weight: bold;
+            color: rgba(#FFFFFF, 0.62);
+            text-align: right;
+            line-height: 24px;
+            margin-left: 95px;
+        }
+
+        .upcoming-draft__body {
+            height: 100%;
+            margin-top: -50px;
+            padding: 0 20px;
+        }
+
+        .upcoming-draft__body .info-container {
+            margin-top: 30px;
+        }
+
+        .upcoming-draft__body .name {
+            font-size: 20px;
+            font-weight: bold;
+            color: rgbba(#FFFFFF, .23);
+            text-align: right;
+            line-height: 24px;
+            margin-right: 12px;
+        }
+
+        .upcoming-draft__body .opponent .name {
+            margin-right: 0;
+            margin-left: 12px;
+        }
+
+        .upcoming-draft__body .vs {
+            font-size: 12px;
+            font-weight: bold;
+            color: rgba(#92939F, .58);
+            text-align: center;
+            line-height: 24px;
+            margin: 0 10px;
+        }
+
+        .upcoming-draft__body .person-image {
+            width: 47px;
+            height: 47px;
+            border-radius: 50%;
+            background: #BDC7FF;
+            border: 2px solid #3B3E91;
+            box-shadow: 0 5px 10px -4px rgba(82, 92, 215, 0.30);
+        }
+
+        .upcoming-draft__body .counter-wrap {
+            background: none;
+            box-shadow: none;
+            margin-top: 50px;
+        }
+
+        .upcoming-draft__main .upcoming-draft__body .counter-wrap .timer .value {
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        .upcoming-draft__main .upcoming-draft__body .counter-wrap .timer .label {
+            font-size: 22px;
+        }
+    </style>
 </head>
 
 <body>
@@ -236,6 +334,57 @@
                     <div class="notification-count">3</div>
                 </div>
                 <div class="league-dashboard-main">
+                    <div class="upcoming-draft">
+                        <div class="upcoming-draft__main">
+                            <div class="upcoming-draft__header d-flex-v-center">
+                                <p class="upcoming">Upcoming Matchup: <span>Gameweek 1</span></p>
+                                <p class="view ml-30">View</p>
+                                <p class="date">Friday, Oct 19th 2:30pm EST</p>
+                            </div>
+                            <div class="d-flex-space-center upcoming-draft__body">
+                                <div class="info-container">
+                                    <div class="versus d-flex-v-center">
+                                        <div class="you d-flex-v-center">
+                                            <p class="name">You</p>
+                                            <figure class="person-image">
+                                                <img src="" alt="">
+                                            </figure>
+                                        </div>
+                                        <p class="vs">Vs</p>
+                                        <div class="you opponent d-flex-v-center">
+                                            <figure class="person-image">
+                                                <img src="" alt="">
+                                            </figure>
+                                            <p class="name">You</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="counter-wrap d-flex-v-center">
+                                    <div class="timer">
+                                        <p class="value">08</p>
+                                        <p class="label">D</p>
+                                    </div>
+                                    <div class="timer">
+                                        <p class="value">14</p>
+                                        <p class="label">H</p>
+                                    </div>
+                                    <div class="timer">
+                                        <p class="value">23</p>
+                                        <p class="label">M</p>
+                                    </div>
+                                    <div class="timer">
+                                        <p class="value">56</p>
+                                        <p class="label">S</p>
+                                    </div>
+                                </div>
+                                <img src="/src/assets/img/pre-draft-dashboard/3player-image.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="upcoming-draft__bottom d-flex-space-center">
+                            <p class="draft-league-text">Draft League</p>
+                            <img src="/src/assets/img/pre-draft-dashboard/user.svg" alt="">
+                        </div>
+                    </div>
                     <div class="match-week-info-wrap d-flex-space-center">
                         <div class="match-week-card mr-10">
                             <div class="match-week-card__title d-flex-v-center">
