@@ -478,6 +478,9 @@ body {
       z-index: 1;
       top: 0;
       left: 0;
+      transform-style: preserve-3d;
+      -webkit-backface-visibility: visible;
+      backface-visibility: visible;
       @include respond-to(768px) {
         &:not(:first-child) {
           display: none;
@@ -490,6 +493,7 @@ body {
         opacity: 0;
         visibility: hidden;
         transform-style: preserve-3d;
+        -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         &.active {
           animation: slide-in 2s forwards;
@@ -976,7 +980,7 @@ body {
   }
 
   .testimonials {
-    background: #2f276e url(/src/assets/img/animation/testimonials.svg) bottom
+    background: #2f276e url(/src/assets/img/animation/testimonials.png) bottom
       right/cover no-repeat;
     padding-top: 10rem;
     overflow-x: hidden;
@@ -1120,12 +1124,16 @@ body {
 
 @keyframes slide-out {
   0% {
-    transform: translate(-50%, -50%) scale(1) rotateX(0);
+    // -webkit-transform: translate(-50%, -50%) scale(1) rotateX(0);
+    // transform: translate(-50%, -50%) scale(1) rotateX(0);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     visibility: visible;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1.3) rotateX(-180deg);
+    // -webkit-transform: translate(-50%, -50%) scale(1.3) rotateX(-180deg);
+    // transform: translate(-50%, -50%) scale(1.3) rotateX(-180deg);
+    transform: translate(-50%, -50%) scale(0);
     opacity: 0;
     visibility: hidden;
   }
@@ -1133,12 +1141,16 @@ body {
 
 @keyframes slide-in {
   0% {
-    transform: translate(-50%, -50%) scale(1.3) rotateX(180deg);
+    // -webkit-transform: translate(-50%, -50%) scale(1.3) rotateX(180deg);
+    // transform: translate(-50%, -50%) scale(1.3) rotateX(180deg);
+    transform: translate(-50%, -50%) scale(0);
     opacity: 0;
     visibility: hidden;
   }
   100% {
-    transform: translate(-50%, -50%) scale(1) rotateX(0);
+    // -webkit-transform: translate(-50%, -50%) scale(1) rotateX(0deg);
+    // transform: translate(-50%, -50%) scale(1) rotateX(0deg);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     visibility: visible;
   }

@@ -12,17 +12,19 @@
     opacity: 0;
     visibility: hidden;
     transform-style: preserve-3d;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
     &.active {
-      animation: slide-in 2s forwards;
+      // animation-delay: 2s;
+      animation: slide-in1 2s forwards;
     }
     &.de-active {
-      animation: slide-out 2s forwards;
+      animation: slide-out1 2s forwards;
     }
   }
 }
 
-@keyframes slide-out {
+@keyframes slide-out1 {
   0% {
     transform: translate(-50%, -50%) scale(1) rotateX(0);
     opacity: 1;
@@ -35,7 +37,7 @@
   }
 }
 
-@keyframes slide-in {
+@keyframes slide-in1 {
   0% {
     transform: translate(-50%, -50%) scale(0.5) rotateX(180deg);
     opacity: 0;
