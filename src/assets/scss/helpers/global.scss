@@ -94,8 +94,8 @@
   position: relative;
   width: calc(100vw - 100px);
   margin-left: 100px;
-  min-height: 100vh;
-  // overflow: hidden;
+  height: 100vh;
+  overflow: auto;
 }
 
 .navbar {

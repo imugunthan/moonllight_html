@@ -1,5 +1,6 @@
 .my-team-main {
-  background: url(/src/assets/img/my-team/my-team-bg.svg) center/cover no-repeat;
+  background: url(/src/assets/img/my-team/my-team-bg.png) center/cover no-repeat;
+  position: relative;
   .nav-link {
     padding: 15px;
     cursor: pointer;
@@ -71,7 +72,7 @@
         border-radius: 3px;
         margin-right: 15px;
         cursor: pointer;
-        &.selected {
+        &.active {
           color: white;
           min-width: 54px;
           min-height: 54px;
@@ -80,15 +81,62 @@
             0 6px 12px -5px rgba(65, 73, 172, 0.46);
           border: 5px solid rgba(white, 0.15);
         }
-        &.active {
+        &.live {
           color: white;
           background: #56c079;
+          &.active {
+            position: relative;
+            min-width: 44px;
+            min-height: 44px;
+            border: none;
+            &::after {
+              position: absolute;
+              top: -5px;
+              left: -5px;
+              content: "";
+              display: inline-block;
+              width: 54px;
+              height: 54px;
+              background: rgba($white, 0.15);
+              border-radius: 3px;
+            }
+          }
         }
         &.upcoming {
           color: #748fba;
           border: 1px solid #728cbd;
+          background: #353780;
+          box-shadow: none;
+          &.active {
+            position: relative;
+            min-width: 44px;
+            min-height: 44px;
+            z-index: 1;
+            &::after {
+              position: absolute;
+              top: -6px;
+              left: -6px;
+              content: "";
+              display: inline-block;
+              width: 54px;
+              height: 54px;
+              background: rgba($white, 0.15);
+              border-radius: 3px;
+            }
+          }
         }
       }
+    }
+    &-bottom {
+      font-size: 12px;
+      color: #b2e7f4;
+      font-weight: 500;
+      text-align: center;
+      line-height: 16px;
+      padding: 5px;
+      background: #1f2256;
+      border-bottom-left-radius: 9px;
+      border-bottom-right-radius: 9px;
     }
   }
   .player-formation-wrap {
@@ -135,7 +183,7 @@
     text-align: right;
     .win {
       min-width: 105px;
-      height: 55px;
+      height: 50px;
       padding: 5px;
       background: #5abf7b;
       border-radius: 27.5px;
@@ -153,6 +201,19 @@
       }
       .points {
         padding: 0 10px;
+        // margin-right: 15px;
+        &.proj-points {
+          p {
+            font-family: "BebasNeuePro-BoldItalic";
+            font-size: 20px;
+            line-height: 24px;
+            span {
+              font-size: 13px;
+              font-family: "BebasNeuePro-BoldItalic";
+              color: #606380;
+            }
+          }
+        }
       }
       p {
         font-family: "Bebas Neue";
@@ -162,6 +223,8 @@
           width: 20px;
           height: 20px;
           margin-right: 5px;
+          display: inline-block;
+          vertical-align: bottom;
         }
       }
       .vs {
@@ -751,7 +814,7 @@
       }
       .team-info-wrap {
         margin-left: 15px;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
         border-bottom: 1px solid rgba(#979797, 0.21);
         .team-info {
           &:not(:last-child) {
@@ -1201,4 +1264,77 @@
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.modal--tutorial {
+  .modal-holder {
+    width: 720px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #3e3583;
+    box-shadow: 0 8px 59px 26px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+  }
+  .modal-header {
+    background: #372f78;
+    border-radius: 9px 9px 0 0;
+    height: 48px;
+    padding: 0 10px 0 20px;
+    h6 {
+      font-family: "Bebas Neue";
+      font-size: 19px;
+      font-weight: normal;
+      color: #ffffff;
+    }
+    img {
+      cursor: pointer;
+    }
+  }
+  .modal-content-body {
+    padding: 55px;
+  }
+  .modal-content {
+    width: 510px;
+    height: 310px;
+    background: #372f78;
+    margin: 0 auto;
+  }
+  .tutorial-nav {
+    .tutorial-pointer {
+      width: 8px;
+      height: 8px;
+      min-width: 8px;
+      min-height: 8px;
+      border-radius: 50%;
+      border: 1px solid #979797;
+      cursor: pointer;
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+      &.active {
+        background: white;
+      }
+    }
+  }
+  .next-button {
+    width: 180px;
+    padding: 8px 16px;
+    background: #525cd7;
+    border-radius: 21px;
+    position: relative;
+    margin: 0 auto;
+    .btn-text {
+      font-family: "Bebas Neue";
+      font-size: 16px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+    .btn-arrow {
+      position: absolute;
+      right: 16px;
+    }
+  }
 }

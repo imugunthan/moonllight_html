@@ -49,474 +49,524 @@
                 </ul>
             </div>
         </aside>
-        <section class="right-section my-team-main">
-            <div class="nav-link d-flex-v-center">
-                <div class="nav-arrow">
-                    <i class="material-icons">keyboard_arrow_left</i>
+        <section class="right-section">
+            <div class="my-team-main">
+                <div class="nav-link d-flex-v-center">
+                    <div class="nav-arrow">
+                        <i class="material-icons">keyboard_arrow_left</i>
+                    </div>
+                    <p class="nav-link-text ml-10">League Dashboard</p>
                 </div>
-                <p class="nav-link-text ml-10">League Dashboard</p>
-            </div>
-            <div class="switch-player">
-                <div class="holder">
-                    <div class="holder__top">
-                        <img src="/src/assets/img/my-team/switch-icon.svg" alt="">
+                <div class="switch-player">
+                    <div class="holder">
+                        <div class="holder__top">
+                            <img src="/src/assets/img/my-team/switch-icon.svg" alt="">
+                        </div>
+                        <div class="holder__body">
+                            <p class="count">1</p>
+                        </div>
+                        <div class="help-wrap">
+                            <i class="material-icons">help</i>
+                        </div>
                     </div>
-                    <div class="holder__body">
-                        <p class="count">1</p>
+                </div>
+                <div class="game-week-selection">
+                    <div class="head d-flex-space-center">
+                        <p class="title">Gamweek</p>
+                        <p class="past-gamweek d-flex-v-center">Past GW <span class="material-icons">info_outline</span>
+                        </p>
                     </div>
+                    <div class="scroll-wrap d-flex-v-center">
+                        <div class="counter">1</div>
+                        <div class="counter">2</div>
+                        <div class="counter">3</div>
+                        <div class="counter active">4</div>
+                        <div class="counter live">5</div>
+                        <div class="counter upcoming">6</div>
+                        <div class="counter upcoming">7</div>
+                        <div class="counter upcoming">8</div>
+                        <div class="counter upcoming">9</div>
+                    </div>
+                </div>
+                <div class="game-week-selection">
+                    <div class="head d-flex-space-center">
+                        <p class="title">Gamweek</p>
+                        <p class="past-gamweek d-flex-v-center">Live GW <span class="material-icons">info_outline</span>
+                        </p>
+                    </div>
+                    <div class="scroll-wrap d-flex-v-center">
+                        <div class="counter">1</div>
+                        <div class="counter">2</div>
+                        <div class="counter">3</div>
+                        <div class="counter">4</div>
+                        <div class="counter active live">5</div>
+                        <div class="counter upcoming">6</div>
+                        <div class="counter upcoming">7</div>
+                        <div class="counter upcoming">8</div>
+                        <div class="counter upcoming">9</div>
+                    </div>
+                </div>
+                <div class="game-week-selection">
+                    <div class="head d-flex-space-center">
+                        <p class="title">Gamweek</p>
+                        <p class="past-gamweek d-flex-v-center">Live GW <span class="material-icons">info_outline</span>
+                        </p>
+                    </div>
+                    <div class="scroll-wrap d-flex-v-center">
+                        <div class="counter">1</div>
+                        <div class="counter">2</div>
+                        <div class="counter">3</div>
+                        <div class="counter">4</div>
+                        <div class="counter live">5</div>
+                        <div class="counter upcoming active">6</div>
+                        <div class="counter upcoming">7</div>
+                        <div class="counter upcoming">8</div>
+                        <div class="counter upcoming">9</div>
+                    </div>
+                    <div class="game-week-selection-bottom">Make sure to update your lineup before GW starts!</div>
+                </div>
+                <div class="player-formation-wrap">
+                    <div class="formation-row d-flex-center">
+                        <div class="player-card empty"></div>
+                        <div class="player-card empty"></div>
+                        <div class="player-card captain">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
+                                <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <p class="club-name">Borussia Dortmund</p>
+                                </div>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                    <p class="club-name">Serie A</p>
+                                </div>
+                                <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
+
+                            </div>
+                        </div>
+                        <div class="player-card empty"></div>
+                        <div class="player-card empty"></div>
+                    </div>
+                    <div class="formation-row d-flex-center">
+                        <div class="player-card injured">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
+                                <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <p class="club-name">Borussia Dortmund</p>
+                                </div>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                    <p class="club-name">Serie A</p>
+                                </div>
+                                <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
+
+                            </div>
+                        </div>
+                        <div class="player-card doubtful">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
+                                <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <p class="club-name">Borussia Dortmund</p>
+                                </div>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                    <p class="club-name">Serie A</p>
+                                </div>
+                                <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
+
+                            </div>
+                        </div>
+                        <div class="player-card vice-captain">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
+                                <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <p class="club-name">Borussia Dortmund</p>
+                                </div>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                    <p class="club-name">Serie A</p>
+                                </div>
+                                <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitue-blue.svg" alt="" class="sub">
+                                <div class="sub-tool-tip">
+                                    Auto-sub was used
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card close">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <img src="/src/assets/img/my-team/close-my-team.svg" alt="" class="player-status close">
+                                <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
+                                <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <p class="club-name">Borussia Dortmund</p>
+                                </div>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                    <p class="club-name">Serie A</p>
+                                </div>
+                                <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
+
+                            </div>
+                        </div>
+                        <div class="player-card ">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/my-team/up-arrow-white.svg" alt="" class="arrow-up-left">
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
+                                <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <p class="club-name">Borussia Dortmund</p>
+                                </div>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                    <p class="club-name">Serie A</p>
+                                </div>
+                                <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formation-row d-flex-center">
+                        <div class="player-card">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
+                                <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <p class="club-name">Borussia Dortmund</p>
+                                </div>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                    <p class="club-name">Serie A</p>
+                                </div>
+                                <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
+
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
+                                <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <p class="club-name">Borussia Dortmund</p>
+                                </div>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                    <p class="club-name">Serie A</p>
+                                </div>
+                                <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
+
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
+                                <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <p class="club-name">Borussia Dortmund</p>
+                                </div>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                    <p class="club-name">Serie A</p>
+                                </div>
+                                <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
+
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
+                                <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <p class="club-name">Borussia Dortmund</p>
+                                </div>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                    <p class="club-name">Serie A</p>
+                                </div>
+                                <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
+
+                            </div>
+                        </div>
+                        <div class="player-card">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
+                                <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <p class="club-name">Borussia Dortmund</p>
+                                </div>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                    <p class="club-name">Serie A</p>
+                                </div>
+                                <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formation-row d-flex-center">
+                        <div class="player-card empty"></div>
+                        <div class="player-card player-card__type2">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <div class="club-logo">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <p class="points">33.21</p>
+                                <p class="proj-points">31.54</p>
+                            </div>
+                            <div class="boost-section d-flex-center">
+                                <p class="text">Boost</p>
+                                <div class="boost-progress"></div>
+                            </div>
+                            <img src="/src/assets/img/my-team/up-arrow-white-bottom.svg" alt="" class="arrow-bottom">
+                        </div>
+                        <div class="player-card">
+                            <div class="player-card__top">
+                                <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
+                                <div class="player-position">FW</div>
+                                <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                    class="player-status injured">
+                                <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                    class="player-status doubtful">
+                                <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
+                                <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                            </div>
+                            <div class="player-card__body">
+                                <p class="player-name">Christiano Ronaldo</p>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
+                                    <p class="club-name">Borussia Dortmund</p>
+                                </div>
+                                <div class="player-club d-flex-v-center">
+                                    <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
+                                    <p class="club-name">Serie A</p>
+                                </div>
+                                <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
+                                <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
+
+                            </div>
+                        </div>
+                        <div class="player-card player-card__type3">
+                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
+                                class="player-status injured">
+                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
+                                class="player-status doubtful">
+                            <div class="player-card__gw">
+                                <div class="gwk-row d-flex-v-center">
+                                    <div class="gwk d-flex-center active">GW3</div>
+                                    <div class="team-info-wrap">
+                                        <div class="team-info d-flex-v-center">
+                                            <p class="team-name">BAR[A]</p>
+                                            <div class="team-difficulty diff-4">4</div>
+                                            <div class="ft">FT</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gwk-row d-flex-v-center">
+                                    <div class="gwk d-flex-center">GW3</div>
+                                    <div class="team-info-wrap">
+                                        <div class="team-info d-flex-v-center">
+                                            <p class="team-name">BAR[A]</p>
+                                            <div class="team-difficulty diff-4">4</div>
+                                            <div class="ft">FT</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gwk-row d-flex-v-center">
+                                    <div class="gwk d-flex-center">GW3</div>
+                                    <div class="team-info-wrap">
+                                        <div class="team-info d-flex-v-center">
+                                            <p class="team-name">BAR[A]</p>
+                                            <div class="team-difficulty diff-4">4</div>
+                                            <div class="ft">FT</div>
+                                        </div>
+                                        <div class="team-info d-flex-v-center">
+                                            <p class="team-name">BAR[A]</p>
+                                            <div class="team-difficulty diff-4">4</div>
+                                            <div class="ft">FT</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="gwk-row d-flex-v-center">
+                                    <div class="gwk d-flex-center">GW3</div>
+                                    <div class="team-info-wrap">
+                                        <div class="team-info d-flex-v-center">
+                                            <p class="team-name none">-</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="/src/assets/img/my-team/substitue-blue.svg" alt="" class="sub">
+                        </div>
+                        <div class="player-card empty"></div>
+                    </div>
+                </div>
+                <div class="help-bench-wrap d-flex-v-center">
                     <div class="help-wrap">
                         <i class="material-icons">help</i>
                     </div>
-                </div>
-            </div>
-            <div class="game-week-selection">
-                <div class="head d-flex-space-center">
-                    <p class="title">Gamweek</p>
-                    <p class="past-gamweek d-flex-v-center">Past GW <span class="material-icons">info_outline</span>
-                    </p>
-                </div>
-                <div class="scroll-wrap d-flex-v-center">
-                    <div class="counter">1</div>
-                    <div class="counter">2</div>
-                    <div class="counter">3</div>
-                    <div class="counter selected">4</div>
-                    <div class="counter active">5</div>
-                    <div class="counter upcoming">6</div>
-                    <div class="counter upcoming">7</div>
-                    <div class="counter upcoming">8</div>
-                    <div class="counter upcoming">9</div>
-                </div>
-            </div>
-            <div class="player-formation-wrap">
-                <div class="formation-row d-flex-center">
-                    <div class="player-card empty"></div>
-                    <div class="player-card empty"></div>
-                    <div class="player-card captain">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-
-                        </div>
-                    </div>
-                    <div class="player-card empty"></div>
-                    <div class="player-card empty"></div>
-                </div>
-                <div class="formation-row d-flex-center">
-                    <div class="player-card injured">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-
-                        </div>
-                    </div>
-                    <div class="player-card doubtful">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-
-                        </div>
-                    </div>
-                    <div class="player-card vice-captain">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitue-blue.svg" alt="" class="sub">
-                            <div class="sub-tool-tip">
-                                Auto-sub was used
-                            </div>
-                        </div>
-                    </div>
-                    <div class="player-card close">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/close-my-team.svg" alt="" class="player-status close">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-
-                        </div>
-                    </div>
-                    <div class="player-card ">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/my-team/up-arrow-white.svg" alt="" class="arrow-up-left">
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-
-                        </div>
+                    <div class="bench-list ml-10 d-flex-v-center">
+                        <span>Bench</span>
+                        <i class="material-icons">arrow_drop_up</i>
                     </div>
                 </div>
-                <div class="formation-row d-flex-center">
-                    <div class="player-card">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-
-                        </div>
+                <div class="win-vs-wrap">
+                    <img src="/src/assets/img/my-team/menu.svg" alt="">
+                    <div class="win d-flex-v-center">
+                        <span>WIN</span>
+                        <div class="vs">Vs</div>
                     </div>
-                    <div class="player-card">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                    <div class="win win--type2 d-flex-v-center hide">
+                        <div class="points">
+                            <p class="own">
+                                <img src="/src/assets/img/player-popout/player-status.svg" alt="">
+                                183.21</p>
+                            <p class="">174.93</p>
                         </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-
-                        </div>
+                        <div class="vs">Vs</div>
                     </div>
-                    <div class="player-card">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
+                    <div class="win win--type2 d-flex-v-center">
+                        <div class="points proj-points">
+                            <p class="own">
+                                <img src="/src/assets/img/player-popout/player-status.svg" alt="">
+                                183.21 <span>PROJ</span></p>
+                            <p class="">174.93 <span>PROJ</span></p>
                         </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-
-                        </div>
+                        <div class="vs">Vs</div>
                     </div>
-                    <div class="player-card">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-
-                        </div>
-                    </div>
-                    <div class="player-card">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-
-                        </div>
-                    </div>
-                </div>
-                <div class="formation-row d-flex-center">
-                    <div class="player-card empty"></div>
-                    <div class="player-card player-card__type2">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <div class="club-logo">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <p class="points">33.21</p>
-                            <p class="proj-points">31.54</p>
-                        </div>
-                        <div class="boost-section d-flex-center">
-                            <p class="text">Boost</p>
-                            <div class="boost-progress"></div>
-                        </div>
-                        <img src="/src/assets/img/my-team/up-arrow-white-bottom.svg" alt="" class="arrow-bottom">
-                    </div>
-                    <div class="player-card">
-                        <div class="player-card__top">
-                            <img src="/src/assets/img/my-team/ronaldo.svg" alt="" class="player-image">
-                            <div class="player-position">FW</div>
-                            <img src="/src/assets/img/league-dashboard/injured.svg" alt=""
-                                class="player-status injured">
-                            <img src="/src/assets/img/league-dashboard/doubtful.svg" alt=""
-                                class="player-status doubtful">
-                            <img src="/src/assets/img/my-team/captain.svg" alt="" class="captain">
-                            <img src="/src/assets/img/my-team/vice-captain.svg" alt="" class="vice-captain">
-                        </div>
-                        <div class="player-card__body">
-                            <p class="player-name">Christiano Ronaldo</p>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Juventus.svg" alt="">
-                                <p class="club-name">Borussia Dortmund</p>
-                            </div>
-                            <div class="player-club d-flex-v-center">
-                                <img src="/src/assets/img/player-popout/Serie A.svg" alt="">
-                                <p class="club-name">Serie A</p>
-                            </div>
-                            <img src="/src/assets/img/my-team/substitue.svg" alt="" class="sub">
-                            <img src="/src/assets/img/my-team/substitute-grey.svg" alt="" class="sub">
-
-                        </div>
-                    </div>
-                    <div class="player-card player-card__type3">
-                        <img src="/src/assets/img/league-dashboard/injured.svg" alt="" class="player-status injured">
-                        <img src="/src/assets/img/league-dashboard/doubtful.svg" alt="" class="player-status doubtful">
-                        <div class="player-card__gw">
-                            <div class="gwk-row d-flex-v-center">
-                                <div class="gwk d-flex-center active">GW3</div>
-                                <div class="team-info-wrap">
-                                    <div class="team-info d-flex-v-center">
-                                        <p class="team-name">BAR[A]</p>
-                                        <div class="team-difficulty diff-4">4</div>
-                                        <div class="ft">FT</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gwk-row d-flex-v-center">
-                                <div class="gwk d-flex-center">GW3</div>
-                                <div class="team-info-wrap">
-                                    <div class="team-info d-flex-v-center">
-                                        <p class="team-name">BAR[A]</p>
-                                        <div class="team-difficulty diff-4">4</div>
-                                        <div class="ft">FT</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gwk-row d-flex-v-center">
-                                <div class="gwk d-flex-center">GW3</div>
-                                <div class="team-info-wrap">
-                                    <div class="team-info d-flex-v-center">
-                                        <p class="team-name">BAR[A]</p>
-                                        <div class="team-difficulty diff-4">4</div>
-                                        <div class="ft">FT</div>
-                                    </div>
-                                    <div class="team-info d-flex-v-center">
-                                        <p class="team-name">BAR[A]</p>
-                                        <div class="team-difficulty diff-4">4</div>
-                                        <div class="ft">FT</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="gwk-row d-flex-v-center">
-                                <div class="gwk d-flex-center">GW3</div>
-                                <div class="team-info-wrap">
-                                    <div class="team-info d-flex-v-center">
-                                        <p class="team-name none">-</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <img src="/src/assets/img/my-team/substitue-blue.svg" alt="" class="sub">
-                    </div>
-                    <div class="player-card empty"></div>
-                </div>
-            </div>
-            <div class="help-bench-wrap d-flex-v-center">
-                <div class="help-wrap">
-                    <i class="material-icons">help</i>
-                </div>
-                <div class="bench-list ml-10 d-flex-v-center">
-                    <span>Bench</span>
-                    <i class="material-icons">arrow_drop_up</i>
-                </div>
-            </div>
-            <div class="win-vs-wrap">
-                <img src="/src/assets/img/my-team/menu.svg" alt="">
-                <div class="win d-flex-v-center">
-                    <span>WIN</span>
-                    <div class="vs">Vs</div>
-                </div>
-                <div class="win win--type2 d-flex-v-center">
-                    <div class="points">
-                        <p class="own d-flex-v-center">
-                            <img src="/src/assets/img/player-popout/player-status.svg" alt="">
-                            183.21</p>
-                        <p class="">174.93</p>
-                    </div>
-                    <div class="vs">Vs</div>
                 </div>
             </div>
         </section>
@@ -767,7 +817,7 @@
                 <button class="btn btn--secondary">View Profile</button>
             </div>
         </section>
-        <section class="bench-players-popup scrollup">
+        <section class="bench-players-popup scrollup hide">
             <div class="head d-flex-space-center">
                 <div class="remaining d-flex-v-center">
                     <div class="count">3</div>
@@ -939,6 +989,32 @@
                     <div class="switch-players">
                         <img src="/src/assets/img/my-team/swap-white.svg" alt="" class="cursor-pointer">
                         <p class="drag-text">CLICK AND DRAG TO REORDER</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="modal modal--tutorial">
+            <div class="modal-holder">
+                <div class="modal-header d-flex-space-center">
+                    <h6>Introducing my team</h6>
+                    <img src="../src/assets/img/league-dashboard/close-icon-2.svg" alt="">
+                    <!-- <span class="close-icon material-icons">close</span> -->
+                </div>
+                <div class="modal-content-body">
+                    <div class="modal-content d-flex-center">
+                        <img src="/src/assets/img/my-team/Group 13.svg" alt="">
+                    </div>
+                    <div class="modal-next mt-30">
+                        <button class="next-button d-flex-center mb-20" type="button"><span
+                                class="btn-text">Next</span><img src="/src/assets/img/create-league/arrow-right.svg"
+                                alt="" class="btn-arrow"></button>
+                        <div class="tutorial-nav d-flex-center">
+                            <div class="tutorial-pointer active"></div>
+                            <div class="tutorial-pointer"></div>
+                            <div class="tutorial-pointer"></div>
+                            <div class="tutorial-pointer"></div>
+                            <div class="tutorial-pointer"></div>
+                        </div>
                     </div>
                 </div>
             </div>
