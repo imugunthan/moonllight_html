@@ -10,6 +10,89 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        .cookies-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(48, 39, 39, 0.5);
+            box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.29);
+            border-radius: 6px;
+            z-index: 10;
+        }
+
+        .cookies-message {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100vw;
+            z-index: 11;
+            background: #302727;
+            box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.29);
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .cookies-content {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 35px;
+        }
+
+        .cookies-title {
+            font-family: 'Bebas Neue';
+            font-size: 36px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+
+        .cookies-text {
+            font-size: 20px;
+            color: #FFFFFF;
+            text-align: center;
+            line-height: 23px;
+            margin-bottom: 35px;
+        }
+
+        .cookies-link {
+            color: #B2E7F4;
+            text-decoration: underline;
+        }
+
+        .cookies-popup .btn--reject {
+            border: 1px solid #FFFFFF;
+            border-radius: 4px;
+            font-family: "Bebas Neue";
+            font-size: 19px;
+            line-height: 34px;
+            color: #FFFFFF;
+            text-align: center;
+            background: transparent;
+            height: 40px;
+            width: 120px;
+        }
+
+        .cookies-popup .btn--accept {
+            font-family: "Bebas Neue";
+            font-size: 19px;
+            line-height: 34px;
+            color: #FFFFFF;
+            background: #FB285E;
+            box-shadow: 0 20px 20px -10px rgba(255, 132, 163, 0.25);
+            border-radius: 4px;
+            height: 40px;
+            width: 120px;
+        }
+
+        .cookies-info-icon {
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
 </head>
 
 <body>
@@ -557,6 +640,26 @@
             </a>
         </footer>
     </main>
+    <section class="cookies-popup">
+        <div class="cookies-message">
+            <div class="cookies-content">
+                <p class="cookies-title">We value your privacy</p>
+                <p class="cookies-text">
+                    This website uses cookies to improve user experience. By using our website you consent to all
+                    cookies in
+                    accordance with
+                    our Cookie Policy. To read our Cookie Policy, click <a href="" class="cookies-link">here</a>.
+                </p>
+                <div class="btns-wrap d-flex-center">
+                    <div class="btn btn--reject">Reject</div>
+                    <div class="btn btn--accept ml-30">Accept</div>
+                </div>
+            </div>
+            <div class="cookies-info-icon">
+                <img src="/src/assets/img/cookies-info.svg" alt="">
+            </div>
+        </div>
+    </section>
 </body>
 <script>
     let counter1 = 0;
