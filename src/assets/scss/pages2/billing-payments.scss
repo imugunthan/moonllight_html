@@ -185,6 +185,7 @@
       }
       @include respond-to(600px) {
         padding: 10px 20px;
+        padding-bottom: 40px;
       }
     }
     .title {
@@ -225,9 +226,6 @@
       left: 40px;
       @include respond-to(1200px) {
         left: 20px;
-      }
-      @include respond-to(600px) {
-        left: 10px;
       }
     }
     .card-type {

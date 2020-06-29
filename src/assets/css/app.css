@@ -13807,6 +13807,7 @@ body {
 @media only screen and (max-width: 600px) {
   .billing-cards .cards-wrapper {
     padding: 10px 20px;
+    padding-bottom: 40px;
   }
 }
 .billing-cards .title {
@@ -13853,11 +13854,6 @@ body {
 @media only screen and (max-width: 1200px) {
   .billing-cards .powered-by {
     left: 20px;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .billing-cards .powered-by {
-    left: 10px;
   }
 }
 .billing-cards .card-type {
