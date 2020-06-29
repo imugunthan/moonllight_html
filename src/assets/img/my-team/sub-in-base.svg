@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="161px" height="49px" viewBox="0 0 161 49" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Rectangle</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Bench---Sub-In" transform="translate(-40.000000, -162.000000)" fill="#FB295E">
+            <g id="Group-6" transform="translate(2.000000, 9.000000)">
+                <path d="M53.9195694,153 L183.313958,153 C189.369622,153 194.476381,157.511918 195.222521,163.521439 L198.326508,188.521439 C199.143095,195.098356 194.473425,201.091975 187.896507,201.908562 C187.406007,201.969463 186.912213,202 186.417946,202 L50.6639957,202 C44.0365787,202 38.6639957,196.627417 38.6639957,190 C38.6639957,189.481842 38.6975567,188.964228 38.7644678,188.450408 L42.0200415,163.450408 C42.7985037,157.47249 47.8911768,153 53.9195694,153 Z" id="Rectangle"></path>
+            </g>
+        </g>
+    </g>
+</svg>

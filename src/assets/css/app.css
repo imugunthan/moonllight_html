@@ -11092,6 +11092,34 @@ table .points .loss {
   right: 16px;
 }
 
+.substitute-in {
+  position: fixed;
+  bottom: 0;
+  left: 100px;
+  width: 242px;
+  height: 140px;
+  background-image: url(/src/assets/img/my-team/sub-in-bg.svg), linear-gradient(124deg, #2c3282 0%, #2a2266 100%);
+  box-shadow: 0 -2px 7px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px 10px 0 0;
+  z-index: 10;
+}
+.substitute-in .player-card {
+  position: absolute;
+  left: 50%;
+  top: -50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.substitute-in .player-card.sub-in {
+  border: 3px solid #ed3b5d;
+}
+.substitute-in .player-base {
+  position: absolute;
+  transform: translateX(-50%);
+  top: 50%;
+  left: 50%;
+}
+
 .article {
   position: relative;
   width: 100%;
