@@ -564,7 +564,8 @@
     &.injured,
     &.doubtful,
     &.close,
-    &.swap {
+    &.swap,
+    &.suspended {
       .player-card__top {
         height: calc(170px - 93px);
       }
@@ -588,6 +589,12 @@
       }
     }
     &.doubtful {
+      border: 3px solid #f1c351;
+      .doubtful {
+        display: inline-block;
+      }
+    }
+    &.suspended {
       border: 3px solid #f1c351;
       .doubtful {
         display: inline-block;

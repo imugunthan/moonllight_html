@@ -1,0 +1,500 @@
+.free-market {
+  .nav-bar {
+    padding: 20px 20px 0 20px;
+  }
+  .free-market-stats {
+    padding: 0 20px 20px 20px;
+    align-items: stretch;
+  }
+  .free-market-card1 {
+    width: calc(35% - 8px);
+    min-height: 126px;
+    padding: 20px 30px;
+    background: #2a276f;
+    border-radius: 8px;
+    &.deadline-bg {
+      background: #2a276f url(/src/assets/img/free-market/deadline-bg.svg) right
+        top/contain no-repeat;
+      padding: 15px 15px 0 30px;
+    }
+    .title {
+      margin-bottom: 5px;
+      p {
+        font-family: "Bebas Neue";
+        font-size: 19px;
+        color: #fbfbfb;
+        letter-spacing: 0.47px;
+        line-height: 24px;
+        text-shadow: 0 3px 0 rgba(19, 18, 65, 0.2);
+      }
+      div {
+        font-size: 10px;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        line-height: 16px;
+        padding: 0 16px;
+        box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+          0 12px 20px -16px rgba(158, 117, 255, 0.15);
+        border-radius: 12px;
+        margin-left: 15px;
+        text-transform: uppercase;
+        &.open {
+          background: #55c77c;
+        }
+        &.closed {
+          background: #f86364;
+        }
+      }
+    }
+    .btn--view-squad {
+      font-family: Roboto-Bold;
+      font-size: 13px;
+      color: #ffffff;
+      line-height: 24px;
+      background: #4e5fc9;
+      box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+        0 12px 20px -16px rgba(158, 117, 255, 0.15);
+      border-radius: 3px;
+      padding: 8px 15px;
+      min-width: 150px;
+    }
+    .calendar-icon {
+      width: 28px;
+      height: 28px;
+      min-width: 28px;
+      min-height: 28px;
+      background: #4e5fc9;
+      box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+        0 12px 20px -16px rgba(158, 117, 255, 0.15);
+      border-radius: 20px;
+      position: relative;
+      > i {
+        font-size: 14px;
+        line-height: 28px;
+        color: #ffffff;
+      }
+      &:hover {
+        .calendar-tooltip {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+    .calendar-tooltip {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      position: absolute;
+      min-width: 170px;
+      font-size: 13px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 17px;
+      white-space: nowrap;
+      background: #000000;
+      box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.29);
+      border-radius: 6px;
+      padding: 8px 15px;
+      left: 40px;
+      top: -1px;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border: 8px solid #000000;
+        border-top: 6px solid transparent;
+        border-left: 6px solid transparent;
+        border-bottom: 6px solid transparent;
+        top: 10px;
+        left: 0px;
+        transform: translateX(-100%);
+      }
+    }
+    .btn-sub {
+      display: flex;
+      flex-direction: column;
+    }
+    .player-count-wrap {
+      .selected-count {
+        font-family: "Bebas Neue";
+        font-size: 32px;
+        color: #fbfbfb;
+        letter-spacing: 0.8px;
+        line-height: 24px;
+        span {
+          font-family: "Bebas Neue";
+          font-size: 20px;
+          color: #fbfbfb;
+          letter-spacing: 0.5px;
+          line-height: 24px;
+        }
+      }
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 16px;
+        margin-bottom: 5px;
+      }
+    }
+    .position-breakup {
+      margin-bottom: 5px;
+      margin-left: 50%;
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 16px;
+      }
+      .pills-wrap {
+        margin-left: 15px;
+      }
+      .pill {
+        width: 16px;
+        height: 5px;
+        border: 1px solid #303558;
+        border-radius: 3px;
+        margin-right: 4px;
+        position: relative;
+        &--selected {
+          background: #303558;
+        }
+        &--doubtful {
+          background: #f8c363;
+          border-color: #f8c363;
+        }
+        &--injured {
+          background: #f86364;
+          border-color: #f86364;
+        }
+        .ut {
+          position: absolute;
+          bottom: -17px;
+          font-size: 12px;
+          font-weight: bold;
+          color: #ffffff;
+          line-height: 16px;
+        }
+      }
+    }
+    .cash-on-hand {
+      .cash-remaining {
+        font-family: "Bebas Neue";
+        font-size: 32px;
+        color: #fbfbfb;
+        letter-spacing: 0.8px;
+        line-height: 24px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 16px;
+      }
+    }
+    .transfer-stats {
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+      .value {
+        font-family: "Bebas Neue";
+        font-size: 19px;
+        color: #fbfbfb;
+        letter-spacing: 0.47px;
+        line-height: 24px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 16px;
+      }
+    }
+    .button-actions {
+      display: flex;
+      flex-direction: column;
+      .btn {
+        font-size: 13px;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 24px;
+        box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+          0 12px 20px -16px rgba(158, 117, 255, 0.15);
+        border-radius: 3px;
+        min-width: 150px;
+      }
+      .btn--confirm {
+        padding: 8px 15px;
+        background: #55c77c;
+      }
+      .btn--reset {
+        background: #4d5ec5;
+      }
+    }
+    .timer {
+      margin-bottom: 5px;
+      .count-down-dfr-time-in {
+        background: rgba(#43479f, 0.35);
+        box-shadow: 0 3px 3px -2px rgba(3, 3, 3, 0.3);
+        border-radius: 2.3px;
+        padding: 5px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .dhms-div {
+        border-right: 1px solid rgba(216, 216, 216, 0.17);
+        text-align: center;
+        padding: 0px 13px;
+      }
+      .count-down-dfr-time-in .dhms-div:last-child {
+        border-right: none;
+      }
+      .dhms-cnt {
+        font-family: "Bebas Neue";
+        font-size: 23px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 24px;
+      }
+      .dhms-type {
+        font-family: "Bebas Neue";
+        font-size: 13px;
+        color: #64669f;
+        text-align: center;
+        line-height: 13px;
+      }
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #b2e7f4;
+        line-height: 29px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .free-market-card2 {
+    width: calc(30% - 8px);
+    background: #4e5fc9;
+    border-radius: 8px;
+  }
+  .player-picker {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background: white;
+    width: 335px;
+    .player-picker__header {
+      position: relative;
+      box-shadow: 0 2px 10px 0 rgba(82, 92, 215, 0.15);
+      .close-button {
+        width: 35px;
+        object-fit: cover;
+      }
+    }
+    .section-header {
+      padding: 10px 15px;
+      background: rgba(220, 222, 247, 0.5);
+      box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+    }
+    .empty-player .player-image {
+      width: 39px;
+      height: 39px;
+    }
+    .player-card {
+      .player-position {
+        font-family: "Bebas Neue";
+        font-size: 14px;
+        color: rgba(#606380, 0.5);
+        line-height: 10px;
+      }
+      .btn-drop {
+        width: 62px;
+        height: 31px;
+        font-size: 13px;
+        color: #5159b6;
+        text-align: center;
+        line-height: 24px;
+        background: #f8fafd;
+        border: 1px solid #dfdfe5;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        padding: 3px 16px;
+      }
+      &-error {
+        background: rgba(#f86364, 0.15);
+        box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+      }
+      .add-player {
+        font-size: 16px;
+        color: #afb1bf;
+        line-height: 16px;
+      }
+    }
+    .text {
+      font-size: 13px;
+    }
+    .text-bold {
+      font-weight: 700;
+    }
+    .text-red {
+      color: white !important;
+      background: #f86364;
+      border-radius: 11px;
+      padding: 1px 8px;
+    }
+    .player-card-wrap {
+      height: calc(100% - 50px);
+    }
+    .squad-value {
+      height: 67px;
+      background: #4e5fc9 url(/src/assets/img/free-market/squad-value.svg) top
+        right/contain no-repeat;
+      border-radius: 8px;
+      padding: 15px 15px 15px 20px;
+      .label {
+        font-family: "Bebas Neue";
+        font-size: 19px;
+        color: #ffffff;
+        line-height: 16px;
+      }
+      .value {
+        font-family: "Bebas Neue";
+        font-size: 32px;
+        color: #ffffff;
+        letter-spacing: 0.8px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.modal--confirm-transfers {
+  .modal-confirm-container {
+    background: #2a276f url(/src/assets/img/free-market/confirm-transfer-bg.svg)
+      top right no-repeat;
+    height: 154px;
+    .modal-info {
+      padding: 35px;
+      height: 100%;
+      position: relative;
+    }
+    .firmino {
+      position: absolute;
+      right: 40px;
+      bottom: 0;
+      width: 184px;
+    }
+    .close-modal {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  }
+}
+
+.modal-market-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 515px;
+  box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+  border-radius: 16px;
+  .content {
+    font-weight: bold;
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 24px;
+    max-width: 241px;
+  }
+}
+
+.modal--market-closed {
+  .modal-all-container {
+    background: #2a276f url(/src/assets/img/free-market/all-closed.svg) top
+      right no-repeat;
+  }
+  .content-info {
+    padding: 45px 20px 45px 35px;
+    position: relative;
+  }
+  .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .label-closed {
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    line-height: 24px;
+    padding: 5px 26px;
+    background: #f86364;
+    box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+      0 12px 20px -16px rgba(158, 117, 255, 0.15);
+    border-radius: 17.05px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+  }
+  .open-window {
+    p {
+      font-family: "Bebas Neue";
+      font-size: 24px;
+      color: #fbfbfb;
+      letter-spacing: 0.6px;
+      line-height: 24px;
+      text-shadow: 0 3px 0 rgba(19, 18, 65, 0.2);
+      margin-top: 30px;
+    }
+    .timer {
+      margin-left: auto;
+      .count-down-dfr-time-in {
+        background: rgba(#43479f, 0.35);
+        box-shadow: 0 3px 3px -2px rgba(3, 3, 3, 0.3);
+        border-radius: 2.3px;
+        padding: 12px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .dhms-div {
+        border-right: 1px solid rgba(216, 216, 216, 0.17);
+        text-align: center;
+        padding: 0px 19px;
+      }
+      .count-down-dfr-time-in .dhms-div:last-child {
+        border-right: none;
+      }
+      .dhms-cnt {
+        font-family: "Bebas Neue";
+        font-size: 23px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 24px;
+      }
+      .dhms-type {
+        font-family: "Bebas Neue";
+        font-size: 13px;
+        color: #64669f;
+        text-align: center;
+        line-height: 13px;
+      }
+      span {
+        font-size: 15px;
+        font-weight: bold;
+        color: #b2e7f4;
+        line-height: 29px;
+        display: block;
+        text-align: center;
+      }
+    }
+  }
+}
