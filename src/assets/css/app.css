@@ -11132,6 +11132,29 @@ table .points .loss {
   left: 50%;
 }
 
+.game-week-selection .head {
+  position: relative;
+}
+.game-week-selection .head .live-progress {
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background: #5ec37f;
+  bottom: 0;
+  left: 0;
+}
+.game-week-selection .head .live-progress::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #5ec37f;
+  position: absolute;
+  right: 0;
+  top: -50%;
+  transform: translateY(-50%);
+}
+
 .article {
   position: relative;
   width: 100%;
