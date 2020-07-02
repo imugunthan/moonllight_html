@@ -14459,4 +14459,260 @@ body {
   text-align: center;
 }
 
+.modal--transfer-summary .modal-summary-container {
+  width: 545px;
+  background: #2a276f;
+  box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.modal--transfer-summary .summary-head {
+  padding: 13px 30px;
+}
+.modal--transfer-summary .summary-head h1 {
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  font-size: 23px;
+  color: #fbfbfb;
+  letter-spacing: 0.58px;
+  line-height: 39px;
+}
+.modal--transfer-summary .summary-body {
+  padding: 15px 15px 110px 15px;
+  background: #ffffff;
+  position: relative;
+}
+.modal--transfer-summary .summary-stat-top {
+  background: #4e5fc9 url(/src/assets/img/free-market/summary-stat-bg.svg) right bottom no-repeat;
+  border-radius: 8px 8px 0 0;
+  padding: 20px 30px;
+  margin-bottom: 2px;
+}
+.modal--transfer-summary .summary-stat-top .value {
+  font-family: "Bebas Neue";
+  font-size: 28px;
+  color: #fbfbfb;
+  letter-spacing: 0.7px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.modal--transfer-summary .summary-stat-top .label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 16px;
+}
+.modal--transfer-summary .summary-stat-top .value-diff {
+  font-family: "Bebas Neue";
+  font-size: 17px;
+  color: #ffffff;
+  letter-spacing: 0.43px;
+  line-height: 24px;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+.modal--transfer-summary .summary-stat-bottom {
+  padding: 8px 15px;
+  background: #4e5fc9;
+  border-radius: 0 0 8px 8px;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup {
+  margin-right: 15px;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 16px;
+  margin-right: 5px;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .pill {
+  height: 21px;
+  width: 6px;
+  border: 1px solid #303558;
+  border-radius: 3px;
+  margin-right: 5px;
+  position: relative;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .pill--selected {
+  background: #303558;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .pill--vacant {
+  background: #7b77dd;
+  border-color: #7b77dd;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .pill--error {
+  background: #f86364;
+  border-color: #f86364;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .error-tooltip {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  font-size: 13px;
+  padding: 15px 10px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 17px;
+  background: #f46869;
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.29);
+  border-radius: 6px 6px 6px 6px;
+  margin-top: 5px;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .error-tooltip .error-info {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 50%);
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .error-tooltip::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 10px solid #f46869;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.modal--transfer-summary .summary-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 67px;
+  background: #edeefb;
+  box-shadow: 0 -2px 7px -1px rgba(0, 0, 0, 0.14);
+}
+.modal--transfer-summary .summary-footer .btn {
+  width: 152px;
+  height: 40px;
+}
+.modal--transfer-summary .summary-footer .btn--cancel {
+  font-size: 13px;
+  color: #5159b6;
+  text-align: center;
+  line-height: 24px;
+  background: #f8fafd;
+  border: 1px solid #dfdfe5;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin-right: 15px;
+}
+.modal--transfer-summary .summary-footer .btn--confirm {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+  background: #55c77c;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+}
+.modal--transfer-summary .transfer-list {
+  background: #edeefb;
+  border-radius: 12px;
+  padding: 10px 15px;
+}
+.modal--transfer-summary .transfer-list .players-wrap {
+  width: 49%;
+}
+.modal--transfer-summary .transfer-list .title p {
+  font-size: 12.6px;
+  font-weight: bold;
+  color: #606380;
+  line-height: 14px;
+  margin-left: 10px;
+}
+.modal--transfer-summary .player-card {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 5px 12px;
+  flex-grow: 1;
+}
+.modal--transfer-summary .counter {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: rgba(78, 95, 201, 0.42);
+  font-size: 12px;
+  font-weight: bold;
+  color: #2f3180;
+  text-align: center;
+  line-height: 18px;
+  margin-right: 10px;
+}
+.modal--transfer-summary .player-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  background: #2a266e;
+}
+.modal--transfer-summary .player-avatar img {
+  width: 100%;
+  height: calc(100% + 5px);
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+}
+.modal--transfer-summary .player-info {
+  margin-left: 10px;
+}
+.modal--transfer-summary .player-name {
+  margin-bottom: 7px;
+}
+.modal--transfer-summary .player-name p {
+  font-size: 16px;
+  color: #5b5b60;
+  line-height: 16px;
+}
+.modal--transfer-summary .player-name p span {
+  opacity: 0.5;
+  font-size: 12px;
+  color: rgba(96, 99, 128, 0.5);
+  line-height: 10px;
+}
+.modal--transfer-summary .player-value {
+  font-family: "Bebas Neue";
+  font-size: 14px;
+  color: rgba(96, 99, 128, 0.5);
+  letter-spacing: 0;
+  line-height: 10px;
+}
+.modal--transfer-summary .delete-row {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #606380;
+  text-align: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.modal--transfer-summary .delete-row i {
+  color: #edeefb;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  display: inline-block;
+}
+.modal--transfer-summary .total-value {
+  width: 100%;
+  text-align: right;
+  font-size: 12.6px;
+  color: #606380;
+  line-height: 14px;
+}
+.modal--transfer-summary .total-value span {
+  font-family: "Bebas Neue";
+  font-size: 19px;
+  color: #606380;
+  line-height: 10px;
+}
+
 /*# sourceMappingURL=app.css.map */
