@@ -1405,3 +1405,16 @@
     }
   }
 }
+
+.my-team .game-week-selection .head .past-gamweek.live-gameweek {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #5ec37f;
+    left: -15px;
+  }
+}

@@ -11155,6 +11155,19 @@ table .points .loss {
   transform: translateY(-50%);
 }
 
+.my-team .game-week-selection .head .past-gamweek.live-gameweek {
+  position: relative;
+}
+.my-team .game-week-selection .head .past-gamweek.live-gameweek::before {
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #5ec37f;
+  left: -15px;
+}
+
 .article {
   position: relative;
   width: 100%;
