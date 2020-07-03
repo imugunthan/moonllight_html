@@ -14029,15 +14029,15 @@ body {
   align-items: stretch;
 }
 .free-market .free-market-card1 {
-  width: calc(35% - 8px);
+  width: calc(36% - 8px);
   min-height: 126px;
-  padding: 20px 30px;
+  padding: 20px;
   background: #2a276f;
   border-radius: 8px;
 }
 .free-market .free-market-card1.deadline-bg {
   background: #2a276f url(/src/assets/img/free-market/deadline-bg.svg) right top/contain no-repeat;
-  padding: 15px 15px 0 30px;
+  padding: 15px 20px 0 20px;
 }
 .free-market .free-market-card1 .title {
   margin-bottom: 5px;
@@ -14078,6 +14078,7 @@ body {
   border-radius: 3px;
   padding: 8px 15px;
   min-width: 150px;
+  margin-left: 5px;
 }
 .free-market .free-market-card1 .calendar-icon {
   width: 28px;
@@ -14153,10 +14154,13 @@ body {
   color: #ffffff;
   line-height: 16px;
   margin-bottom: 5px;
+  white-space: nowrap;
+}
+.free-market .free-market-card1 .selection-breakup {
+  margin-left: 5vw;
 }
 .free-market .free-market-card1 .position-breakup {
   margin-bottom: 5px;
-  margin-left: 50%;
 }
 .free-market .free-market-card1 .position-breakup p {
   font-size: 12px;
@@ -14285,7 +14289,7 @@ body {
   margin-left: 10px;
 }
 .free-market .free-market-card2 {
-  width: calc(30% - 8px);
+  width: calc(28% - 8px);
   background: #4e5fc9;
   border-radius: 8px;
 }
@@ -14582,6 +14586,7 @@ body {
   border-color: #f86364;
 }
 .modal--transfer-summary .summary-stat-bottom .position-breakup .error-tooltip {
+  opacity: 0;
   position: absolute;
   top: calc(100% + 10px);
   left: 50%;
@@ -14674,6 +14679,8 @@ body {
 .modal--transfer-summary .counter {
   width: 18px;
   height: 18px;
+  min-width: 18px;
+  min-height: 18px;
   border-radius: 50%;
   background: rgba(78, 95, 201, 0.42);
   font-size: 12px;
@@ -14724,6 +14731,8 @@ body {
 .modal--transfer-summary .delete-row {
   width: 16px;
   height: 16px;
+  min-width: 16px;
+  min-height: 16px;
   border-radius: 50%;
   background: #606380;
   text-align: center;
@@ -14749,6 +14758,187 @@ body {
   font-size: 19px;
   color: #606380;
   line-height: 10px;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+  .free-market .free-market-card1 {
+    padding: 15px 20px !important;
+  }
+  .free-market .free-market-card1 .selection-breakup {
+    margin-left: initial;
+  }
+  .free-market .free-market-card1 .d-flex-v-center-1300 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .wrap-center-1300 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .view-my-squad {
+    margin-left: initial;
+    align-items: center;
+  }
+
+  .wrap-space-center-1300 {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .transfer-stats-wrap {
+    display: flex;
+    width: 100%;
+    order: 3;
+  }
+  .transfer-stats-wrap .transfer-stats:first-child {
+    margin-right: 15px;
+  }
+
+  .free-market .free-market-card1 {
+    padding: 15px 20px !important;
+  }
+  .free-market .free-market-card1 .btn-sub {
+    flex-direction: row;
+  }
+  .free-market .free-market-card1 .btn-sub .calendar-icon {
+    margin-top: 0 !important;
+  }
+
+  .d-flex-v-center-1300 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .d-flex-v-center-1300 img {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .d-flex-v-center-1300 .player-count-wrap {
+    margin: 10px 0;
+  }
+}
+@media only screen and (max-width: 998px) {
+  .free-market .free-market-card1.free-market-card2 {
+    order: 2;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .free-market .free-market-card1.free-market-card2 .wrap-center-1300 {
+    justify-content: initial;
+  }
+
+  .free-market .free-market-stats {
+    flex-wrap: wrap;
+  }
+
+  .free-market .free-market-card1 {
+    width: calc(50% - 8px);
+    min-height: initial;
+  }
+
+  .free-market .free-market-card1 .selection-breakup {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .free-market .free-market-card1 .position-breakup .pill {
+    width: 5px;
+    height: 16px;
+  }
+
+  .free-market .free-market-card1 .position-breakup {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .free-market .free-market-card1 {
+    width: 100%;
+  }
+  .free-market .free-market-card1:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  .free-market .free-market-card1 .selection-breakup {
+    display: initial;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .button-actions .btn {
+    max-width: 125px;
+    min-width: initial !important;
+    padding: 5px 10px !important;
+  }
+
+  .free-market .player-picker {
+    max-width: 100%;
+  }
+
+  .modal--confirm-transfers .modal-confirm-container .firmino {
+    display: none;
+  }
+
+  .modal-market-container {
+    width: calc(100% - 30px) !important;
+  }
+
+  .modal--market-closed .open-window {
+    flex-wrap: wrap;
+  }
+
+  .modal--market-closed .open-window .timer {
+    margin-left: initial;
+  }
+
+  .free-market .free-market-card1.free-market-card2 {
+    order: initial;
+  }
+
+  .modal--transfer-summary .summary-stat-top {
+    padding-bottom: 0;
+  }
+
+  .modal--transfer-summary .summary-stat-top .d-flex-space-center {
+    flex-wrap: wrap;
+  }
+
+  .modal--transfer-summary .summary-stat-top .stat-wrap {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .modal--transfer-summary .summary-stat-bottom {
+    padding-bottom: 0;
+  }
+
+  .modal--transfer-summary .summary-stat-bottom .selection-breakup {
+    flex-wrap: wrap;
+  }
+
+  .modal--transfer-summary .summary-stat-bottom .position-breakup {
+    margin-bottom: 10px;
+  }
+
+  .modal--transfer-summary .summary-footer .btn {
+    width: initial;
+    height: initial;
+  }
+
+  .modal--transfer-summary .player-avatar {
+    display: none;
+  }
+
+  .modal--transfer-summary .player-card {
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  .modal--transfer-summary .total-value {
+    margin-right: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
