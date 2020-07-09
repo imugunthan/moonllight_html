@@ -5,6 +5,18 @@
   font-family: "Roboto", sans-serif;
 }
 
+%italic {
+  font-family: "Bebas Neue italic";
+}
+
+@font-face {
+  font-family: "Bebas Neue italic";
+  src: url("./fonts/font.woff2") format("woff2"),
+    url(".fonts/font.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 %left {
   float: left;
 }

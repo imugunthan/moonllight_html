@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Team</title>
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mobile-header">
+        <div class="mobile-menu-icon material-icons" onclick="togglemobileNav()">menu</div>
+        <img src="/src/assets/img/signup/moonlight-logo.svg" alt="" class="mobile-logo">
+        <div class="notifications-icon material-icons">notifications_none</div>
+    </div>
+    <main class="main">
+        <aside class="side-nav d-flex">
+            <div class="close-mobile-menu material-icons" onclick="togglemobileNav()">close</div>
+            <div class="user-info">
+                <figure class="user-avatar m-auto mb-20">
+                    <img src="/src/assets/img/profile-image.svg" alt="User Image" class="user-image">
+                    <!-- <img src="https://images.vexels.com/media/users/3/140748/isolated/preview/5b078a59390bb4666df98b49f1cdedd0-male-profile-avatar-by-vexels.png"
+                        alt="User Image" class="user-image"> -->
+                </figure>
+                <p class="user-name">L. Vaz</p>
+            </div>
+            <nav class="navmenu">
+                <ul class="navmenu__list">
+                    <li class="navmenu__item mb-30">
+                        <i class="material-icons">home</i>
+                    </li>
+                    <li class="navmenu__item mb-30">
+                        <img src="/src/assets/img/trophy-filed.svg" alt="" class="filled">
+                        <img src="/src/assets/img/trophy.svg" alt="" class="normal">
+                    </li>
+                    <li class="navmenu__item mb-30 active">
+                        <img src="/src/assets/img/chart-filed.svg" class="filled" alt="">
+                        <img src="/src/assets/img/chart.svg" alt="" class="normal">
+                    </li>
+                </ul>
+            </nav>
+            <div class="side-nav__footer">
+                <ul class="">
+                    <li class="text-center help">
+                        <i class="material-icons">help</i>
+                    </li>
+                    <li class="text-center logo">
+                        <img src="/src//assets/img/moonlight-logo.svg" alt="Moonlight Logo">
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="right-section">
+            <div class="my-team-mobile">
+                <div class="my-team-mobile__top d-flex">
+                    <div class="value-holder justify-end projected">
+                        <div class="values text-right">
+                            <p>You</p>
+                            <h6 class="italic">328.40</h6>
+                            <!-- <h6 class="d-flex"><span class="italic">239.40</span> 328.40</h6> -->
+                        </div>
+                    </div>
+                    <div class="vs-holder">
+                        <div class="vs">VS</div>
+                    </div>
+                    <div class="value-holder">
+                        <div class="values">
+                            <p>You</p>
+                            <h6 class="italic">328.40</h6>
+                            <!-- <h6 class="d-flex">328.40 <span class="italic">239.40</span></h6> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="points-progress-holder d-flex-center">
+                    <div class="points points-green italic">93%</div>
+                    <div class="points-progress">
+                        <div class="progress-bar-green"></div>
+                        <div class="half-marker"></div>
+                        <div class="progress-bar-red"></div>
+                    </div>
+                    <div class="points points-red italic">40%</div>
+                </div>
+                <div class="my-team-menu d-flex">
+                    <div class="date-holder holder">FRI, Jun 22 @ 2:00pm</div>
+                    <div class="holder">view gw fixtures</div>
+                    <div class="holder custom-dropdown">filter: <span>Proj pts</span>
+                    </div>
+                </div>
+                <div class="gameweek-selector d-flex-space-center">
+                    <img src="/src/assets/img/my-team-mobile/left-arrow-nav.svg" alt="" class="cursor-pointer">
+                    <p>GAMEWEEK 18</p>
+                    <img src="/src/assets/img/my-team-mobile/right-arrow-nav.svg" alt="" class="cursor-pointer">
+                </div>
+                <div class="player-section">
+                    <div class="player-section-title">Starters</div>
+                    <div class="players-wrapper">
+                        <div class="player-card d-flex">
+                            <div class="player-position d-flex-center">
+                                <p>GK</p>
+                            </div>
+                            <div class="player-info-wrapper d-flex flex-grow-1">
+                                <img src="/src/assets/img/my-team-mobile/eriksen.svg" alt="" class="player-image">
+                                <div class="ml-10">
+                                    <p class="player-name">E. Morales</p>
+                                    <div class="d-flex-v-center">
+                                        <div class="match-info">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                        <div class="match-info grey">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="player-points ml-auto">
+                                    <p class="italic points-bar">29.98</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card d-flex">
+                            <div class="player-position d-flex-center">
+                                <p>GK</p>
+                            </div>
+                            <div class="player-info-wrapper d-flex flex-grow-1">
+                                <img src="/src/assets/img/my-team-mobile/eriksen.svg" alt="" class="player-image">
+                                <div class="ml-10">
+                                    <p class="player-name">E. Morales</p>
+                                    <div class="d-flex-v-center">
+                                        <div class="match-info">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                        <div class="match-info grey">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="player-points ml-auto">
+                                    <p class="italic points-bar">29.98</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card d-flex">
+                            <div class="player-position d-flex-center">
+                                <p>GK</p>
+                            </div>
+                            <div class="player-info-wrapper d-flex flex-grow-1">
+                                <img src="/src/assets/img/my-team-mobile/eriksen.svg" alt="" class="player-image">
+                                <div class="ml-10">
+                                    <p class="player-name">E. Morales</p>
+                                    <div class="d-flex-v-center">
+                                        <div class="match-info">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                        <div class="match-info grey">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="player-points ml-auto">
+                                    <p class="italic points-bar">29.98</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card d-flex">
+                            <div class="player-position d-flex-center">
+                                <p>GK</p>
+                            </div>
+                            <div class="player-info-wrapper d-flex flex-grow-1">
+                                <img src="/src/assets/img/my-team-mobile/eriksen.svg" alt="" class="player-image">
+                                <div class="ml-10">
+                                    <p class="player-name">E. Morales</p>
+                                    <div class="d-flex-v-center">
+                                        <div class="match-info">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                        <div class="match-info grey">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="player-points ml-auto">
+                                    <p class="italic points-bar">29.98</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card d-flex">
+                            <div class="player-position d-flex-center">
+                                <p>GK</p>
+                            </div>
+                            <div class="player-info-wrapper d-flex flex-grow-1">
+                                <img src="/src/assets/img/my-team-mobile/eriksen.svg" alt="" class="player-image">
+                                <div class="ml-10">
+                                    <p class="player-name">E. Morales</p>
+                                    <div class="d-flex-v-center">
+                                        <div class="match-info">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                        <div class="match-info grey">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="player-points ml-auto">
+                                    <p class="italic points-bar">29.98</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card d-flex">
+                            <div class="player-position d-flex-center">
+                                <p>GK</p>
+                            </div>
+                            <div class="player-info-wrapper d-flex flex-grow-1">
+                                <img src="/src/assets/img/my-team-mobile/eriksen.svg" alt="" class="player-image">
+                                <div class="ml-10">
+                                    <p class="player-name">E. Morales</p>
+                                    <div class="d-flex-v-center">
+                                        <div class="match-info">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                        <div class="match-info grey">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="player-points ml-auto">
+                                    <p class="italic points-bar">29.98</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="player-card d-flex">
+                            <div class="player-position d-flex-center">
+                                <p>GK</p>
+                            </div>
+                            <div class="player-info-wrapper d-flex flex-grow-1">
+                                <img src="/src/assets/img/my-team-mobile/eriksen.svg" alt="" class="player-image">
+                                <div class="ml-10">
+                                    <p class="player-name">E. Morales</p>
+                                    <div class="d-flex-v-center">
+                                        <div class="match-info">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                        <div class="match-info grey">
+                                            <p class="team"><span>Liv</span> vs MCI</p>
+                                            <p class="time">SAT, 10:30am</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="player-points ml-auto">
+                                    <p class="italic points-bar">29.98</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+    function togglemobileNav() {
+        let sideNav = document.querySelector('.side-nav');
+        sideNav.classList.toggle('open');
+    }
+</script>
+
+</html>

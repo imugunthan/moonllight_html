@@ -1,0 +1,921 @@
+.free-market .nav-bar {
+  padding: 20px 20px 0 20px;
+}
+.free-market .free-market-stats {
+  padding: 0 20px 20px 20px;
+  align-items: stretch;
+}
+.free-market .free-market-card1 {
+  width: calc(36% - 8px);
+  min-height: 126px;
+  padding: 20px;
+  background: #2a276f;
+  border-radius: 8px;
+}
+.free-market .free-market-card1.deadline-bg {
+  background: #2a276f url(/src/assets/img/free-market/deadline-bg.svg) right top/contain no-repeat;
+  padding: 15px 20px 0 20px;
+}
+.free-market .free-market-card1 .title {
+  margin-bottom: 5px;
+}
+.free-market .free-market-card1 .title p {
+  font-family: "Bebas Neue";
+  font-size: 19px;
+  color: #fbfbfb;
+  letter-spacing: 0.47px;
+  line-height: 24px;
+  text-shadow: 0 3px 0 rgba(19, 18, 65, 0.2);
+}
+.free-market .free-market-card1 .title div {
+  font-size: 10px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 16px;
+  padding: 0 16px;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 12px;
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+.free-market .free-market-card1 .title div.open {
+  background: #55c77c;
+}
+.free-market .free-market-card1 .title div.closed {
+  background: #f86364;
+}
+.free-market .free-market-card1 .btn--view-squad {
+  font-family: Roboto-Bold;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 24px;
+  background: #4e5fc9;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+  padding: 8px 15px;
+  min-width: 150px;
+  margin-left: 5px;
+}
+.free-market .free-market-card1 .calendar-icon {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  background: #4e5fc9;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 20px;
+  position: relative;
+}
+.free-market .free-market-card1 .calendar-icon > i {
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.free-market .free-market-card1 .calendar-icon:hover .calendar-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+.free-market .free-market-card1 .calendar-tooltip {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  position: absolute;
+  min-width: 170px;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 17px;
+  white-space: nowrap;
+  background: #000000;
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.29);
+  border-radius: 6px;
+  padding: 8px 15px;
+  left: 40px;
+  top: -1px;
+}
+.free-market .free-market-card1 .calendar-tooltip::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 8px solid #000000;
+  border-top: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  top: 10px;
+  left: 0px;
+  transform: translateX(-100%);
+}
+.free-market .free-market-card1 .btn-sub {
+  display: flex;
+  flex-direction: column;
+}
+.free-market .free-market-card1 .player-count-wrap .selected-count {
+  font-family: "Bebas Neue";
+  font-size: 32px;
+  color: #fbfbfb;
+  letter-spacing: 0.8px;
+  line-height: 24px;
+}
+.free-market .free-market-card1 .player-count-wrap .selected-count span {
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  color: #fbfbfb;
+  letter-spacing: 0.5px;
+  line-height: 24px;
+}
+.free-market .free-market-card1 .player-count-wrap p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 16px;
+  margin-bottom: 5px;
+  white-space: nowrap;
+}
+.free-market .free-market-card1 .selection-breakup {
+  margin-left: 5vw;
+}
+.free-market .free-market-card1 .position-breakup {
+  margin-bottom: 5px;
+}
+.free-market .free-market-card1 .position-breakup p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 16px;
+}
+.free-market .free-market-card1 .position-breakup .pills-wrap {
+  margin-left: 15px;
+}
+.free-market .free-market-card1 .position-breakup .pill {
+  width: 16px;
+  height: 5px;
+  border: 1px solid #303558;
+  border-radius: 3px;
+  margin-right: 4px;
+  position: relative;
+}
+.free-market .free-market-card1 .position-breakup .pill--selected {
+  background: #303558;
+}
+.free-market .free-market-card1 .position-breakup .pill--doubtful {
+  background: #f8c363;
+  border-color: #f8c363;
+}
+.free-market .free-market-card1 .position-breakup .pill--injured {
+  background: #f86364;
+  border-color: #f86364;
+}
+.free-market .free-market-card1 .position-breakup .pill .ut {
+  position: absolute;
+  bottom: -17px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 16px;
+}
+.free-market .free-market-card1 .cash-on-hand .cash-remaining {
+  font-family: "Bebas Neue";
+  font-size: 32px;
+  color: #fbfbfb;
+  letter-spacing: 0.8px;
+  line-height: 24px;
+}
+.free-market .free-market-card1 .cash-on-hand p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 16px;
+}
+.free-market .free-market-card1 .transfer-stats:not(:last-child) {
+  margin-bottom: 5px;
+}
+.free-market .free-market-card1 .transfer-stats .value {
+  font-family: "Bebas Neue";
+  font-size: 19px;
+  color: #fbfbfb;
+  letter-spacing: 0.47px;
+  line-height: 24px;
+}
+.free-market .free-market-card1 .transfer-stats p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 16px;
+}
+.free-market .free-market-card1 .button-actions {
+  display: flex;
+  flex-direction: column;
+}
+.free-market .free-market-card1 .button-actions .btn {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 24px;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+  min-width: 150px;
+}
+.free-market .free-market-card1 .button-actions .btn--confirm {
+  padding: 8px 15px;
+  background: #55c77c;
+}
+.free-market .free-market-card1 .button-actions .btn--reset {
+  background: #4d5ec5;
+}
+.free-market .free-market-card1 .timer {
+  margin-bottom: 5px;
+}
+.free-market .free-market-card1 .timer .count-down-dfr-time-in {
+  background: rgba(67, 71, 159, 0.35);
+  box-shadow: 0 3px 3px -2px rgba(3, 3, 3, 0.3);
+  border-radius: 2.3px;
+  padding: 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.free-market .free-market-card1 .timer .dhms-div {
+  border-right: 1px solid rgba(216, 216, 216, 0.17);
+  text-align: center;
+  padding: 0px 13px;
+}
+.free-market .free-market-card1 .timer .count-down-dfr-time-in .dhms-div:last-child {
+  border-right: none;
+}
+.free-market .free-market-card1 .timer .dhms-cnt {
+  font-family: "Bebas Neue";
+  font-size: 23px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+}
+.free-market .free-market-card1 .timer .dhms-type {
+  font-family: "Bebas Neue";
+  font-size: 13px;
+  color: #64669f;
+  text-align: center;
+  line-height: 13px;
+}
+.free-market .free-market-card1 .timer p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #b2e7f4;
+  line-height: 29px;
+  margin-left: 10px;
+}
+.free-market .free-market-card2 {
+  width: calc(28% - 8px);
+  background: #4e5fc9;
+  border-radius: 8px;
+}
+.free-market .player-picker {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background: white;
+  width: 335px;
+}
+.free-market .player-picker .player-picker__header {
+  position: relative;
+  box-shadow: 0 2px 10px 0 rgba(82, 92, 215, 0.15);
+}
+.free-market .player-picker .player-picker__header .close-button {
+  width: 35px;
+  object-fit: cover;
+}
+.free-market .player-picker .section-header {
+  padding: 10px 15px;
+  background: rgba(220, 222, 247, 0.5);
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.free-market .player-picker .empty-player .player-image {
+  width: 39px;
+  height: 39px;
+}
+.free-market .player-picker .player-card .player-position {
+  font-family: "Bebas Neue";
+  font-size: 14px;
+  color: rgba(96, 99, 128, 0.5);
+  line-height: 10px;
+}
+.free-market .player-picker .player-card .btn-drop {
+  width: 62px;
+  height: 31px;
+  font-size: 13px;
+  color: #5159b6;
+  text-align: center;
+  line-height: 24px;
+  background: #f8fafd;
+  border: 1px solid #dfdfe5;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 3px 16px;
+}
+.free-market .player-picker .player-card-error {
+  background: rgba(248, 99, 100, 0.15);
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.free-market .player-picker .player-card .add-player {
+  font-size: 16px;
+  color: #afb1bf;
+  line-height: 16px;
+}
+.free-market .player-picker .text {
+  font-size: 13px;
+}
+.free-market .player-picker .text-bold {
+  font-weight: 700;
+}
+.free-market .player-picker .text-red {
+  color: white !important;
+  background: #f86364;
+  border-radius: 11px;
+  padding: 1px 8px;
+}
+.free-market .player-picker .player-card-wrap {
+  height: calc(100% - 50px);
+}
+.free-market .player-picker .squad-value {
+  height: 67px;
+  background: #4e5fc9 url(/src/assets/img/free-market/squad-value.svg) top right/contain no-repeat;
+  border-radius: 8px;
+  padding: 15px 15px 15px 20px;
+}
+.free-market .player-picker .squad-value .label {
+  font-family: "Bebas Neue";
+  font-size: 19px;
+  color: #ffffff;
+  line-height: 16px;
+}
+.free-market .player-picker .squad-value .value {
+  font-family: "Bebas Neue";
+  font-size: 32px;
+  color: #ffffff;
+  letter-spacing: 0.8px;
+  line-height: 24px;
+}
+
+.modal--confirm-transfers .modal-confirm-container {
+  background: #2a276f url(/src/assets/img/free-market/confirm-transfer-bg.svg) top right no-repeat;
+  height: 154px;
+}
+.modal--confirm-transfers .modal-confirm-container .modal-info {
+  padding: 35px;
+  height: 100%;
+  position: relative;
+}
+.modal--confirm-transfers .modal-confirm-container .firmino {
+  position: absolute;
+  right: 40px;
+  bottom: 0;
+  width: 184px;
+}
+.modal--confirm-transfers .modal-confirm-container .close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal-market-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 515px;
+  box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+  border-radius: 16px;
+}
+.modal-market-container .content {
+  font-weight: bold;
+  font-size: 24px;
+  color: #ffffff;
+  line-height: 24px;
+  max-width: 241px;
+}
+
+.modal--market-closed .modal-all-container {
+  background: #2a276f url(/src/assets/img/free-market/all-closed.svg) top right no-repeat;
+}
+.modal--market-closed .content-info {
+  padding: 45px 20px 45px 35px;
+  position: relative;
+}
+.modal--market-closed .close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.modal--market-closed .label-closed {
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+  padding: 5px 26px;
+  background: #f86364;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 17.05px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+.modal--market-closed .open-window p {
+  font-family: "Bebas Neue";
+  font-size: 24px;
+  color: #fbfbfb;
+  letter-spacing: 0.6px;
+  line-height: 24px;
+  text-shadow: 0 3px 0 rgba(19, 18, 65, 0.2);
+  margin-top: 30px;
+}
+.modal--market-closed .open-window .timer {
+  margin-left: auto;
+}
+.modal--market-closed .open-window .timer .count-down-dfr-time-in {
+  background: rgba(67, 71, 159, 0.35);
+  box-shadow: 0 3px 3px -2px rgba(3, 3, 3, 0.3);
+  border-radius: 2.3px;
+  padding: 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal--market-closed .open-window .timer .dhms-div {
+  border-right: 1px solid rgba(216, 216, 216, 0.17);
+  text-align: center;
+  padding: 0px 19px;
+}
+.modal--market-closed .open-window .timer .count-down-dfr-time-in .dhms-div:last-child {
+  border-right: none;
+}
+.modal--market-closed .open-window .timer .dhms-cnt {
+  font-family: "Bebas Neue";
+  font-size: 23px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+}
+.modal--market-closed .open-window .timer .dhms-type {
+  font-family: "Bebas Neue";
+  font-size: 13px;
+  color: #64669f;
+  text-align: center;
+  line-height: 13px;
+}
+.modal--market-closed .open-window .timer span {
+  font-size: 15px;
+  font-weight: bold;
+  color: #b2e7f4;
+  line-height: 29px;
+  display: block;
+  text-align: center;
+}
+
+.modal--transfer-summary .modal-summary-container {
+  width: 545px;
+  background: #2a276f;
+  box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.modal--transfer-summary .summary-head {
+  padding: 13px 30px;
+}
+.modal--transfer-summary .summary-head h1 {
+  font-family: "Bebas Neue";
+  font-weight: normal;
+  font-size: 23px;
+  color: #fbfbfb;
+  letter-spacing: 0.58px;
+  line-height: 39px;
+}
+.modal--transfer-summary .summary-body {
+  padding: 15px 15px 110px 15px;
+  background: #ffffff;
+  position: relative;
+}
+.modal--transfer-summary .summary-stat-top {
+  background: #4e5fc9 url(/src/assets/img/free-market/summary-stat-bg.svg) right bottom no-repeat;
+  border-radius: 8px 8px 0 0;
+  padding: 20px 30px;
+  margin-bottom: 2px;
+}
+.modal--transfer-summary .summary-stat-top .value {
+  font-family: "Bebas Neue";
+  font-size: 28px;
+  color: #fbfbfb;
+  letter-spacing: 0.7px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+.modal--transfer-summary .summary-stat-top .label {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 16px;
+}
+.modal--transfer-summary .summary-stat-top .value-diff {
+  font-family: "Bebas Neue";
+  font-size: 17px;
+  color: #ffffff;
+  letter-spacing: 0.43px;
+  line-height: 24px;
+  margin-top: 2px;
+  margin-left: 10px;
+}
+.modal--transfer-summary .summary-stat-bottom {
+  padding: 8px 15px;
+  background: #4e5fc9;
+  border-radius: 0 0 8px 8px;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup {
+  margin-right: 15px;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 16px;
+  margin-right: 5px;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .pill {
+  height: 21px;
+  width: 6px;
+  border: 1px solid #303558;
+  border-radius: 3px;
+  margin-right: 5px;
+  position: relative;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .pill--selected {
+  background: #303558;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .pill--vacant {
+  background: #7b77dd;
+  border-color: #7b77dd;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .pill--error {
+  background: #f86364;
+  border-color: #f86364;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .error-tooltip {
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  font-size: 13px;
+  padding: 15px 10px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 17px;
+  background: #f46869;
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.29);
+  border-radius: 6px 6px 6px 6px;
+  margin-top: 5px;
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .error-tooltip .error-info {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 50%);
+}
+.modal--transfer-summary .summary-stat-bottom .position-breakup .error-tooltip::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 10px solid #f46869;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.modal--transfer-summary .summary-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 67px;
+  background: #edeefb;
+  box-shadow: 0 -2px 7px -1px rgba(0, 0, 0, 0.14);
+}
+.modal--transfer-summary .summary-footer .btn {
+  width: 152px;
+  height: 40px;
+}
+.modal--transfer-summary .summary-footer .btn--cancel {
+  font-size: 13px;
+  color: #5159b6;
+  text-align: center;
+  line-height: 24px;
+  background: #f8fafd;
+  border: 1px solid #dfdfe5;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  margin-right: 15px;
+}
+.modal--transfer-summary .summary-footer .btn--confirm {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+  background: #55c77c;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+}
+.modal--transfer-summary .transfer-list {
+  background: #edeefb;
+  border-radius: 12px;
+  padding: 10px 15px;
+}
+.modal--transfer-summary .transfer-list .players-wrap {
+  width: 49%;
+}
+.modal--transfer-summary .transfer-list .title p {
+  font-size: 12.6px;
+  font-weight: bold;
+  color: #606380;
+  line-height: 14px;
+  margin-left: 10px;
+}
+.modal--transfer-summary .player-card {
+  background: #ffffff;
+  border-radius: 6px;
+  padding: 5px 12px;
+  flex-grow: 1;
+}
+.modal--transfer-summary .counter {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  min-height: 18px;
+  border-radius: 50%;
+  background: rgba(78, 95, 201, 0.42);
+  font-size: 12px;
+  font-weight: bold;
+  color: #2f3180;
+  text-align: center;
+  line-height: 18px;
+  margin-right: 10px;
+}
+.modal--transfer-summary .player-avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  position: relative;
+  background: #2a266e;
+}
+.modal--transfer-summary .player-avatar img {
+  width: 100%;
+  height: calc(100% + 5px);
+  position: absolute;
+  bottom: 0;
+  border-radius: 50%;
+}
+.modal--transfer-summary .player-info {
+  margin-left: 10px;
+}
+.modal--transfer-summary .player-name {
+  margin-bottom: 7px;
+}
+.modal--transfer-summary .player-name p {
+  font-size: 16px;
+  color: #5b5b60;
+  line-height: 16px;
+}
+.modal--transfer-summary .player-name p span {
+  opacity: 0.5;
+  font-size: 12px;
+  color: rgba(96, 99, 128, 0.5);
+  line-height: 10px;
+}
+.modal--transfer-summary .player-value {
+  font-family: "Bebas Neue";
+  font-size: 14px;
+  color: rgba(96, 99, 128, 0.5);
+  letter-spacing: 0;
+  line-height: 10px;
+}
+.modal--transfer-summary .delete-row {
+  width: 16px;
+  height: 16px;
+  min-width: 16px;
+  min-height: 16px;
+  border-radius: 50%;
+  background: #606380;
+  text-align: center;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.modal--transfer-summary .delete-row i {
+  color: #edeefb;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 16px;
+  display: inline-block;
+}
+.modal--transfer-summary .total-value {
+  width: 100%;
+  text-align: right;
+  font-size: 12.6px;
+  color: #606380;
+  line-height: 14px;
+}
+.modal--transfer-summary .total-value span {
+  font-family: "Bebas Neue";
+  font-size: 19px;
+  color: #606380;
+  line-height: 10px;
+}
+
+@media screen and (max-width: 1300px) and (min-width: 1000px) {
+  .free-market .free-market-card1 {
+    padding: 15px 20px !important;
+  }
+  .free-market .free-market-card1 .selection-breakup {
+    margin-left: initial;
+  }
+  .free-market .free-market-card1 .d-flex-v-center-1300 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .wrap-center-1300 {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .view-my-squad {
+    margin-left: initial;
+    align-items: center;
+  }
+
+  .wrap-space-center-1300 {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .transfer-stats-wrap {
+    display: flex;
+    width: 100%;
+    order: 3;
+  }
+  .transfer-stats-wrap .transfer-stats:first-child {
+    margin-right: 15px;
+  }
+
+  .free-market .free-market-card1 {
+    padding: 15px 20px !important;
+  }
+  .free-market .free-market-card1 .btn-sub {
+    flex-direction: row;
+  }
+  .free-market .free-market-card1 .btn-sub .calendar-icon {
+    margin-top: 0 !important;
+  }
+
+  .d-flex-v-center-1300 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .d-flex-v-center-1300 img {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+  .d-flex-v-center-1300 .player-count-wrap {
+    margin: 10px 0;
+  }
+}
+@media only screen and (max-width: 998px) {
+  .free-market .free-market-card1.free-market-card2 {
+    order: 2;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .free-market .free-market-card1.free-market-card2 .wrap-center-1300 {
+    justify-content: initial;
+  }
+
+  .free-market .free-market-stats {
+    flex-wrap: wrap;
+  }
+
+  .free-market .free-market-card1 {
+    width: calc(50% - 8px);
+    min-height: initial;
+  }
+
+  .free-market .free-market-card1 .selection-breakup {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .free-market .free-market-card1 .position-breakup .pill {
+    width: 5px;
+    height: 16px;
+  }
+
+  .free-market .free-market-card1 .position-breakup {
+    margin-left: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .free-market .free-market-card1 {
+    width: 100%;
+  }
+  .free-market .free-market-card1:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  .free-market .free-market-card1 .selection-breakup {
+    display: initial;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .button-actions .btn {
+    max-width: 125px;
+    min-width: initial !important;
+    padding: 5px 10px !important;
+  }
+
+  .free-market .player-picker {
+    max-width: 100%;
+  }
+
+  .modal--confirm-transfers .modal-confirm-container .firmino {
+    display: none;
+  }
+
+  .modal-market-container {
+    width: calc(100% - 30px) !important;
+  }
+
+  .modal--market-closed .open-window {
+    flex-wrap: wrap;
+  }
+
+  .modal--market-closed .open-window .timer {
+    margin-left: initial;
+  }
+
+  .free-market .free-market-card1.free-market-card2 {
+    order: initial;
+  }
+
+  .modal--transfer-summary .summary-stat-top {
+    padding-bottom: 0;
+  }
+
+  .modal--transfer-summary .summary-stat-top .d-flex-space-center {
+    flex-wrap: wrap;
+  }
+
+  .modal--transfer-summary .summary-stat-top .stat-wrap {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .modal--transfer-summary .summary-stat-bottom {
+    padding-bottom: 0;
+  }
+
+  .modal--transfer-summary .summary-stat-bottom .selection-breakup {
+    flex-wrap: wrap;
+  }
+
+  .modal--transfer-summary .summary-stat-bottom .position-breakup {
+    margin-bottom: 10px;
+  }
+
+  .modal--transfer-summary .summary-footer .btn {
+    width: initial;
+    height: initial;
+  }
+
+  .modal--transfer-summary .player-avatar {
+    display: none;
+  }
+
+  .modal--transfer-summary .player-card {
+    background: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  .modal--transfer-summary .total-value {
+    margin-right: 0 !important;
+  }
+}
+
+/*# sourceMappingURL=free-market.css.map */
