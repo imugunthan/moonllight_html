@@ -510,7 +510,7 @@
             </div>
         </div>
     </section>
-    <section class="modal modal--transfer-summary hide">
+    <section class="modal modal--transfer-summary hid">
         <div class="modal-market-container modal-summary-container">
             <div class="summary-head d-flex-space-center">
                 <h1>TRANSFER SUMMARY</h1>
@@ -594,7 +594,7 @@
                     </div>
                 </div>
                 <div class="transfer-list">
-                    <div class="d-flex-space-center mb-10">
+                    <div class="d-flex-space-center mb-10 transfer-title-wrap">
                         <div class="players-wrap title d-flex-v-center ml-30">
                             <img src="/src/assets/img/free-market/players-in.svg" alt="">
                             <p>Players in</p>
@@ -604,7 +604,45 @@
                             <p>Players out</p>
                         </div>
                     </div>
-                    <div class="d-flex-space-center mb-10">
+                    <div class="d-flex-space-center list-wrap mb-10">
+                        <div class="players-wrap d-flex-v-center">
+                            <div class="counter">1</div>
+                            <div class="player-card d-flex-v-center">
+                                <img src="/src/assets/img/free-market/players-in.svg" alt="" class="swap-icon">
+                                <div class="player-avatar">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                                <div class="player-info">
+                                    <div class="player-name">
+                                        <p>J. Oblack <span>DF</span></p>
+                                    </div>
+                                    <div class="player-value">
+                                        256 pts / $1.1M
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="players-wrap d-flex-v-center">
+                            <div class="player-card d-flex-v-center">
+                                <img src="/src/assets/img/free-market/players-out.svg" alt="" class="swap-icon">
+                                <div class="player-avatar">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                                <div class="player-info">
+                                    <div class="player-name">
+                                        <p>J. Oblack <span>DF</span></p>
+                                    </div>
+                                    <div class="player-value">
+                                        256 pts / $1.1M
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delete-row">
+                                <i class="material-icons">close</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex-space-center list-wrap mb-10">
                         <div class="players-wrap d-flex-v-center">
                             <div class="counter">1</div>
                             <div class="player-card d-flex-v-center">
@@ -640,7 +678,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex-space-center mb-10">
+                    <div class="d-flex-space-center list-wrap mb-10">
                         <div class="players-wrap d-flex-v-center">
                             <div class="counter">1</div>
                             <div class="player-card d-flex-v-center">
@@ -676,43 +714,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex-space-center mb-10">
-                        <div class="players-wrap d-flex-v-center">
-                            <div class="counter">1</div>
-                            <div class="player-card d-flex-v-center">
-                                <div class="player-avatar">
-                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
-                                </div>
-                                <div class="player-info">
-                                    <div class="player-name">
-                                        <p>J. Oblack <span>DF</span></p>
-                                    </div>
-                                    <div class="player-value">
-                                        256 pts / $1.1M
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="players-wrap d-flex-v-center">
-                            <div class="player-card d-flex-v-center">
-                                <div class="player-avatar">
-                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
-                                </div>
-                                <div class="player-info">
-                                    <div class="player-name">
-                                        <p>J. Oblack <span>DF</span></p>
-                                    </div>
-                                    <div class="player-value">
-                                        256 pts / $1.1M
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="delete-row">
-                                <i class="material-icons">close</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex-space-center mb-10 mt-20">
+                    <div class="d-flex-space-center list-wrap mb-10 mt-20">
                         <div class="players-wrap d-flex-v-center">
                             <div class="total-value">
                                 Total In <span>$12.3M</span>
@@ -720,7 +722,7 @@
                         </div>
                         <div class="players-wrap d-flex-v-center">
                             <div class="total-value mr-30">
-                                Total In <span>$12.3M</span>
+                                Total Out <span>$12.3M</span>
                             </div>
                         </div>
                     </div>

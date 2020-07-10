@@ -1,4 +1,16 @@
 .my-team-mobile {
+  .bebas-bold {
+    font-family: "Bebas Neue" !important;
+  }
+  .red-text {
+    color: #f86364;
+  }
+  .green-text {
+    color: #5abf7b;
+  }
+  .yellow-text {
+    color: #f4c85f;
+  }
   .value-holder {
     width: calc(50% - 15px);
     background: white;
@@ -47,7 +59,7 @@
     &.projected {
       &::after {
         content: "Projected pts";
-        font-family: "Bebas Neue";
+        font-family: "bebas_neueregular";
         font-size: 14px;
         color: #586b78;
         line-height: 16px;
@@ -59,7 +71,7 @@
     &.live {
       &::after {
         content: "Live PTS";
-        font-family: "Bebas Neue";
+        font-family: "bebas_neueregular";
         font-size: 14px;
         color: #586b78;
         line-height: 16px;
@@ -72,7 +84,7 @@
       background: #5abf7b;
       &::after {
         content: "You Won!";
-        font-family: "Bebas Neue";
+        font-family: "bebas_neueregular";
         font-size: 21px;
         color: white;
         line-height: 16px;
@@ -90,7 +102,7 @@
       background: #f86364;
       &::after {
         content: "You Lost";
-        font-family: "Bebas Neue";
+        font-family: "bebas_neueregular";
         font-size: 21px;
         color: white;
         line-height: 16px;
@@ -108,7 +120,7 @@
       background: #97a1a5;
       &::after {
         content: "You Drew";
-        font-family: "Bebas Neue";
+        font-family: "bebas_neueregular";
         font-size: 21px;
         color: white;
         line-height: 16px;
@@ -196,7 +208,7 @@
   .my-team-menu {
     .holder {
       flex-grow: 1;
-      font-family: "Bebas Neue";
+      font-family: "bebas_neueregular";
       font-size: 14px;
       color: #586b78;
       text-align: center;
@@ -206,7 +218,7 @@
       text-transform: uppercase;
       background: white;
       span {
-        font-family: "Bebas Neue";
+        font-family: "bebas_neueregular";
         font-size: 14px;
         color: #586b78;
         text-align: center;
@@ -230,7 +242,7 @@
     background: #f5f7fa;
     box-shadow: 0 2px 4px 0 #d8dde5;
     p {
-      font-family: "Bebas Neue";
+      font-family: "bebas_neueregular";
       font-size: 18px;
       color: #76878e;
       text-align: center;
@@ -246,9 +258,32 @@
       padding: 4px 0 2px 0;
       border-bottom: 1px solid #d5d5d5;
     }
+    .players-wrapper {
+      &.grey-style {
+        .player-card {
+          background: #e6e6e6;
+        }
+      }
+      &.grey-light-style {
+        .player-card {
+          background: #eeeeee;
+        }
+      }
+    }
     .player-card {
       background: white;
       border-bottom: 1px solid #d5d5d5;
+      &.active {
+        background: white !important;
+        .player-position {
+          background: #525cd7 !important;
+          box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.09) !important;
+          p {
+            @extend .bebas-bold;
+            color: white;
+          }
+        }
+      }
       .player-info-wrapper {
         padding: 5px;
         align-items: flex-end;
@@ -260,10 +295,14 @@
         background: #f5f7fa;
         box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.09);
         p {
-          font-family: "Bebas Neue";
+          font-family: "bebas_neueregular";
           font-size: 15px;
           color: rgba(#76878e, 0.9);
           text-align: center;
+        }
+        .special-icon {
+          position: absolute;
+          bottom: 0;
         }
       }
       .player-image {
@@ -293,10 +332,13 @@
           text-transform: uppercase;
         }
         .time {
-          font-family: "Bebas Neue";
+          font-family: "bebas_neueregular";
           font-size: 12px;
           color: #586b78;
           line-height: 16px;
+          span {
+            font-family: inherit;
+          }
         }
         &.grey {
           background: #829298;
@@ -308,11 +350,44 @@
           }
         }
       }
+      .team-name {
+        font-size: 14px;
+        font-weight: bold;
+        color: #273640;
+        line-height: 16px;
+      }
+      .league-name {
+        font-family: Roboto-Regular;
+        font-size: 12px;
+        color: #273640;
+        letter-spacing: 0;
+        line-height: 16px;
+      }
+      .team-images {
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+          &:not(:last-child) {
+            margin-right: 5px;
+          }
+        }
+      }
       .player-points {
         margin-right: 10px;
         display: flex;
         height: 100%;
+        flex-direction: column;
         align-items: flex-end;
+        justify-content: flex-end;
+        .actual-points {
+          font-family: "Bebas Neue";
+          font-size: 26px;
+          color: #586b78;
+          text-align: right;
+          line-height: 16px;
+        }
         .points-bar {
           position: relative;
           &::after {
@@ -327,6 +402,91 @@
           }
         }
       }
+      .game-week-info-wrap {
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+        .gw-title {
+          font-family: "Bebas Neue";
+          font-size: 13px;
+          color: #586b78;
+          text-align: center;
+          line-height: 14px;
+        }
+        .team {
+          font-family: "bebas_neueregular";
+          font-size: 15px;
+          color: #273640;
+          line-height: 10px;
+        }
+        .team-difficulty {
+          width: 14px;
+          height: 14px;
+          font-size: 12px;
+          font-weight: bold;
+          color: #ffffff;
+          padding: 0px;
+          border-radius: 2px;
+          margin-left: 5px;
+        }
+        .gw-bottom {
+          padding-top: 4px;
+          border-top: 1px solid #586b78;
+        }
+      }
     }
+  }
+}
+
+.my-team-mobile-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.09);
+  padding: 6px;
+  .menu-type1 {
+    width: calc(100% / 4 - 4px);
+    height: 81px;
+    text-transform: uppercase;
+    font-family: "bebas_neueregular";
+    font-size: 18px;
+    color: #586b78;
+    text-align: center;
+    line-height: 18px;
+    background: #ffffff;
+    border: 1px solid #e5eaf2;
+    border-radius: 1px;
+    padding: 5px;
+    &:not(:last-child) {
+      margin-right: 4px;
+    }
+    &.disabled {
+      color: rgba(#586b78, 0.3);
+      border: 0;
+      pointer-events: none;
+    }
+  }
+  .menu-type2 {
+    font-family: "bebas_neueregular";
+    font-size: 18px;
+    color: #586b78;
+    text-align: center;
+    line-height: 18px;
+    background: #ffffff;
+    border: 1px solid #e5eaf2;
+    border-radius: 1px;
+    padding: 5px 15px;
+    margin-right: 10px;
+    white-space: nowrap;
+  }
+  .menu-text {
+    font-size: 13px;
+    font-weight: bold;
+    color: #273640;
+    line-height: 16px;
+    text-align: right;
+    margin-right: 5px;
   }
 }

@@ -933,4 +933,42 @@
   .modal--transfer-summary .total-value {
     margin-right: 0 !important;
   }
+  .modal--transfer-summary .list-wrap {
+    flex-wrap: wrap;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .modal--transfer-summary .transfer-list .players-wrap {
+    width: 100%;
+  }
+  .modal--transfer-summary .transfer-list .players-wrap {
+    padding-left: 30px;
+    margin-top: 15px;
+  }
+  .modal--transfer-summary .delete-row {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+  }
+  .modal--transfer-summary .counter {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  .modal--transfer-summary .transfer-list .transfer-title-wrap {
+    justify-content: flex-end;
+  }
+  .modal--transfer-summary .transfer-list .transfer-title-wrap .players-wrap {
+    width: initial;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .modal--transfer-summary .transfer-list .swap-icon {
+    display: none;
+  }
 }

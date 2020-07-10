@@ -114,6 +114,18 @@ input, select, textarea {
 }
 
 @font-face {
+  font-family: "bebas_neueregular";
+  src: url("./webFonts/BebasNeue/bebasneueregular-webfont.woff2") format("woff2"), url("./webFonts/BebasNeue/bebasneueregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./webFonts/BebasNeue/bebasneue-bold-webfont.woff2") format("woff2"), url("./webFonts/BebasNeue/bebasneue-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: "Bebas Neue italic";
   src: url("./fonts/font.woff2") format("woff2"), url(".fonts/font.woff") format("woff");
   font-weight: normal;
@@ -14954,6 +14966,62 @@ table .points .loss {
   .modal--transfer-summary .total-value {
     margin-right: 0 !important;
   }
+
+  .modal--transfer-summary .list-wrap {
+    flex-wrap: wrap;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .modal--transfer-summary .transfer-list .players-wrap {
+    width: 100%;
+  }
+
+  .modal--transfer-summary .transfer-list .players-wrap {
+    padding-left: 30px;
+    margin-top: 15px;
+  }
+
+  .modal--transfer-summary .delete-row {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+  }
+
+  .modal--transfer-summary .counter {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+
+  .modal--transfer-summary .transfer-list .transfer-title-wrap {
+    justify-content: flex-end;
+  }
+
+  .modal--transfer-summary .transfer-list .transfer-title-wrap .players-wrap {
+    width: initial;
+  }
+}
+@media screen and (min-width: 600px) {
+  .modal--transfer-summary .transfer-list .swap-icon {
+    display: none;
+  }
+}
+.my-team-mobile .bebas-bold, .my-team-mobile .player-section .player-card.active .player-position p {
+  font-family: "Bebas Neue" !important;
+}
+.my-team-mobile .red-text {
+  color: #f86364;
+}
+.my-team-mobile .green-text {
+  color: #5abf7b;
+}
+.my-team-mobile .yellow-text {
+  color: #f4c85f;
 }
 .my-team-mobile .value-holder {
   width: calc(50% - 15px);
@@ -15001,7 +15069,7 @@ table .points .loss {
 }
 .my-team-mobile .value-holder.projected::after {
   content: "Projected pts";
-  font-family: "Bebas Neue";
+  font-family: "bebas_neueregular";
   font-size: 14px;
   color: #586b78;
   line-height: 16px;
@@ -15011,7 +15079,7 @@ table .points .loss {
 }
 .my-team-mobile .value-holder.live::after {
   content: "Live PTS";
-  font-family: "Bebas Neue";
+  font-family: "bebas_neueregular";
   font-size: 14px;
   color: #586b78;
   line-height: 16px;
@@ -15024,7 +15092,7 @@ table .points .loss {
 }
 .my-team-mobile .value-holder.won::after {
   content: "You Won!";
-  font-family: "Bebas Neue";
+  font-family: "bebas_neueregular";
   font-size: 21px;
   color: white;
   line-height: 16px;
@@ -15042,7 +15110,7 @@ table .points .loss {
 }
 .my-team-mobile .value-holder.lost::after {
   content: "You Lost";
-  font-family: "Bebas Neue";
+  font-family: "bebas_neueregular";
   font-size: 21px;
   color: white;
   line-height: 16px;
@@ -15060,7 +15128,7 @@ table .points .loss {
 }
 .my-team-mobile .value-holder.drew::after {
   content: "You Drew";
-  font-family: "Bebas Neue";
+  font-family: "bebas_neueregular";
   font-size: 21px;
   color: white;
   line-height: 16px;
@@ -15145,7 +15213,7 @@ table .points .loss {
 }
 .my-team-mobile .my-team-menu .holder {
   flex-grow: 1;
-  font-family: "Bebas Neue";
+  font-family: "bebas_neueregular";
   font-size: 14px;
   color: #586b78;
   text-align: center;
@@ -15156,7 +15224,7 @@ table .points .loss {
   background: white;
 }
 .my-team-mobile .my-team-menu .holder span {
-  font-family: "Bebas Neue";
+  font-family: "bebas_neueregular";
   font-size: 14px;
   color: #586b78;
   text-align: center;
@@ -15178,7 +15246,7 @@ table .points .loss {
   box-shadow: 0 2px 4px 0 #d8dde5;
 }
 .my-team-mobile .gameweek-selector p {
-  font-family: "Bebas Neue";
+  font-family: "bebas_neueregular";
   font-size: 18px;
   color: #76878e;
   text-align: center;
@@ -15192,9 +15260,25 @@ table .points .loss {
   padding: 4px 0 2px 0;
   border-bottom: 1px solid #d5d5d5;
 }
+.my-team-mobile .player-section .players-wrapper.grey-style .player-card {
+  background: #e6e6e6;
+}
+.my-team-mobile .player-section .players-wrapper.grey-light-style .player-card {
+  background: #eeeeee;
+}
 .my-team-mobile .player-section .player-card {
   background: white;
   border-bottom: 1px solid #d5d5d5;
+}
+.my-team-mobile .player-section .player-card.active {
+  background: white !important;
+}
+.my-team-mobile .player-section .player-card.active .player-position {
+  background: #525cd7 !important;
+  box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.09) !important;
+}
+.my-team-mobile .player-section .player-card.active .player-position p {
+  color: white;
 }
 .my-team-mobile .player-section .player-card .player-info-wrapper {
   padding: 5px;
@@ -15208,10 +15292,14 @@ table .points .loss {
   box-shadow: 1px 0 2px 0 rgba(0, 0, 0, 0.09);
 }
 .my-team-mobile .player-section .player-card .player-position p {
-  font-family: "Bebas Neue";
+  font-family: "bebas_neueregular";
   font-size: 15px;
   color: rgba(118, 135, 142, 0.9);
   text-align: center;
+}
+.my-team-mobile .player-section .player-card .player-position .special-icon {
+  position: absolute;
+  bottom: 0;
 }
 .my-team-mobile .player-section .player-card .player-image {
   max-height: 72px;
@@ -15239,10 +15327,13 @@ table .points .loss {
   font-weight: bold;
 }
 .my-team-mobile .player-section .player-card .match-info .time {
-  font-family: "Bebas Neue";
+  font-family: "bebas_neueregular";
   font-size: 12px;
   color: #586b78;
   line-height: 16px;
+}
+.my-team-mobile .player-section .player-card .match-info .time span {
+  font-family: inherit;
 }
 .my-team-mobile .player-section .player-card .match-info.grey {
   background: #829298;
@@ -15253,11 +15344,42 @@ table .points .loss {
 .my-team-mobile .player-section .player-card .match-info.grey .time {
   color: white;
 }
+.my-team-mobile .player-section .player-card .team-name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #273640;
+  line-height: 16px;
+}
+.my-team-mobile .player-section .player-card .league-name {
+  font-family: Roboto-Regular;
+  font-size: 12px;
+  color: #273640;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+.my-team-mobile .player-section .player-card .team-images img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.my-team-mobile .player-section .player-card .team-images img:not(:last-child) {
+  margin-right: 5px;
+}
 .my-team-mobile .player-section .player-card .player-points {
   margin-right: 10px;
   display: flex;
   height: 100%;
+  flex-direction: column;
   align-items: flex-end;
+  justify-content: flex-end;
+}
+.my-team-mobile .player-section .player-card .player-points .actual-points {
+  font-family: "Bebas Neue";
+  font-size: 26px;
+  color: #586b78;
+  text-align: right;
+  line-height: 16px;
 }
 .my-team-mobile .player-section .player-card .player-points .points-bar {
   position: relative;
@@ -15271,6 +15393,89 @@ table .points .loss {
   position: absolute;
   top: -15px;
   left: 0;
+}
+.my-team-mobile .player-section .player-card .game-week-info-wrap:not(:last-child) {
+  margin-right: 20px;
+}
+.my-team-mobile .player-section .player-card .game-week-info-wrap .gw-title {
+  font-family: "Bebas Neue";
+  font-size: 13px;
+  color: #586b78;
+  text-align: center;
+  line-height: 14px;
+}
+.my-team-mobile .player-section .player-card .game-week-info-wrap .team {
+  font-family: "bebas_neueregular";
+  font-size: 15px;
+  color: #273640;
+  line-height: 10px;
+}
+.my-team-mobile .player-section .player-card .game-week-info-wrap .team-difficulty {
+  width: 14px;
+  height: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 0px;
+  border-radius: 2px;
+  margin-left: 5px;
+}
+.my-team-mobile .player-section .player-card .game-week-info-wrap .gw-bottom {
+  padding-top: 4px;
+  border-top: 1px solid #586b78;
+}
+
+.my-team-mobile-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 -1px 4px 0 rgba(0, 0, 0, 0.09);
+  padding: 6px;
+}
+.my-team-mobile-menu .menu-type1 {
+  width: calc(100% / 4 - 4px);
+  height: 81px;
+  text-transform: uppercase;
+  font-family: "bebas_neueregular";
+  font-size: 18px;
+  color: #586b78;
+  text-align: center;
+  line-height: 18px;
+  background: #ffffff;
+  border: 1px solid #e5eaf2;
+  border-radius: 1px;
+  padding: 5px;
+}
+.my-team-mobile-menu .menu-type1:not(:last-child) {
+  margin-right: 4px;
+}
+.my-team-mobile-menu .menu-type1.disabled {
+  color: rgba(88, 107, 120, 0.3);
+  border: 0;
+  pointer-events: none;
+}
+.my-team-mobile-menu .menu-type2 {
+  font-family: "bebas_neueregular";
+  font-size: 18px;
+  color: #586b78;
+  text-align: center;
+  line-height: 18px;
+  background: #ffffff;
+  border: 1px solid #e5eaf2;
+  border-radius: 1px;
+  padding: 5px 15px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.my-team-mobile-menu .menu-text {
+  font-size: 13px;
+  font-weight: bold;
+  color: #273640;
+  line-height: 16px;
+  text-align: right;
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=app.css.map */

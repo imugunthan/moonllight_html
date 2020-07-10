@@ -10,6 +10,23 @@
 }
 
 @font-face {
+  font-family: "bebas_neueregular";
+  src: url("./webFonts/BebasNeue/bebasneueregular-webfont.woff2")
+      format("woff2"),
+    url("./webFonts/BebasNeue/bebasneueregular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./webFonts/BebasNeue/bebasneue-bold-webfont.woff2") format("woff2"),
+    url("./webFonts/BebasNeue/bebasneue-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: "Bebas Neue italic";
   src: url("./fonts/font.woff2") format("woff2"),
     url(".fonts/font.woff") format("woff");
