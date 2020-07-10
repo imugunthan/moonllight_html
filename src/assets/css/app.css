@@ -14696,6 +14696,7 @@ table .points .loss {
   color: #606380;
   line-height: 14px;
   margin-left: 10px;
+  white-space: nowrap;
 }
 .modal--transfer-summary .player-card {
   background: #ffffff;
@@ -15222,6 +15223,7 @@ table .points .loss {
   padding: 5px 0;
   text-transform: uppercase;
   background: white;
+  min-width: 105px;
 }
 .my-team-mobile .my-team-menu .holder span {
   font-family: "bebas_neueregular";
@@ -15233,6 +15235,20 @@ table .points .loss {
 .my-team-mobile .my-team-menu .holder.date-holder {
   color: #8f989e;
   background: #f5f5f5;
+}
+.my-team-mobile .my-team-menu .holder.date-holder .live {
+  position: relative;
+}
+.my-team-mobile .my-team-menu .holder.date-holder .live::before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #5ac47d;
+  left: -15px;
+  top: 4px;
 }
 .my-team-mobile .my-team-menu .holder.custom-dropdown {
   padding: 5px 10px;
@@ -15280,6 +15296,10 @@ table .points .loss {
 .my-team-mobile .player-section .player-card.active .player-position p {
   color: white;
 }
+.my-team-mobile .player-section .player-card.active .player-position .player-count {
+  background: white;
+  color: #273640;
+}
 .my-team-mobile .player-section .player-card .player-info-wrapper {
   padding: 5px;
   align-items: flex-end;
@@ -15300,6 +15320,18 @@ table .points .loss {
 .my-team-mobile .player-section .player-card .player-position .special-icon {
   position: absolute;
   bottom: 0;
+}
+.my-team-mobile .player-section .player-card .player-position .player-count {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: #8d9ba1;
+  font-weight: bold;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: center;
 }
 .my-team-mobile .player-section .player-card .player-image {
   max-height: 72px;
