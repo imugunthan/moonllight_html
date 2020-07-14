@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trades</title>
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mobile-header">
+        <div class="mobile-menu-icon material-icons" onclick="togglemobileNav()">menu</div>
+        <img src="/src/assets/img/signup/moonlight-logo.svg" alt="" class="mobile-logo">
+        <div class="notifications-icon material-icons">notifications_none</div>
+    </div>
+    <main class="main">
+        <aside class="side-nav d-flex">
+            <div class="close-mobile-menu material-icons" onclick="togglemobileNav()">close</div>
+            <div class="user-info">
+                <figure class="user-avatar m-auto mb-20">
+                    <img src="/src/assets/img/profile-image.svg" alt="User Image" class="user-image">
+                    <!-- <img src="https://images.vexels.com/media/users/3/140748/isolated/preview/5b078a59390bb4666df98b49f1cdedd0-male-profile-avatar-by-vexels.png"
+                        alt="User Image" class="user-image"> -->
+                </figure>
+                <p class="user-name">L. Vaz</p>
+            </div>
+            <nav class="navmenu">
+                <ul class="navmenu__list">
+                    <li class="navmenu__item mb-30">
+                        <i class="material-icons">home</i>
+                    </li>
+                    <li class="navmenu__item mb-30">
+                        <img src="/src/assets/img/trophy-filed.svg" alt="" class="filled">
+                        <img src="/src/assets/img/trophy.svg" alt="" class="normal">
+                    </li>
+                    <li class="navmenu__item mb-30 active">
+                        <img src="/src/assets/img/chart-filed.svg" class="filled" alt="">
+                        <img src="/src/assets/img/chart.svg" alt="" class="normal">
+                    </li>
+                </ul>
+            </nav>
+            <div class="side-nav__footer">
+                <ul class="">
+                    <li class="text-center help">
+                        <i class="material-icons">help</i>
+                    </li>
+                    <li class="text-center logo">
+                        <img src="/src//assets/img/moonlight-logo.svg" alt="Moonlight Logo">
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="right-section trades">
+            <nav class="nav-bar">
+                <ul class="nav-menu d-flex-v-center">
+                    <li class="nav-items active">Dashboard</li>
+                    <li class="nav-items">My Team</li>
+                    <li class="nav-items">Trades-Wagers</li>
+                    <li class="nav-items">Free Market</li>
+                    <li class="nav-items">Stats</li>
+                    <li class="nav-items">My League</li>
+                    <li class="nav-items">Rules</li>
+                </ul>
+            </nav>
+            <div class="trades-container">
+                <div class="trades__top d-flex-space-center">
+                    <div class="trade-card trade-card__deadline d-flex-v-center">
+                        <div class="deadline-info">
+                            <div class="d-flex-v-center mb-5">
+                                <h6>GW10 TRANSFER DEADLINE</h6>
+                                <span class="open">Open</span>
+                            </div>
+                            <p>Friday, Oct 19th 2:30pm EST</p>
+                        </div>
+                        <div class="counter-wrap d-flex-v-center ml-auto">
+                            <div class="timer">
+                                <p class="value">08</p>
+                                <p class="label">D</p>
+                            </div>
+                            <div class="timer">
+                                <p class="value">14</p>
+                                <p class="label">H</p>
+                            </div>
+                            <div class="timer">
+                                <p class="value">23</p>
+                                <p class="label">M</p>
+                            </div>
+                            <div class="timer">
+                                <p class="value">56</p>
+                                <p class="label">S</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trade-card trade-card__wagers d-flex-v-center">
+                        <img src="/src/assets/img/trades/ronaldo-wager-card.png" alt="" class="ronaldo-caricarture">
+                        <div class="wagers-info">
+                            <h6>WAGERS COMING SOON</h6>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin facilisis tellus nec .</p>
+                        </div>
+                        <button class="btn btn--primary ml-auto">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+    function togglemobileNav() {
+        let sideNav = document.querySelector('.side-nav');
+        sideNav.classList.toggle('open');
+    }
+</script>
+
+</html>

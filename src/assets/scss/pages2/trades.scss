@@ -1,0 +1,129 @@
+.trades {
+  .nav-bar {
+    padding: 20px 20px 0 20px;
+  }
+  &-container {
+    padding: 20px;
+  }
+  &__top {
+    .trade-card {
+      width: calc(50% - 15px);
+      min-height: 126px;
+      border-radius: 10px;
+      position: relative;
+      padding: 25px;
+      &__deadline {
+        background: #2a276f url(/src/assets/img/trades/trade-card-bg.svg) right
+          top no-repeat;
+        box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+      }
+      &__wagers {
+        background: #4e5fc9 url(/src/assets/img/trades/wager-card-bg.svg) right
+          top no-repeat;
+      }
+      .deadline-info {
+        margin-right: 15px;
+        .mb-5 {
+          margin-bottom: 5px;
+        }
+        h6 {
+          font-family: "Bebas Neue";
+          font-size: 19px;
+          font-weight: normal;
+          color: #fbfbfb;
+          letter-spacing: 0.47px;
+          line-height: 24px;
+          text-shadow: 0 3px 0 rgba(19, 18, 65, 0.2);
+        }
+        p {
+          font-size: 12px;
+          font-weight: bold;
+          color: #b2e7f4;
+          line-height: 17px;
+        }
+        span {
+          font-size: 10px;
+          font-weight: bold;
+          color: #ffffff;
+          text-align: center;
+          line-height: 16px;
+          padding: 0 16px;
+          box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+            0 12px 20px -16px rgba(158, 117, 255, 0.15);
+          border-radius: 12px;
+          margin-left: 15px;
+          text-transform: uppercase;
+          &.open {
+            background: #55c77c;
+          }
+          &.closed {
+            background: #f86364;
+          }
+        }
+      }
+      .ronaldo-caricarture {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-height: calc(100% + 25%);
+      }
+      .wagers-info {
+        margin-left: 90px;
+        max-width: 300px;
+        margin-right: 15px;
+        h6 {
+          font-family: "Bebas Neue";
+          font-size: 23px;
+          font-weight: normal;
+          margin-bottom: 5px;
+          color: #fbfbfb;
+          letter-spacing: 0.57px;
+          line-height: 24px;
+          text-shadow: 0 3px 0 rgba(19, 18, 65, 0.2);
+        }
+        p {
+          font-weight: bold;
+          font-size: 13px;
+          color: #ffffff;
+          letter-spacing: 0;
+        }
+      }
+      .btn {
+        white-space: nowrap;
+      }
+      .counter-wrap {
+        padding: 8px 15px;
+        background: rgba(#43479f, 0.6);
+        box-shadow: 0 4px 4px -3px rgba(3, 3, 3, 0.3);
+        border-radius: 4px;
+        .timer {
+          padding: 0 20px;
+          text-align: center;
+          .value {
+            font-family: "Bebas Neue";
+            font-size: 32px;
+            line-height: 32px;
+            color: #ffffff;
+            text-align: center;
+          }
+          .label {
+            font-family: "Bebas Neue";
+            color: #64669f;
+            font-size: 18px;
+            line-height: 18px;
+            text-align: center;
+          }
+          &:not(:last-child) {
+            border-right: 1px solid rgba(#d8d8d8, 0.17);
+          }
+          &:first-child {
+            padding-left: 0;
+          }
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
