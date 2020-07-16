@@ -3,7 +3,7 @@
     padding: 20px 20px 0 20px;
   }
   &-container {
-    padding: 20px;
+    padding: 0 20px 20px;
   }
   &__top {
     .trade-card {
@@ -125,5 +125,551 @@
         }
       }
     }
+  }
+  &-table {
+    width: calc(67% - 15px);
+    height: calc(100vh - 271px);
+    background: #edeefb;
+    box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+    border-radius: 15px;
+    overflow: auto;
+    .trades-table__head {
+      padding: 9px 25px;
+      background: #edeefb;
+      box-shadow: 0 3px 1px -1px rgba(0, 0, 0, 0.03);
+      border-bottom: 1px solid rgba(#9d9ea9, 0.37);
+      border-radius: 15px 15px 0 0;
+      .select-wrap {
+        .custom-select {
+          padding: 3px 30px 3px 10px;
+          -webkit-appearance: none;
+          min-width: 132px;
+          background: #f8fafd url(/src/assets/img/trades/dropdown-arrow.svg)
+            right 10px center no-repeat;
+          border: 1px solid #dfdfe5;
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+          border-radius: 4px;
+          font-size: 13px;
+          color: #5159b6;
+          line-height: 24px;
+        }
+      }
+    }
+    .trade {
+      &-info {
+        padding: 10px 15px;
+      }
+      &-row {
+        border-bottom: 1px solid rgba(#9d9ea9, 0.37);
+      }
+      &-user {
+        background: white;
+        border-radius: 6px;
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+        .user-info {
+          padding: 5px 10px;
+          width: 50%;
+          position: relative;
+          &:first-child::after {
+            content: "";
+            width: 1px;
+            height: 70%;
+            right: 0;
+            top: 15%;
+            position: absolute;
+            background: rgba(#979797, 0.31);
+          }
+        }
+      }
+      &-gw {
+        width: 90px;
+        margin-left: 15px;
+        .gw-text {
+          background: #444cb4;
+          border-radius: 4px;
+          font-size: 12px;
+          font-weight: bold;
+          color: #ffffff;
+          text-align: center;
+          line-height: 14px;
+          display: inline-block;
+          padding: 3px 8px;
+          margin-bottom: 5px;
+        }
+        .date {
+          font-size: 12px;
+          color: #606380;
+          line-height: 15px;
+        }
+      }
+      &-action {
+        flex-direction: column;
+        width: 100px;
+        background: #ffffff;
+        box-shadow: 0 5px 8px 4px rgba(0, 0, 0, 0.06);
+        box-shadow: -4px 0px 5px 2px rgba(0, 0, 0, 0.06);
+        &.disabled {
+          position: relative;
+          .actions-btn {
+            pointer-events: none;
+            background: #d6d6d6;
+          }
+          .hover-text {
+            font-size: 13px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 15px;
+            background: rgba(#121212, 0.76);
+            border-radius: 6px;
+            width: 170px;
+            padding: 10px 7px;
+            position: absolute;
+            right: 0;
+            top: 25px;
+            opacity: 0;
+            visibility: hidden;
+          }
+          &:hover {
+            .hover-text {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+        .actions {
+          &-text {
+            font-size: 15px;
+            color: rgba(#000000, 0.3);
+            text-align: center;
+            line-height: 14px;
+            margin-bottom: 4px;
+          }
+          &-btn {
+            background: #55c77c;
+            box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.06);
+            border-radius: 3px;
+            color: #ffffff;
+            line-height: 14px;
+            padding: 4px 8px;
+            margin: 0 auto;
+            span {
+              font-size: 12px;
+              font-weight: bold;
+            }
+            img {
+              margin-top: 3px;
+            }
+          }
+          &-dropdown-holder {
+            position: relative;
+          }
+          &-dropdown {
+            position: absolute;
+            top: 25px;
+            right: 0;
+            padding: 15px;
+            background: #ffffff;
+            box-shadow: 0 10px 10px 0 rgba(68, 76, 180, 0.2);
+            border-radius: 4px;
+            min-width: 130px;
+            p {
+              font-size: 12px;
+              color: #5159b6;
+              text-align: center;
+              line-height: 24px;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    .user-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #bdc7ff;
+      border: 2px solid white;
+      box-shadow: 0 4px 7px -3px rgba(82, 92, 215, 0.3);
+      position: relative;
+      img {
+        width: 100%;
+        height: 95%;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    .user-price {
+      font-size: 10px;
+      font-weight: bold;
+      color: #444cb4;
+      text-align: center;
+      line-height: 14px;
+      background: #d8d8d8;
+      border-radius: 9.5px;
+      padding: 3px 10px;
+      margin: auto 0 0 5px;
+    }
+    .player-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #2a266e;
+      position: relative;
+      img {
+        width: 100%;
+        height: calc(100% + 3px);
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+      }
+      &.empty {
+        background: none;
+        position: initial;
+        img {
+          position: initial;
+          height: 100%;
+        }
+      }
+    }
+    .player-name {
+      font-size: 16px;
+      color: #5b5b60;
+      line-height: 16px;
+      span {
+        font-size: 12px;
+        color: rgba(#606380, 0.5);
+        line-height: 10px;
+      }
+    }
+    .player-points-value {
+      font-family: "Bebas Neue";
+      font-size: 14px;
+      color: rgba(#606380, 0.5);
+      line-height: 10px;
+      margin-top: 5px;
+    }
+    .text-right {
+      text-align: right !important;
+    }
+    .player-info-wrap {
+      margin: 0 10px;
+    }
+    .price-wrap {
+      width: 50%;
+      background: rgba(#444cb4, 0.17);
+      border-radius: 9.5px;
+      padding: 2px 10px;
+      &.opacity-0 {
+        opacity: 0;
+        visibility: hidden;
+      }
+      p {
+        font-size: 10px;
+        font-weight: bold;
+        color: #444cb4;
+        line-height: 14px;
+      }
+      span {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #444cb4;
+        display: inline-block;
+        text-align: center;
+        line-height: 15px;
+        color: white;
+        font-weight: bold;
+        font-size: 10px;
+      }
+    }
+  }
+  &-opponent {
+    width: calc(33% - 15px);
+    height: calc(100vh - 271px);
+    background: #fbfafc;
+    box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+    border-radius: 3px;
+    overflow: auto;
+    .trade-opponent__head {
+      padding: 10px 20px;
+      background: #ffffff;
+      box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
+      border-radius: 3px 3px 0 0;
+    }
+    .trade-opponent-card {
+      min-height: 90px;
+      padding: 14px;
+      background: #f7f7fa;
+      box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+      .count {
+        font-size: 15px;
+        font-weight: bold;
+        color: #606380;
+        letter-spacing: 0;
+      }
+      .user-avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: #bdc7ff;
+        border: 2px solid white;
+        box-shadow: 0 4px 7px -3px rgba(82, 92, 215, 0.3);
+        position: relative;
+        margin: 0 10px;
+        img {
+          width: 100%;
+          height: 90%;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0;
+        }
+      }
+      .user-info {
+        margin: 0 10px;
+      }
+      .manager {
+        font-size: 13px;
+        font-weight: bold;
+        color: #606380;
+      }
+      .team {
+        font-size: 13px;
+        color: #606380;
+      }
+      .actions {
+        flex-direction: column;
+        button {
+          &:not(:last-child) {
+            margin-bottom: 6px;
+          }
+        }
+      }
+      .btn-view-team {
+        font-size: 12px;
+        color: #5159b6;
+        text-align: center;
+        line-height: 24px;
+        background: #f8fafd;
+        border: 1px solid #dfdfe5;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
+        padding: 1px 15px;
+      }
+      .btn-offer-trade {
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff;
+        text-align: center;
+        line-height: 26px;
+        background: #4e5fc9 url(/src/assets/img/trades/offer-trade-btn-bg.svg)
+          right top no-repeat;
+        box-shadow: 0 6px 14px -4px rgba(0, 0, 0, 0.3),
+          0 11px 18px -14px rgba(158, 117, 255, 0.15);
+        border-radius: 3px;
+        padding: 1px 15px;
+      }
+    }
+  }
+  .player-picker {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    background: white;
+    width: 335px;
+    .user-info {
+      .user-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #bdc7ff;
+        border: 2px solid white;
+        box-shadow: 0 4px 7px -3px rgba(82, 92, 215, 0.3);
+        position: relative;
+        img {
+          width: 100%;
+          height: 95%;
+          border-radius: 50%;
+          position: absolute;
+          bottom: 0;
+        }
+      }
+      .info-wrap {
+        margin-left: 10px;
+        .name {
+          font-size: 13px;
+          font-weight: bold;
+          color: #606380;
+        }
+        .team {
+          font-size: 13px;
+          color: #606380;
+        }
+      }
+    }
+    .info-value-wrap {
+      .label {
+        font-family: "Bebas Neue";
+        font-size: 13px;
+        color: #ffffff;
+        line-height: 13px;
+        margin-bottom: 5px;
+      }
+      .value {
+        font-family: "Bebas Neue";
+        font-size: 25px;
+        color: #ffffff;
+        letter-spacing: 0.64px;
+        line-height: 19px;
+      }
+    }
+    .position-breakup {
+      margin-right: 10px;
+      margin-top: 15px;
+      p {
+        font-size: 12px;
+        font-weight: bold;
+        color: #ffffff;
+        line-height: 16px;
+        margin-right: 5px;
+      }
+      .pill {
+        height: 21px;
+        width: 6px;
+        border: 1px solid #303558;
+        border-radius: 3px;
+        margin-right: 5px;
+        position: relative;
+        &--selected {
+          background: #303558;
+        }
+        &--vacant {
+          background: #7b77dd;
+          border-color: #7b77dd;
+        }
+        &--error {
+          background: #f86364;
+          border-color: #f86364;
+        }
+      }
+      .error-tooltip {
+        opacity: 0;
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 50%;
+        transform: translateX(-50%);
+        width: 220px;
+        font-size: 13px;
+        padding: 15px 10px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 17px;
+        background: #f46869;
+        box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.29);
+        border-radius: 6px 6px 6px 6px;
+        margin-top: 5px;
+        .error-info {
+          position: absolute;
+          left: 50%;
+          bottom: 0%;
+          transform: translate(-50%, 50%);
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border: 10px solid #f46869;
+          border-top: 10px solid transparent;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          top: -19px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+    }
+    .player-picker__header {
+      position: relative;
+      box-shadow: 0 2px 10px 0 rgba(82, 92, 215, 0.15);
+      padding: 25px 7px;
+      .close-button {
+        width: 35px;
+        object-fit: cover;
+      }
+    }
+    .section-header {
+      padding: 10px 15px;
+      background: rgba(220, 222, 247, 0.5);
+      box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+    }
+    .empty-player .player-image {
+      width: 39px;
+      height: 39px;
+    }
+    .player-card {
+      .player-position {
+        font-family: "Bebas Neue";
+        font-size: 14px;
+        color: rgba(#606380, 0.5);
+        line-height: 10px;
+      }
+      .club-images {
+        img:not(:last-child) {
+          margin-right: 5px;
+        }
+      }
+      &-error {
+        background: rgba(#f86364, 0.15);
+        box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+      }
+      .add-player {
+        font-size: 16px;
+        color: #afb1bf;
+        line-height: 16px;
+      }
+    }
+    .text {
+      font-size: 13px;
+    }
+    .text-bold {
+      font-weight: 700;
+    }
+    .text-red {
+      color: white !important;
+      background: #f86364;
+      border-radius: 11px;
+      padding: 1px 8px;
+    }
+    .player-card-wrap {
+      height: calc(100% - 50px);
+      padding-bottom: 35px;
+    }
+    .squad-value {
+      min-height: 67px;
+      background: #4e5fc9 url(/src/assets/img/trades/trade-player-picker-bg.svg)
+        top right/contain no-repeat;
+      border-radius: 8px;
+      padding: 15px 15px 15px 20px;
+    }
+  }
+  .player-picker__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    padding: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    line-height: 24px;
+    background: #5abf7b url(/src/assets/img/trades/offer-trade-button-bg.svg)
+      right bottom no-repeat;
+    box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+      0 12px 20px -16px rgba(158, 117, 255, 0.15);
   }
 }

@@ -15514,7 +15514,7 @@ table .points .loss {
   padding: 20px 20px 0 20px;
 }
 .trades-container {
-  padding: 20px;
+  padding: 0 20px 20px;
 }
 .trades__top .trade-card {
   width: calc(50% - 15px);
@@ -15631,6 +15631,943 @@ table .points .loss {
 }
 .trades__top .trade-card .counter-wrap .timer:last-child {
   padding-right: 0;
+}
+.trades-table {
+  width: calc(67% - 15px);
+  height: calc(100vh - 271px);
+  background: #edeefb;
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 15px;
+  overflow: auto;
+}
+.trades-table .trades-table__head {
+  padding: 9px 25px;
+  background: #edeefb;
+  box-shadow: 0 3px 1px -1px rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(157, 158, 169, 0.37);
+  border-radius: 15px 15px 0 0;
+}
+.trades-table .trades-table__head .select-wrap .custom-select {
+  padding: 3px 30px 3px 10px;
+  -webkit-appearance: none;
+  min-width: 132px;
+  background: #f8fafd url(/src/assets/img/trades/dropdown-arrow.svg) right 10px center no-repeat;
+  border: 1px solid #dfdfe5;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  font-size: 13px;
+  color: #5159b6;
+  line-height: 24px;
+}
+.trades-table .trade-info {
+  padding: 10px 15px;
+}
+.trades-table .trade-row {
+  border-bottom: 1px solid rgba(157, 158, 169, 0.37);
+}
+.trades-table .trade-user {
+  background: white;
+  border-radius: 6px;
+}
+.trades-table .trade-user:not(:last-child) {
+  margin-bottom: 10px;
+}
+.trades-table .trade-user .user-info {
+  padding: 5px 10px;
+  width: 50%;
+  position: relative;
+}
+.trades-table .trade-user .user-info:first-child::after {
+  content: "";
+  width: 1px;
+  height: 70%;
+  right: 0;
+  top: 15%;
+  position: absolute;
+  background: rgba(151, 151, 151, 0.31);
+}
+.trades-table .trade-gw {
+  width: 90px;
+  margin-left: 15px;
+}
+.trades-table .trade-gw .gw-text {
+  background: #444cb4;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 14px;
+  display: inline-block;
+  padding: 3px 8px;
+  margin-bottom: 5px;
+}
+.trades-table .trade-gw .date {
+  font-size: 12px;
+  color: #606380;
+  line-height: 15px;
+}
+.trades-table .trade-action {
+  flex-direction: column;
+  width: 100px;
+  background: #ffffff;
+  box-shadow: 0 5px 8px 4px rgba(0, 0, 0, 0.06);
+  box-shadow: -4px 0px 5px 2px rgba(0, 0, 0, 0.06);
+}
+.trades-table .trade-action.disabled {
+  position: relative;
+}
+.trades-table .trade-action.disabled .actions-btn {
+  pointer-events: none;
+  background: #d6d6d6;
+}
+.trades-table .trade-action.disabled .hover-text {
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 15px;
+  background: rgba(18, 18, 18, 0.76);
+  border-radius: 6px;
+  width: 170px;
+  padding: 10px 7px;
+  position: absolute;
+  right: 0;
+  top: 25px;
+  opacity: 0;
+  visibility: hidden;
+}
+.trades-table .trade-action.disabled:hover .hover-text {
+  opacity: 1;
+  visibility: visible;
+}
+.trades-table .trade-action .actions-text {
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  line-height: 14px;
+  margin-bottom: 4px;
+}
+.trades-table .trade-action .actions-btn {
+  background: #55c77c;
+  box-shadow: 0 6px 10px -1px rgba(0, 0, 0, 0.06);
+  border-radius: 3px;
+  color: #ffffff;
+  line-height: 14px;
+  padding: 4px 8px;
+  margin: 0 auto;
+}
+.trades-table .trade-action .actions-btn span {
+  font-size: 12px;
+  font-weight: bold;
+}
+.trades-table .trade-action .actions-btn img {
+  margin-top: 3px;
+}
+.trades-table .trade-action .actions-dropdown-holder {
+  position: relative;
+}
+.trades-table .trade-action .actions-dropdown {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  padding: 15px;
+  background: #ffffff;
+  box-shadow: 0 10px 10px 0 rgba(68, 76, 180, 0.2);
+  border-radius: 4px;
+  min-width: 130px;
+}
+.trades-table .trade-action .actions-dropdown p {
+  font-size: 12px;
+  color: #5159b6;
+  text-align: center;
+  line-height: 24px;
+  cursor: pointer;
+}
+.trades-table .user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #bdc7ff;
+  border: 2px solid white;
+  box-shadow: 0 4px 7px -3px rgba(82, 92, 215, 0.3);
+  position: relative;
+}
+.trades-table .user-avatar img {
+  width: 100%;
+  height: 95%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+.trades-table .user-price {
+  font-size: 10px;
+  font-weight: bold;
+  color: #444cb4;
+  text-align: center;
+  line-height: 14px;
+  background: #d8d8d8;
+  border-radius: 9.5px;
+  padding: 3px 10px;
+  margin: auto 0 0 5px;
+}
+.trades-table .player-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2a266e;
+  position: relative;
+}
+.trades-table .player-avatar img {
+  width: 100%;
+  height: calc(100% + 3px);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+.trades-table .player-avatar.empty {
+  background: none;
+  position: initial;
+}
+.trades-table .player-avatar.empty img {
+  position: initial;
+  height: 100%;
+}
+.trades-table .player-name {
+  font-size: 16px;
+  color: #5b5b60;
+  line-height: 16px;
+}
+.trades-table .player-name span {
+  font-size: 12px;
+  color: rgba(96, 99, 128, 0.5);
+  line-height: 10px;
+}
+.trades-table .player-points-value {
+  font-family: "Bebas Neue";
+  font-size: 14px;
+  color: rgba(96, 99, 128, 0.5);
+  line-height: 10px;
+  margin-top: 5px;
+}
+.trades-table .text-right {
+  text-align: right !important;
+}
+.trades-table .player-info-wrap {
+  margin: 0 10px;
+}
+.trades-table .price-wrap {
+  width: 50%;
+  background: rgba(68, 76, 180, 0.17);
+  border-radius: 9.5px;
+  padding: 2px 10px;
+}
+.trades-table .price-wrap.opacity-0 {
+  opacity: 0;
+  visibility: hidden;
+}
+.trades-table .price-wrap p {
+  font-size: 10px;
+  font-weight: bold;
+  color: #444cb4;
+  line-height: 14px;
+}
+.trades-table .price-wrap span {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #444cb4;
+  display: inline-block;
+  text-align: center;
+  line-height: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+}
+.trades-opponent {
+  width: calc(33% - 15px);
+  height: calc(100vh - 271px);
+  background: #fbfafc;
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 3px;
+  overflow: auto;
+}
+.trades-opponent .trade-opponent__head {
+  padding: 10px 20px;
+  background: #ffffff;
+  box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.05);
+  border-radius: 3px 3px 0 0;
+}
+.trades-opponent .trade-opponent-card {
+  min-height: 90px;
+  padding: 14px;
+  background: #f7f7fa;
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.trades-opponent .trade-opponent-card .count {
+  font-size: 15px;
+  font-weight: bold;
+  color: #606380;
+  letter-spacing: 0;
+}
+.trades-opponent .trade-opponent-card .user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #bdc7ff;
+  border: 2px solid white;
+  box-shadow: 0 4px 7px -3px rgba(82, 92, 215, 0.3);
+  position: relative;
+  margin: 0 10px;
+}
+.trades-opponent .trade-opponent-card .user-avatar img {
+  width: 100%;
+  height: 90%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+.trades-opponent .trade-opponent-card .user-info {
+  margin: 0 10px;
+}
+.trades-opponent .trade-opponent-card .manager {
+  font-size: 13px;
+  font-weight: bold;
+  color: #606380;
+}
+.trades-opponent .trade-opponent-card .team {
+  font-size: 13px;
+  color: #606380;
+}
+.trades-opponent .trade-opponent-card .actions {
+  flex-direction: column;
+}
+.trades-opponent .trade-opponent-card .actions button:not(:last-child) {
+  margin-bottom: 6px;
+}
+.trades-opponent .trade-opponent-card .btn-view-team {
+  font-size: 12px;
+  color: #5159b6;
+  text-align: center;
+  line-height: 24px;
+  background: #f8fafd;
+  border: 1px solid #dfdfe5;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 1px 15px;
+}
+.trades-opponent .trade-opponent-card .btn-offer-trade {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  line-height: 26px;
+  background: #4e5fc9 url(/src/assets/img/trades/offer-trade-btn-bg.svg) right top no-repeat;
+  box-shadow: 0 6px 14px -4px rgba(0, 0, 0, 0.3), 0 11px 18px -14px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+  padding: 1px 15px;
+}
+.trades .player-picker {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  background: white;
+  width: 335px;
+}
+.trades .player-picker .user-info .user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #bdc7ff;
+  border: 2px solid white;
+  box-shadow: 0 4px 7px -3px rgba(82, 92, 215, 0.3);
+  position: relative;
+}
+.trades .player-picker .user-info .user-avatar img {
+  width: 100%;
+  height: 95%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+.trades .player-picker .user-info .info-wrap {
+  margin-left: 10px;
+}
+.trades .player-picker .user-info .info-wrap .name {
+  font-size: 13px;
+  font-weight: bold;
+  color: #606380;
+}
+.trades .player-picker .user-info .info-wrap .team {
+  font-size: 13px;
+  color: #606380;
+}
+.trades .player-picker .info-value-wrap .label {
+  font-family: "Bebas Neue";
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 13px;
+  margin-bottom: 5px;
+}
+.trades .player-picker .info-value-wrap .value {
+  font-family: "Bebas Neue";
+  font-size: 25px;
+  color: #ffffff;
+  letter-spacing: 0.64px;
+  line-height: 19px;
+}
+.trades .player-picker .position-breakup {
+  margin-right: 10px;
+  margin-top: 15px;
+}
+.trades .player-picker .position-breakup p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 16px;
+  margin-right: 5px;
+}
+.trades .player-picker .position-breakup .pill {
+  height: 21px;
+  width: 6px;
+  border: 1px solid #303558;
+  border-radius: 3px;
+  margin-right: 5px;
+  position: relative;
+}
+.trades .player-picker .position-breakup .pill--selected {
+  background: #303558;
+}
+.trades .player-picker .position-breakup .pill--vacant {
+  background: #7b77dd;
+  border-color: #7b77dd;
+}
+.trades .player-picker .position-breakup .pill--error {
+  background: #f86364;
+  border-color: #f86364;
+}
+.trades .player-picker .position-breakup .error-tooltip {
+  opacity: 0;
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  font-size: 13px;
+  padding: 15px 10px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 17px;
+  background: #f46869;
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.29);
+  border-radius: 6px 6px 6px 6px;
+  margin-top: 5px;
+}
+.trades .player-picker .position-breakup .error-tooltip .error-info {
+  position: absolute;
+  left: 50%;
+  bottom: 0%;
+  transform: translate(-50%, 50%);
+}
+.trades .player-picker .position-breakup .error-tooltip::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 10px solid #f46869;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: -19px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.trades .player-picker .player-picker__header {
+  position: relative;
+  box-shadow: 0 2px 10px 0 rgba(82, 92, 215, 0.15);
+  padding: 25px 7px;
+}
+.trades .player-picker .player-picker__header .close-button {
+  width: 35px;
+  object-fit: cover;
+}
+.trades .player-picker .section-header {
+  padding: 10px 15px;
+  background: rgba(220, 222, 247, 0.5);
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.trades .player-picker .empty-player .player-image {
+  width: 39px;
+  height: 39px;
+}
+.trades .player-picker .player-card .player-position {
+  font-family: "Bebas Neue";
+  font-size: 14px;
+  color: rgba(96, 99, 128, 0.5);
+  line-height: 10px;
+}
+.trades .player-picker .player-card .club-images img:not(:last-child) {
+  margin-right: 5px;
+}
+.trades .player-picker .player-card-error {
+  background: rgba(248, 99, 100, 0.15);
+  box-shadow: inset 0 -1px 0 0 rgba(82, 92, 215, 0.27);
+}
+.trades .player-picker .player-card .add-player {
+  font-size: 16px;
+  color: #afb1bf;
+  line-height: 16px;
+}
+.trades .player-picker .text {
+  font-size: 13px;
+}
+.trades .player-picker .text-bold {
+  font-weight: 700;
+}
+.trades .player-picker .text-red {
+  color: white !important;
+  background: #f86364;
+  border-radius: 11px;
+  padding: 1px 8px;
+}
+.trades .player-picker .player-card-wrap {
+  height: calc(100% - 50px);
+  padding-bottom: 35px;
+}
+.trades .player-picker .squad-value {
+  min-height: 67px;
+  background: #4e5fc9 url(/src/assets/img/trades/trade-player-picker-bg.svg) top right/contain no-repeat;
+  border-radius: 8px;
+  padding: 15px 15px 15px 20px;
+}
+.trades .player-picker__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 18px;
+  padding: 10px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  line-height: 24px;
+  background: #5abf7b url(/src/assets/img/trades/offer-trade-button-bg.svg) right bottom no-repeat;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+}
+
+.traderoom-header {
+  margin-bottom: 40px;
+  position: relative;
+  padding: 12px 15px;
+  background: #ffffff;
+  box-shadow: 0 4px 14px 0 rgba(82, 92, 215, 0.23);
+}
+.traderoom-header .draftroom-title {
+  font-size: 17px;
+  color: #3d397b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.traderoom-header .btn--end {
+  position: absolute;
+  right: 30px;
+  top: 6px;
+  background: #f86364;
+  box-shadow: 0 1px 4px 1px rgba(58, 58, 58, 0.25);
+  font-size: 13px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  width: 100px;
+}
+.traderoom-header .nav-link {
+  position: absolute;
+  left: 15px;
+  cursor: pointer;
+}
+.traderoom-header .nav-arrow {
+  width: 24px;
+  height: 24px;
+  background-color: #333589;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+}
+.traderoom-header .nav-arrow > .material-icons {
+  color: #fff;
+  line-height: 24px;
+}
+.traderoom-header .nav-link-text {
+  font-size: 11px;
+  color: #525cd7;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.traderoom-container {
+  padding: 0 20px 20px;
+}
+.traderoom__top .traderoom-card {
+  min-height: 126px;
+  border-radius: 8px;
+  position: relative;
+  padding: 5px 25px;
+}
+.traderoom__top .traderoom-card--you {
+  width: calc(48% - 10px);
+  background: #333589 url(/src/assets/img/trades/traderoom-you.svg) bottom right no-repeat;
+  border-radius: 8px;
+}
+.traderoom__top .traderoom-card--opponent {
+  width: calc(34% - 10px);
+  background: #4e5fc9;
+  border-radius: 8px;
+}
+.traderoom__top .traderoom-card--count {
+  width: calc(18% - 10px);
+  background: #2a276f;
+  border-radius: 8px;
+}
+.traderoom__top .traderoom-card .user-info {
+  max-width: 100px;
+}
+.traderoom__top .traderoom-card .user-info .you {
+  font-size: 13px;
+  font-weight: bold;
+  color: #b2e7f4;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.traderoom__top .traderoom-card .user-info .user-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #bdc7ff;
+  border: 2px solid white;
+  box-shadow: 0 4px 7px -3px rgba(82, 92, 215, 0.3);
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.traderoom__top .traderoom-card .user-info .user-avatar img {
+  width: 100%;
+  height: 95%;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+.traderoom__top .traderoom-card .user-info .manager-name {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+.traderoom__top .traderoom-card .squad-value {
+  margin-right: 30px;
+}
+.traderoom__top .traderoom-card .squad-value .label {
+  font-family: "Bebas Neue";
+  font-size: 13.2px;
+  color: #ffffff;
+  line-height: 12.8px;
+  margin-bottom: 5px;
+}
+.traderoom__top .traderoom-card .squad-value .value {
+  font-family: "Bebas Neue";
+  font-size: 25.6px;
+  color: #ffffff;
+  letter-spacing: 0.64px;
+  line-height: 19.2px;
+}
+.traderoom__top .position-breakup {
+  margin-bottom: 5px;
+}
+.traderoom__top .position-breakup p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 16px;
+}
+.traderoom__top .position-breakup .pills-wrap {
+  margin-left: 15px;
+}
+.traderoom__top .position-breakup .pill {
+  width: 16px;
+  height: 5px;
+  border: 1px solid #999ac4;
+  border-radius: 3px;
+  margin-right: 4px;
+  position: relative;
+}
+.traderoom__top .position-breakup .pill--selected {
+  background: #999ac4;
+}
+.traderoom__top .position-breakup .pill--doubtful {
+  background: #f8c363;
+  border-color: #f8c363;
+}
+.traderoom__top .position-breakup .pill--injured {
+  background: #f86364;
+  border-color: #f86364;
+}
+.traderoom__top .position-breakup .pill .ut {
+  position: absolute;
+  bottom: -17px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 16px;
+}
+.traderoom__top .btn {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  line-height: 24px;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+  min-width: 150px;
+  margin: 0 auto;
+  display: inherit;
+}
+.traderoom__top .btn--confirm {
+  padding: 8px 15px;
+  background: #55c77c;
+}
+.traderoom__top .btn--reset {
+  background: #4d5ec5;
+}
+.traderoom__top .trade-count {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0;
+  line-height: 16px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.traderoom__top .trade-count span {
+  font-family: "Bebas Neue";
+  font-size: 19px;
+  color: #fbfbfb;
+  letter-spacing: 0.47px;
+  line-height: 24px;
+}
+.traderoom__top .view-squad {
+  text-align: right;
+}
+.traderoom__top .btn--view-squad {
+  font-family: Roboto-Bold;
+  font-size: 13px;
+  color: #ffffff;
+  line-height: 24px;
+  background: #4e5fc9;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+  padding: 8px 15px;
+  min-width: 115px;
+  margin-left: 5px;
+}
+.traderoom__top .calendar-icon {
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  min-height: 28px;
+  background: #4e5fc9;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 20px;
+  position: relative;
+}
+.traderoom__top .calendar-icon > i {
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.traderoom__top .calendar-icon:hover .calendar-tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+.traderoom__top .calendar-tooltip {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  position: absolute;
+  min-width: 170px;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 17px;
+  white-space: nowrap;
+  background: #000000;
+  box-shadow: 0 9px 10px 0 rgba(0, 0, 0, 0.29);
+  border-radius: 6px;
+  padding: 8px 15px;
+  left: 40px;
+  top: -1px;
+  z-index: 1;
+}
+.traderoom__top .calendar-tooltip::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 8px solid #000000;
+  border-top: 6px solid transparent;
+  border-left: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  top: 10px;
+  left: 0px;
+  transform: translateX(-100%);
+}
+
+.modal--wagers-coming-soon .modal-holder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 723px;
+  min-height: 465px;
+  background: url(/src/assets/img/trades/wagers-coming-left-bg.svg) left bottom no-repeat, url(/src/assets/img/trades/wagers-coming-right-bg.svg) right bottom no-repeat, #3e3583;
+  box-shadow: 0 8px 59px 26px rgba(0, 0, 0, 0.15);
+  border-radius: 15px;
+}
+.modal--wagers-coming-soon .modal-holder .close-modal {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.modal--wagers-coming-soon .modal-holder .image {
+  position: absolute;
+  bottom: -20px;
+  max-height: 90%;
+}
+.modal--wagers-coming-soon .modal-holder .image-left {
+  left: 5%;
+}
+.modal--wagers-coming-soon .modal-holder .image-right {
+  right: 5%;
+}
+.modal--wagers-coming-soon .modal-content {
+  max-width: 390px;
+  margin: auto;
+  padding: 30px 0;
+}
+.modal--wagers-coming-soon .modal-content h3 {
+  font-family: "Bebas Neue";
+  font-size: 42px;
+  font-weight: normal;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.modal--wagers-coming-soon .modal-content p {
+  font-size: 14px;
+  color: #b2e7f4;
+  text-align: center;
+  line-height: 24px;
+}
+.modal--wagers-coming-soon .modal-content ul {
+  margin: 30px 0 0 40px;
+}
+.modal--wagers-coming-soon .modal-content li {
+  position: relative;
+  font-size: 14px;
+  color: #b2e7f4;
+  line-height: 30px;
+}
+.modal--wagers-coming-soon .modal-content li::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 10px;
+  background: url(/src/assets/img/trades/tick-mark.svg);
+  position: absolute;
+  left: -20px;
+  top: 10px;
+}
+
+.modal--transfer-summary.modal--trade-summary .modal-summary-container {
+  width: 762px;
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .summary-stat-card {
+  width: calc(50% - 7px);
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .transfer-icon {
+  padding: 0 15px;
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .players-wrap {
+  width: calc(49% - 20px);
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .transfer-list {
+  padding: 20px 15px;
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .add-cash-wrap {
+  background: rgba(68, 76, 180, 0.17);
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .add-cash-wrap:first-child {
+  width: calc(50% - 55px);
+  margin-left: 30px;
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .add-cash-wrap:last-child {
+  width: calc(50% - 54px);
+  margin-right: 27px;
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .dollar {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #444cb4;
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 15px;
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .add-cash {
+  font-family: "Bebas Neue";
+  font-size: 15px;
+  color: #444cb4;
+  letter-spacing: 0.38px;
+  margin-left: 5px;
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .price-wrap {
+  position: relative;
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .price-wrap p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444cb4;
+  text-align: right;
+  line-height: 14px;
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .price-wrap span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #444cb4;
+  text-align: right;
+  line-height: 14px;
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .price-wrap input {
+  background: #ffffff;
+  border: 1px solid #959bf4;
+  border-radius: 1px;
+  width: 50px;
+  margin: 0 8px;
+}
+.modal--transfer-summary.modal--trade-summary .modal-summary-container .price-wrap .price-tooltip {
+  position: absolute;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 15px;
+  background: rgba(18, 18, 18, 0.76);
+  border-radius: 6px;
+  width: 170px;
+  padding: 7px 10px;
+  top: 26px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=app.css.map */

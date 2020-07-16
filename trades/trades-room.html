@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Room</title>
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mobile-header">
+        <div class="mobile-menu-icon material-icons" onclick="togglemobileNav()">menu</div>
+        <img src="/src/assets/img/signup/moonlight-logo.svg" alt="" class="mobile-logo">
+        <div class="notifications-icon material-icons">notifications_none</div>
+    </div>
+    <main class="main">
+        <aside class="side-nav d-flex">
+            <div class="close-mobile-menu material-icons" onclick="togglemobileNav()">close</div>
+            <div class="user-info">
+                <figure class="user-avatar m-auto mb-20">
+                    <img src="/src/assets/img/profile-image.svg" alt="User Image" class="user-image">
+                    <!-- <img src="https://images.vexels.com/media/users/3/140748/isolated/preview/5b078a59390bb4666df98b49f1cdedd0-male-profile-avatar-by-vexels.png"
+                        alt="User Image" class="user-image"> -->
+                </figure>
+                <p class="user-name">L. Vaz</p>
+            </div>
+            <nav class="navmenu">
+                <ul class="navmenu__list">
+                    <li class="navmenu__item mb-30">
+                        <i class="material-icons">home</i>
+                    </li>
+                    <li class="navmenu__item mb-30">
+                        <img src="/src/assets/img/trophy-filed.svg" alt="" class="filled">
+                        <img src="/src/assets/img/trophy.svg" alt="" class="normal">
+                    </li>
+                    <li class="navmenu__item mb-30 active">
+                        <img src="/src/assets/img/chart-filed.svg" class="filled" alt="">
+                        <img src="/src/assets/img/chart.svg" alt="" class="normal">
+                    </li>
+                </ul>
+            </nav>
+            <div class="side-nav__footer">
+                <ul class="">
+                    <li class="text-center help">
+                        <i class="material-icons">help</i>
+                    </li>
+                    <li class="text-center logo">
+                        <img src="/src//assets/img/moonlight-logo.svg" alt="Moonlight Logo">
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="right-section traderoom">
+            <div class="traderoom-header text-center">
+                <div class="nav-link d-flex-v-center">
+                    <div class="nav-arrow">
+                        <i class="material-icons">keyboard_arrow_left</i>
+                    </div>
+                    <p class="nav-link-text ml-10">BACK TO TRADE OVERVIEW</p>
+
+                </div>
+                <h1 class="traderoom-title">TradeRoom</h1>
+            </div>
+            <div class="traderoom-container">
+                <div class="traderoom__top d-flex-space-center">
+                    <div class="traderoom-card--you traderoom-card d-flex-v-center">
+                        <div class="user-info">
+                            <p class="you">You</p>
+                            <div class="user-avatar">
+                                <img src="/src/assets/img/profile-image.svg" alt="">
+                            </div>
+                            <p class="manager-name">Manager name goes here</p>
+                        </div>
+                        <div class="sqaud-value-wrap ml-30">
+                            <div class="squad-value mb-20">
+                                <p class="label">Squad value</p>
+                                <p class="value">$124.0M</p>
+                            </div>
+                            <div class="squad-value">
+                                <p class="label">Squad value</p>
+                                <p class="value">$124.0M</p>
+                            </div>
+                        </div>
+                        <div class="selection-breakup">
+                            <div class="position-breakup d-flex-v-center">
+                                <p>GK</p>
+                                <div class="d-flex-v-center pills-wrap">
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                </div>
+                            </div>
+                            <div class="position-breakup d-flex-v-center">
+                                <p>DF</p>
+                                <div class="d-flex-v-center pills-wrap">
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--doubtful">
+                                        <p class="ut">UT</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="position-breakup d-flex-v-center">
+                                <p>MF</p>
+                                <div class="d-flex-v-center pills-wrap">
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill"></span>
+                                </div>
+                            </div>
+                            <div class="position-breakup d-flex-v-center">
+                                <p>FW</p>
+                                <div class="d-flex-v-center pills-wrap">
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--injured"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="view-squad ml-auto">
+                            <button class="btn btn--view-squad mb-10">View my squad</button>
+                            <button class="calendar-icon ml-auto">
+                                <i class="material-icons">calendar_today</i>
+                                <div class="calendar-tooltip">View Monthly Calendar</div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="traderoom-card--opponent traderoom-card  d-flex-v-center">
+                        <div class="user-info">
+                            <div class="user-avatar">
+                                <img src="/src/assets/img/profile-image.svg" alt="">
+                            </div>
+                            <p class="manager-name">Manager name goes here</p>
+                        </div>
+                        <div class="sqaud-value-wrap ml-30">
+                            <div class="squad-value mb-20">
+                                <p class="label">Squad value</p>
+                                <p class="value">$124.0M</p>
+                            </div>
+                            <div class="squad-value">
+                                <p class="label">Squad value</p>
+                                <p class="value">$124.0M</p>
+                            </div>
+                        </div>
+                        <div class="selection-breakup">
+                            <div class="position-breakup d-flex-v-center">
+                                <p>GK</p>
+                                <div class="d-flex-v-center pills-wrap">
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                </div>
+                            </div>
+                            <div class="position-breakup d-flex-v-center">
+                                <p>DF</p>
+                                <div class="d-flex-v-center pills-wrap">
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--doubtful">
+                                        <p class="ut">UT</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="position-breakup d-flex-v-center">
+                                <p>MF</p>
+                                <div class="d-flex-v-center pills-wrap">
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill"></span>
+                                </div>
+                            </div>
+                            <div class="position-breakup d-flex-v-center">
+                                <p>FW</p>
+                                <div class="d-flex-v-center pills-wrap">
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--selected"></span>
+                                    <span class="pill pill--injured"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="traderoom-card--count traderoom-card">
+                        <p class="trade-count"> <span>2</span> Trades</p>
+                        <button class="btn btn--confirm mb-10">Confirm Changes</button>
+                        <button class="btn btn--reset">Reset Changes</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="modal modal--wagers-coming-soon hide">
+        <div class="modal-holder d-flex-center">
+            <button class="close-modal">
+                <img src="/src/assets/img/league-dashboard/close-icon-2.svg" alt="">
+            </button>
+            <img src="/src/assets/img/trades/Fantasy-Football-Soccer-Salah.png" alt="" class="image-left image">
+            <img src="/src/assets/img/trades/Fantasy-Football-Soccer-Ronaldo.png" alt="" class="image-right image">
+            <div class="modal-content">
+                <h3>WAGERS COMING SOON!</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at blandit sapien. Sed a sem risus.
+                    In hac habitasse
+                    platea dictumst. Praesent vel suscipit erat, in semper erat.</p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur</li>
+                    <li>adipiscing eli nullam at blandit sapien</li>
+                    <li>Sed a sem risus</li>
+                    <li>In hac habitasse platea dictumst</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="modal modal--transfer-summary modal--trade-summary hide">
+        <div class="modal-market-container modal-summary-container">
+            <div class="summary-head d-flex-space-center">
+                <h1>TRADE SUMMARY</h1>
+                <img src="/src/assets/img/league-dashboard/close-icon-2.svg" alt="">
+            </div>
+            <div class="summary-body">
+                <div class="summary-stat-wrap mb-20 d-flex-space-center">
+                    <div class="summary-stat-card">
+                        <div class="summary-stat-top">
+                            <div class="d-flex-space-center">
+                                <div class="d-flex stat-wrap">
+                                    <div class="label-value-wrap">
+                                        <p class="value">$126.2M</p>
+                                        <p class="label">Squad total</p>
+                                    </div>
+                                    <p class="value-diff">+$1.8M</p>
+                                </div>
+                                <div class="d-flex stat-wrap">
+                                    <div class="label-value-wrap">
+                                        <p class="value">$0.2M</p>
+                                        <p class="label">Cash on hand</p>
+                                    </div>
+                                    <p class="value-diff">-$1.8M</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-stat-bottom">
+                            <div class="d-flex-space-center">
+                                <div class="d-flex selection-breakup">
+                                    <div class="position-breakup d-flex-v-center">
+                                        <p>GK</p>
+                                        <div class="d-flex-v-center pills-wrap">
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                        </div>
+                                    </div>
+                                    <div class="position-breakup d-flex-v-center">
+                                        <p>DF</p>
+                                        <div class="d-flex-v-center pills-wrap">
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                        </div>
+                                    </div>
+                                    <div class="position-breakup d-flex-v-center">
+                                        <p>MF</p>
+                                        <div class="d-flex-v-center pills-wrap">
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--vacant"></span>
+                                        </div>
+                                    </div>
+                                    <div class="position-breakup d-flex-v-center">
+                                        <p>FW</p>
+                                        <div class="d-flex-v-center pills-wrap">
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--error">
+                                                <div class="error-tooltip">
+                                                    You have too many forwards!
+                                                    <img src="/src/assets/img/draft-room/error-info.svg" alt=""
+                                                        class="error-info">
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="/src/assets/img/free-market/error.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-stat-card">
+                        <div class="summary-stat-top">
+                            <div class="d-flex-space-center">
+                                <div class="d-flex stat-wrap">
+                                    <div class="label-value-wrap">
+                                        <p class="value">$126.2M</p>
+                                        <p class="label">Squad total</p>
+                                    </div>
+                                    <p class="value-diff">+$1.8M</p>
+                                </div>
+                                <div class="d-flex stat-wrap">
+                                    <div class="label-value-wrap">
+                                        <p class="value">$0.2M</p>
+                                        <p class="label">Cash on hand</p>
+                                    </div>
+                                    <p class="value-diff">-$1.8M</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="summary-stat-bottom">
+                            <div class="d-flex-space-center">
+                                <div class="d-flex selection-breakup">
+                                    <div class="position-breakup d-flex-v-center">
+                                        <p>GK</p>
+                                        <div class="d-flex-v-center pills-wrap">
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                        </div>
+                                    </div>
+                                    <div class="position-breakup d-flex-v-center">
+                                        <p>DF</p>
+                                        <div class="d-flex-v-center pills-wrap">
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                        </div>
+                                    </div>
+                                    <div class="position-breakup d-flex-v-center">
+                                        <p>MF</p>
+                                        <div class="d-flex-v-center pills-wrap">
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--vacant"></span>
+                                        </div>
+                                    </div>
+                                    <div class="position-breakup d-flex-v-center">
+                                        <p>FW</p>
+                                        <div class="d-flex-v-center pills-wrap">
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--selected"></span>
+                                            <span class="pill pill--error">
+                                                <div class="error-tooltip">
+                                                    You have too many forwards!
+                                                    <img src="/src/assets/img/draft-room/error-info.svg" alt=""
+                                                        class="error-info">
+                                                </div>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img src="/src/assets/img/free-market/error.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="transfer-list">
+                    <div class="d-flex-space-center list-wrap mb-10">
+                        <div class="players-wrap d-flex-v-center">
+                            <div class="counter">1</div>
+                            <div class="player-card d-flex-v-center">
+                                <img src="/src/assets/img/free-market/players-in.svg" alt="" class="swap-icon">
+                                <div class="player-avatar">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                                <div class="player-info">
+                                    <div class="player-name">
+                                        <p>J. Oblack <span>DF</span></p>
+                                    </div>
+                                    <div class="player-value">
+                                        256 pts / $1.1M
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/src/assets/img/trades/transfer-icon.svg" alt="" class="transfer-icon">
+                        <div class="players-wrap d-flex-v-center">
+                            <div class="player-card d-flex-v-center">
+                                <img src="/src/assets/img/free-market/players-out.svg" alt="" class="swap-icon">
+                                <div class="player-avatar">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                                <div class="player-info">
+                                    <div class="player-name">
+                                        <p>J. Oblack <span>DF</span></p>
+                                    </div>
+                                    <div class="player-value">
+                                        256 pts / $1.1M
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delete-row">
+                                <i class="material-icons">close</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex-space-center list-wrap mb-10">
+                        <div class="players-wrap d-flex-v-center">
+                            <div class="counter">1</div>
+                            <div class="player-card d-flex-v-center">
+                                <img src="/src/assets/img/free-market/players-in.svg" alt="" class="swap-icon">
+                                <div class="player-avatar">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                                <div class="player-info">
+                                    <div class="player-name">
+                                        <p>J. Oblack <span>DF</span></p>
+                                    </div>
+                                    <div class="player-value">
+                                        256 pts / $1.1M
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/src/assets/img/trades/transfer-icon.svg" alt="" class="transfer-icon">
+                        <div class="players-wrap d-flex-v-center">
+                            <div class="player-card d-flex-v-center">
+                                <img src="/src/assets/img/free-market/players-out.svg" alt="" class="swap-icon">
+                                <div class="player-avatar">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                                <div class="player-info">
+                                    <div class="player-name">
+                                        <p>J. Oblack <span>DF</span></p>
+                                    </div>
+                                    <div class="player-value">
+                                        256 pts / $1.1M
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delete-row">
+                                <i class="material-icons">close</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex-space-center list-wrap mb-10">
+                        <div class="players-wrap d-flex-v-center">
+                            <div class="counter">1</div>
+                            <div class="player-card d-flex-v-center">
+                                <img src="/src/assets/img/free-market/players-in.svg" alt="" class="swap-icon">
+                                <div class="player-avatar">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                                <div class="player-info">
+                                    <div class="player-name">
+                                        <p>J. Oblack <span>DF</span></p>
+                                    </div>
+                                    <div class="player-value">
+                                        256 pts / $1.1M
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="/src/assets/img/trades/transfer-icon.svg" alt="" class="transfer-icon">
+                        <div class="players-wrap d-flex-v-center">
+                            <div class="player-card d-flex-v-center">
+                                <img src="/src/assets/img/free-market/players-out.svg" alt="" class="swap-icon">
+                                <div class="player-avatar">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                                <div class="player-info">
+                                    <div class="player-name">
+                                        <p>J. Oblack <span>DF</span></p>
+                                    </div>
+                                    <div class="player-value">
+                                        256 pts / $1.1M
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="delete-row">
+                                <i class="material-icons">close</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex-space-center list-wrap mb-10 mt-20">
+                        <div class="players-wrap add-cash-wrap d-flex-v-center">
+                            <div class="dollar">
+                                $
+                            </div>
+                            <p class="add-cash">Add cash</p>
+                            <div class="price-wrap ml-auto d-flex-v-center">
+                                <p>+$</p>
+                                <input type="number">
+                                <span>M</span>
+                                <div class="price-tooltip">
+                                    [insert manager name] <br> doesn't have any more cash on hand
+                                </div>
+                            </div>
+                        </div>
+                        <div class="players-wrap add-cash-wrap d-flex-v-center">
+                            <div class="dollar">
+                                $
+                            </div>
+                            <p class="add-cash">Add cash</p>
+                            <div class="price-wrap ml-auto d-flex-v-center">
+                                <p>+$</p>
+                                <input type="number">
+                                <span>M</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-footer d-flex-center">
+                    <button class="btn btn--cancel">Cancel</button>
+                    <button class="btn btn--confirm">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    function togglemobileNav() {
+        let sideNav = document.querySelector('.side-nav');
+        sideNav.classList.toggle('open');
+    }
+</script>
+
+</html>
