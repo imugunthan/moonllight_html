@@ -8,6 +8,12 @@
     overflow: auto;
     background: #ffffff;
     box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.17);
+    @include respond-to(1250px) {
+      width: 280px;
+    }
+    @include respond-to(768px) {
+      display: none;
+    }
     .header {
       background: #ffffff;
       box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.25);
@@ -50,10 +56,30 @@
     overflow: auto;
     background: url(/src/assets/img/article/article-bg.svg) top right no-repeat;
     padding: 100px;
+    @include respond-to(1250px) {
+      width: calc(100% - 380px);
+      padding: 100px 50px;
+    }
+    @include respond-to(1150px) {
+      width: calc(100% - 280px);
+      padding: 50px;
+      background: none;
+    }
+    @include respond-to(768px) {
+      width: 100%;
+      padding: 50px 20px;
+    }
     .article {
       &-wrap {
-        max-width: 570px;
+        max-width: 75%;
+        @include respond-to(1250px) {
+          max-width: 70%;
+        }
+        @include respond-to(1100px) {
+          max-width: 100%;
+        }
       }
+
       &-date {
         font-size: 13px;
         color: #9c9fb9;
@@ -190,6 +216,9 @@
       #edeefb 45%
     );
     box-shadow: -2px 0 8px 0 rgba(0, 0, 0, 0.17);
+    @include respond-to(1100px) {
+      display: none;
+    }
     .article-add-holder {
       width: 100%;
       position: absolute;

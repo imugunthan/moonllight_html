@@ -11212,6 +11212,16 @@ table .points .loss {
   background: #ffffff;
   box-shadow: 2px 0 8px 0 rgba(0, 0, 0, 0.17);
 }
+@media only screen and (max-width: 1250px) {
+  .article-menu {
+    width: 280px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .article-menu {
+    display: none;
+  }
+}
 .article-menu .header {
   background: #ffffff;
   box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.25);
@@ -11251,8 +11261,37 @@ table .points .loss {
   background: url(/src/assets/img/article/article-bg.svg) top right no-repeat;
   padding: 100px;
 }
+@media only screen and (max-width: 1250px) {
+  .article-container {
+    width: calc(100% - 380px);
+    padding: 100px 50px;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .article-container {
+    width: calc(100% - 280px);
+    padding: 50px;
+    background: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .article-container {
+    width: 100%;
+    padding: 50px 20px;
+  }
+}
 .article-container .article-wrap {
-  max-width: 570px;
+  max-width: 75%;
+}
+@media only screen and (max-width: 1250px) {
+  .article-container .article-wrap {
+    max-width: 70%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .article-container .article-wrap {
+    max-width: 100%;
+  }
 }
 .article-container .article-date {
   font-size: 13px;
@@ -11380,6 +11419,11 @@ table .points .loss {
   height: 100vh;
   background-image: linear-gradient(180deg, rgba(247, 248, 253, 0) 21%, #edeefb 45%);
   box-shadow: -2px 0 8px 0 rgba(0, 0, 0, 0.17);
+}
+@media only screen and (max-width: 1100px) {
+  .article-add {
+    display: none;
+  }
 }
 .article-add .article-add-holder {
   width: 100%;
@@ -14194,6 +14238,7 @@ table .points .loss {
   font-weight: bold;
   color: #ffffff;
   line-height: 16px;
+  width: 15px;
 }
 .free-market .free-market-card1 .position-breakup .pills-wrap {
   margin-left: 15px;
@@ -14592,6 +14637,7 @@ table .points .loss {
   color: #ffffff;
   line-height: 16px;
   margin-right: 5px;
+  width: 15px;
 }
 .modal--transfer-summary .summary-stat-bottom .position-breakup .pill {
   height: 21px;
@@ -15510,11 +15556,25 @@ table .points .loss {
   margin-right: 5px;
 }
 
+.trades .check-button .check-button-text {
+  white-space: nowrap;
+  padding: 4px 10px;
+}
 .trades .nav-bar {
   padding: 20px 20px 0 20px;
 }
 .trades-container {
   padding: 0 20px 20px;
+}
+@media only screen and (max-width: 600px) {
+  .trades-container {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .trades__top {
+    flex-wrap: wrap;
+  }
 }
 .trades__top .trade-card {
   width: calc(50% - 15px);
@@ -15523,9 +15583,37 @@ table .points .loss {
   position: relative;
   padding: 25px;
 }
+@media only screen and (max-width: 1200px) {
+  .trades__top .trade-card {
+    width: calc(40% - 10px);
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .trades__top .trade-card {
+    width: 100%;
+    min-height: 100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .trades__top .trade-card {
+    padding: 15px;
+    border-radius: 0;
+  }
+}
 .trades__top .trade-card__deadline {
   background: #2a276f url(/src/assets/img/trades/trade-card-bg.svg) right top no-repeat;
   box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+}
+@media only screen and (max-width: 1200px) {
+  .trades__top .trade-card__deadline {
+    width: calc(60% - 10px);
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .trades__top .trade-card__deadline {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 .trades__top .trade-card__wagers {
   background: #4e5fc9 url(/src/assets/img/trades/wager-card-bg.svg) right top no-repeat;
@@ -15535,6 +15623,17 @@ table .points .loss {
 }
 .trades__top .trade-card .deadline-info .mb-5 {
   margin-bottom: 5px;
+}
+@media only screen and (max-width: 600px) {
+  .trades__top .trade-card .deadline-info .mb-5 {
+    flex-wrap: wrap;
+  }
+  .trades__top .trade-card .deadline-info .mb-5 h6 {
+    width: 100%;
+  }
+  .trades__top .trade-card .deadline-info .mb-5 span {
+    margin-left: 0;
+  }
 }
 .trades__top .trade-card .deadline-info h6 {
   font-family: "Bebas Neue";
@@ -15575,10 +15674,20 @@ table .points .loss {
   left: 0;
   max-height: calc(100% + 25%);
 }
+@media only screen and (max-width: 1200px) {
+  .trades__top .trade-card .ronaldo-caricarture {
+    display: none;
+  }
+}
 .trades__top .trade-card .wagers-info {
   margin-left: 90px;
   max-width: 300px;
   margin-right: 15px;
+}
+@media only screen and (max-width: 1200px) {
+  .trades__top .trade-card .wagers-info {
+    margin-left: 0;
+  }
 }
 .trades__top .trade-card .wagers-info h6 {
   font-family: "Bebas Neue";
@@ -15605,9 +15714,27 @@ table .points .loss {
   box-shadow: 0 4px 4px -3px rgba(3, 3, 3, 0.3);
   border-radius: 4px;
 }
+@media only screen and (max-width: 768px) {
+  .trades__top .trade-card .counter-wrap {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    justify-content: flex-end;
+  }
+}
 .trades__top .trade-card .counter-wrap .timer {
   padding: 0 20px;
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .trades__top .trade-card .counter-wrap .timer {
+    padding: 0;
+    background: #43479f;
+    border-radius: 4px;
+  }
+  .trades__top .trade-card .counter-wrap .timer:not(:last-child) {
+    margin-right: 4px;
+  }
 }
 .trades__top .trade-card .counter-wrap .timer .value {
   font-family: "Bebas Neue";
@@ -15616,12 +15743,28 @@ table .points .loss {
   color: #ffffff;
   text-align: center;
 }
+@media only screen and (max-width: 768px) {
+  .trades__top .trade-card .counter-wrap .timer .value {
+    font-size: 14px;
+    padding: 0 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 4px 4px 0 0;
+  }
+}
 .trades__top .trade-card .counter-wrap .timer .label {
   font-family: "Bebas Neue";
   color: #64669f;
   font-size: 18px;
   line-height: 18px;
   text-align: center;
+}
+@media only screen and (max-width: 768px) {
+  .trades__top .trade-card .counter-wrap .timer .label {
+    font-size: 10px;
+    padding: 5px 10px;
+    height: 26px;
+    border-radius: 0 0 4px 4px;
+  }
 }
 .trades__top .trade-card .counter-wrap .timer:not(:last-child) {
   border-right: 1px solid rgba(216, 216, 216, 0.17);
@@ -15632,6 +15775,11 @@ table .points .loss {
 .trades__top .trade-card .counter-wrap .timer:last-child {
   padding-right: 0;
 }
+@media only screen and (max-width: 1250px) {
+  .trades__main {
+    flex-wrap: wrap;
+  }
+}
 .trades-table {
   width: calc(67% - 15px);
   height: calc(100vh - 271px);
@@ -15640,12 +15788,29 @@ table .points .loss {
   border-radius: 15px;
   overflow: auto;
 }
+@media only screen and (max-width: 1250px) {
+  .trades-table {
+    width: 100%;
+    margin-bottom: 15px;
+    height: initial;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .trades-table {
+    overflow: auto;
+  }
+}
 .trades-table .trades-table__head {
-  padding: 9px 25px;
+  padding: 9px 15px;
   background: #edeefb;
   box-shadow: 0 3px 1px -1px rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(157, 158, 169, 0.37);
   border-radius: 15px 15px 0 0;
+}
+@media only screen and (max-width: 900px) {
+  .trades-table .trades-table__head {
+    min-width: 800px;
+  }
 }
 .trades-table .trades-table__head .select-wrap .custom-select {
   padding: 3px 30px 3px 10px;
@@ -15658,6 +15823,11 @@ table .points .loss {
   font-size: 13px;
   color: #5159b6;
   line-height: 24px;
+}
+@media only screen and (max-width: 900px) {
+  .trades-table .trades-table__body {
+    min-width: 800px;
+  }
 }
 .trades-table .trade-info {
   padding: 10px 15px;
@@ -15786,6 +15956,8 @@ table .points .loss {
 .trades-table .user-avatar {
   width: 40px;
   height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   border-radius: 50%;
   background: #bdc7ff;
   border: 2px solid white;
@@ -15813,6 +15985,8 @@ table .points .loss {
 .trades-table .player-avatar {
   width: 40px;
   height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   border-radius: 50%;
   background: #2a266e;
   position: relative;
@@ -15891,6 +16065,12 @@ table .points .loss {
   border-radius: 3px;
   overflow: auto;
 }
+@media only screen and (max-width: 1250px) {
+  .trades-opponent {
+    width: 100%;
+    height: initial;
+  }
+}
 .trades-opponent .trade-opponent__head {
   padding: 10px 20px;
   background: #ffffff;
@@ -15912,6 +16092,8 @@ table .points .loss {
 .trades-opponent .trade-opponent-card .user-avatar {
   width: 48px;
   height: 48px;
+  min-width: 48px;
+  min-height: 48px;
   border-radius: 50%;
   background: #bdc7ff;
   border: 2px solid white;
@@ -15954,6 +16136,7 @@ table .points .loss {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   padding: 1px 15px;
+  white-space: nowrap;
 }
 .trades-opponent .trade-opponent-card .btn-offer-trade {
   font-size: 12px;
@@ -15965,6 +16148,7 @@ table .points .loss {
   box-shadow: 0 6px 14px -4px rgba(0, 0, 0, 0.3), 0 11px 18px -14px rgba(158, 117, 255, 0.15);
   border-radius: 3px;
   padding: 1px 15px;
+  white-space: nowrap;
 }
 .trades .player-picker {
   position: fixed;
@@ -15977,6 +16161,8 @@ table .points .loss {
 .trades .player-picker .user-info .user-avatar {
   width: 40px;
   height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   border-radius: 50%;
   background: #bdc7ff;
   border: 2px solid white;
@@ -16026,6 +16212,7 @@ table .points .loss {
   color: #ffffff;
   line-height: 16px;
   margin-right: 5px;
+  width: 15px;
 }
 .trades .player-picker .position-breakup .pill {
   height: 21px;
@@ -16204,8 +16391,29 @@ table .points .loss {
   font-weight: 700;
   text-transform: uppercase;
 }
+@media only screen and (max-width: 600px) {
+  .traderoom-header {
+    display: none;
+  }
+}
 .traderoom-container {
   padding: 0 20px 20px;
+}
+@media only screen and (max-width: 600px) {
+  .traderoom-container {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 1250px) {
+  .traderoom__top {
+    align-items: stretch;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .traderoom__top {
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 .traderoom__top .traderoom-card {
   min-height: 126px;
@@ -16213,20 +16421,161 @@ table .points .loss {
   position: relative;
   padding: 5px 25px;
 }
+@media only screen and (max-width: 1250px) {
+  .traderoom__top .traderoom-card {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .traderoom__top .traderoom-card {
+    min-height: initial;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .traderoom__top .traderoom-card {
+    border-radius: 0 !important;
+    padding: 15px 10px;
+  }
+}
 .traderoom__top .traderoom-card--you {
   width: calc(48% - 10px);
   background: #333589 url(/src/assets/img/trades/traderoom-you.svg) bottom right no-repeat;
   border-radius: 8px;
+}
+@media only screen and (max-width: 1000px) {
+  .traderoom__top .traderoom-card--you {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .traderoom__top .traderoom-card--you {
+    flex-wrap: wrap;
+    width: calc(42% - 10px);
+  }
+  .traderoom__top .traderoom-card--you .sqaud-value-wrap {
+    display: flex;
+    margin-top: 56px;
+    margin-left: auto !important;
+  }
+  .traderoom__top .traderoom-card--you .sqaud-value-wrap .squad-value {
+    margin-bottom: 0 !important;
+  }
+  .traderoom__top .traderoom-card--you .sqaud-value-wrap .squad-value:last-child {
+    margin-right: 0 !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .traderoom__top .traderoom-card--you {
+    flex-wrap: wrap;
+  }
+  .traderoom__top .traderoom-card--you .sqaud-value-wrap {
+    display: flex;
+    margin-top: 56px;
+    margin-left: auto !important;
+  }
+  .traderoom__top .traderoom-card--you .sqaud-value-wrap .squad-value {
+    margin-bottom: 0 !important;
+  }
+  .traderoom__top .traderoom-card--you .sqaud-value-wrap .squad-value:last-child {
+    margin-right: 0 !important;
+  }
 }
 .traderoom__top .traderoom-card--opponent {
   width: calc(34% - 10px);
   background: #4e5fc9;
   border-radius: 8px;
 }
+@media only screen and (max-width: 1000px) {
+  .traderoom__top .traderoom-card--opponent {
+    flex-grow: 1;
+    margin-right: 15px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .traderoom__top .traderoom-card--opponent {
+    flex-wrap: wrap;
+    width: calc(38% - 10px);
+  }
+  .traderoom__top .traderoom-card--opponent .sqaud-value-wrap {
+    display: flex;
+    margin-left: auto !important;
+  }
+  .traderoom__top .traderoom-card--opponent .sqaud-value-wrap .squad-value {
+    margin-bottom: 0 !important;
+  }
+  .traderoom__top .traderoom-card--opponent .sqaud-value-wrap .squad-value:last-child {
+    margin-right: 0 !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .traderoom__top .traderoom-card--opponent {
+    width: 100%;
+    margin: 0 0 15px;
+    flex-wrap: wrap;
+    width: calc(38% - 10px);
+  }
+  .traderoom__top .traderoom-card--opponent .sqaud-value-wrap {
+    display: flex;
+    margin-left: auto !important;
+  }
+  .traderoom__top .traderoom-card--opponent .sqaud-value-wrap .squad-value {
+    margin-bottom: 0 !important;
+  }
+  .traderoom__top .traderoom-card--opponent .sqaud-value-wrap .squad-value:last-child {
+    margin-right: 0 !important;
+  }
+}
 .traderoom__top .traderoom-card--count {
   width: calc(18% - 10px);
   background: #2a276f;
   border-radius: 8px;
+}
+@media only screen and (max-width: 1250px) {
+  .traderoom__top .traderoom-card--count {
+    width: calc(20% - 10px);
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .traderoom__top .traderoom-card--count {
+    width: 100%;
+    margin: 0;
+    flex-direction: initial;
+    align-items: center;
+  }
+  .traderoom__top .traderoom-card--count .trade-count {
+    margin-bottom: 0;
+  }
+  .traderoom__top .traderoom-card--count .btn {
+    padding: 8px 15px;
+    margin: 0 !important;
+  }
+  .traderoom__top .traderoom-card--count .btn--confirm {
+    margin-right: 10px !important;
+  }
+  .traderoom__top .traderoom-card--count .btn-wrap {
+    display: flex;
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .traderoom__top .traderoom-card--count {
+    flex-direction: column;
+  }
+  .traderoom__top .traderoom-card--count .btn--confirm {
+    margin: 0 10px 0 0 !important;
+  }
+  .traderoom__top .traderoom-card--count .btn-wrap {
+    margin-left: initial;
+    margin-top: 10px;
+  }
+  .traderoom__top .traderoom-card--count .btn {
+    min-width: 100px;
+  }
 }
 .traderoom__top .traderoom-card .user-info {
   max-width: 100px;
@@ -16279,17 +16628,60 @@ table .points .loss {
   letter-spacing: 0.64px;
   line-height: 19.2px;
 }
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .traderoom__top .selection-breakup {
+    width: 100%;
+    display: flex;
+    order: 4;
+    margin-top: 15px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .traderoom__top .selection-breakup {
+    margin-left: auto;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .traderoom__top .selection-breakup {
+    width: 100%;
+    display: flex;
+    order: 4;
+    margin-top: 15px;
+  }
+}
 .traderoom__top .position-breakup {
   margin-bottom: 5px;
+}
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .traderoom__top .position-breakup {
+    margin-bottom: 0;
+  }
+  .traderoom__top .position-breakup:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .traderoom__top .position-breakup {
+    margin-bottom: 0;
+  }
+  .traderoom__top .position-breakup:not(:last-child) {
+    margin-right: 15px;
+  }
 }
 .traderoom__top .position-breakup p {
   font-size: 12px;
   font-weight: bold;
   color: #ffffff;
   line-height: 16px;
+  width: 15px;
 }
 .traderoom__top .position-breakup .pills-wrap {
   margin-left: 15px;
+}
+@media only screen and (max-width: 1250px) {
+  .traderoom__top .position-breakup .pills-wrap {
+    margin-left: 5px;
+  }
 }
 .traderoom__top .position-breakup .pill {
   width: 16px;
@@ -16298,6 +16690,18 @@ table .points .loss {
   border-radius: 3px;
   margin-right: 4px;
   position: relative;
+}
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .traderoom__top .position-breakup .pill {
+    width: 5px;
+    height: 16px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .traderoom__top .position-breakup .pill {
+    width: 5px;
+    height: 16px;
+  }
 }
 .traderoom__top .position-breakup .pill--selected {
   background: #999ac4;
@@ -16327,7 +16731,8 @@ table .points .loss {
   border-radius: 3px;
   min-width: 150px;
   margin: 0 auto;
-  display: inherit;
+  display: block;
+  text-align: center;
 }
 .traderoom__top .btn--confirm {
   padding: 8px 15px;
@@ -16355,6 +16760,47 @@ table .points .loss {
 .traderoom__top .view-squad {
   text-align: right;
 }
+@media (min-width: 1000px) and (max-width: 1250px) {
+  .traderoom__top .view-squad {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+  }
+  .traderoom__top .view-squad .btn--view-squad {
+    margin-bottom: 0 !important;
+  }
+  .traderoom__top .view-squad .calendar-icon {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .traderoom__top .view-squad {
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .traderoom__top .view-squad {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  .traderoom__top .view-squad .btn--view-squad {
+    margin-bottom: 0 !important;
+  }
+  .traderoom__top .view-squad .calendar-icon {
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .traderoom__top .view-squad {
+    right: 10px;
+  }
+}
 .traderoom__top .btn--view-squad {
   font-family: Roboto-Bold;
   font-size: 13px;
@@ -16366,6 +16812,7 @@ table .points .loss {
   padding: 8px 15px;
   min-width: 115px;
   margin-left: 5px;
+  white-space: nowrap;
 }
 .traderoom__top .calendar-icon {
   width: 28px;
@@ -16430,6 +16877,12 @@ table .points .loss {
   box-shadow: 0 8px 59px 26px rgba(0, 0, 0, 0.15);
   border-radius: 15px;
 }
+@media only screen and (max-width: 768px) {
+  .modal--wagers-coming-soon .modal-holder {
+    width: calc(100% - 30px);
+    background: #3e3583;
+  }
+}
 .modal--wagers-coming-soon .modal-holder .close-modal {
   position: absolute;
   right: 10px;
@@ -16446,10 +16899,20 @@ table .points .loss {
 .modal--wagers-coming-soon .modal-holder .image-right {
   right: 5%;
 }
+@media only screen and (max-width: 768px) {
+  .modal--wagers-coming-soon .modal-holder .image {
+    display: none;
+  }
+}
 .modal--wagers-coming-soon .modal-content {
   max-width: 390px;
   margin: auto;
   padding: 30px 0;
+}
+@media only screen and (max-width: 600px) {
+  .modal--wagers-coming-soon .modal-content {
+    max-width: calc(100% - 30px);
+  }
 }
 .modal--wagers-coming-soon .modal-content h3 {
   font-family: "Bebas Neue";
@@ -16485,11 +16948,36 @@ table .points .loss {
   top: 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  .modal--transfer-summary.modal--trade-summary {
+    overflow: auto;
+  }
+}
 .modal--transfer-summary.modal--trade-summary .modal-summary-container {
   width: 762px;
 }
+@media only screen and (max-width: 600px) {
+  .modal--transfer-summary.modal--trade-summary .modal-summary-container {
+    top: 80px;
+    margin: 0 auto;
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .modal--transfer-summary.modal--trade-summary .modal-summary-container .summary-stat-wrap {
+    flex-wrap: wrap;
+  }
+}
 .modal--transfer-summary.modal--trade-summary .modal-summary-container .summary-stat-card {
   width: calc(50% - 7px);
+}
+@media only screen and (max-width: 600px) {
+  .modal--transfer-summary.modal--trade-summary .modal-summary-container .summary-stat-card {
+    width: 100%;
+  }
+  .modal--transfer-summary.modal--trade-summary .modal-summary-container .summary-stat-card:first-child {
+    margin-bottom: 10px;
+  }
 }
 .modal--transfer-summary.modal--trade-summary .modal-summary-container .transfer-icon {
   padding: 0 15px;
@@ -16497,8 +16985,22 @@ table .points .loss {
 .modal--transfer-summary.modal--trade-summary .modal-summary-container .players-wrap {
   width: calc(49% - 20px);
 }
+@media only screen and (max-width: 600px) {
+  .modal--transfer-summary.modal--trade-summary .modal-summary-container .players-wrap {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
 .modal--transfer-summary.modal--trade-summary .modal-summary-container .transfer-list {
   padding: 20px 15px;
+}
+@media only screen and (max-width: 600px) {
+  .modal--transfer-summary.modal--trade-summary .modal-summary-container .transfer-list .list-wrap {
+    justify-content: center;
+  }
+  .modal--transfer-summary.modal--trade-summary .modal-summary-container .transfer-list .transfer-icon {
+    margin: 10px 0;
+  }
 }
 .modal--transfer-summary.modal--trade-summary .modal-summary-container .add-cash-wrap {
   background: rgba(68, 76, 180, 0.17);
@@ -16568,6 +17070,7 @@ table .points .loss {
   top: 26px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 /*# sourceMappingURL=app.css.map */
