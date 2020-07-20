@@ -16067,8 +16067,13 @@ table .points .loss {
 }
 @media only screen and (max-width: 1250px) {
   .trades-opponent {
-    width: 100%;
+    width: 420px;
     height: initial;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .trades-opponent {
+    width: 100%;
   }
 }
 .trades-opponent .trade-opponent__head {

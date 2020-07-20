@@ -488,8 +488,11 @@
     border-radius: 3px;
     overflow: auto;
     @include respond-to(1250px) {
-      width: 100%;
+      width: 420px;
       height: initial;
+    }
+    @include respond-to(600px) {
+      width: 100%;
     }
     .trade-opponent__head {
       padding: 10px 20px;
