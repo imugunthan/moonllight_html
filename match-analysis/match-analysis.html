@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match Analysis</title>
+    <link rel="stylesheet" href="/src/assets/css/app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="mobile-header">
+        <div class="mobile-menu-icon material-icons" onclick="togglemobileNav()">menu</div>
+        <img src="/src/assets/img/signup/moonlight-logo.svg" alt="" class="mobile-logo">
+        <div class="notifications-icon material-icons">notifications_none</div>
+    </div>
+    <main class="main">
+        <aside class="side-nav d-flex">
+            <div class="close-mobile-menu material-icons" onclick="togglemobileNav()">close</div>
+            <div class="user-info">
+                <figure class="user-avatar m-auto mb-20">
+                    <img src="/src/assets/img/profile-image.svg" alt="User Image" class="user-image">
+                    <!-- <img src="https://images.vexels.com/media/users/3/140748/isolated/preview/5b078a59390bb4666df98b49f1cdedd0-male-profile-avatar-by-vexels.png"
+                        alt="User Image" class="user-image"> -->
+                </figure>
+                <p class="user-name">L. Vaz</p>
+            </div>
+            <nav class="navmenu">
+                <ul class="navmenu__list">
+                    <li class="navmenu__item mb-30">
+                        <i class="material-icons">home</i>
+                    </li>
+                    <li class="navmenu__item mb-30">
+                        <img src="/src/assets/img/trophy-filed.svg" alt="" class="filled">
+                        <img src="/src/assets/img/trophy.svg" alt="" class="normal">
+                    </li>
+                    <li class="navmenu__item mb-30 active">
+                        <img src="/src/assets/img/chart-filed.svg" class="filled" alt="">
+                        <img src="/src/assets/img/chart.svg" alt="" class="normal">
+                    </li>
+                </ul>
+            </nav>
+            <div class="side-nav__footer">
+                <ul class="">
+                    <li class="text-center help">
+                        <i class="material-icons">help</i>
+                    </li>
+                    <li class="text-center logo">
+                        <img src="/src//assets/img/moonlight-logo.svg" alt="Moonlight Logo">
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="right-section match-analysis">
+            <nav class="nav-bar">
+                <ul class="nav-menu d-flex-v-center">
+                    <li class="nav-items active">Dashboard</li>
+                    <li class="nav-items">My Team</li>
+                    <li class="nav-items">Trades-Wagers</li>
+                    <li class="nav-items">Free Market</li>
+                    <li class="nav-items">Stats</li>
+                    <li class="nav-items">My League</li>
+                    <li class="nav-items">Rules</li>
+                </ul>
+            </nav>
+            <div class="match-analysis-filter">
+                <div class="d-flex-space-center filters-main">
+                    <div class="match-selection d-flex-v-center">
+                        <label for="match1" class="check-button">
+                            <input type="radio" id="match1" class="radio-button" name="match" checked="">
+                            <span class="check-button-text">By Gameweek</span>
+                        </label>
+                        <label for="match2" class="check-button">
+                            <input type="radio" id="match2" class="radio-button" name="match">
+                            <span class="check-button-text">By Date</span>
+                        </label>
+                    </div>
+                    <button class="btn btn--filter d-flex-v-center">
+                        Filter Matches
+                        <img src="/src/assets/img/draft-room/filter.svg" alt="" class="ml-30">
+                    </button>
+                </div>
+                <div class="filter-section open">
+                    <div class="less-more-toggle">
+                        <div class="text-section">
+                            <div class="d-flex-space-center filter-container">
+                                <div class="select-wrap--type2">
+                                    <label for="" class="select-label">League</label>
+                                    <select name="" id="" class="custom-select">
+                                        <option value="">Premier League</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap--type2">
+                                    <label for="" class="select-label">Club</label>
+                                    <select name="" id="" class="custom-select">
+                                        <option value="">All</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap--type2">
+                                    <label for="" class="select-label">Match Status</label>
+                                    <select name="" id="" class="custom-select">
+                                        <option value="">All</option>
+                                    </select>
+                                </div>
+                                <div class="select-wrap--type2">
+                                    <label for="" class="select-label">Featured Players</label>
+                                    <ul class="stats-type d-flex-v-center">
+                                        <li class="stats-type__item active">All Players</li>
+                                        <li class="stats-type__item">My Players</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selected-filters-wrap d-flex d-none-mobile">
+                    <div class="selected-filters">Position: Defender</div>
+                    <div class="selected-filters">Gameweek: GW01 - GW10</div>
+                    <div class="selected-filters">Home / Away: Home</div>
+                    <div class="selected-filters">League: Premier League, La Liga, Bundesliga</div>
+                </div>
+            </div>
+            <div class="match-analysis-main">
+                <div class="gameweek-selection-container d-flex">
+                    <div class="nav-arrow left-nav d-flex-center">
+                        <img src="/src/assets/img/match-analysis/left-nav.svg" alt="">
+                    </div>
+                    <div class="gameweek-selection-wrap d-flex">
+                        <div class="gameweek-holder d-flex-center">
+                            <div class="current">Current</div>
+                            <div class="gameweek">GW 13</div>
+                            <div class="date">Jul 4 - jul 6</div>
+                        </div>
+                        <div class="gameweek-holder d-flex-center">
+                            <div class="current">Current</div>
+                            <div class="gameweek">GW 14</div>
+                            <div class="date">Jul 4 - jul 6</div>
+                        </div>
+                        <div class="gameweek-holder d-flex-center">
+                            <div class="current">Current</div>
+                            <div class="gameweek">GW 15</div>
+                            <div class="date">Jul 4 - jul 6</div>
+                        </div>
+                        <div class="gameweek-holder d-flex-center">
+                            <div class="current">Current</div>
+                            <div class="gameweek">GW 16</div>
+                            <div class="date">Jul 4 - jul 6</div>
+                        </div>
+                        <div class="gameweek-holder d-flex-center">
+                            <div class="current">Current</div>
+                            <div class="gameweek">GW 17</div>
+                            <div class="date">Jul 4 - jul 6</div>
+                        </div>
+                        <div class="gameweek-holder d-flex-center live">
+                            <div class="current">Current</div>
+                            <div class="gameweek">GW 18</div>
+                            <div class="date">Jul 4 - jul 6</div>
+                        </div>
+                        <div class="gameweek-holder d-flex-center">
+                            <div class="current">Current</div>
+                            <div class="gameweek">GW 19</div>
+                            <div class="date">Jul 4 - jul 6</div>
+                        </div>
+                        <div class="gameweek-holder d-flex-center">
+                            <div class="current">Current</div>
+                            <div class="gameweek">GW 20</div>
+                            <div class="date">Jul 4 - jul 6</div>
+                        </div>
+                        <div class="gameweek-holder d-flex-center">
+                            <div class="current">Current</div>
+                            <div class="gameweek">GW 21</div>
+                            <div class="date">Jul 4 - jul 6</div>
+                        </div>
+                        <div class="gameweek-holder d-flex-center">
+                            <div class="current">Current</div>
+                            <div class="gameweek">GW 22</div>
+                            <div class="date">Jul 4 - jul 6</div>
+                        </div>
+                        <div class="gameweek-holder d-flex-center">
+                            <div class="current">Current</div>
+                            <div class="gameweek">GW 23</div>
+                            <div class="date">Jul 4 - jul 6</div>
+                        </div>
+                    </div>
+                    <div class="nav-arrow right-nav d-flex-center">
+                        <img src="/src/assets/img/match-analysis/right-nav.svg" alt="">
+                    </div>
+                </div>
+                <div class="pills-selection-wrap d-flex-v-center">
+                    <div class="pills d-flex-center">
+                        <span>7 Matches</span>
+                    </div>
+                    <div class="pills d-flex-center active">
+                        <img src="/src/assets/img/landing-page/c.png" alt="">
+                        <span>7 Matches</span>
+                    </div>
+                    <div class="pills d-flex-center">
+                        <img src="/src/assets/img/landing-page/b.png" alt="">
+                        <span>7 Matches</span>
+                    </div>
+                    <div class="pills d-flex-center">
+                        <img src="/src/assets/img/landing-page/d.png" alt="">
+                        <span>7 Matches</span>
+                    </div>
+                    <div class="pills d-flex-center">
+                        <img src="/src/assets/img/landing-page/a.png" alt="">
+                        <span>7 Matches</span>
+                    </div>
+                    <div class="pills d-flex-center">
+                        <span>1 Complete</span>
+                    </div>
+                    <div class="pills d-flex-center">
+                        <span>3 Live</span>
+                    </div>
+                    <div class="pills d-flex-center">
+                        <span>1 Not yet played</span>
+                    </div>
+                </div>
+                <div class="match-analysis-details d-flex">
+                    <div class="left-wrap">
+                        <div class="day-wrap text-center">
+                            <p class="date">Friday, July 4th</p>
+                            <div class="match-info-wrap d-flex-v-center active">
+                                <img src="/src/assets/img/landing-page/c.png" alt="" class="league-image">
+                                <div class="team-info-wrap d-flex-v-center">
+                                    <div class="d-flex-v-center">
+                                        <p class="team-name winner">(17) Monchenglabach</p>
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                    </div>
+                                    <div class="points-info">
+                                        <p class="timing match-time">88'</p>
+                                        <div class="goals">2 &nbsp; : &nbsp; 0</div>
+                                        <div class="match-time-progress"></div>
+                                    </div>
+                                    <div class="d-flex-v-center">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="team-name">Monchenglabach (17)</p>
+                                        <img src="/src/assets/img/player-popout/player-status.svg" alt=""
+                                            class="my-player">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-info-wrap d-flex-v-center">
+                                <img src="/src/assets/img/landing-page/c.png" alt="" class="league-image">
+                                <div class="team-info-wrap d-flex-v-center">
+                                    <div class="d-flex-v-center">
+                                        <p class="team-name winner">(17) Monchenglabach</p>
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                    </div>
+                                    <div class="points-info">
+                                        <p class="timing">FT</p>
+                                        <div class="goals">2 &nbsp; : &nbsp; 0</div>
+                                    </div>
+                                    <div class="d-flex-v-center">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="team-name">Monchenglabach (17)</p>
+                                        <img src="/src/assets/img/player-popout/player-status.svg" alt=""
+                                            class="my-player">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-info-wrap d-flex-v-center">
+                                <img src="/src/assets/img/landing-page/c.png" alt="" class="league-image">
+                                <div class="team-info-wrap d-flex-v-center">
+                                    <div class="d-flex-v-center">
+                                        <p class="team-name winner">(17) Monchenglabach</p>
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                    </div>
+                                    <div class="points-info">
+                                        <p class="timing">FT</p>
+                                        <div class="goals">2 &nbsp; : &nbsp; 0</div>
+                                    </div>
+                                    <div class="d-flex-v-center">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="team-name">Monchenglabach (17)</p>
+                                        <img src="/src/assets/img/player-popout/player-status.svg" alt=""
+                                            class="my-player">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-info-wrap d-flex-v-center">
+                                <img src="/src/assets/img/landing-page/c.png" alt="" class="league-image">
+                                <div class="team-info-wrap d-flex-v-center">
+                                    <div class="d-flex-v-center">
+                                        <p class="team-name winner">(17) Monchenglabach</p>
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                    </div>
+                                    <div class="points-info">
+                                        <div class="match-start-time">5:30pm</div>
+                                    </div>
+                                    <div class="d-flex-v-center">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="team-name">Monchenglabach (17)</p>
+                                        <img src="/src/assets/img/player-popout/player-status.svg" alt=""
+                                            class="my-player">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="day-wrap text-center">
+                            <p class="date">Friday, July 4th</p>
+                            <div class="match-info-wrap d-flex-v-center active">
+                                <img src="/src/assets/img/landing-page/c.png" alt="" class="league-image">
+                                <div class="team-info-wrap d-flex-v-center">
+                                    <div class="d-flex-v-center">
+                                        <p class="team-name winner">(17) Monchenglabach</p>
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                    </div>
+                                    <div class="points-info">
+                                        <p class="timing">FT</p>
+                                        <div class="goals">2 &nbsp; : &nbsp; 0</div>
+                                        <div class="match-time-progress"></div>
+                                    </div>
+                                    <div class="d-flex-v-center">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="team-name">Monchenglabach (17)</p>
+                                        <img src="/src/assets/img/player-popout/player-status.svg" alt=""
+                                            class="my-player">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-info-wrap d-flex-v-center">
+                                <img src="/src/assets/img/landing-page/c.png" alt="" class="league-image">
+                                <div class="team-info-wrap d-flex-v-center">
+                                    <div class="d-flex-v-center">
+                                        <p class="team-name winner">(17) Monchenglabach</p>
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                    </div>
+                                    <div class="points-info">
+                                        <p class="timing">FT</p>
+                                        <div class="goals">2 &nbsp; : &nbsp; 0</div>
+                                    </div>
+                                    <div class="d-flex-v-center">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="team-name">Monchenglabach (17)</p>
+                                        <img src="/src/assets/img/player-popout/player-status.svg" alt=""
+                                            class="my-player">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-info-wrap d-flex-v-center">
+                                <img src="/src/assets/img/landing-page/c.png" alt="" class="league-image">
+                                <div class="team-info-wrap d-flex-v-center">
+                                    <div class="d-flex-v-center">
+                                        <p class="team-name winner">(17) Monchenglabach</p>
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                    </div>
+                                    <div class="points-info">
+                                        <p class="timing">FT</p>
+                                        <div class="goals">2 &nbsp; : &nbsp; 0</div>
+                                    </div>
+                                    <div class="d-flex-v-center">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="team-name">Monchenglabach (17)</p>
+                                        <img src="/src/assets/img/player-popout/player-status.svg" alt=""
+                                            class="my-player">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="match-info-wrap d-flex-v-center">
+                                <img src="/src/assets/img/landing-page/c.png" alt="" class="league-image">
+                                <div class="team-info-wrap d-flex-v-center">
+                                    <div class="d-flex-v-center">
+                                        <p class="team-name winner">(17) Monchenglabach</p>
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                    </div>
+                                    <div class="points-info">
+                                        <p class="timing">FT</p>
+                                        <div class="goals">2 &nbsp; : &nbsp; 0</div>
+                                    </div>
+                                    <div class="d-flex-v-center">
+                                        <img src="/src/assets/img/player-popout/Juventus.svg" alt="" class="team-image">
+                                        <p class="team-name">Monchenglabach (17)</p>
+                                        <img src="/src/assets/img/player-popout/player-status.svg" alt=""
+                                            class="my-player">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-wrap"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script>
+    function togglemobileNav() {
+        let sideNav = document.querySelector('.side-nav');
+        sideNav.classList.toggle('open');
+    }
+</script>
+
+</html>
