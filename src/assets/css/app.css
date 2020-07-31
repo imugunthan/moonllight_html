@@ -17725,6 +17725,9 @@ table .points .loss {
   padding: 2px 10px;
   margin: 0 10px;
 }
+.modal--match-summary .results-section-wrap .results-body .pills.loss {
+  background: #fa6968;
+}
 .modal--match-summary .results-section-wrap .results-body .name {
   font-size: 14px;
   line-height: 16px;
@@ -17769,6 +17772,7 @@ table .points .loss {
 }
 .modal--match-summary .top-players-wrap .top-players-body .players-card-wrap:last-child .player-name {
   text-align: right;
+  flex-direction: row-reverse;
 }
 .modal--match-summary .top-players-wrap .top-players-body .players-card-wrap:last-child .player-points .count {
   margin-left: auto;
@@ -17832,6 +17836,7 @@ table .points .loss {
   font-size: 12px;
   color: rgba(96, 99, 128, 0.5);
   line-height: 10px;
+  margin: 0 5px;
 }
 .modal--match-summary .top-players-wrap .top-players-body .players-card-wrap .stats {
   background: #efeef8;
@@ -17881,6 +17886,7 @@ table .points .loss {
 }
 .modal--match-summary .injury-suspensions-wrap .injury-suspensions-body .right-side-team .player-name {
   margin-left: auto;
+  flex-direction: row-reverse;
 }
 .modal--match-summary .injury-suspensions-wrap .injury-suspensions-body .player-card {
   background: #ffffff;
@@ -17914,7 +17920,25 @@ table .points .loss {
 .modal--match-summary .injury-suspensions-wrap .injury-suspensions-body .player-name span {
   font-size: 12px;
   color: rgba(96, 99, 128, 0.5);
-  line-height: 10px;
+  line-height: 16px;
+  margin: 0 5px;
+}
+.modal--match-summary .injury-suspensions-wrap .injury-suspensions-body .status {
+  padding: 0px 10px;
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-radius: 10px;
+  color: white;
+}
+.modal--match-summary .injury-suspensions-wrap .injury-suspensions-body .status--injured {
+  background: #f86364;
+}
+.modal--match-summary .injury-suspensions-wrap .injury-suspensions-body .status--suspended {
+  background: #606380;
+}
+.modal--match-summary .injury-suspensions-wrap .injury-suspensions-body .status img {
+  margin-right: 5px;
 }
 
 /*# sourceMappingURL=app.css.map */

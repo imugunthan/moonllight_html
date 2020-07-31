@@ -659,6 +659,9 @@
         border-radius: 10.5px;
         padding: 2px 10px;
         margin: 0 10px;
+        &.loss {
+          background: #fa6968;
+        }
       }
       .name {
         font-size: 14px;
@@ -708,6 +711,7 @@
           flex-direction: row-reverse;
           .player-name {
             text-align: right;
+            flex-direction: row-reverse;
           }
           .player-points .count {
             margin-left: auto;
@@ -775,6 +779,7 @@
             font-size: 12px;
             color: rgba(#606380, 0.5);
             line-height: 10px;
+            margin: 0 5px;
           }
         }
         .stats {
@@ -829,6 +834,7 @@
         }
         .player-name {
           margin-left: auto;
+          flex-direction: row-reverse;
         }
       }
       .player-card {
@@ -862,7 +868,25 @@
         span {
           font-size: 12px;
           color: rgba(#606380, 0.5);
-          line-height: 10px;
+          line-height: 16px;
+          margin: 0 5px;
+        }
+      }
+      .status {
+        padding: 0px 10px;
+        font-size: 10px;
+        font-weight: 500;
+        text-transform: capitalize;
+        border-radius: 10px;
+        color: white;
+        &--injured {
+          background: #f86364;
+        }
+        &--suspended {
+          background: #606380;
+        }
+        img {
+          margin-right: 5px;
         }
       }
     }
