@@ -975,3 +975,58 @@
     display: none;
   }
 }
+
+.free-market-tooltip-wrap {
+  position: relative;
+  .tool-tip {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    width: 250px;
+    background: #ffffff;
+    box-shadow: 0 -1px 28px -4px rgba(30, 30, 30, 0.22);
+    border-radius: 0 8px 8px 0;
+    padding: 15px;
+    label {
+      font-weight: bold;
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
+    .btn {
+      background: #4e5fc9 url(/src/assets/img/free-market/popup-btn-bg.svg)
+        bottom right no-repeat;
+      box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+        0 12px 20px -16px rgba(158, 117, 255, 0.15);
+      border-radius: 3px;
+      padding: 7px 30px;
+    }
+    .btn-wrap {
+      .btn:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+    &::after {
+      content: "";
+      width: 3px;
+      height: 100%;
+      background: #4048aa;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: -7px;
+      top: 50%;
+      width: 0px;
+      height: 0;
+      transform: translateY(-50%);
+      display: inline-block;
+      border-top: 8px solid transparent;
+      border-bottom: 8px solid transparent;
+      border-right: 8px solid #4048aa;
+    }
+  }
+}
