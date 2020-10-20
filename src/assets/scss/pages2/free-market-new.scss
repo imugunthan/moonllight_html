@@ -1,0 +1,137 @@
+.free-market-stats.free-market-stats--type1 {
+  @include respond-to(998px) {
+    padding-bottom: 0;
+    .mr-30 {
+      margin-right: 15px;
+      margin-bottom: 20px;
+    }
+  }
+  @include respond-to(600px) {
+    .mr-30 {
+      width: 100%;
+      min-width: 100%;
+      margin-right: 0;
+    }
+    .stat-card {
+      width: calc(50% - 10px);
+      min-width: calc(50% - 10px);
+      &.budget-remaining {
+        margin-left: 20px;
+      }
+    }
+  }
+  .free-market-card1.free-market-card1--type1 {
+    width: 290px;
+    box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+    border-radius: 10px;
+    padding: 15px 20px 0 20px !important;
+  }
+  .free-market-actions {
+    min-width: 200px;
+
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 7px 15px;
+      font-weight: bold;
+      font-size: 13px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 24px;
+      &:not(:last-child) {
+        margin-bottom: 6px;
+      }
+      &--primary {
+        background: #4e5fc9;
+        box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+          0 12px 20px -16px rgba(158, 117, 255, 0.15);
+        border-radius: 3px;
+      }
+      &--secondary {
+        background: #55c77c;
+        box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+          0 12px 20px -16px rgba(85, 199, 124, 0.15);
+        border-radius: 3px;
+      }
+      &--view-trade {
+        background: #babad2;
+        box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3),
+          0 12px 20px -16px rgba(42, 39, 111, 0.15);
+        border-radius: 3px;
+      }
+    }
+  }
+  .stat-card {
+    background: #ffffff;
+    box-shadow: 0 5px 12px -4px rgba(30, 30, 30, 0.22);
+    border-radius: 3px;
+    min-width: 125px;
+
+    &-body {
+      padding: 5px 10px;
+    }
+    .title {
+      padding: 4px 21px 0 21px;
+      font-family: "Bebas Neue";
+      font-size: 13px;
+      color: #67689d;
+      text-align: center;
+      line-height: 20px;
+      border-bottom: 1px solid #efefef;
+    }
+    .label-value-wrap {
+      margin-bottom: 2px;
+      .material-icons {
+        font-size: 12px;
+        margin: 0 5px;
+        &.info {
+          color: #918cbd;
+        }
+        &.done {
+          color: #55c77c;
+        }
+      }
+    }
+    .label {
+      font-family: "Bebas Neue";
+      font-size: 12px;
+      color: #606380;
+      line-height: 13px;
+    }
+    .value {
+      font-family: "bebas_neueregular";
+      font-size: 12px;
+      color: #606380;
+      line-height: 16px;
+      margin-left: 15px;
+    }
+    .budget-amount {
+      font-family: "Bebas Neue";
+      font-size: 51px;
+      line-height: 51px;
+      color: #2a276f;
+      text-align: center;
+      span {
+        font-size: 26px;
+        line-height: 29px;
+        font-family: "Bebas Neue";
+        letter-spacing: -4.1px;
+        margin-right: -5px;
+      }
+    }
+    .budget-text {
+      opacity: 0.75;
+      font-family: "Bebas Neue";
+      font-size: 17px;
+      color: #606380;
+      letter-spacing: 0.65px;
+      text-align: center;
+      line-height: 29px;
+    }
+    .budget-body {
+      height: calc(100% - 25px);
+      text-align: center;
+      flex-direction: column;
+    }
+  }
+}

@@ -17992,4 +17992,137 @@ table .points .loss {
   margin-right: 5px;
 }
 
+@media only screen and (max-width: 998px) {
+  .free-market-stats.free-market-stats--type1 {
+    padding-bottom: 0;
+  }
+  .free-market-stats.free-market-stats--type1 .mr-30 {
+    margin-right: 15px;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .free-market-stats.free-market-stats--type1 .mr-30 {
+    width: 100%;
+    min-width: 100%;
+    margin-right: 0;
+  }
+  .free-market-stats.free-market-stats--type1 .stat-card {
+    width: calc(50% - 10px);
+    min-width: calc(50% - 10px);
+  }
+  .free-market-stats.free-market-stats--type1 .stat-card.budget-remaining {
+    margin-left: 20px;
+  }
+}
+.free-market-stats.free-market-stats--type1 .free-market-card1.free-market-card1--type1 {
+  width: 290px;
+  box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
+  border-radius: 10px;
+  padding: 15px 20px 0 20px !important;
+}
+.free-market-stats.free-market-stats--type1 .free-market-actions {
+  min-width: 200px;
+}
+.free-market-stats.free-market-stats--type1 .free-market-actions .btn {
+  display: block;
+  width: 100%;
+  padding: 7px 15px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 24px;
+}
+.free-market-stats.free-market-stats--type1 .free-market-actions .btn:not(:last-child) {
+  margin-bottom: 6px;
+}
+.free-market-stats.free-market-stats--type1 .free-market-actions .btn--primary {
+  background: #4e5fc9;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(158, 117, 255, 0.15);
+  border-radius: 3px;
+}
+.free-market-stats.free-market-stats--type1 .free-market-actions .btn--secondary {
+  background: #55c77c;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(85, 199, 124, 0.15);
+  border-radius: 3px;
+}
+.free-market-stats.free-market-stats--type1 .free-market-actions .btn--view-trade {
+  background: #babad2;
+  box-shadow: 0 7px 15px -4px rgba(0, 0, 0, 0.3), 0 12px 20px -16px rgba(42, 39, 111, 0.15);
+  border-radius: 3px;
+}
+.free-market-stats.free-market-stats--type1 .stat-card {
+  background: #ffffff;
+  box-shadow: 0 5px 12px -4px rgba(30, 30, 30, 0.22);
+  border-radius: 3px;
+  min-width: 125px;
+}
+.free-market-stats.free-market-stats--type1 .stat-card-body {
+  padding: 5px 10px;
+}
+.free-market-stats.free-market-stats--type1 .stat-card .title {
+  padding: 4px 21px 0 21px;
+  font-family: "Bebas Neue";
+  font-size: 13px;
+  color: #67689d;
+  text-align: center;
+  line-height: 20px;
+  border-bottom: 1px solid #efefef;
+}
+.free-market-stats.free-market-stats--type1 .stat-card .label-value-wrap {
+  margin-bottom: 2px;
+}
+.free-market-stats.free-market-stats--type1 .stat-card .label-value-wrap .material-icons {
+  font-size: 12px;
+  margin: 0 5px;
+}
+.free-market-stats.free-market-stats--type1 .stat-card .label-value-wrap .material-icons.info {
+  color: #918cbd;
+}
+.free-market-stats.free-market-stats--type1 .stat-card .label-value-wrap .material-icons.done {
+  color: #55c77c;
+}
+.free-market-stats.free-market-stats--type1 .stat-card .label {
+  font-family: "Bebas Neue";
+  font-size: 12px;
+  color: #606380;
+  line-height: 13px;
+}
+.free-market-stats.free-market-stats--type1 .stat-card .value {
+  font-family: "bebas_neueregular";
+  font-size: 12px;
+  color: #606380;
+  line-height: 16px;
+  margin-left: 15px;
+}
+.free-market-stats.free-market-stats--type1 .stat-card .budget-amount {
+  font-family: "Bebas Neue";
+  font-size: 51px;
+  line-height: 51px;
+  color: #2a276f;
+  text-align: center;
+}
+.free-market-stats.free-market-stats--type1 .stat-card .budget-amount span {
+  font-size: 26px;
+  line-height: 29px;
+  font-family: "Bebas Neue";
+  letter-spacing: -4.1px;
+  margin-right: -5px;
+}
+.free-market-stats.free-market-stats--type1 .stat-card .budget-text {
+  opacity: 0.75;
+  font-family: "Bebas Neue";
+  font-size: 17px;
+  color: #606380;
+  letter-spacing: 0.65px;
+  text-align: center;
+  line-height: 29px;
+}
+.free-market-stats.free-market-stats--type1 .stat-card .budget-body {
+  height: calc(100% - 25px);
+  text-align: center;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=app.css.map */
