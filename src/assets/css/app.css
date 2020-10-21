@@ -18000,6 +18000,12 @@ table .points .loss {
     margin-right: 15px;
     margin-bottom: 20px;
   }
+  .free-market-stats.free-market-stats--type1 .mr-30.budget-remaining {
+    margin-right: 0;
+  }
+  .free-market-stats.free-market-stats--type1 .mr-30 .wrap-center-1300 {
+    justify-content: flex-start;
+  }
 }
 @media only screen and (max-width: 600px) {
   .free-market-stats.free-market-stats--type1 .mr-30 {
@@ -18020,6 +18026,9 @@ table .points .loss {
   box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
   border-radius: 10px;
   padding: 15px 20px 0 20px !important;
+}
+.free-market-stats.free-market-stats--type1 .free-market-card1.free-market-card1--type1 .title p {
+  white-space: nowrap;
 }
 .free-market-stats.free-market-stats--type1 .free-market-actions {
   min-width: 200px;
@@ -18069,6 +18078,7 @@ table .points .loss {
   text-align: center;
   line-height: 20px;
   border-bottom: 1px solid #efefef;
+  white-space: nowrap;
 }
 .free-market-stats.free-market-stats--type1 .stat-card .label-value-wrap {
   margin-bottom: 2px;
@@ -18123,6 +18133,48 @@ table .points .loss {
   height: calc(100% - 25px);
   text-align: center;
   flex-direction: column;
+}
+
+.free-market .modal-aside.modal-aside--right.player-picker {
+  overflow: hidden;
+}
+.free-market .modal-aside.modal-aside--right.player-picker .cancel {
+  font-size: 15px;
+  color: #f86364;
+  display: inline-block;
+  margin-left: 10px;
+}
+.free-market .modal-aside.modal-aside--right.player-picker .done {
+  font-size: 15px;
+  color: #55c77c;
+  display: inline-block;
+  margin-left: 10px;
+}
+.free-market .modal-aside.modal-aside--right.player-picker .player-picker__header--type2 {
+  padding: 15px;
+  box-shadow: 0 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+.free-market .modal-aside.modal-aside--right.player-picker .player-picker__header--type2 p {
+  font-family: "Bebas Neue";
+  font-size: 14px;
+  color: #606380;
+  text-align: center;
+  line-height: 14px;
+}
+.free-market .modal-aside.modal-aside--right.player-picker .section-header .info-text p {
+  margin-left: 5px;
+}
+.free-market .modal-aside.modal-aside--right.player-picker .section-header .info-icon {
+  font-size: 16px;
+  color: #918cbd;
+  cursor: pointer;
+}
+
+.modal.modal--submit-transfer .modal-holder {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+  border-radius: 16px;
 }
 
 /*# sourceMappingURL=app.css.map */

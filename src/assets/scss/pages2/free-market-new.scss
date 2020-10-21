@@ -4,6 +4,12 @@
     .mr-30 {
       margin-right: 15px;
       margin-bottom: 20px;
+      &.budget-remaining {
+        margin-right: 0;
+      }
+      .wrap-center-1300 {
+        justify-content: flex-start;
+      }
     }
   }
   @include respond-to(600px) {
@@ -25,6 +31,9 @@
     box-shadow: 0 5px 12px -4px rgba(82, 92, 215, 0.3);
     border-radius: 10px;
     padding: 15px 20px 0 20px !important;
+    .title p {
+      white-space: nowrap;
+    }
   }
   .free-market-actions {
     min-width: 200px;
@@ -78,6 +87,7 @@
       text-align: center;
       line-height: 20px;
       border-bottom: 1px solid #efefef;
+      white-space: nowrap;
     }
     .label-value-wrap {
       margin-bottom: 2px;
@@ -132,6 +142,58 @@
       height: calc(100% - 25px);
       text-align: center;
       flex-direction: column;
+    }
+  }
+}
+
+.free-market {
+  .modal-aside.modal-aside--right.player-picker {
+    overflow: hidden;
+    .cancel {
+      font-size: 15px;
+      color: #f86364;
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .done {
+      font-size: 15px;
+      color: #55c77c;
+      display: inline-block;
+      margin-left: 10px;
+    }
+    .player-picker__header--type2 {
+      padding: 15px;
+      box-shadow: 0 0px 2px 5px rgba(0, 0, 0, 0.05);
+      p {
+        font-family: "Bebas Neue";
+        font-size: 14px;
+        color: #606380;
+        text-align: center;
+        line-height: 14px;
+      }
+    }
+    .section-header {
+      .info-text {
+        p {
+          margin-left: 5px;
+        }
+      }
+      .info-icon {
+        font-size: 16px;
+        color: #918cbd;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.modal.modal--submit-transfer {
+  .modal {
+    &-holder {
+      position: absolute;
+      background: #ffffff;
+      box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
+      border-radius: 16px;
     }
   }
 }

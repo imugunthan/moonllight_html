@@ -99,8 +99,8 @@
                 </div>
                 <div class="free-market-actions mr-30">
                     <button class="btn btn--primary">View My Squad</button>
-                    <button class="btn btn--secondary">View My Squad</button>
-                    <button class="btn btn--view-trade">View My Squad</button>
+                    <button class="btn btn--secondary">View completed transfers</button>
+                    <button class="btn btn--view-trade">View trade offers</button>
                 </div>
                 <div class="position-restrictions stat-card mr-30">
                     <div class="title">Position Restrictions</div>
@@ -275,20 +275,20 @@
                 </div>
             </div>
             <aside class="modal-aside modal-aside--right player-picker hide">
-                <div class="player-picker__header">
-                    <div class="d-flex-space-center">
-                        <p class="title mb-10">My Squad</p>
-                        <img src="/src/assets/img/player-popout/close-icon.svg" alt="" class="close-button">
-                    </div>
-                    <div class="squad-value d-flex-space-center mt-20">
-                        <p class="label">Squad Value</p>
-                        <p class="value">$124.0M</p>
-                    </div>
+                <div class="player-picker__header--type2 d-flex-center">
+                   <p>Still need a Utility Player!</p>
+                   <i class="material-icons cancel">cancel</i>
                 </div>
                 <div class="player-card-wrap">
                     <div class="section-header d-flex-space-center">
                         <p class="text">Goalkeepers</p>
-                        <p class="text text-bold">0/2</p>
+                        <div class="d-flex-v-center">
+                            <div class="d-flex-v-center mr-10 info-text">
+                                <i class="material-icons info-icon">info_outline</i>
+                                <p> <strong>Utility</strong> dropped</p>
+                            </div>
+                            <p class="text text-bold">0/2</p>
+                        </div>
                     </div>
                     <div class="player-card d-flex-v-center">
                         <img src="/src/assets/img/user.svg" alt="" class="player-image">
@@ -421,280 +421,8 @@
             </aside>
         </section>
     </main>
-    <section class="modal modal--confirm-transfers hide">
-        <div class="modal-confirm-container modal-market-container">
-            <div class="modal-info d-flex-v-center">
-                <p class="content">Transfers Successful!</p>
-                <img src="/src/assets/img/free-market/robero-firmino.png" alt="" class="firmino">
-                <button class="close-modal">
-                    <img src="/src/assets/img/league-dashboard/close-icon-2.svg" alt="">
-                </button>
-            </div>
-        </div>
-    </section>
-    <section class="modal modal--market-closed hide">
-        <div class="modal-market-container modal-all-container">
-            <div class="content-info">
-                <div class="label-closed">
-                    Closed
-                </div>
-                <button class="close-modal">
-                    <img src="/src/assets/img/league-dashboard/close-icon-2.svg" alt="">
-                </button>
-                <p class="content">The Transfer Window is current closed.</p>
-                <div class="open-window d-flex-v-center">
-                    <p>GW11 TRANSFER OPENS IN:</p>
-                    <div class="timer">
-                        <span>Friday, Oct 19th 2:30pm EST</span>
-                        <div class="count-down-dfr-time-in">
-                            <div class="dhms-div">
-                                <div class="dhms-cnt">16</div>
-                                <div class="dhms-type">D</div>
-                            </div>
-                            <div class="dhms-div">
-                                <div class="dhms-cnt">01</div>
-                                <div class="dhms-type">H</div>
-                            </div>
-                            <div class="dhms-div">
-                                <div class="dhms-cnt">52</div>
-                                <div class="dhms-type">M</div>
-                            </div>
-                            <div class="dhms-div">
-                                <div class="dhms-cnt">35</div>
-                                <div class="dhms-type">S</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="modal modal--transfer-summary hide">
-        <div class="modal-market-container modal-summary-container">
-            <div class="summary-head d-flex-space-center">
-                <h1>TRANSFER SUMMARY</h1>
-                <img src="/src/assets/img/league-dashboard/close-icon-2.svg" alt="">
-            </div>
-            <div class="summary-body">
-                <div class="summary-stat-card mb-20">
-                    <div class="summary-stat-top">
-                        <div class="d-flex-space-center">
-                            <div class="d-flex stat-wrap">
-                                <div class="label-value-wrap">
-                                    <p class="value">$126.2M</p>
-                                    <p class="label">Squad total</p>
-                                </div>
-                                <p class="value-diff">+$1.8M</p>
-                            </div>
-                            <div class="d-flex stat-wrap">
-                                <div class="label-value-wrap">
-                                    <p class="value">$0.2M</p>
-                                    <p class="label">Cash on hand</p>
-                                </div>
-                                <p class="value-diff">-$1.8M</p>
-                            </div>
-                            <div class="d-flex stat-wrap">
-                                <div class="label-value-wrap">
-                                    <p class="value">3</p>
-                                    <p class="label">Transfers</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="summary-stat-bottom">
-                        <div class="d-flex-space-center">
-                            <div class="d-flex selection-breakup">
-                                <div class="position-breakup d-flex-v-center">
-                                    <p>GK</p>
-                                    <div class="d-flex-v-center pills-wrap">
-                                        <span class="pill pill--selected"></span>
-                                        <span class="pill pill--selected"></span>
-                                    </div>
-                                </div>
-                                <div class="position-breakup d-flex-v-center">
-                                    <p>DF</p>
-                                    <div class="d-flex-v-center pills-wrap">
-                                        <span class="pill pill--selected"></span>
-                                        <span class="pill pill--selected"></span>
-                                        <span class="pill pill--selected"></span>
-                                        <span class="pill pill--selected"></span>
-                                        <span class="pill pill--selected"></span>
-                                    </div>
-                                </div>
-                                <div class="position-breakup d-flex-v-center">
-                                    <p>MF</p>
-                                    <div class="d-flex-v-center pills-wrap">
-                                        <span class="pill pill--selected"></span>
-                                        <span class="pill pill--selected"></span>
-                                        <span class="pill pill--selected"></span>
-                                        <span class="pill pill--selected"></span>
-                                        <span class="pill pill--vacant"></span>
-                                    </div>
-                                </div>
-                                <div class="position-breakup d-flex-v-center">
-                                    <p>FW</p>
-                                    <div class="d-flex-v-center pills-wrap">
-                                        <span class="pill pill--selected"></span>
-                                        <span class="pill pill--selected"></span>
-                                        <span class="pill pill--selected"></span>
-                                        <span class="pill pill--error">
-                                            <div class="error-tooltip">
-                                                You have too many forwards!
-                                                <img src="/src/assets/img/draft-room/error-info.svg" alt=""
-                                                    class="error-info">
-                                            </div>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <img src="/src/assets/img/free-market/error.svg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="transfer-list">
-                    <div class="d-flex-space-center mb-10 transfer-title-wrap">
-                        <div class="players-wrap title d-flex-v-center ml-30">
-                            <img src="/src/assets/img/free-market/players-in.svg" alt="">
-                            <p>Players in</p>
-                        </div>
-                        <div class="players-wrap title d-flex-v-center">
-                            <img src="/src/assets/img/free-market/players-out.svg" alt="">
-                            <p>Players out</p>
-                        </div>
-                    </div>
-                    <div class="d-flex-space-center list-wrap mb-10">
-                        <div class="players-wrap d-flex-v-center">
-                            <div class="counter">1</div>
-                            <div class="player-card d-flex-v-center">
-                                <img src="/src/assets/img/free-market/players-in.svg" alt="" class="swap-icon">
-                                <div class="player-avatar">
-                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
-                                </div>
-                                <div class="player-info">
-                                    <div class="player-name">
-                                        <p>J. Oblack <span>DF</span></p>
-                                    </div>
-                                    <div class="player-value">
-                                        256 pts / $1.1M
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="players-wrap d-flex-v-center">
-                            <div class="player-card d-flex-v-center">
-                                <img src="/src/assets/img/free-market/players-out.svg" alt="" class="swap-icon">
-                                <div class="player-avatar">
-                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
-                                </div>
-                                <div class="player-info">
-                                    <div class="player-name">
-                                        <p>J. Oblack <span>DF</span></p>
-                                    </div>
-                                    <div class="player-value">
-                                        256 pts / $1.1M
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="delete-row">
-                                <i class="material-icons">close</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex-space-center list-wrap mb-10">
-                        <div class="players-wrap d-flex-v-center">
-                            <div class="counter">1</div>
-                            <div class="player-card d-flex-v-center">
-                                <img src="/src/assets/img/free-market/players-in.svg" alt="" class="swap-icon">
-                                <div class="player-avatar">
-                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
-                                </div>
-                                <div class="player-info">
-                                    <div class="player-name">
-                                        <p>J. Oblack <span>DF</span></p>
-                                    </div>
-                                    <div class="player-value">
-                                        256 pts / $1.1M
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="players-wrap d-flex-v-center">
-                            <div class="player-card d-flex-v-center">
-                                <img src="/src/assets/img/free-market/players-out.svg" alt="" class="swap-icon">
-                                <div class="player-avatar">
-                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
-                                </div>
-                                <div class="player-info">
-                                    <div class="player-name">
-                                        <p>J. Oblack <span>DF</span></p>
-                                    </div>
-                                    <div class="player-value">
-                                        256 pts / $1.1M
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="delete-row">
-                                <i class="material-icons">close</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex-space-center list-wrap mb-10">
-                        <div class="players-wrap d-flex-v-center">
-                            <div class="counter">1</div>
-                            <div class="player-card d-flex-v-center">
-                                <img src="/src/assets/img/free-market/players-in.svg" alt="" class="swap-icon">
-                                <div class="player-avatar">
-                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
-                                </div>
-                                <div class="player-info">
-                                    <div class="player-name">
-                                        <p>J. Oblack <span>DF</span></p>
-                                    </div>
-                                    <div class="player-value">
-                                        256 pts / $1.1M
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="players-wrap d-flex-v-center">
-                            <div class="player-card d-flex-v-center">
-                                <img src="/src/assets/img/free-market/players-out.svg" alt="" class="swap-icon">
-                                <div class="player-avatar">
-                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
-                                </div>
-                                <div class="player-info">
-                                    <div class="player-name">
-                                        <p>J. Oblack <span>DF</span></p>
-                                    </div>
-                                    <div class="player-value">
-                                        256 pts / $1.1M
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="delete-row">
-                                <i class="material-icons">close</i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="d-flex-space-center list-wrap mb-10 mt-20">
-                        <div class="players-wrap d-flex-v-center">
-                            <div class="total-value">
-                                Total In <span>$12.3M</span>
-                            </div>
-                        </div>
-                        <div class="players-wrap d-flex-v-center">
-                            <div class="total-value mr-30">
-                                Total Out <span>$12.3M</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="summary-footer d-flex-center">
-                    <button class="btn btn--cancel">Cancel</button>
-                    <button class="btn btn--confirm">Confirm</button>
-                </div>
-            </div>
+    <section class="modal modal--submit-transfer hide">
+        <div class="modal-holder">
         </div>
     </section>
 </body>
