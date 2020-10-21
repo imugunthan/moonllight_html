@@ -18007,7 +18007,7 @@ table .points .loss {
     justify-content: flex-start;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .free-market-stats.free-market-stats--type1 .mr-30 {
     width: 100%;
     min-width: 100%;
@@ -18032,6 +18032,32 @@ table .points .loss {
 }
 .free-market-stats.free-market-stats--type1 .free-market-actions {
   min-width: 200px;
+}
+@media (min-width: 750px) and (max-width: 950px) {
+  .free-market-stats.free-market-stats--type1 .free-market-actions {
+    width: 100%;
+    display: flex;
+    order: 4;
+  }
+  .free-market-stats.free-market-stats--type1 .free-market-actions .btn {
+    max-width: 200px;
+    margin-bottom: 0 !important;
+  }
+  .free-market-stats.free-market-stats--type1 .free-market-actions .btn:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 500px) and (max-width: 750px) {
+  .free-market-stats.free-market-stats--type1 .free-market-actions {
+    display: flex;
+  }
+  .free-market-stats.free-market-stats--type1 .free-market-actions .btn {
+    max-width: 200px;
+    margin-bottom: 0 !important;
+  }
+  .free-market-stats.free-market-stats--type1 .free-market-actions .btn:not(:last-child) {
+    margin-right: 15px;
+  }
 }
 .free-market-stats.free-market-stats--type1 .free-market-actions .btn {
   display: block;
@@ -18180,7 +18206,7 @@ table .points .loss {
   box-shadow: 0 5px 10px 0 rgba(42, 39, 111, 0.19);
   border-radius: 8px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .modal.modal--submit-transfer .modal-holder {
     max-width: calc(100% - 60px);
   }
@@ -18351,7 +18377,7 @@ table .points .loss {
   border-radius: 8px;
   overflow: hidden;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   .modal.modal--completed-summary .modal-holder {
     max-width: calc(100% - 20px);
   }
@@ -18440,6 +18466,11 @@ table .points .loss {
   background: #ffffff;
   border-bottom: 1px solid rgba(82, 92, 215, 0.27);
 }
+@media only screen and (max-width: 700px) {
+  .modal.modal--completed-summary .transfer-item-wrap {
+    border-bottom: 1px solid rgba(82, 92, 215, 0.5);
+  }
+}
 .modal.modal--completed-summary .transfer-item-wrap .modal-player-info {
   width: 100%;
   box-shadow: none;
@@ -18479,9 +18510,6 @@ table .points .loss {
     width: 100%;
     border-right: none;
     position: relative;
-  }
-  .modal.modal--completed-summary .transfer-player-wrap .transfer-item:not(:last-child) {
-    border-bottom: 1px solid #f1f1f1;
   }
   .modal.modal--completed-summary .transfer-player-wrap .transfer-item .transfer-icon {
     display: inline-block;
