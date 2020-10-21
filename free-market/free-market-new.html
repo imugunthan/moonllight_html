@@ -94,7 +94,7 @@
                                 </div>
                             </div>
                             <p>Sun, Oct 21th 8:30pm</p>
-                        </div> 
+                        </div>
                     </div>
                 </div>
                 <div class="free-market-actions mr-30">
@@ -276,8 +276,8 @@
             </div>
             <aside class="modal-aside modal-aside--right player-picker hide">
                 <div class="player-picker__header--type2 d-flex-center">
-                   <p>Still need a Utility Player!</p>
-                   <i class="material-icons cancel">cancel</i>
+                    <p>Still need a Utility Player!</p>
+                    <i class="material-icons cancel">cancel</i>
                 </div>
                 <div class="player-card-wrap">
                     <div class="section-header d-flex-space-center">
@@ -423,6 +423,222 @@
     </main>
     <section class="modal modal--submit-transfer hide">
         <div class="modal-holder">
+            <div class="modal-title">
+                Submit Your Transfer
+            </div>
+            <div class="modal-submit-body d-flex">
+                    <div class="player-info">
+                        <div class="transfer-title d-flex-v-center">
+                            <img src="/src/assets/img/free-market/players-in.svg" alt="">
+                            <p>Players <span>DROPPED</span></p>
+                        </div>  
+                        <div class="transfer-player-wrap">
+                            <div class="transfer-player-top">
+                                <div class="modal-player-info d-flex-v-center">
+                                    <div class="player-avatar">
+                                        <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                    </div>
+                                    <div class="player-details">
+                                        <div class="d-flex-v-center mb-8">
+                                            <p class="name">T. Alexander-Arnold</p>
+                                            <p class="position">DF</p>
+                                        </div>
+                                        <p class="points-price">219.73 pts / $10.8M</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transfer-player-body">
+                                <div class="title">BEFORE TRANSFER</div>
+                                <div class="value-wrap">
+                                    <p class="label">Utility Player</p>
+                                    <p class="value">Defender</p>
+                                </div>
+                                <div class="value-wrap">
+                                    <p class="label">Budget Remaining</p>
+                                    <p class="value">$1.5M</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="player-info">
+                        <div class="transfer-title d-flex-v-center">
+                            <img src="/src/assets/img/free-market/players-out.svg" alt="">
+                            <p>Players <span>ADDED</span></p>
+                        </div>
+                        <div class="transfer-player-wrap">
+                            <div class="transfer-player-top">
+                                <div class="modal-player-info d-flex-v-center">
+                                    <div class="player-avatar">
+                                        <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                    </div>
+                                    <div class="player-details">
+                                        <div class="d-flex-v-center mb-8">
+                                            <p class="name">H. Maguire</p>
+                                            <p class="position">DF</p>
+                                        </div>
+                                        <p class="points-price">208.19 pts / $7.6M</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="transfer-player-body">
+                                <div class="title">AFTER TRANSFER</div>
+                                <div class="value-wrap">
+                                    <p class="label">Utility Player</p>
+                                    <p class="value">Defender</p>
+                                </div>
+                                <div class="value-wrap">
+                                    <p class="label">Budget Remaining</p>
+                                    <p class="value">$1.5M</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            <div class="modal-submit-footer d-flex-center">
+                <button class="btn btn--cancel">Cancel</button>
+                <button class="btn btn--secondary ml-15">Confirm</button>
+            </div>
+        </div>
+    </section>
+    <section class="modal modal--submit-transfer modal--to-slow hide">
+        <div class="modal-holder">
+            <div class="modal-title">
+                Too Slow!
+            </div>
+            <div class="modal-submit-body d-flex">
+                    <div class="player-info">
+                        <div class="transfer-player-wrap">
+                            <p class="player-picked-text ">This player was already picked up by <span>Stefan Woort-Menker!</span></p>
+                            <div class="transfer-player-top">
+                                <div class="modal-player-info d-flex-v-center">
+                                    <div class="player-avatar">
+                                        <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                    </div>
+                                    <div class="player-details">
+                                        <div class="d-flex-v-center mb-8">
+                                            <p class="name">T. Alexander-Arnold</p>
+                                            <p class="position">DF</p>
+                                        </div>
+                                        <p class="points-price">219.73 pts / $10.8M</p>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+            </div>
+            <div class="modal-submit-footer d-flex-center">
+                <button class="btn btn--primary d-flex-center">
+                    <i class="material-icons">refresh</i>
+                    Refresh Page</button>
+            </div>
+        </div>
+    </section>
+    <section class="modal modal--completed-summary">
+        <div class="modal-holder">
+            <div class="modal-header d-flex-center">
+                <div class="text-center">
+                    <h1 class="title">Completed transfers</h1>
+                    <p class="sub-title">Gameweek 1o transfer window</p>
+                </div>
+                <div class="modal-close-icon">
+                    <img src="/src/assets/img/league-dashboard/close-icon-2.svg" alt="" >
+                </div>
+            </div>
+            <div class="modal-transfer-body">
+                <div class="d-flex list-head transfer-item-wrap">
+                    <div class="transfer-title d-flex-center time">
+                        <p><span>Time</span> of Transfer</p>
+                    </div>
+                    <div class="d-flex-v-center transfer-player-wrap">
+                        <div class="transfer-title d-flex-center">
+                            <img src="/src/assets/img/free-market/players-out.svg" alt="">
+                            <p>Players <span>DROPPED</span></p>
+                        </div>
+                        <div class="transfer-title d-flex-center">
+                            <img src="/src/assets/img/free-market/players-in.svg" alt="">
+                            <p>Players <span>ADDED</span></p>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="transfer-item-wrap d-flex">
+                    <div class="d-flex-center transfer-item time">
+                        Oct 22 12:59pm
+                    </div>
+                    <div class="d-flex-v-center transfer-player-wrap">
+                        <div class="d-flex-v-center transfer-item">
+                            <img src="/src/assets/img/free-market/players-out.svg" alt="" class="transfer-icon">
+                            <div class="modal-player-info d-flex-v-center">
+                                <div class="player-avatar">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                                <div class="player-details">
+                                    <div class="d-flex-v-center mb-8">
+                                        <p class="name">T. Alexander-Arnold</p>
+                                        <p class="position">DF</p>
+                                    </div>
+                                    <p class="points-price">219.73 pts / $10.8M</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex-v-center transfer-item">
+                            <img src="/src/assets/img/free-market/players-in.svg" alt="" class="transfer-icon">
+                            <div class="modal-player-info d-flex-v-center">
+                                <div class="player-avatar">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                                <div class="player-details">
+                                    <div class="d-flex-v-center mb-8">
+                                        <p class="name">T. Alexander-Arnold</p>
+                                        <p class="position">DF</p>
+                                    </div>
+                                    <p class="points-price">219.73 pts / $10.8M</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="transfer-item-wrap d-flex">
+                    <div class="d-flex-center transfer-item time">
+                        Oct 22 12:59pm
+                    </div>
+                    <div class="d-flex-v-center transfer-player-wrap">
+                        <div class="d-flex-v-center transfer-item">
+                            <img src="/src/assets/img/free-market/players-out.svg" alt="" class="transfer-icon">
+                            <div class="modal-player-info d-flex-v-center">
+                                <div class="player-avatar">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                                <div class="player-details">
+                                    <div class="d-flex-v-center mb-8">
+                                        <p class="name">T. Alexander-Arnold</p>
+                                        <p class="position">DF</p>
+                                    </div>
+                                    <p class="points-price">219.73 pts / $10.8M</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex-v-center transfer-item">
+                            <img src="/src/assets/img/free-market/players-in.svg" alt="" class="transfer-icon">
+                            <div class="modal-player-info d-flex-v-center">
+                                <div class="player-avatar">
+                                    <img src="/src/assets/img/league-dashboard/Jan Oblak.svg" alt="">
+                                </div>
+                                <div class="player-details">
+                                    <div class="d-flex-v-center mb-8">
+                                        <p class="name">T. Alexander-Arnold</p>
+                                        <p class="position">DF</p>
+                                    </div>
+                                    <p class="points-price">219.73 pts / $10.8M</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </section>
 </body>
